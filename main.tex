@@ -56,6 +56,9 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
+\newcommand{\Raa}{R_{\rm AA}}
+\newcommand{\RAA}{R_{\rm AA}}
+\newcommand{\RpPb}{R_{\rm pPb}}
 \newcommand{\der}{\rm d}
 \newcommand{\pp}{p-p}
 \newcommand{\sqrts}{\sqrt{s}}
@@ -80,7 +83,7 @@ headsepline, % Uncomment to get a line under the header
 \newcommand{\cm}{\mathrm{cm}}
 \newcommand{\m}{\mathrm{m}}
 \newcommand{\mum}{\mathrm{\mu m}}
-\newcommand{\s}{\mathrm{s}}
+\newcommand{\s}{\sqrt{s}}
 %\renewcommand{\d}{\mathrm{d}}
 \newcommand{\ns}{\mathrm{ns}}
 \newcommand{\mrad}{\mathrm{mrad}}
@@ -90,8 +93,6 @@ headsepline, % Uncomment to get a line under the header
 \newcommand{\PbPb}{\mbox{Pb--Pb}}
 \newcommand{\Npart}{N_{\rm part}}
 \newcommand{\Ncoll}{N_{\rm coll}}
-\newcommand{\Raa}{R_{\rm AA}}
-\newcommand{\RAA}{R_{\rm AA}}
 \newcommand{\TAA}{T_{\rm AA}}
 \newcommand{\RCP}{R_{\rm CP}}
 \newcommand{\pt}{p_{\rm T}}
@@ -107,6 +108,9 @@ headsepline, % Uncomment to get a line under the header
 \newcommand{\Ds}{{\rm D_s}}
 \newcommand{\Dsplus}{{\rm D_s^+}}
 \newcommand{\DstoKKpi}{{\rm D^{+}_\mathrm{s}\to K^+ K^-\pi^+}}
+\newcommand{\KKpi}{{\rm K^+ K^-}\pi^+}
+\newcommand{\KK}{{\rm K^+ K^-}}
+\newcommand{\PhitoKK}{{\phi \to {\rm K^+ K^-}}}
 \newcommand{\DplustoKKpi}{{\rm D^{+}\to K^+ K^-\pi^+}}
 \newcommand{\nbinv}{{\rm nb^{-1}}}
 \newcommand{\decleng}{{\rm L}_{xyz}}
@@ -116,6 +120,20 @@ headsepline, % Uncomment to get a line under the header
 \newcommand{\vtwo}{\rm v_2}
 \newcommand{\sNN}{\sqrt{s_{\rm NN}}}
 \newcommand{\Nch}{N_{\rm ch}}
+\newcommand{\Dstophipi}{{\rm D_s^{+}\to \phi\pi^+}}
+\newcommand{\DplustoKpipi}{{\rm D}^+\to {\rm K}^-\pi^+\pi^+}
+\newcommand{\DstartoDpiPrecise}{{\rm D^{*+}(2010)\to D^0\pi^+}}
+\newcommand{\DzerotoKpi}{{\rm D}^0 \to {\rm K}^-\pi^+}
+\newcommand{\MeVcc}{\mathrm{MeV}/c^2}
+\newcommand{\phitoKK}{{\rm \phi\to  K^-K^+}}
+\newcommand{\Ntrkl}{N_{\rm trkl}}
+\newcommand{\averNtrkl}{<N_{\rm trkl}>}
+\newcommand{\averNch}{<N_{\rm ch}>}
+\newcommand{\zVtx}{z_{\rm vtx}}
+\newcommand{\DstophipitoKKpi}{{\rm D_s^{+}\to \phi\pi^+\to K^-K^+\pi^+}}
+\newcommand{\QpPb}{Q_{\rm pPb}}
+\newcommand{\Qcp}{Q_{\rm CP}}
+
 \geometry{
 	paper=a4paper, % Change to letterpaper for US letter
 	inner=2.5cm, % Inner margin
@@ -278,15 +296,15 @@ $\omega$ & angular frequency & \si{\radian} \\
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
 \pagestyle{thesis} % Return the page headers back to the "thesis" style
-
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
 \include{Chapters/Chapter1_QGP}
 \include{Chapters/Chapter2_HF} 
 %\include{Chapters/Chapter3_Detector}
-%\include{Chapters/Chapter4} 
-%\include{Chapters/Chapter5} 
+\include{Chapters/Chapter4_pp} 
+\include{Chapters/Chapter5_PbPb} 
+\include{Chapters/Chapter6_pPb} 
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
@@ -298,7 +316,7 @@ $\omega$ & angular frequency & \si{\radian} \\
 % Uncomment the lines as you write the Appendices
 
 \include{Appendices/AppendixA}
-%\include{Appendices/AppendixB}
+\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
 %----------------------------------------------------------------------------------------
