@@ -140,11 +140,26 @@ Fig. for the 60-80$\%$ centrality class.
 
 \begin{figure}[!htbp]
  \begin{center}
-  \includegraphics[angle=0, width=15cm]{FigCap5/DsMassHistos_010.eps}
-   \includegraphics[angle=0, width=15cm]{FigCap5/DsMassHistos_6080.eps}
+  \includegraphics[width=.9\textwidth]{FigCap5/MassDs_PbPb010_5TeV_pt_4-6_12-16.pdf}
 \end{center}
  \caption{$\Ds$ signal in 4 $\pt$ bins in the range, $4<\pt<16$ GeV$/c$ for the 0-10$\%$ centrality class. }
  \label{FigInvMassDs_010} 
+\end{figure} 
+ 
+\begin{figure}[!htbp]
+ \begin{center}
+  \includegraphics[width=.9\textwidth]{FigCap5/MassDs_PbPb3050_5TeV_pt_4-6_12-16.pdf}
+\end{center}
+ \caption{$\Ds$ signal in 4 $\pt$ bins in the range, $4<\pt<16$ GeV$/c$ for the 30-50$\%$ centrality class. }
+ \label{FigInvMassDs_3050} 
+\end{figure} 
+ 
+\begin{figure}[!h]
+ \begin{center}
+  \includegraphics[width=.9\textwidth]{FigCap5/MassDs_PbPb6080_5TeV_pt_2-4_8-12.pdf}
+\end{center}
+ \caption{$\Ds$ signal in 4 $\pt$ bins in the range, $4<\pt<16$ GeV$/c$ for the 60-80$\%$ centrality class. }
+ \label{FigInvMassDs_6080} 
 \end{figure} 
  
 
@@ -225,8 +240,11 @@ Other topological cuts, like the one on the normalised track-impact parameter, a
 in rejecting the feed-down component, allowing higher prompt efficiencies at high $\pt$ or in the $\Dplus$ meson case.
 
 \begin{figure}[!t]
-\centering
-\includegraphics[width=8cm]{FigCap5/DsAccEff_3050.eps}
+%\begin{center}
+\includegraphics[width=.49\textwidth]{FigCap5/AccEff_Ds_010.pdf}
+\includegraphics[width=.49\textwidth]{FigCap5/AccEff_Ds_3050.pdf}
+%\end{center}
+\includegraphics[width=.49\textwidth]{FigCap5/AccEff_Ds_6080.pdf}
 \caption{Efficiency times acceptance for $\Ds$ mesons in the 30-50\% centrality range, as a function of $\pt$, for prompt (red) and feed-down (blue) $\Ds$.}
 \label{fig:DsAccEff}
 \end{figure}
@@ -357,25 +375,6 @@ For this analysis the event plane was measured using the multiplicity in the VZE
 
 \begin{figure}
 \centering
- \includegraphics[width=0.9\textwidth]{FigCap5/EP_overQlengthnorm.eps}
- \caption{Event plane distributions obtained with the TPC tracks (top
-   row) and VZERO multiplicity (bottom row) after several stpes of
-   calibration applied using the $Q_n$-correction framework using the
-   $Q/|Q|$ normalization. At step 1 the gain equalization and the
-   recentering correction
-   information are collected for VZERO and TPC respectively. At
-   step 2 the recentering correction is applied to TPC $Q_n$ vector
-   and the alignment information are retrieved. For VZERO the gain
-   equalization is applied to data and the recentering informations
-   collected. At step 4 TPC $Q_n$ vectors are corrected for
-   recentering, alignment and twist. VZERO $Q_n$ vectors are corrected
-   for gain equalization, recentering
-   and alignment.}
-   \label{fig:QoverQlengthCalibration}
-\end{figure}
-
-\begin{figure}
-\centering
  \includegraphics[width=0.9\textwidth]{FigCap5/EP_overMnorm.eps}
  \caption{Event plane distributions obtained with the TPC tracks (top row) and VZERO multiplicity (bottom row) after several stpes of calibration applied using the $Q_n$-correction framework using the $Q/M$ normalization. At step 1 the gain equalization and the
    recentering correction
@@ -432,7 +431,7 @@ The values of the extracted raw yields and the signal over background for the in
 
 \begin{figure}
 \centering
- \includegraphics[width=\textwidth]{FigCap5/InvMassDeltaPhi_fs_Set1_VZERO_EP.pdf}
+ \includegraphics[width=.7\textwidth]{FigCap5/MassDsInOutOfPlane_PbPb3050_5TeV_pt6-8.pdf}
 \caption{$\Ds$ invariant mass distribution in the 2 $\Delta\phi$ and 5 $\pt$ intervals.}
 \label{fig:2deltaphibinsds}
 \end{figure}
@@ -1093,15 +1092,14 @@ the measurements in the two systems are compatible within about one standard dev
 \iffalse
 
 \begin{figure}[!t]
-\centering
-\includegraphics[angle=0, width=0.49\textwidth]{FigCap5/RatioDplusDzero-PbPb-010-3050-6080-502-pp-7.eps}
-\includegraphics[angle=0, width=0.49\textwidth]{FigCap5/RatioDstarDzero-PbPb-010-3050-6080-502-pp-7.eps}
-\includegraphics[angle=0, width=0.49\textwidth]{FigCap5/RatioDsD0-PbPb-010-3050-6080-502-pp-7.eps}
-\includegraphics[angle=0, width=0.49\textwidth]{FigCap5/RatioDsDplus-PbPb-010-3050-6080-502-pp-7.eps}
- \caption{Ratio of prompt D-meson yields as a function of $\pt$.
-Statistical (bars) and systematic (boxes) uncertainties are shown.}
+\includegraphics[width=0.49\textwidth]{FigCap5/RatioDplusDzero-PbPb-010-3050-6080-502-pp-7.eps}
+\includegraphics[width=0.49\textwidth]{FigCap5/RatioDstarDzero-PbPb-010-3050-6080-502-pp-7.eps}
  \label{fig:DmesRatio} 
 \end{figure} 
+
+
+\includegraphics[width=0.49\textwidth]{FigCap5/RatioDsD0-PbPb-010-3050-6080-502-pp-7.eps}
+\includegraphics[width=0.49\textwidth]{FigCap5/RatioDsDplus-PbPb-010-3050-6080-502-pp-7.eps}
 
 \begin{figure}[!h]
 \centering
