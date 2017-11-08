@@ -243,6 +243,7 @@ A further parameter which allowed to reduce the background is the
 Typical values for cuts on $\Delta M$ are between 3 $<\Delta M<$ 15 MeV$/c^2$.
 
 \section{Particle identification}
+\label{Sec:PID}
 The Particle IDentification (PID) selection is based on the specific energy loss 
 d$E$/d$x$ in the TPC and the time-of-flight from the interaction vertex to the 
 TOF detector. This is used in the D-meson analysis to reduce the background, 
@@ -268,10 +269,11 @@ $0.6 < \pt < 0.8 \, \Gevc$ and 2 elsewhere and $n\sigma^{\rm max,TOF} = 3$ at al
 An output value is associated to the track based on its PID signal in the single
 detector: +1 if the track
 satisfies $n\sigma^{\rm max}$ selection criteria, 0 if the track satisfies looser selection criteria,
--1 if it is rejected. The responses in TPC and TOF are summed linearly together and the track is considered
+-1 if it is rejected. The responses in TPC and TOF (green values in Fig.~\ref{fig:strongPID}) 
+are summed linearly together 
+and the track is considered
 compatible with the species hypothesis is the final value is 1 or 2. This
-PID selection preserves $\sim$90\% of the signal.
-
+PID selection preserves $\sim$85-90\% of the signal depending on the $\pt$.
 
  
 \begin{figure}[!h]
@@ -496,7 +498,8 @@ extracted yield to assess about possible biases.
  background were compared with those using linear and 
  polynomial functions with the same
 configuration for pole, sigma, mass range and bin width, and their
-difference used to fill a histogram. The procedure was repeated for different
+difference, normalised to the yield with exponential background, 
+used to fill a histogram. The procedure was repeated for different
 configurations of pole, sigma, mass range and bin width. 
 A potential shift from zero of the mean of the resultant distribution 
  should reveal the bias from the change of background. The
@@ -507,14 +510,6 @@ A potential shift from zero of the mean of the resultant distribution
   of yields extracted with linear or Pol2 shapes to those extracted with exponential
   background. The shift in the distribution is not statistically significant 
  since $\mu < 3\sigma$.
- In the bottom panels of the same figures, it is plotted the 
- difference of the mean yields with different
-backgrounds for each of the 50 samples, in number of significative 
-sigmas of the yield distribution for exponential background.
- Again, one can see that the significance is always less than 1, 
- confirming that different
-background fit functions do not introduce systematic 
-effects on yield extraction.\\
  \\
 The systematic from the yield extraction is hence a 5\%. 
 It results reduced by a factor 3-4 with respect to the analysis of pass2,
@@ -551,47 +546,38 @@ functions for background for $2 < \pt < 4 ~\Gevc$.}
 
 \subsection{Selection efficiency}
 
-The systematic uncertainty due to possible imperfections
- in the description in the simulations
-of the variables used in the geometrical selections of the 
-D-meson displaced decay vertices was
-studied by repeating the analysis varying the applied selection criteria.
-The systematics on selection efficiency want to account for 
+The systematics on the selection efficiency accounts for 
 possible imperfections in the MC description ($\pt$, 
-impact parameter ... resolution distributions) which could 
-cause a bias in the final yield when correcting for the efficiency terms.
-Hence, different sets of cuts were exploited and corrected 
-yields obtained with sets of cuts with medium-high significance 
-values were compared. Twelve sets of cuts were compared, 
-with their respective efficiencies spanning a variation of
-a factor from 2 to 6, depending on the $\pt$ interval. For this 
-reason, we are allowed to take the RMS of the corrected yield distribution as 
-an estimator for the systematic uncertainty. \\New topological 
-variables were introduced with the re-analysis of this
-sample, like the projection on xy plane of the cosine of Pointing 
-angle and of the decay length of the candidate, or like
-the normalized decay length (decay length divided by its error) 
-and its projection on xy plane and the normalized impact parameter
-residual. \\In Fig.~\ref{fig:cutVariation} (left) one can see the 
-distribution of the ratio of corrected yields with different selections with respect to the one
-used to give the central value, in different colours for each 
-$\pt$ interval. The RMS of each distribution is reported on the plot. 
-We decided to give a smoothed value on $\pt$ for these uncertainties, 
-setting them to 7\% everywhere.\\
-We also looked at the possible contribution to this systematic from
- variations in the xy impact parameter distribution 
-of the particles. By changing the MC distribution by up to a 10\% 
-variation, the variation of the efficiencies
-of the previously analysed 12 sets of cuts results in less than 3\%. 
-So, such variation is included in the already quoted 7\% from topological
-selection. In Fig.~\ref{fig:cutVariation} (right) there is an example of the 
-effect on the decay length distribution with and without the smearing on
-resolution, for signal and background. A small shift in the distribution 
-is evident at low $\pt$. In Fig.~\ref{fig:DLwoSmear} there is instead the ratio
-of efficiencies after and before the smearing, for the case of 10\% 
-variation with respect to the original xy impact parameter resolution.\\
-In this case, we reduce by a factor of 2 the uncertainty quoted for pass2 analysis.
-
+impact parameter resolution) which could 
+impact the raw yield correction via the efficiency term.
+A possible test to quantify the effect of imperfections in the 
+description of topological variables in the MC is to exploit different sets of cuts
+that have different selection efficiencies and to compare the corrected
+yields. In this analysis, twelve sets of cuts with 
+medium-high statistical significance of the extracted yields were compared, 
+their respective efficiencies spanning a variation of
+a factor from 2 to 6, depending on the $\pt$ interval. We take the RMS 
+of the corrected yield distribution in each $\pt$ interval as an estimator of 
+the systematic uncertainty. The uncertainty resulted in a 7\% in all $\pt$ bins.
+\begin{figure}[!b]
+\begin{center}
+ \includegraphics[width=1\textwidth]{FigCap4/DCAxyReso_Pions.eps}
+\caption{DCA$_{\rm xy}$ resolution curves of pion tracks as a function of $\pt$ in data and in MC (left panel) and their ratio (right panel) in pp collisions at $\s = 7 $ TeV.}             
+\label{fig:DCAxyReso}
+\end{center}
+\end{figure}
+The effect of a variation of the impact parameter resolution in the transverse plane
+was also investigated. Fig.~\ref{fig:DCAxyReso} (left) shows, as an example for pion tracks, distributions of
+DCA$_{\rm xy}$ resolution as a function of $\pt$ in data and in simulation 
+in pp collisions at $\s = 7 $ TeV. The values were extracted via fits to the DCA$_{\rm xy}$ distributions
+of tracks in data and in MC, in different $\pt$ intervals, and estimated as the RMS of
+such fits. The right panel of the Fig.~\ref{fig:DCAxyReso} shows the ratio MC to data of DCA$_{\rm xy}$ resolutions. 
+The agreement is overall good; to estimate the effect of the residual discrepancy at hight $\pt$,
+the resolution values in MC were reduced up to 10\% and the
+DCA$_{\rm xy}$ of tracks in MC smeared according to the new resolution.
+The variation of the efficiencies results in less than 3\%, which is hence
+included in the already quoted 7\% from previous discussion. 
+\iffalse
 \begin{figure}[!htb]
 \begin{center}
  \includegraphics[width=.44\textwidth]{FigCap4/rms_cutvariation.eps}
@@ -602,49 +588,30 @@ cuts and compared to the yield from the best set of cuts (chosen for the central
 \label{fig:cutVariation}
 \end{center}
 \end{figure}
-
-\begin{figure}[!htb]
-\begin{center}
- \includegraphics[width=.60\textwidth]{FigCap4/DL_smerp10m10.eps}
-\caption{Decay length distribution w/o a 10\% applied smearing on xy impact parameter resolution, in different colours for signal and background.}             
-\label{fig:DLwoSmear}
-\end{center}
-\end{figure}
+\fi
 
 \subsection{PID efficiency}
-For the $\Ds$ a tigher PID selection was used in the analysis, and the test
-without PID could not be carried out, due to the too low statistical 
-significance obtained for the $\Ds$ without applying PID.
-In the next subsections, the cases of the non strange D mesons and od $\Ds$ 
-will be therefore discussed separately.
-
- The particle identification approach in the D meson 
- analysis consists in the evaluation of the compatibility
-within $n\sigma$ from the expected dE/dx and time-of-flight 
-values in a particular mass hypothesis. Usually,
-in the D meson analysis, the systematic error on the PID is 
-evaluated through the comparison of the
-corrected yield obtained with and without applying the PID.
-In the $\Ds$ case, the rare signal and the large background 
+To test the efficiency correction of PID selections, a looser PID cut
+was used with respect to the default selection described in Sec.~\ref{Sec:PID}. 
+In fact, in the $\Ds$ case, the rare signal and the large background 
 do not allow for a signal extraction without 
-particle identification. The standard PID used for this meson 
-(namely strong PID) was hence compared to the
-standard one used for the non-strange D mesons (namely conservative PID).
- In Fig.~\ref{fig:rmsPID} it is shown the ratio
-of the corrected yield obtained with conservative PID and the one 
-obtained with the strong one, for the 12 different sets of cuts analysed.
-The evaluation of this systematic was made considering only the
- third and fourth $\pt$ interval, as, in the other two intervals,
-the yield extraction with conservative PID is problematic, due to 
-the huge amount of background. The RMS of
-the yield distribution in 6-8 and 8-12 GeV/c stays around 7\%, 
-confirming the systematic uncertainty on PID quoted for the pass2 analysis.
+particle identification. This looser PID selection accepts those cases 
+reported in Fig.~\ref{fig:strongPID} where combined response value from TPC and TOF 
+detectors is $\geqslant 0$.
+In Fig.~\ref{fig:rmsPID} the ratio
+of the corrected yield obtained with looser to default PID selection is shown, 
+for the twelve different sets of cuts discussed before.
+The evaluation of the systematic uncertainty, estimated from the RMS of the distributions in each $\pt$ 
+interval, was made considering $\pt > 4 \, \Gevc$, since at lower $\pt$ 
+the yield extraction with looser PID does not guarantee a statistical significance
+of the signal peak larger than 3. The RMS of the yield distributions for the considered
+$\pt$ intervals is around 7\%.
 
 \begin{figure}[!htb]
 \begin{center}
- \includegraphics[width=.45\textwidth]{FigCap4/rms.eps}
-\caption{Ratio of $\Ds$ corrected yield with 12 different sets of
-cuts obtained with conservative and strong PID methods.}
+ \includegraphics[width=.7\textwidth]{FigCap4/PIDrms4x4}
+\caption{Ratio of $\Ds$ corrected yields with looser and default PID selections (twelve different sets of
+topological selections).}
 \label{fig:rmsPID}
 \end{center}
 \end{figure}
@@ -652,83 +619,37 @@ cuts obtained with conservative and strong PID methods.}
 \subsection{Track reconstruction efficiency}
 
 The systematic uncertainty related to the tracking efficiency includes the 
-effects arising from track finding in the TPC, from track propagation  
+effects arising from track finding in the TPC, from track prolongation  
 from the TPC to the ITS, and from track quality selections.
 It was estimated with the following tests:
 \begin{itemize}
-\item comparison of the $\Dzero$ and $\Dplus$ cross sections obtained with different track selection cuts;
+\item comparison of the D-meson cross sections obtained with different track selection cuts;
 \item comparison of the TPC-ITS track matching efficiency in data and simulations.
 \end{itemize}
 These checks are discussed in detail in the following subsections.
 
 \subsubsection{Variation of track selections}
-
-The D-meson raw yields, efficiency and corrected yields were evaluated with 
+For this purpose $\Dzero$ and $\Dplus$ mesons were used due to their
+higher statistical significance of the extracted yields.
+The D-meson raw yields and efficiencies were evaluated with 
 different sets of track selection cuts.
-Only one cut at a time was changed with respect to the standard values 
-reported in Section?.
-In particular, for the $\Dzero$ meson, the following four cut variations were 
-tested:
+The following selections were tested:
 \begin{enumerate}
 \item additional cut on number TPC crossed rows $> 120-(5/\pt)$;
 \item number of TPC clusters $>0.65 \times$ number of TPC crossed rows;
-\item additional cut on number of clusters with TPC dE/dx signal $> 0.5 \times$ number of TPC crossed rows;
 \item ratio of crossed rows over findable clusters in the TPC $>0.9$.
 \end{enumerate}
-
-The effect of the track cut variation on the raw yield, efficiency 
-of prompt and feeddown $\Dzero$ mesons and on the prompt $\Dzero$ 
-cross section are shown in Fig., where the ratios of 
-the results obtained with the modified sets of track selections to those of 
-the standard selection are reported.
 The systematic uncertainty was assigned based on the observed variation of
-the prompt $\Dzero$ cross section when varying the selections on the number of
-TPC crossed rows and on the ratio of crossed rows over findable clusters.
-The cut on the number of clusters with TPC dE/dx signal was not considered
-for the estimation of the uncertainty since this selection is not applied
-in the standard cuts.
- A systematic uncertainty of 2\% was therefore estimated due to track cut
-variation.
-
-
-In the $\Dplus$ case, the following four cut variations were tested:
-\begin{enumerate}
-\item additional cut on number TPC crossed rows $> 120-(5/\pt)$ (stc2);
-\item number of TPC clusters $>0.65 \times$ number of TPC crossed rows (stc3);
-\item ratio of crossed rows over findable clusters in the TPC $>0.9$ (stc4);
-\item additional cut on the track geometric length (stc6). This was applied to 
-the default values of SetCutGeoNcrNcl(3, 130, 1.5, 0.85, 0.7), where 3 is the 
-width of the TPC dead zone, 130 is the cut on the geometrical length condition, 
-1.5 is the 1/$\pt$ dependence slope, and 0.85 and 0.7 are the relative 
-fractions of the cut conditions on Ncr and Ncl.
-\end{enumerate}
-
-The results are reported in fig., where the
-top panel show the raw yield values extracted with the different set of cuts 
-and the ratio to the standard cuts; the middle panel shows the efficiency for 
-prompt $\Dplus$ mesons and the bottom panel the cross section.
-The geometric length cut rejects 40--60\% of the signal (triplets of tracks):
-this was expected because the efficiency of this cut is of about 80\% in a 
-$\pt$ around 1 GeV/$c$, where there are most of the $\Dplus$ daughter tracks.
-For the comparison of the cross section, one can see that a systematic 
-deviation of about 3\% is observed when varying the cut on the ratio of 
-crossed rows over findable clusters (stc4) and a trend with $\pt$ is observed 
-in the deviation of the cross section when the additional $\pt$ dependent cut 
-on the number of crossed rows is applied (stc2).
-Based on these results, a 3\% systematic uncertainty was assigned.
-Notice that this is larger than the 2\% effect observed for $\Dzero$ mesons,
-reflecting the fact that $\Dplus$ are reconstructed from a three-body decay
-channel, while $\Dzero$ from a two-prong decay.
-For this reason, the 3\% uncertainty estimated with the $\Dplus$ was
-assigned also to the $\Ds$ mesons, which are also reconstructed via a 
-three-body decay and for which the lower statistical significance 
-does not allow to estimate the systematic uncertainty with the same
-precision obtained for the $\Dplus$.
+the prompt $\Dzero$ and $\Dplus$ cross sections with respect to the default selections.
+Based on this check a systematic uncertainties of 2\% and 3\% were 
+respectively estimated for $\Dzero$ (two-body decay) and $\Dplus$ (three-body decay) 
+due to variation of track cuts, which is consistent with a 1\% per-track systematic
+uncertainty.
 
 \subsubsection{ITS-TPC matching efficiency}
 
 Matching efficiency is defined as the fraction of tracks with 
-clusters in both ITS and TPC over the total number of tracks with clusters in TPC.
+clusters in both ITS and TPC over the number of tracks with clusters in TPC.
 Systematic uncertainty on its determination arises from discrepancies 
 in efficiency between data and Monte Carlo.
 Matching efficiency for primary tracks is expected to be higher than 
@@ -737,99 +658,83 @@ with secondary vertices likely to be out of SPD) or tracks arising
  from interaction with material.
 If the fractions of primary and secondary tracks are different in data 
 and in Monte Carlo, this could lead to a wrong estimation of systematic 
-uncertainty in the matching. Hence, the idea here is to evaluate the
- real fraction of track types in data, and to use them to re-weight respective MC efficiencies 
+uncertainty in the matching. Hence, the idea of this study is to 
+use data-driven corrections of primary and secondary fractions in the MC.
 to obtain a corrected inclusive MC efficiency. The latter will be compared 
 with efficiency on data to extract the systematic uncertainty.\\
 The ingredients are:
 \begin{itemize}
-\item Matching efficiencies for different particle types: 
+\item matching efficiencies for different particle types: 
 Eff$^{\rm MC}_{\rm primaries}$, Eff$^{\rm MC}_{\rm secondaries}$, Eff$^{\rm Data}_{\rm inclusive}$
-\item Fraction of primary tracks in data: f'$_{\rm primaries}$
-\item Corrected MC-inclusive efficiency: 
+\item fraction of primary tracks in data: f'$_{\rm primaries}$
+\item corrected MC-inclusive efficiency: 
 Eff$^{\rm MC}_{\rm inclusive}$ = f'$_{\rm primaries}$ x Eff$^{\rm MC}_{\rm primaries}$ + (1- f'$_{\rm primaries}$) x Eff$^{\rm MC}_{\rm secondaries}$
-\item Systematic uncertainty: 
-(Eff$^{\rm Data}_{\rm inclusive}$ - Eff$^{\rm MC}_{\rm inclusive}$)/Eff$^{\rm Data}_{\rm inclusive}$
+\item systematic uncertainty: 
+(Eff$^{\rm Data}_{\rm inclusive}$ - Eff$^{\rm MC}_{\rm inclusive}$)/Eff$^{\rm Data}_{\rm inclusive}$.
 \end{itemize}
-The same MC re-weighting procedure was already used in the 
-charged-particle spectra analysis in pp at 5 TeV, with a slightly 
-different algebra. Final results were checked to be in 
-agreement with current analysis. \\
-The Monte Carlo used here was the minimum bias 
-LHC14j4b(c,d,e) anchored to LHC10b(c,d,e) pass4. 
-Charm-enriched productions were rejected in this study as not
- advisable for fitting the DCA distribution at the level of the primary
-  fraction extraction, since the peak shape of the DCA is slightly modified 
-by the heavy flavour enrichment, making fit difficult to be performed. \\
+A minimum-bias Monte Carlo production anchored to 2010 pp data taking at 
+$\s = 7$ TeV was used. Charm-enriched productions were not used in this study 
+since the shape of DCA distribution of tracks (used to extract data-driven 
+primary track fraction) is affected by the heavy-flavour enhancement
+and may bias the fit.
 Efficiency was studied as a function of:
 \begin{itemize}
-\item $\pt$, in 7 bins from 0.5 to 15 $\Gevc$
-\item $\phi$, in 18 bins between (0,2$\pi$)
-\item $\eta$, in 16 bins between (-0.8,0.8)
+\item $\pt$, from 0.5 to 15 $\Gevc$
+\item $\phi$, between (0,2$\pi$)
+\item $\eta$, between (-0.8,0.8)
 \end{itemize}
 
 Let's examine below in detail the steps needed to 
 calculate the systematic uncertainty.
 \begin{enumerate}
 \item {\bf ITS-TPC matching efficiency:} calculated separately for 
-primary and secondary tracks in MC, inclusively on data. For the denominator
-of the efficiency, i.e. tracks with TPC clusters, the selection was 
-made requiring a TPC refit on the AliESDtracks, with no further 
-requests on SPD clusters neither other ITS selections or refit. As 
-for the numerator of the efficiency, the AliESDtracks were required 
-to pass the kAny selection on SPD cluster, i.e. to have a cluster 
-on at least one of the SPD layers. Tracks were selected requiring 
-a cut on $|$DCAxy$|<$2.4 cm and on $|$DCAz$|<$3.2 cm.
+primary and secondary tracks in MC, inclusively on data. For 
+the numerator of the efficiency, tracks were selected requiring 
+to have a hit at least in one of the SPD layers, 
+$|$DCAxy$|<$ 2.4 cm and $|$DCAz$|<$ 3.2 cm.
 \begin{figure}[!htb]
-%\begin{center}
 \centering
 \includegraphics[width=1\textwidth]{FigCap4/ITSTPC_matchEff_vsPt_LowFullpt.eps}
-\caption{Matching efficiency for primaries and secondaries tracks as a function of $\pt$ in MC sample related to  period b.  Left:  in $\pt$ intervals from 0. to 1 $\Gevc$. Right: in $\pt$ intervals from 0.5 to 20 $\Gevc$. }
+\caption{Matching efficiency for primaries and secondaries tracks as a function of $\pt$ in MC for $\pt$ intervals from 0.1 to 1 $\Gevc$ (left) and from 0.5 to 20 $\Gevc$ (righ). }
 \label{fig:matcheff_pt}
-%\end{center}
 \end{figure}
 
-In Fig.~\ref{fig:matcheff_pt}, matching efficiency as a function of 
-$\pt$ is shown for the MC sample related to the period b of pass4 runs.  
-The left panel  is referred to low $\pt$ (0-1 $\Gevc$), the right one
- to the range 0.5 to 20 $\Gevc$. 
-In Fig.~\ref{fig:matcheff_phieta} matching efficiencies as a function of 
-$\phi$ and $\eta$ are shown, in the $\pt$ range from 0.5 to 14 $\Gevc$.
- The trend of matching efficiency versus azimuthal angle $\phi$ clearly 
-shows drops due to SPD inefficiencies during data taking.
+In Fig.~\ref{fig:matcheff_pt}, ITS-TPC matching efficiency 
+of charged tracks in MC as a function of 
+$\pt$ is shown. The left panel is referred to the low $\pt$ region (0.1-1 $\Gevc$), 
+the right one to a wider range from 0.5 to 20 $\Gevc$. 
+
 \item {\bf Fractions of primary tracks:} extracted from a fit to
- the impact parameter distribution on data using MC templates for 
- primary and secondary contributions. The ROOT TFractionFitter 
+ the track impact parameter distribution in data using MC templates for 
+ DCA distributions of primary and secondary tracks. The ROOT TFractionFitter 
  package was used to perform the fit. The fit could be resolved 
- using three templates describing primary particles, secondaries 
- from strangeness and secondaries from material. A selection on 
- tracks requiring SPD kAny was used, to assure enough resolution
-  and distinguish primary from secondary DCA distributions.
-Fit was performed on the DCAxy distributions of charged particles 
+ using three templates describing primary tracks, secondaries tracks
+ from strangeness decay and tracks from interaction with material. 
+ A selection on tracks requiring at least one hit in the two SPD layers 
+ was used, to assure enough resolution to distinguish primary and 
+ secondary DCA distributions.
+Fit was performed on the DCA$_{\rm xy}$ distributions of charged particles 
 in the range [-1,1] cm, in different intervals of $\pt$, $\phi$, $\eta$ 
-and constraining the 3 fractions within reasonable minimum and maximum values.
-The fractions were then calculated integrating the histograms 
-resulting from the fit in the range $|$DCAxy$|<$2.4 cm, for
-consistency with matching efficiency calculation. In Fig.~\ref{fig:DCAxyDataMCVsPt}
- the distributions of DCAxy in data and in MC for the different contributions are
-shown in different colours, in $\pt$ intervals from 0.5 to 15 $\Gevc$.
- In Fig.~\ref{fig:DCAxyRatioDataMCVsPt} the ratio of the distributions 
- of DCAxy in data and in MC (inclusive distribution) are also
-shown in the same $\pt$ intervals of Fig.~\ref{fig:DCAxyDataMCVsPt}, 
-while in Fig.~\ref{fig:DCAxyRatioDataFitVsPt} the ratio of the 
-distributions of DCAxy in data with the fit-result histograms are plotted. 
-In some $\pt$ intervals, for large DCAxy values, a quite large 
-discrepancy data-MC template is observed.
-Finally, in Fig.~\ref{fig:Fractions}, the primary and secondary
- fractions extracted from fit on data are shown and compared to 
- the ones obtained from MC truth (empty markers). As a closure test, 
- it was verified that the latter MC fractions did not change when extracting
-them from a fit using TFractionFitter on MC inclusive distribution itself, 
-with the three usual MC templates.  
+and constraining the three fractions within reasonable minimum and maximum values.
+The fractions were then calculated by integrating the histogram 
+resulting from the fit in the range $|$DCA$_{\rm xy}|<$ 2.4 cm, for
+consistency with what done for matching efficiency calculation. 
+As a closure test, it was verified that the MC fractions of primary and secondary tracks 
+were in agreement with the values extracted if performing the fit using TFractionFitter 
+on the inclusive MC distribution (instead of data), with the three MC templates.  
+In Fig.~\ref{fig:DCAxyDataMCVsPt} the distributions of DCA$_{\rm xy}$ 
+in data and in MC for the different contributions are
+shown in different colours, in $\pt$ intervals from 0.5 to 15 $\Gevc$. 
+In Fig.~\ref{fig:DCAxyRatioDataFitVsPt} the ratio of DCA$_{\rm xy}$ distributions 
+of data to the histogram resulting from the fit are plotted. 
+Finally, in Fig.~\ref{fig:Fractions}, the data-driven values of primary and secondary
+ fractions are shown and compared to 
+ the ones obtained from MC truth (empty markers). 
 The fraction of secondaries in the figure already includes contribution 
 from material. We conclude that the fraction of secondaries is underestimated in MC.
+
 \item {\bf Correction to the primary fraction:} since the fraction of primary
- particles was calculated on tracks passing the selection SPD kAny, we
+ particles was calculated using tracks with the request of a hit in one of the SPD layers, we
 need to rescale the primary fraction to the total number of tracks in TPC. 
 The correction factor is based on MC information and obtained as 
 the ratio of the fraction of primary tracks in TPC with the fraction of primary

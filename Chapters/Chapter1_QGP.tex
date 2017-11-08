@@ -215,8 +215,8 @@ estimates of characteristics parameters, like the critical temperature $T_c$ for
 to a deconfined starte, can be obtained. Among the order parameters, there are:
 \begin{figure}[!t]
 \includegraphics[width=6cm,height=6cm]{FigCap1/Lattice1.png} 
-\includegraphics[width=7.5cm,height=5.8cm]{FigCap1/Lattice2.png}
- \caption{(Left) Chiral condensate $\langle \bar{\psi}\psi\rangle$ and free energy function L (blue) as function of temperature. Their susceptibilities are shown in red~\cite{Karsch:2001vs}. (Right) Lattice simulation of energy density as a function of temperature. The arrows indicate the position of the Stefan-Boltzmann limit~\cite{Karsch:2001vs}.}
+\includegraphics[width=7.5cm,height=5.8cm]{FigCap1/BW_EnDensity.png}
+ \caption{(Left) Chiral condensate $\langle \bar{\psi}\psi\rangle$ and free energy function L (blue) as function of temperature. Their susceptibilities are shown in red~\cite{Karsch:2001vs}. (Right) Lattice simulation of energy density as a function of temperature. The arrows indicate the position of the Stefan-Boltzmann limit~\cite{Borsanyi:2010cj}.}
 \label{fig:Lattice}
 \end{figure}
 
@@ -255,14 +255,22 @@ term in the Lagrangian, that is the
 chiral condensate $\langle \overline{\psi}\psi \rangle$. In Fig.~\ref{fig:Lattice} 
 (left) the behaviour of 
 the order parameter as a function of temperature is shown. 
-Recent results provide a measure of the critical temperature $T_c$ from the results for the chiral condensate, 
-and it is estimated as $T_c \sim 157 $ MeV~\cite{Borsanyi:2011bn}.
-\item \textbf{Energy density $\epsilon$ and pressure P} at deconfinement: in Fig.~\ref{fig:Lattice} (right) it 
-is seen that $\epsilon/T^4$ changes quickly at the critical temperature $T_c$, increasing from a low 
-value typical of an hadron gas to a higher value closer to what expected for an ideal gas in the Stefan-Boltzmann limit of 
-massless quarks and gluons. The most realistic description adopts 3 quarks with non zero masses and $m_s > m_{u,d}$. 
+Recent results provide a measure of the critical temperature 
+$T_c$ from the results for the chiral condensate, 
+and it is estimated as $T_c = (154 \pm 9) $ MeV~\cite{Petreczky:2012rq}.
+\item \textbf{Energy density $\epsilon$ and pressure P} at deconfinement: 
+in Fig.~\ref{fig:Lattice} (right) it 
+is seen that $\epsilon/T^4$ changes quickly at the critical temperature 
+$T_c$, increasing from a low 
+value typical of an hadron gas to a higher value closer to what expected 
+for an ideal gas in the Stefan-Boltzmann limit of 
+massless quarks and gluons. N$_{\rm t}$ is the number of points in the temporal
+direction of a hypercubic lattice~\cite{Borsanyi:2010cj}. The 
+remarkable deviation of $\epsilon/T^4$ from the
+Stefan-Boltzmann limit is a clear signal of surviving
+correlations in the deconfined phase.
 The rapid increase in energy density is expected to occur as consequence of the increased number of degrees of 
-freedom in the phase transition. Recent calculations of Lattice QCD predicts as critical temperature $ \sim 160$ MeV~\cite{Karsch:2001vs}.
+freedom in the phase transition. %Recent calculations of Lattice QCD predicts as critical temperature $ \sim 160$ MeV~\cite{Karsch:2001vs}.
 
 \end{itemize}
 
@@ -608,7 +616,7 @@ due to chiral symmetry restoration (see Sec.~\ref{sec:Lattice}).
   \caption{ Hyperon enhancement as a function of the number of the wounded nucleons measured by the NA57 experiment in Pb-Pb collisions at $\sNN = 17.2$ GeV~\cite{Sandor:2004bg}.}
   \label{fig:sEnhancSPS}
 \end{figure}
-Besides, for $T > T_c$, also \textit{u} and \textit{d} quark masses 
+For $T > T_c$, also \textit{u} and \textit{d} quark masses 
 decreases to $m_q \sim 0$ MeV/$c^2$, but the 
 strange quark production becomes important. In a simple hadron gas, 
 even if it is possible to produce strange particles from some inelastic 
@@ -616,8 +624,19 @@ scattering such as $\pi^0+p \rightarrow K^++\Lambda$, it is less probable
 to produce multi-strange baryons, like $\Xi ^-$ and $\Omega$, as 
 they are the result of more than one consecutive reactions. In presence 
 of QGP, instead, it is expected an enhancement in the production of 
-multi-strange baryons relative to pp reactions of about one order of magnitude. \\In experiments 
-the magnitude of strangeness production is usually estimated by measuring 
+multi-strange baryons relative to pp reactions of about one order of magnitude.
+The abundant strangeness production in QGP is due to the large gluon 
+density of the system, which favours gluon-fusion processes
+$gg \rightarrow s\bar{s}$. 
+The Grand Canonical (GC) formulation is used whenever the conservation law of
+a quantum number, for example strangeness, can be on average implemented by using
+the corresponding chemical potential. This approach can be used in systems 
+with a large number of produced particles. For smaller systems like pp or pA
+collisions, this is no longer valid and the Canonical (C) formulation must be used
+in turn. The canonical conservation of quantum numbers strictly reduces the phase
+space available for particle production~\cite{Beutler:2009cc}, and this is usually referred to as canonical suppression~\cite{Tounsi:2001ck}.
+This is the essence of the strangeness enhancement from pp to AA collisions.\\
+In experiments the magnitude of strangeness production is usually estimated by measuring 
 the enhancement factor, defined as the ratio of the yields of a given particle 
 specie per participant nucleon in nucleus-nucleus collisions over the same 
 ratio measured in smaller system (pp or pA). The first evidence of 
@@ -775,7 +794,7 @@ second order Fourier coefficients respectively in the particle azimuthal
 distribution in Eq.~\ref{eq:FourierAzimuthExpansion}, but coefficients 
 up to at least 6th order were measured at the LHC~\cite{ATLAS:2012at}.
 With the large amount of data provided by the LHC, in fact, it became accessible
-to study not only the on-average anisotropies but the event-by-event flow 
+to study not only the on-average anisotropies but the initial space geometries 
 fluctuations~\cite{Aad:2013xma,Schukraft:2012ah}, to which first-order and higher-order Fourier 
 coefficients were indeed found to be sensitive. 
 The positions of the nucleons in the overlap region of the colliding nuclei 
@@ -842,7 +861,7 @@ the mesons were originally advocated as signatures of the chiral transition~\cit
 Among light vector mesons, the $\rho$ meson was used from the very beginning as the test particle for in-medium 
 modifications, due to the abundant production
 of $\pi^+ \pi^- \rightarrow \rho$ and subsequent decay $\rho \rightarrow \mu^+ \mu^- $ 
-with a lifetime of 1.3 fm/c, shorter than the hadronization time and thermal freeze-out. 
+with a lifetime of 1.3 fm/c, shorter than the time between hadronization and the thermal freeze-out. 
 Fig.~\ref{fig:JPsiSuppressionNA50} (right) shows NA60 measurement of the 
 low-mass di-muon pair invariant mass distribution after 
 subtracting the background to the $\rho$ meson peak, 
@@ -1000,8 +1019,9 @@ particle species, that can further constrain the models. In Fig.~\ref{fig:PiKPRa
 \end{figure}
 
 \subsubsection{Jets}
-The interest in jet measurement with respect to single hadrons is that 
-they allow for more differential studies, therefore are expected to put 
+The interest in jet measurement with respect to single hadrons is that
+the kinematics of the leading parton becomes accessible and we are 
+less sensitive to fragmentation effects. Therefore jets are expected to put 
 more stringent constraints on assumptions in models for parton energy loss. 
 Experimental techniques are now able enough to clearly identify jets 
 even in the huge background of high-energy heavy-ion collisions. 
@@ -1338,7 +1358,8 @@ Recently, ALICE reported about the first observation of strangeness production
  grand-canonical statistical model and does not show a significant dependence 
  on the collision centrality, if one excludes the very peripheral events. For the latter,
   the relative yield of strange particles to pions becomes very similar to what 
-  observed in pp and in p-Pb~\cite{Abelev:2013haa,Adam:2015vsf} collisions. In~\cite{ALICE:2017jyt}, ALICE presented the
+  observed in pp and in p-Pb~\cite{Abelev:2013haa,Adam:2015vsf} collisions, and this is understood
+  in terms of canonical suppression~\cite{Tounsi:2001ck}. In~\cite{ALICE:2017jyt}, ALICE presented the
    measurement of the production of primary strange ($K^0_S,\; \Lambda,\; \bar{\Lambda}$) 
    and multi-strange ($\Xi^-,\; \Xi^+,\; \Omega^-,\; \Omega^+$) hadrons in pp 
    collisions at $\sqrt{s} = 7$ TeV. Fig.~\ref{fig:StrangenessALICEpp} (left panel) 
