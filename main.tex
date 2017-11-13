@@ -51,11 +51,13 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 \usepackage{ amssymb }
 \usepackage{amsmath}
+\usepackage{multirow}
 
 \hyphenation{strange-ness}
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
+\newcommand{\kt}{k_{\rm T}}
 \newcommand{\Raa}{R_{\rm AA}}
 \newcommand{\RAA}{R_{\rm AA}}
 \newcommand{\RpPb}{R_{\rm pPb}}
@@ -302,7 +304,7 @@ $\omega$ & angular frequency & \si{\radian} \\
 
 \include{Chapters/Chapter1_QGP}
 \include{Chapters/Chapter2_HF} 
-%\include{Chapters/Chapter3_Detector}
+\include{Chapters/Chapter3_Detector}
 \include{Chapters/Chapter4_pp} 
 \include{Chapters/Chapter5_PbPb} 
 \include{Chapters/Chapter6_pPb} 
