@@ -15,7 +15,7 @@ used in the analysis, the corresponding
 average nuclear overlap functions $\av{\TAA}$~\cite{ALICE-PUBLIC-2015-008} 
 and the number of events ($N_{\rm events}$) in each class 
 are summarised in Table~\ref{tab:Nevents}. The corresponding 
-integrated luminosity in each centrality class is $L_{\rm int}=13.04\pm0.4~\mum^{-1}$.\\
+integrated luminosity is $L_{\rm int}=13.04\pm0.4~\mum^{-1}$.\\
 \begin{table}[!h]
 	\centering
 	\begin{tabular}{ccc}
@@ -340,7 +340,7 @@ f_{\mathrm{prompt}} = \, & 1- \frac{N^{\text{D~feed-down}}_{\mathrm{raw}}}{N^{\m
 \end{split}
 \end{equation}
 The difference with respect to Eq.~\ref{eq:fpr} is that the beauty-hadron 
-production cross section from FONLL perturbative QCD
+production cross section from FONLL pQCD
 calculations for pp collisions at $\sqrt{s}=5.02~\tev$~\cite{Cacciari:2012ny}
 is multiplied by $\langle \TAA \rangle$ of the corresponding centrality class. 
 In addition, a hypothesis on the nuclear 
@@ -350,7 +350,7 @@ production in Pb-Pb collisions. The resulting sample of
 feed-down $\Ds$ mesons is composed of two 
 contributions: about 50\% of the feed-down originates from 
 B$^0_{\rm s}$-meson decays, while the remaining 50\% comes from decays of 
-non-strange B mesons (B$^0$ and B$^+$), see Fig.~\ref{fig:DsParents}.
+non-strange B mesons (B$^0$ and B$^+$) (see Fig.~\ref{fig:DsParents}).
 To determine the central value of $f_{\rm prompt}$ in the 0-10\% 
 and 30-50\% centrality classes, it was assumed that the 
 nuclear modification factors of feed-down and prompt $\Ds$ mesons were equal 
@@ -362,11 +362,16 @@ was varied in the range $1/3<\RAA^{\textnormal{feed-down}}/\RAA^{\rm prompt}<3$,
 discussed in detail in Section~\ref{sec:systematics}.
 It should be noted that the central value and the range of the hypothesis
 on $\RAA^{\textnormal{feed-down}}/\RAA^{\rm prompt}$ differ from those used for
-non-strange D mesons in Refs.~\cite{ALICE-PUBLIC-2017-003,Adam:2015sza},
-owing to the unknown role of recombination in the beauty sector, which
-could enhance the ratio of B$^0_{\rm s}$ over non-strange B mesons~\cite{TAMULHC}, and to the
-large fraction of feed-down $\Ds$ mesons originating from non-strange B-meson 
-decays.
+non-strange D mesons in Refs.~\cite{ALICE-PUBLIC-2017-003,Adam:2015sza}. The 
+central hypothesis of $\RAA^{\textnormal{feed-down}}/\RAA^{\rm prompt}$ for non-strange
+D mesons is in fact set at 2  due to the comparison of the $\RAA$ of prompt D mesons at 
+$\sNN = 2.76$ TeV~\cite{Adam:2015nna} with that of J/$\psi$ from B-meson decays~\cite{Khachatryan:2016ypw} 
+measured in the CMS experiment (see Sec.~\ref{sec:resAAcap2}), that indicates that charmed hadrons 
+are more suppressed than beauty hadrons. The hypothesis for $\Ds$ meson
+accounts for the unknown role of 
+recombination in the beauty sector, which
+could enhance the ratio of B$^0_{\rm s}$ over non-strange B mesons~\cite{TAMULHC}, 
+and for the large fraction of feed-down $\Ds$ mesons originating from non-strange B-meson decays.
 For the peripheral class 60--80\%, in which the medium effects are milder, 
 also the difference between charm and beauty mesons is assumed to be 
 reduced: the value $\RAA^{\textnormal{feed-down}}=1.3\cdot\RAA^{\rm prompt}$ 
@@ -376,40 +381,41 @@ was used for all D-meson species.
 \section{Systematics}
 \label{sec:systematics}
 Most of the sources of systematic errors considered for the analysis 
-of the d$N$/d$\pt$ were already described in Sec.~\ref{sec:systPP}. 
+of the corrected yield were already described in Sec.~\ref{sec:systPP}. 
 Hence we will concentrate on the differences with respect to what 
 already discussed. Table~\ref{tab:sysunc_yieldtable} summarises the 
 assigned systematic uncertainties, as an example for the 0-10\% class. 
 
 \subsection{Yield extraction systematics}
+\label{sec:YieldExsystAA}
 Since the two approaches described in 
 Sec.~\ref{sec:RawYieldSyst} for the estimate of this 
 systematic uncertainty were observed to give similar results,
 for brevity the first approach is presented here. Fig.~\ref{fig:multitrial_Ds_010}
 shows an example of the multiple trial fit procedure on the invariant-mass
-distribution in the interval $4 < \pt < 6 \, \Gevc$, for 0-10\% centrality class.
+distribution in the interval $4 < \pt < 6 \, \Gevc$, for the 0-10\% centrality class.
 The panels of the figure show, starting from top left plot:
-(i) the raw yield distributions from multiple trial fits, 
-applied both with fit procedure and bin counting method 
+(i) the raw yield distributions from multiple trial extractions, 
+with fit procedure and bin counting method 
 in different colours; (ii) the distribution of raw yields from multiple 
-trials, with Gaussian width of the peak line shape as free parameter 
+trials, with the Gaussian width of the signal function as free parameter 
 in the fit, fixed to its MC value or fixed to MC value $\pm$ 15\%; 
-(iii) the $\chi^{2}$ distribution of the extracted yields; 
+(iii) the reduced $\chi^{2}$ distribution of the fits; 
 (iv) the Gaussian width of the peak as a function of the 
 number of trials; (v) the raw yield distribution as a 
 function of the number of trial; (vi) the RMS value (used as
 estimator of the systematic uncertainty) of the yield distribution
 in three cases: considering the fits with 
-all possible values for the Gaussian sigma (free, fixed to MC, fixed to MC $\pm$ 15\%), 
+all possible values for the Gaussian sigma parameter (free, fixed to MC, fixed to MC $\pm$ 15\%), 
 considering the fits with sigma free, fixed to MC, fixed to 
-MC $+$ 15\% or finally with sigma free, fixed to MC, fixed to MC $-$ 15\%. 
+MC +15\% or finally with sigma free, fixed to MC, fixed to MC -15\%. 
 In this way, for those $\pt$ intervals where the values 
-of the free sigma were on average displaced towards 
-values of sigma MC $+ (-)$ 15\%, the second (third) value 
-of the RMS was chosen to give the final systematics. 
-In the assigned systematic uncertainty, it was verified that the
-difference between the means of the distributions of yields from fit
-and from bin counting method was contained within the quoted number.
+of the sigma as free parameter were on average displaced towards 
+values around MC sigma values +(-)15\%, the RMS of the second (third) 
+distribution was chosen to give the final systematics. 
+It was verified that the difference between the mean values of the yield distributions from fit
+and from bin counting method was contained within the number quoted 
+as systematic uncertainty.
 The final assigned values range from 5\% to 10\% depending on $\pt$ and
 centrality class. 
 
@@ -424,19 +430,7 @@ centrality class.
 \end{figure}
 
 
-\subsection{Topological selection efficiency}
-A systematic scan from looser to tighter cuts was done on a variable-per-variable 
-basis, reconstructing the yields, comparing them to the yields obtained 
-with a reference set of cuts and looking for possible trends/biases of 
-the reconstructed yield as a function of the cut strength.
-The study was done using as reference set of cuts the one used 
-to provide the central values of the yields. A selection
-on the basis of the $\chi^2/ndf$ of the fits and the statistical significance
-of the signal was applied. All the corrected yields that passed the selections
-and that revealed systematics trends were collected into final distributions (Fig.~\ref{DsCutVar_010} as
-an example for 0-10\% centrality class) for each $\pt$ interval, that were 
-used to provide the RMS values for the systematic uncertainty estimate. 
-\begin{figure}[!ht]
+\begin{figure}[!h]
  \begin{center}
    \includegraphics[angle=0, width=15cm]{./FigCap5/FinalSyst_010.eps}
  \end{center}
@@ -444,8 +438,28 @@ used to provide the RMS values for the systematic uncertainty estimate.
  \label{DsCutVar_010} 
 \end{figure}
 
+\subsection{Topological selection efficiency}
+\label{sec:CutVarsystAA}
+A systematic scan from looser to tighter cuts was done on a variable-per-variable 
+basis, reconstructing the yields, comparing them to the yields obtained 
+with a reference set of cuts and looking for possible trends/biases of 
+the reconstructed yield as a function of the cut strength.
+The study was done using as reference set of cuts the one used 
+to provide the central values of the yields. A selection
+on the basis of the $\chi^2/ndf$ ($<2$) of the fits and the statistical significance ($>3$)
+of the signal was applied. For the corrected yields that passed the selections
+and that revealed systematics trends, their ratios to the reference corrected
+yield, in each $\pt$ interval, were collected
+into final distributions, used to provide the RMS values 
+for the systematic uncertainty estimate. 
+Fig.~\ref{DsCutVar_010} shows an example of such final distributions 
+for the 0-10\% centrality class, in the four analysed $\pt$ intervals. 
+The values of the RMS of Gaussian-like distributions are reported, as well as
+the values of the full spread of the distribution divided by $\sqrt{12}$.
+
 \subsection{PID selection efficiency}
-To estimate the effect of PID efficiency on the corrected yield, 
+\label{sec:PIDsystAA}
+To estimate the effect of PID efficiency on the corrected yields, 
 two particle identification selections (a tighter one, discussed in Sec.~\ref{Sec:PID}, and a 
 looser, in Sec.~\ref{sec:PIDsystPP}) were compared. Fig.~\ref{fig:DsPID010} 
 shows, as an example for 0-10\% centrality class, the ratio of the corrected yields 
@@ -454,62 +468,69 @@ whether the points are affected by a (considerable, $\sim$15-20\%) systematic ef
 or they are simply dominated by statistical fluctuations originating from
 yield extraction. For this reason, an alternative approach of a per-track 
 systematic was followed. The idea is to apply optimised selections in data to obtain
-samples of kaons and pions, pure enough to be compared to true kaons and pions
-in MC. The difference in the efficiencies for a given N-sigma cut (on d$E$/d$x$ or 
+pure samples of kaons and pions. The difference in the efficiencies for a given N$\sigma$ cut (on d$E$/d$x$ or 
 time-of-flight signal) in data and MC will
 constitute a $\pt$-dependent per-track systematics for each species.
 The per-track systematics can be propagated to the D-meson level, via the kinematics of
-the daughter tracks.
+the tracks of the daughters.
 \begin{figure}[!h]
  \centering
  \includegraphics[angle=0, width=7cm]{./FigCap5/PIDsyst_010.eps}
- \caption{Ratio of $\Ds$ corrected yield in 0--10\% centrality class when using strong and conservative PID selections.}
+ \caption{Ratio of $\Ds$ corrected yield in 0--10\% centrality class with tighter-to-looser PID selections.}
  \label{fig:DsPID010} 
 \end{figure}
-Pions from V0 decays were selected using the selection cuts
+Pions from V0 decays were selected using the optimised cuts
 used in~\cite{Schuchmann:2102194}. In Fig.~\ref{fig:MCPionsTPC} the Monte Carlo 
-N-sigma distributions for the d$E$/d$x$ of pions in TPC are shown.
-The distribution of true pions (in green) is compared to the
-distributions of pions passing the optimised selection for V0 decays 
-(in blue). The comparison confirms the choice of the applied selections.
-In Fig.~\ref{fig:DataPionsTPC}, the distribution in data (blue) is compared
-to distribution of true MC pions (green). 
-Since a second population is visible at low $\pt$ in data, on the right of the 
-peak (likely a contamination from electrons; the contamination is reproduced in the MC
-also, when not requiring the PDG code of the species), 
-only the left region of the peak is used 
-to evaluate the efficiency of the N-sigma cuts. The same procedure
-is carried out with distributions of time-of-flight signals in TOF
-for the above selected pions.
-To identify the d$E$/d$x$ signal of sample of kaons, a tight cut requiring N 
-sigma $< 0.25$ from kaon hypothesis in the TOF was required. 
-With this selection, the black curve in Fig.~\ref{fig:MCKaonsTPC} was obtained.
-Contamination from other particle species is still present. The
-contributions, obtained with MC information on the species, are shown in different colours in the same Fig.~\ref{fig:MCKaonsTPC}. The black curve was fitted with a Gaussian shape 
-to extrapolate the kaon contribution. The ranges of the fit are set, for each $\pt$ interval, in 
-the region less affected by other species contribution.
-In Fig.~\ref{fig:DataKaonsTPC}, the distribution of d$E$/d$x$ data, with 
-same cuts as in MC, is displayed. The yellow Monte Carlo template of true 
+N$\sigma$ distributions for the d$E$/d$x$ of pions in TPC are shown for 
+different $\pt$ intervals, from 0.2 to 10 $\Gevc$.
+The N$\sigma$ distribution of true pions (in green) is compared to the
+distribution of tracks in the simulation that pass the selection as pions from V0 decays 
+(in blue). Since a second population is visible on the right of the 
+peak at low $\pt$ for
+the blue distribution (as well as in data, likely a contamination from electrons), 
+only the left region of the peak will be used 
+to evaluate the efficiency of the N$\sigma$ cuts.
+A part from this secondary population, in general the comparison is good and we
+conclude that the utilised selections provide a good
+cleaning of the sample. 
+In Fig.~\ref{fig:DataPionsTPC}, the N$\sigma$ distributions in data (blue) are compared
+to the distributions of true MC pions (green), in the different $\pt$ intervals.  
+Finally, efficiencies in data and in MC are obtained by integrating the respective 
+distributions (blue and green distributions in Fig.~\ref{fig:DataPionsTPC})
+within 1, 2 or 3$\sigma$, and normalising these values to the integral 
+of the distributions within 5$\sigma$. It was verified that enlarging the number of $\sigma$ from 5 to 10 at the 
+denominator of the efficiency does not affect the final results.
+The same procedure
+was carried out with distributions of time-of-flight signals in TOF
+for the above selected pions, to obtained the systematics on pion identification in TOF.
+To obtain the uncertainty on kaon identification in TPC, a tight cut on the PID 
+signal in TOF requiring N$\sigma < 0.25\sigma$ from kaon hypothesis was required. 
+The black curve in Fig.~\ref{fig:MCKaonsTPC}, for PID signal in TPC, was obtained
+from reconstructed track in the simulation that satisfy this selection.
+Contaminations from other particle species are still present and they
+are shown in different colours in the same Fig.~\ref{fig:MCKaonsTPC}. 
+The black curve was fitted with a Gaussian shape 
+to extrapolate the kaon contribution. The ranges of the fits are set, for each $\pt$ interval, in 
+the regions less affected by other species contribution.
+In Fig.~\ref{fig:DataKaonsTPC}, the distribution of d$E$/d$x$ in data is displayed. 
+The yellow Monte Carlo template of true 
 kaons is superimposed to the data distribution, 
-only for visualisation purposes, and not used in the fit. The blue curve in data
-was fitted with a Gaussian shapes in the $x$-axis ranges obtained in MC,
-to extrapolate the kaon component from the inclusive distribution.\\
+only for visualisation purposes, and not used in the fit. The curve in data
+was fitted with a Gaussian function in the $x$-axis range previously tuned with the MC,
+to extrapolate the kaon component from the inclusive distribution, in each $\pt$ interval.\\
 The values of the final systematics, obtained as the data-to-MC ratio
-of the efficiencies for selections at 1, 2, 3$\sigma$ and normalised to a cut at 5$\sigma$
-are shown in Fig~\ref{fig:PerTrackPIDsys}, as a function of $\pt$. 
-It was verified that enlarging the number of sigmas from 5 to 10 at the 
-denominator does not affect the results.
-Since systematic uncertainty on pion and kaon identification in 
-TPC shows similar values, systematic uncertainty on kaon identification in TOF 
-was assumed to be equal to that of pions in TOF. 
-These per-track values were then propagated 
-through the $\Ds$' daughters kinematics. The propagation accounts for topological and
-PID selections used on $\Ds$ mesons. The values of the PID 
-systematics for the $\Ds$, when using the default selection described in Sec.~\ref{Sec:PID}, 
-are shown in Fig.~\ref{fig:DsPIDsys} and are around a 3\% value. Similar results were 
-obtained calculating efficiencies for Monte Carlo using the distribution obtained with
- the PDG selection code (as described above) or without it.
-
+of the efficiencies are shown in Fig~\ref{fig:PerTrackPIDsys}, as a function of $\pt$,
+for cuts at 1, 2 ans 3$\sigma$ on the PID signal. 
+Since the systematic uncertainties on pion and kaon identification in 
+TPC show similar values, an assumption for the systematic uncertainty 
+on kaon identification in TOF is done and it is considered to be similar to that of pions in TOF.
+These $\pt$-dependent per-track values were then associated to
+$\Ds$' daughter tracks, depending on their transverse momentum, and linearly summed together 
+for each candidate. The topological discussed 
+in Sec.~\ref{sec:CutVarsystAA} were applied. 
+The final values of the systematic uncertainties are around 
+3\% for the tighter PID selection (Sec.~\ref{Sec:PID}) and are negligible for the
+looser PID selection (Sec.~\ref{sec:PIDsystPP}).
 
 \begin{figure}[!h]
  \centering
@@ -550,17 +571,17 @@ obtained calculating efficiencies for Monte Carlo using the distribution obtaine
 
 \begin{figure}[!h]
  \centering
- \includegraphics[angle=0, width=13cm]{./FigCap5/PIDsyst_1over5sigmaCut.eps}
- \includegraphics[angle=0, width=13cm]{./FigCap5/PIDsyst_2over5sigmaCut.eps}
- \includegraphics[angle=0, width=13cm]{./FigCap5/PIDsyst_3over5sigmaCut.eps}
- \caption{Per-track systematics for kaons and pions in TPC and TOF in different colours, as a function of $\pt$, for different N-sigma selection (1-sigma cut in the top panel, 2-sigma cut in the middle panel, 3-sigma cut in the bottom panel) with respect to a 5-sigma cut. Left and right panel refers to the Monte Carlo efficiency calculated on the distribution respectively without and with PDG code selection.}
+ \includegraphics[angle=0, width=7cm]{./FigCap5/PIDsyst_1over5sigmaCut.eps}
+ \includegraphics[angle=0, width=7cm]{./FigCap5/PIDsyst_2over5sigmaCut.eps}
+ \includegraphics[angle=0, width=7cm]{./FigCap5/PIDsyst_3over5sigmaCut.eps}
+ \caption{Per-track systematics for kaons and pions in TPC and TOF in different colours, as a function of $\pt$, for 1, 2 and 3$\sigma$ selection, normalised to a 5$\sigma$ cut. }
  \label{fig:PerTrackPIDsys} 
 \end{figure}
 
 \begin{figure}[!h]
  \centering
- \includegraphics[angle=0, width=13cm]{./FigCap5/PIDsystDs_MCtruth.eps}
- \caption{Left: scatter plot of daughter's $\pt$ and $\Ds$-meson $\pt$. Right: systematics on PID for $\Ds$ meson as a function of $\pt$.}
+ \includegraphics[angle=0, width=13cm]{./FigCap5/PIDsystDs_MCall.eps}
+ \caption{Left: scatter plot of $\Ds$ daughter $\pt$ as a function of $\Ds$ $\pt$. Right: systematics on the tighter PID selection used for $\Ds$ meson as a function of $\pt$.}
  \label{fig:DsPIDsys} 
 \end{figure}
 
@@ -570,13 +591,11 @@ the real and simulated $\Ds$-meson transverse momentum distributions
 was estimated by using alternative $\Ds$-meson $\pt$ distributions.
 In particular, the $\pt$ distributions from FONLL calculations with
 and without hot-medium effects parametrised based on the $\RAA$ in central collisions from the 
-BAMPS~\cite{Uphoff:2014hza} and TAMU~\cite{He:2014cla} models were used in this study.
+TAMU~\cite{He:2014cla} model and in semi-central collisions from 
+BAMPS~\cite{Uphoff:2014hza} model were used in this study.
 The values assigned as systematic uncertainty are reported in 
 Table~\ref{tab:sysunc_yieldtable} for the 0-10\% centrality class, but are similar in 
-30-50\% and 60-80\% classes. They are taken as the RMS
-of the distribution of efficiencies with different weights (treated as a flat distribution) 
-in each $\pt$ interval, summed in quadrature with the mean shift of the distribution itself. \\
-
+30-50\% and 60-80\% classes. 
 
 \iffalse
 \begin{figure}[!htp]
@@ -590,39 +609,44 @@ in each $\pt$ interval, summed in quadrature with the mean shift of the distribu
 \fi
 
 \subsection{Feed-down subtraction}
-The systematic uncertainty on the subtraction of feed-down from B-meson decays 
-(i.e. the calculation of the $f_{\rm prompt}$ fraction) was estimated by varying i)
+The systematic uncertainty on the subtraction of feed-down from 
+B-meson decays was estimated by varying i)
 the $\pt$-differential feed-down D-meson cross section from the 
-FONLL calculation within the theoretical uncertainties, ii)  the ratio of the 
-prompt and feed-down $\Ds$-meson $\Raa$ in the 
+FONLL calculation within the theoretical uncertainties (that originate from variations on 
+$b$-quark mass, perturbative scales and on the parton distribution functions~\cite{Cacciari:2012ny}), 
+ii) the ratio of the prompt and feed-down $\Ds$-meson $\Raa$ in the 
 range $\frac{1}{3} < \RAA^{\rm  feed-down}/\RAA^{\rm prompt} < 3$ 
 for the centrality classes 0-10\% and 30-50\%. The range was limited to 
-$1 < \RAA^{\rm  feed-down}/\RAA^{\rm prompt} < 1.6$ 
+$1 < \RAA^{\rm  feed-down} / \RAA^{\rm prompt} < 1.6$ 
 for the centrality class 60-80\%. 
 
 \subsection{Track reconstruction efficiency}
 \label{sec:TrackEffSystPbPb}
 The procedure to estimate the difference
 of tracking efficiency between data and MC was discussed in Sec.~\ref{sec:TrackEffSystPP}.
-The per-track uncertainty quoted to account for track quality selections
-is 1.5\% in the 10\% most central class and 1\% in 30-50\% and 60-80\% 
+The per-track uncertainty quoted to account for track-quality selection efficiencies
+is 1.5\% in the 10\% most central events and 1\% in 30-50\% and 60-80\% 
 centrality classes. As regards the systematic uncertainty from ITS-TPC track
-matching, some discrepancies were observed in the primary fraction estimate
-when requiring or not a point in the ITS for the tracks used to perform the DCA$_{\rm xy}$ fits.
-As explained in Sec.~\ref{sec:TrackEffSystPP}, the request of at least a point
-in one of the two SPD layers is preferable since it makes the DCA$_{\rm xy}$
-resolution good enough to clearly separate primary and secondary track DCA$_{\rm xy}$ templates.
-In this case, a correction factor to rescale the primary track fraction in the ITS
-to the same fraction in TPC is needed. This factor is extracted from MC and it
+matching efficiency, some discrepancies (up to 4\%, for $2 < \pt < 4\, \Gevc$) 
+are observed in the final systematics for Pb-Pb data
+when switching off the request of a hit in one of the two SPD 
+layers for the tracks used to perform the DCA$_{\rm xy}$ fits.
+As explained in Sec.~\ref{sec:TrackEffSystPP}, this request is 
+preferable since the DCA$_{\rm xy}$
+resolution is more accurate, thus differences between primary and secondary track DCA$_{\rm xy}$ 
+distributions can be appreciated. This request also implies 
+a correction factor to rescale the fraction of primary tracks in the ITS
+to the same fraction in TPC. Such factor is extracted from MC and it
 lays on the hypothesis that simulation can reproduce the ITS-to-TPC ratio of primary tracks 
-as in data. It was verified that different MC generators with different particle
-cocktails give similar value for the correction factor. Nevertheless, a quite large discrepancy
-(up to 4\%, for $2 < \pt < 4\, \Gevc$) is observed in Pb-Pb data when 
-comparing results of primary fractions when using, for the DCA$_{\rm xy}$ fits, tracks
-with or without requests on ITS hits. In the latter case, the 
-resolution is worse, still the fits can be performed with acceptable data-to-fit agreement.
-The final systematic uncertainty on the ITS-TPS matching efficiency was
-assigned by averaging the results from the two different procedures, resulting in
+as in data. For the case 
+without the request of hit in the SPD, the DCA$_{\rm xy}$
+resolution is worse, but the fits can be performed with still acceptable data-to-fit agreement.
+The observed discrepancy in the results from the two cases 
+may be due to the less precise estimate
+of the fraction of primary tracks due to looser resolution power as well as
+a non valid assumption for the correction factor. For this reason, the systematic 
+uncertainty on the ITS-TPS matching efficiency was
+assigned by averaging the two results, resulting in
 2.5-4\% for $0.5 < \pt < 5 \, \Gevc$, 2.5-1\% for $5 < \pt < 10 \, \Gevc$, 1\% for $10 < \pt < 15\, \Gevc$.
 
 
@@ -652,7 +676,7 @@ Data syst. in pp and $\sqrt s$-scaling of the pp ref. & & & & & \\
 The nuclear modification factor $\RAA$ of prompt $\Dsplus$ mesons was defined as follows:
 \begin{equation}
 \label{eq:RAADs}
-\RAA (\pt) = \frac{1}{\langle \TAA \rangle} \frac{{\rm d} N_{\rm AA}/{\rm d}\pt}{{\rm d} \sigma_{\rm pp}/{\rm d} \pt}
+\RAA (\pt) = \frac{1}{\langle \TAA \rangle} \frac{{\rm d} N_{\rm AA}/{\rm d}\pt}{{\rm d} \sigma_{\rm pp}/{\rm d} \pt},
 \end{equation}
 where ${\rm d} N_{\rm AA}/{\rm d}\pt$ is the corrected $\pt$-spectrum of 
 Eq.~\ref{eq:dNdpt}, $\langle \TAA \rangle$ is the 
@@ -661,7 +685,7 @@ proton-proton reference at $\s = 5.02$ TeV.
 \section{Systematic uncertainty on the $\RAA$}
 \label{sec:SystRAA}
 The systematic uncertainties on the $\Raa$ measurement include those 
-on the $\Ds$-meson corrected yields described above. The systematic 
+on the $\Ds$-meson corrected $\pt$-spectrum described above. The systematic 
 uncertainty on the feed-down subtraction deriving from
 the variation of the parameters of the FONLL calculation was considered to be
 correlated in the $\PbPb$ and pp measurements. All the 
@@ -1063,7 +1087,8 @@ v_2^{\rm feed-down}=v_2^{\rm prompt}/2.
 \section{Systematic uncertainties on $v_2$}
 \label{sec:systsectionV2}
 The sources of systematic uncertainty affecting the measurement of 
-$\Ds$ $v_2$ are related to the signal extraction from the invariant-massdistribution, B feed-down subtraction, non-flow effects 
+$\Ds$ $v_2$ are related to the signal extraction from the invariant-mass
+distribution, B feed-down subtraction, non-flow effects 
 and centrality dependence in the EP resolution correction $R_2$.
 with the event plane method that we are considering are:
 \begin{itemize}
