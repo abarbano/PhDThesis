@@ -923,7 +923,7 @@ from using the PYTHIA~\cite{Sjostrand:2006za} decayer instead of
 EvtGen~\cite{Lange:2001uf} is negligible 
 with respect to the FONLL B-meson cross-section uncertainty.
 Previous D-meson analyses in 
-ALICE~\cite{ALICE:2011aa,Abelev:2012tca,Adam:2016ich,Adam:2015jda} 
+ALICE~\cite{ALICE:2011aa,Adam:2016ich,Adam:2015jda} 
 used to compare two different methods for the subtraction of the beauty feed-down component 
 and include their difference in this systematic uncertainty. 
 The first method, used to give the central value for $f_{\rm prompt}$, 
@@ -1048,7 +1048,7 @@ cross section of prompt $\Ds$ mesons.}
 \label{tab:SystDs}
 \end{table}
 
-\begin{figure}[!b]
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=.99\textwidth]{FigCap4/uncertainties_pass2_pass4.eps}
 \caption{Comparison of statistical and global systematic uncertainty on $\Dsplus$-meson
@@ -1075,7 +1075,9 @@ the analysis of previous reconstruction of this sample.
 
 
 \section{Results}
-The $\pt$-differential cross sections for prompt $\Ds$ 
+\subsection{$\Dsplus$ $\pt$-differential cross section}
+\label{sec:ppCrosSec}
+The $\pt$-differential cross section for prompt $\Ds$ 
 production in $|y|<0.5$ are shown in black data points in 
 Fig.~\ref{fig:CrossSecDsvsGMVFNS}~\cite{Acharya:2017jgo}.
 The error bars represent the statistical uncertainties, while the systematic 
@@ -1097,7 +1099,6 @@ based on $k_{\rm T}$-factorisation~\cite{Maciula:2013wg} (right panel).
 \label{fig:CrossSecDsvsGMVFNS}
 \end{center}
 \end{figure}
-
 The results are consistent within uncertainties with 
 those reported in the previous publication on charmed-meson 
 cross sections in pp collisions at $\s=$ 7 TeV~\cite{ALICE:2011aa,Abelev:2012tca},
@@ -1140,7 +1141,8 @@ theoretical uncertainty band.}
 \end{figure}
 
 
-
+\subsection{D-meson ratios}
+\label{sec:ppDratios}
 The ratios of the $\pt$-differential cross sections of $\Dzero$, $\Dplus$, 
 $\Dstar$ and $\Ds$ mesons are reported in Fig.~\ref{fig:DratiosVsPt}~\cite{Acharya:2017jgo}.
 In the evaluation of the systematic uncertainties on these ratios, 
@@ -1178,4 +1180,100 @@ mesons, resulting in the same shape of the $\pt$ distributions of these three
 meson species, while 
 the fragmentation functions for vector mesons from Ref.~\cite{Braaten:1994bz} 
 are used for $\Dstar$ mesons~\cite{Maciula:2013wg}.
+
+\subsection{$\pt$-integrated $\Dsplus$ cross section}
+\label{sec:ppDsXsecPtint}
+The visible cross sections of prompt $\Dsplus$ mesons, obtained by integrating
+the $\pt$-differential cross section in the measured $\pt$ range, is reported
+in Table~\ref{tab:ptintegcs}.
+\begin{table}[!h]
+\centering
+\begin{tabular}{c|c|l} 
+ & Kinematic range & Visible cross section ($\mub$) \\
+\hline
+\rule{0pt}{12pt} 
+$\Dsplus$     & $2<\pt<12~\GeV/c$ & $\phantom{0}40 \pm \phantom{0}8 ({\rm stat}) \pm \phantom{0}5 ({\rm syst}) \pm \phantom{0}1 ({\rm lumi}) \pm 1 ({\rm BR})$\\[1ex]
+\hline
+\end{tabular}
+\caption{Visible production cross sections of prompt D mesons in $|y| < 0.5$ in pp collisions at $\sqrts = 7~\TeV$.}
+\label{tab:ptintegcs}
+\end{table}
+The systematic uncertainty was defined by propagating the yield extraction uncertainties as uncorrelated among $\pt$ intervals and all the other uncertainties 
+as correlated.
+
+The production cross section per unit of rapidity, ${\rm d}\sigma/{\rm d}y$, 
+at mid-rapidity was computed by extrapolating the 
+visible cross section to the full $\pt$ range.
+The extrapolation factor was defined as
+the ratio between the total production cross section in $|y|<0.5$ and that 
+in the experimentally covered phase space, both of them calculated with the
+FONLL central parameters. 
+The systematic uncertainty on the extrapolation factor was estimated by
+considering the contributions due to i) the uncertainties on the 
+CTEQ6.6 PDFs~\cite{Pumplin:2002vw} and ii) the variation of the charm-quark 
+mass and the renormalisation and factorisation scales in the FONLL 
+calculation, as proposed in~\cite{Cacciari:2012ny}.
+Since for $\Ds$ mesons a FONLL prediction is not available,
+the central value of the extrapolation factor was computed 
+from the prediction based on the $\pt$-differential cross section of charm 
+quarks from FONLL, the fractions $f({\rm c\rightarrow \Ds})$ and 
+$f({\rm c\rightarrow D_{\rm s}^{*+}})$ from ALEPH~\cite{Barate:1999bg}, and the 
+fragmentation functions from~\cite{Braaten:1994bz}, which have one parameter, 
+$r$, that was set to 0.1 as done in FONLL~\cite{Cacciari:2003zu}.
+The ${\rm D}_{\rm s}^{*+}$ mesons produced in the c quark fragmentation were 
+made to decay with PYTHIA and the resulting $\Ds$ mesons were summed to the 
+primary ones to obtain the prompt yield.
+An additional contribution to the systematic uncertainty  was assigned
+for $\Ds$ mesons based on the envelope of the results obtained using the 
+FONLL $\pt$-differential cross sections of $\Dzero$, 
+$\Dplus$ and $\Dstar$ mesons to compute the $\Ds$ extrapolation factor.
+The resulting values for the extrapolation factor and for the prompt $\Dsplus$-meson 
+production cross section per unit of rapidity ${\rm d}\sigma/{\rm d}y$ are 
+reported in Table~\ref{tab:dsdy}.
+\begin{table}[!h]
+\centering
+\begin{tabular}{c|c|l} 
+ & Extr. factor to $\pt>0$ & ${\rm d}\sigma/{\rm d}y \mid_{|y|<0.5}$ ($\mub$) \\
+\hline
+\rule{0pt}{12pt} 
+$\Ds$     & $2.23^{+0.71}_{-0.65}$ &  $\phantom{0}89 \pm 18 ({\rm stat}) \pm 11 ({\rm syst}) \pm \phantom{0}3 ({\rm lumi}) \pm 3 ({\rm BR})^{+28}_{-26} ({\rm extrap})$\\[1ex]
+\hline
+\end{tabular}
+\caption{Production cross sections of prompt D mesons in $|y| < 0.5$ and full $\pt$ range in pp collisions at $\sqrts = 7~\TeV$.}
+\label{tab:dsdy}
+\end{table}
+\subsection{$\pt$-integrated D-meson ratios}
+\label{sec:ppDratiosPtint}
+The $\Dsplus$ and non-strange D-meson integrated cross-sections~\cite{Acharya:2017jgo} values 
+were used to compute the ratios of the $\pt$-integrated D-meson 
+production cross sections, which are reported in Table~\ref{tab:ptintegrat}.
+The systematic uncertainties on the ratios were computed taking into
+account the sources correlated and uncorrelated among the different D-meson
+species as described above.
+The measured ratios are compatible within uncertainties with the results at
+$\sqrts=2.76~\TeV$~\cite{Abelev:2012vra} and with the measurements of
+the LHCb collaboration at forward rapidity ($2.0<y<4.5$) at three 
+different collision energies $\sqrts=$~5, 7 and 
+13~TeV~\cite{Aaij:2013mga,Aaij:2016jht,Aaij:2015bpa}.
+The measured $\pt$-integrated production ratios are also compatible with the
+charm-quark fragmentation fractions $f(\rm c\to D)$ measured in ${\rm e^+e^-}$ 
+collisions from the compilation in~\cite{Gladilin:2014tba}.
+These results indicate that the fragmentation fractions of charm quarks into
+different D-meson species do not vary substantially with rapidity, collision
+energy and colliding system.
+\begin{table}[!h]
+\centering
+\begin{tabular}{c|c|l} 
+ & Kinematic range & Production cross section ratio \\
+\hline
+\rule{0pt}{12pt} 
+$\sigma(\Dplus) / \sigma(\Dzero)$ & $1<\pt<24~\GeV/c$ & $0.45 \pm 0.04 ({\rm stat}) \pm 0.05 ({\rm syst}) \pm 0.01 ({\rm BR})$\\[1ex]
+$\sigma(\Dstar) / \sigma(\Dzero)$ & $1<\pt<24~\GeV/c$ & $0.52 \pm 0.07 ({\rm stat}) \pm 0.05 ({\rm syst}) \pm 0.01 ({\rm BR})$\\[1ex]
+$\sigma(\Ds) / \sigma(\Dzero)$    & $2<\pt<12~\GeV/c$ & $0.19 \pm 0.04 ({\rm stat}) \pm 0.02 ({\rm syst}) \pm 0.01 ({\rm BR})$\\[1ex]
+$\sigma(\Ds) / \sigma(\Dplus)$    & $2<\pt<12~\GeV/c$ & $0.45 \pm 0.09 ({\rm stat}) \pm 0.06 ({\rm syst}) \pm 0.02 ({\rm BR})$\\[1ex]
+\hline
+\end{tabular}
+\caption{Ratios of the measured $\pt$-integrated cross sections of prompt D mesons in $|y| < 0.5$ in pp collisions at $\sqrts = 7~\TeV$.}
+\label{tab:ptintegrat}
+\end{table}
 
