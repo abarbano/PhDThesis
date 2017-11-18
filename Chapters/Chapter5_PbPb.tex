@@ -35,7 +35,7 @@ For sake of clarity, we will start with the description of $\pt$-differential yi
 analyses, to move afterwards to the analysis of elliptic flow, in the second part of the Chapter. 
 The results of the measurements will be discussed together in Sec.~\ref{sec:PbPbResults}.
 
-\section{$\Dsplus$ $\pt$-differential yields and $\RAA$}
+\section{$\Dsplus$ $\pt$-differential yields}
 \label{sec:YieldsAndRaa}
 \subsection{Signal extraction}
 \label{sec:SelectionPbPb}
@@ -378,7 +378,7 @@ reduced: the value $\RAA^{\textnormal{feed-down}}=1.3\cdot\RAA^{\rm prompt}$
 was used for all D-meson species. 
 
 
-\section{Systematics}
+\section{Systematic uncertainty on corrected d$N$/d$\pt$}
 \label{sec:systematics}
 Most of the sources of systematic errors considered for the analysis 
 of the corrected yield were already described in Sec.~\ref{sec:systPP}. 
@@ -693,7 +693,7 @@ other sources of systematic uncertainties were treated as uncorrelated.
 Additional systematic uncertainties on the $\Raa$ are on 
 the proton--proton reference cross section and on the $\RAA$ normalisation. 
 
-\subsubsection{Proton-proton reference}
+\subsection{Proton-proton reference}
 \label{sec:PPrefSyst}
 The $\pt$-differential cross section of prompt $\Dsplus$ mesons with 
 $|y|<0.5$ in pp collisions at $\sqrt s=5.02~\tev$, used as reference 
@@ -718,7 +718,7 @@ systematic uncertainty on the $\pt$-extrapolated cross section is about
 $^{+42}_{-29}\%$ for $\Ds$ in the $\pt$ interval 12--16~$\Gevc$.
 
 
-\subsubsection{Normalization}
+\subsection{Normalization}
 \label{sec:NormalizSyst}
 The uncertainties on the $\RAA$ normalisation are the quadratic sum of 
 (i) the pp normalisation uncertainty (3.5\%), 
@@ -728,17 +728,23 @@ Glauber fit to determine the centrality ($<0.1\%$, $2\%$ and $3\%$ for the 0--10
 and 60--80\% centrality classes, respectively)~\cite{Adam:2015sza}, while the branching ratio uncertainty cancels out in the 
 ratio.
 
+\section{$\Ds$ elliptic flow}
+In this section, the first measurement at LHC of the $v_2$ of 
+$\Ds$ meson in Pb--Pb collisions at 
+$\sqrtsNN = 5.02$~$\TeV$ is reported. The analysis was carried 
+out for the 30-50\% centrality class, because it is the centrality
+interval where the elliptic flow reaches its maximum value~\cite{Adam:2016izf}. 
 
-\section{Event characterization: event plane}
+\subsection{Event characterization: event plane}
 \label{sec:EventPlane}
 Let's briefly recall that the reaction plane ($\Psi_{\rm RP}$) is the 
 plane formed by the impact parameter of the two colliding nuclei and the beam
 direction. The orientation of the reaction plane or, in case of flow fluctuations, 
-the $n^{th}$-harmonic collision symmetry plane is estimated 
+of the $n^{th}$-harmonic collision symmetry plane is estimated 
 from the particle azimuthal distribution event-by-event
-with the $n^{th}$-harmonic event-plane angle, $\Psi_n^{\rm EP}$.
+with the $n^{th}$-harmonic event-plane angle, $\psi_n^{\rm EP}$.
 For a given harmonic $n$, one constructs the two-dimensional event-plane 
-vector $Q_n$ from the measured azimuthal distribution of 
+vector $\vec{Q}_n$ from the measured azimuthal distribution of 
 particles produced in the event as follows:
 \begin{equation}
 \label{f:qvector}
@@ -762,7 +768,7 @@ Due to the finite number of detected particles, the
 angular resolution on reaction plane $\Psi_{\rm RP}$ is limited and 
 has be estimated for the $n^{th}$ harmonic as:
 \begin{equation}
-R_n = \langle {\rm cos}[n({\rm \Psi}_n-{\rm \Psi}_{\rm RP})]) \rangle ,
+R_n = \langle {\rm cos}[n({\rm \psi}_n-{\rm \Psi}_{\rm RP})]) \rangle ,
 \end{equation}
 where the angle brackets denote an average over a large event sample.
 The resolution term must be used to correct the flow coefficients as:
@@ -773,18 +779,22 @@ It can be demonstrated that the the event plane resolution
 can be expressed as:
 \cite{Poskanzer:1998yz}:
 \begin{equation}
-\label{f:epreso}
-\left\langle \cos km\left( \psi_m-\Psi_{\rm RP}\right)\right\rangle = \sqrt{\dfrac{\pi }{8}} \chi_m \cdot {\rm e}^{-\chi_m^2/4} \cdot I_{(k-1)/2}(\chi_m^2/4)+I_{(k+1)/2}(\chi_m^2/4),
+\label{eq:epreso}
+\left\langle \cos [km\left( \psi_m-\Psi_{\rm RP}\right)]\right\rangle = \sqrt{\dfrac{\pi }{8}} \chi_m \cdot {\rm e}^{-\chi_m^2/4} \cdot I_{(k-1)/2}(\chi_m^2/4)+I_{(k+1)/2}(\chi_m^2/4),
 \end{equation}
-where where the equation has been written in terms of $km$ 
-instead of $n$, $\chi_m=v_n\sqrt{2N}$ ($N$ is the multiplicity) and $I_\nu$ the Bessel function of order $\nu$, as drawn in Fig.~\ref{fig:resoBessel}.
-$k$ is an integer number that accounts for the fact that the event plane of $m$-th order can be used to compute all Fourier harmonics that are multiples
-of $m$ (i.e. $km$).
-The mean cosine values are less than one, thus the correction always increases the Fourier coefficients.
+where the equation has been written in terms of $km$ 
+instead of $n$, $\chi_m= v_m/\sigma = v_m\sqrt{2N}$ ($N$ is the multiplicity) and 
+$I_\nu$ is the Bessel function of order $\nu$.
+$k$ is an integer number that accounts for the fact that the 
+event plane of $m^{\rm th}$ order can be used to compute all Fourier harmonics that are multiples
+of $m$ (i.e. $km$). The expression for resolution in Eq.~\ref{eq:epreso} is
+drawn in Fig.~\ref{fig:resoBessel} as a function of $\chi_m$. 
+The mean cosine values are less than one, thus the 
+correction always increases the Fourier coefficients.
 \begin{figure}
 \centering
  \includegraphics[width=0.5\textwidth]{FigCap5/resolBessel.png}
- \caption[Event plane resolution vs $\chi_m$]{The event plane resolution for the $n$-th ($n=km$, according the conventions of eq.~(\ref{f:epreso})) harmonic of the particle distribution with respect to the $m$-th harmonic plane, as a function of $\chi_m$ (figure taken from).}
+ \caption[Event plane resolution vs $\chi_m$]{The event plane resolution for the $n^{\rm th}$ ($n=km$, according the conventions of Eq.~(\ref{eq:epreso})) harmonic of the particle distribution with respect to the $m^{\rm th}$ harmonic plane, as a function of $\chi_m$.}
  \label{fig:resoBessel}
 \end{figure}
 To measure the event plane resolution, one usually divide the
@@ -795,39 +805,44 @@ splitting the full event in two subsets of tracks using a random generator.
 There is a simple relation for the correlations between 
 two independent sub-sets and the true event plane:
 \begin{equation}
-\langle {\rm cos} (n({\rm \Psi}^a_n-{\rm \Psi}^b_n)) \rangle = 
-\langle {\rm cos} (n({\rm \Psi}^a_n-{\rm \Psi}_{\rm RP})) \rangle \langle {\rm cos} (n({\rm \Psi}^b_n-{\rm \Psi}_{\rm RP})) \rangle .
+\langle {\rm cos} [n({\rm \psi}^a_n-{\rm \psi}^b_n)) \rangle = 
+\langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_{\rm RP})] \rangle \langle {\rm cos} [n({\rm \psi}^b_n-{\rm \Psi}_{\rm RP})] \rangle .
 \end{equation}
 Since, given the conditions above, the resolution of each sub-sets is expected 
 to be the same, their resolution can be obtained 
 once the correlation between the two samples is known:
 \begin{equation}
-R_{n, sub} = \langle {\rm cos} (n({\rm \Psi}^a_n-{\rm \Psi}_{\rm RP})) \rangle = \sqrt{\langle {\rm cos} (n({\rm \Psi}^a_n-{\rm \Psi}^b_n)) \rangle}.
+R_{n, sub} = \langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_{\rm RP})] \rangle = \sqrt{\langle {\rm cos} [n({\rm \psi}^a_n-{\rm \psi}^b_n)] \rangle}.
 \end{equation}
-If the sub-events are not equal or have different rapidity coverage,
-at least three sub-samples are needed to determine the 
-event plane resolution in each of them. In this case, 
-for example the resolution of the first sub-set $a$ is determined as:
-\begin{equation}
- \langle {\rm cos} (n({\rm \Psi}^a_n-{\rm \Psi}_{\rm RP})) \rangle = 
-\sqrt{\frac{\langle\cos [n(\psi_n^a-\psi_n^c)] \rangle \langle\cos [n(\psi_n^a-\psi_n^b)] \rangle}{\langle\cos [n(\psi_n^b-\psi_n^c)] \rangle}}\,,
-\end{equation}
+\iffalse
 The full event resolution is obtained using 
 Eq.?? from the resolution of sub-events {\bf trovare reference}:
 \begin{equation}
 R_{full} = R(\sqrt{2}\chi_{sub})
 \end{equation}
-because $\chi \propto \sqrt{M}$ and the full event has twice the multiplicity of the sub-events.\\
+because $\chi \propto \sqrt{N}$ and the full event has twice the multiplicity of the sub-events.\\
+\fi
+If the two sub-events are not equal or have different rapidity coverage,
+at least three sub-samples are needed to determine the 
+event-plane resolution in each of them. In this case, 
+the resolution of the first sub-set $a$, for example, is determined as:
+\begin{equation}
+ \langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_{\rm RP})] \rangle = 
+\sqrt{\frac{\langle\cos [n(\psi_n^a-\psi_n^c)] \rangle \langle\cos [n(\psi_n^a-\psi_n^b)] \rangle}{\langle\cos [n(\psi_n^b-\psi_n^c)] \rangle}}\, .
+\end{equation}
 
-\subsection{Event plane measurements}
+\subsection{Event plane measurement and corrections}
 
 The determination of the event plane in ALICE can be performed using
 either the tracks reconstructed in the TPC, which has an uniform
 azimuthal coverage in the central rapidity region, or the V0
 detectors, located at forward ($2.8<\eta<5.1$) and backward
-($-3.7<\eta<-1.7$) pseudorapidity.
+($-3.7<\eta<-1.7$) pseudo-rapidity.
 
 In this analysis the event plane was obtained from the 
+signals produced by the charged particles in the eight 
+azimuthal sectors of each V0 array.
+\iffalse
 multiplicity recorded in the two V0 detectors 
 (V0A and V0C). A first equalization of the channels 
 was performed online. Three different event planes 
@@ -835,20 +850,17 @@ was performed online. Three different event planes
 can be computed from the V0 detector information: 
 the V0A and V0C event planes, coming from 
 the two sub-detectors, and the event plane of the full V0. 
-As the V0s sub-detectors cover different rapidity 
-regions and measure different multiplicities, at least 
-three sub-events are required to compute the event
- plane resolution. The resolution of the V0A (V0C) 
+The resolution of the V0A (V0C) 
  event planes can be obtained using the V0A, 
  V0C and the TPC event planes, while for the full 
  V0 event plane we use as sub-events the TPC 
  event plane computed using only tracks with $\eta>0$, 
  only tracks with $\eta<0$ and the full V0 event plane. \\
- 
+\fi 
 
 Effects of non-uniformity of the detectors can generate 
 non-flat distribution of the event planes. Such effects on the 
-Q-vector can be written as~\cite{Selyuzhenkov:2007zi}:
+$\vec{Q}_n$ vector can be written as~\cite{Selyuzhenkov:2007zi}:
 \begin{equation}
 \langle Q \rangle_{\Psi}={\langle X \rangle_{\Psi} =\bar{X}_n+A^+_{2n}(\cos
   (n\Psi)+\Lambda^+\sin (n\Psi))\choose \langle Y \rangle_{\Psi} =\bar{Y}_n+A^-_{2n}(\cos
@@ -929,43 +941,59 @@ configurations have been tested in order to compare
 
 
 \subsection{Event-plane based methods for $v_2$ extraction} 
-\label{epMethodsDescript}
-The $v_2$ coefficient can then be obtained by fitting the signal yield 
-versus $\Delta\phi$ distribution with the following function:
+\label{sec:epMethodsDescript}
+The basic principle in flow analysis is to quantify the azimuthal 
+anisotropies via Fourier coefficients obtained through a 
+decomposition of the measured azimuthal yields in a Fourier series:
 \begin{equation}
-\label{eq:v2D}
- \frac{dN}{d\phi} = k\cdot(1 + 2v_2\cos(2\Delta\phi)),
+\label{eq:dNdphi}
+\frac{{\rm d} N}{{\rm d} \varphi} = k \cdot \big ( 1 + 2 \sum_{n=1}^{\infty} v_n {\rm cos}[n (\varphi - \Psi_n)] ),
 \end{equation}
 where $k$ is a normalisation constant. 
-In the analysis presented here, the sample of candidates was 
+The $v_2$ coefficient can be obtained by integrating Eq.~\ref{eq:dNdphi}
+in two $\Delta \varphi$ intervals and including a correction for the
+resolution. In the analysis presented here, the sample of candidates was 
 divided in two $\Delta\phi$ regions: the \textit{in-plane} region 
 and the \textit{out-of-plane} regions. We define the in-plane 
 region (centred on the event plane) as the region 
-$\left(0,\frac{\pi}{4}\right]\cup\left(\frac{3\pi}{4},\pi\right]$ and
- the out-of-plane as $\left(\frac{\pi}{4},\frac{3\pi}{4}\right]$. 
+$\left(-\frac{\pi}{4},\frac{\pi}{4}\right]\cup\left(\frac{3\pi}{4},\frac{5\pi}{4}\right]$ and
+ the out-of-plane as $\left(\frac{\pi}{4},\frac{3\pi}{4}\right]\cup\left(\frac{5\pi}{4},\frac{7\pi}{4}\right]$. 
  Reducing the splitting in $\Delta\phi$ to only two bins allows 
  to improve the statistics for each invariant mass fit. Resolving 
- equation \ref{eq:v2D} for the number of signals measured 
- in the in-plane and out-of-plane regions separately we obtain
+ Eq.~\ref{eq:dNdphi} for the number of signals measured 
+ in the in-plane and out-of-plane regions separately we obtain:
 \begin{equation}\label{eq:ninout}
  \begin{split}
-  & N_\text{in-plane} = k\int_\text{in-plane}1+2v_2\cos(2\phi)d\phi = k'\cdot(\pi+4v_2)\\
-  & N_\text{out-plane} = k\int_\text{out-plane}1+2v_2\cos(2\phi)d\phi= k'\cdot(\pi-4v_2)
+  & N_\text{in-plane} = k\int_\text{in-plane}1+2v_2\cos(2\varphi)d\varphi = k'\cdot(\pi+4v_2)\\
+  & N_\text{out-plane} = k\int_\text{out-plane}1+2v_2\cos(2\varphi)d\varphi= k'\cdot(\pi-4v_2),
  \end{split}
 \end{equation}
-and therefore it is possible to compute $v_2$ from the relative difference between the number of signal observed in-plane and out-of-plane:
+and therefore it is possible to compute $v_2$ from the relative 
+difference between the number of signal observed in-plane and out-of-plane:
 \begin{equation}
 \label{eq:anis}
  v_2 = \frac{1}{R_2} \frac{\pi}{4}\frac{N_\text{in-plane}-N_\text{out-plane}}{N_\text{in-plane}+N_\text{out-plane}}.
 \end{equation}
-The factor $\frac{1}{R_2}$ is the correction for the finite resolution in the
-estimation of the symmetry plane $\Psi_2$ via the EP $\psi_2$.
-The resolution of the V0 EP was calculated using three
-sub-events of charged particles in the V0 itself and in the 
-positive and negative $\eta$ regions of the TPC~\cite{Poskanzer:1998yz}.
+The contribution of all odd harmonics, 
+as well as $v_4$ and $v_8$, to the $v_2$ value induce the same average 
+contribution to $N_\text{in-plane}$ and $N_\text{out-of-plane}$ 
+due to symmetry, and therefore they do not affect $v_2$ calculated with 
+Eq.~\ref{eq:anis}. The contribution of $v_6$, $v_10$ and higher 
+harmonics is assumed to be negligible based on the 
+values measured for light-flavour hadrons~\cite{Aamodt:2011by,ATLAS:2012atc}.
+The factor $\frac{1}{R_2}$ in Eq.~\ref{eq:anis} is the correction for the finite resolution in the
+estimate of the symmetry plane $\Psi_2$ via the event plane $\psi_2$.
+Since the V0s sub-detectors (used to calculate the event plane angle)
+cover different rapidity regions and measure different multiplicities, at least 
+three sub-events of charged particles are required to compute the event plane resolution.
+They are the V0 detector itself and the 
+positive and negative $\eta$ regions of the TPC.
+The average resolution value in the 30-50\% centrality class is
+$\langle R_2 \rangle = 0.7744$. The statistical uncertainty on 
+$\langle R_2 \rangle$ is negligible. 
 The separation of at least 0.9 units of pseudo-rapidity 
-($|\Delta\eta|>0.9$) between the D mesons 
-and the particles used in the $\psi_2$ calculation
+($|\Delta\eta|>0.9$) between the D mesons (reconstructed in the TPC)
+and the particles (detected with V0) used in the $\psi_2$ calculation
 suppresses non-flow contributions (i.e.\,correlations not 
 induced by the collective expansion but rather by decays and 
 jet production) in the $v_2$ measurement.
@@ -974,44 +1002,43 @@ jet production) in the $v_2$ measurement.
 therefore Eq.~\ref{eq:anis} can be applied using the 
 D-meson raw yields, without an efficiency correction.
 
- \section{In- and out-of-plane signal extraction}
+ \subsection{In- and out-of-plane signal extraction}
  \label{sec:SigExtracV2}
  The topological selections used for the extraction of
- in-plane and out-of-plane $\Ds$ yields in the 30-50\% class
+ in-plane and out-of-plane $\Dspm$ yields in the 30-50\% centrality class
  are very similar to those reported in Table~\ref{tab:topologicalselections_ds_3050} for the
- $\varphi$-integrated yield in the same centrality class.
- The only selections which were slightly released in some $\pt$
- intervals are those
- on NDL$_{\rm xy}$, $\sigma_{vertex}$, $\Delta M$ and $|\cos^3 \theta^\prime({\rm K})|$.
-The $\Ds$ in- and out-of-plane invariant-mass distributions, 
+ $\varphi$-integrated yields in the same centrality class.
+ Only the selections on NDL$_{\rm xy}$, $\sigma_{vertex}$, $\Delta M$ 
+ and $|\cos^3 \theta^\prime({\rm K})|$ were slightly released in some $\pt$
+ intervals. The $\Dspm$ in- and out-of-plane invariant-mass distributions, 
 with the event plane determined by the V0 multiplicity 
-in the centrality class 30-50\%, are shown in Fig.~\ref{fig:deltaphibinsds} 
+in the 30-50\% centrality class, are shown in Fig.~\ref{fig:deltaphibinsds} 
 for the interval $6 < \pt < 8 \, \Gevc$.
 The fit was performed using a double Gaussian function to model 
-the $\Ds$ peak and the contribution of the $\DtoKpipi$ and 
+the $\Ds$ peak and the contribution of the $\DplustoKKpi$ and 
 an exponential shape to model the background.
-The mean and the width of the Gaussian were fixed to those obtained from a fit to
+The mean and the width of the Gaussians were fixed to those obtained from a fit to
 the invariant-mass distribution integrated over $\Delta \varphi$, 
 where the signal has higher statistical significance. 
-In Fig.~\ref{fig:deltaphibinsds}, one can also see the comparison of Gaussian pole and 
-sigma for the in/out-of-plane and the $\phi$-integrated yield extraction.
-The yields in the two $\phi$ regions were extracted in the 30-50\% centrality
-class, for 5 $\pt$ intervals between 2 and 16 $\Gevc$.
-The values of the extracted raw yields and the signal over 
-background for the in-plane and out-of-plane invariant-mass fits 
+Fig.~\ref{fig:deltaphibinsds} shows the values of Gaussian means and 
+widths for the in-/out-of-plane and the $\varphi$-integrated extracted yields.
+The yields in the two $\varphi$ regions were extracted in five $\pt$ 
+intervals between 2 and 16 $\Gevc$.
+The values of the extracted raw yields and the signal-over-background 
+ratios for the in-plane and out-of-plane invariant-mass fits 
 are reported in Table~\ref{signalsDs}.
 
 \begin{figure}
 \centering
  \includegraphics[width=.7\textwidth]{FigCap5/MassDsInOutOfPlane_PbPb3050_5TeV_pt6-8.pdf}
-\caption{$\Ds$ invariant mass distribution in the 2 $\Delta\phi$ and 5 $\pt$ intervals.}
+\caption{$\Dspm$ in- and out-of-plane invariant-mass distributions in the interval $6 < \pt <8 \, \Gevc$.}
 \label{fig:deltaphibinsds}
 \end{figure}
 \begin{figure}
 \centering
  \includegraphics[width=.43\textwidth]{FigCap5/MeanDsInOutFull.pdf}
  \includegraphics[width=.43\textwidth]{FigCap5/SigmaDsInOutFull.pdf}
-\caption{Left: $\Ds$ invariant mass mean from the $\varphi$-integrated, in-plane and out-of-plane fits. Right: comparison of the invariant mass sigma from the in-plane and out-of-plane fits to the one obtained from the $\varphi$-integrated fit.}
+\caption{$\Dspm$ means (left) and widths (right) from the Gaussian fits for $\varphi$-integrated, in-plane and out-of-plane fits. For left panel, in dashed green colour the value from PDG is also shown.}
 \label{fig:deltaphibinsds}
 \end{figure}
 
@@ -1033,90 +1060,74 @@ are reported in Table~\ref{signalsDs}.
 12-16 & $25 \pm 6$  & 3.00 & $18 \pm 5$  & 1.89 \\
 \hline
   \end{tabular}
- \caption{$\Ds$ raw yields and signal over background per $\pt$ intervals and $\Delta\phi$ region.}
+ \caption{$\Dspm$ raw yields and signal-over-background ratios per $\pt$ intervals and $\Delta\varphi$ region.}
  \label{signalsDs}
  \end{center}
 \end{table}  
 
-\section{B feed-down subtraction}
+\subsection{B feed-down subtraction}
 \label{sec:FDv2}
-The measured $\Ds$ meson yield includes a contribution (of about 85-90\%)
+The measured $\Dspm$ meson raw yield includes a contribution (around 90\%)
 from prompt D mesons and a contribution from beauty feed-down.
-Considering that $v_2$ is additive, the measured $v_2$ is therefore given by:
+Considering that $v_2$ is an additive quantity, the measured $v_2$ is therefore given by:
 \begin{equation}
 \label{eq:bfeed}
-v_2^{\rm obs}=f_{\rm prompt} v_2^{\rm promptD} + (1-f_{\rm prompt})v_2^{\rm feed-down}
+v_2^{\rm obs}=f_{\rm prompt} v_2^{\rm promptD} + (1-f_{\rm prompt})v_2^{\rm feed-down}.
 \end{equation}
-where $f_{\rm prompt}$ is the fraction of $\Ds$ mesons
- promptly produced in the measured yield.
 The value of $f_{\rm prompt}$ is estimated using the FONLL prediction for B mesons, 
 the B$\rightarrow$D decay kinematics from the EvtGen package and
 the Monte Carlo efficiencies for feed-down D mesons, via Eq.~\ref{eq:fprAA},
-with the same hypothesis for the $\RAA^{\rm feed-down}$ of Sec.~\ref{sec:CorrectionsAA}.
-
-To estimate the contribution of the feed-down D mesons on the measured $v_2$ 
-an hypothesis on the unknown $v_2^{\rm feed-down}$ of D mesons from B decays, 
-which is sensitive to the dynamics of $b$ quarks in the medium, is needed.
-We assumed as range for the hypothesis on 
-the anisotropy of feed-down D mesons $0<v_2^{\rm feed-down}<v_2^{\rm prompt}$.
+with the same hypothesis for the $\RAA^{\rm feed-down}$ of 
+Sec.~\ref{sec:CorrectionsAA}.
+To calculate $v_{\rm 2}^{\rm prompt}$, a hypothesis on 
+$v_{\rm 2}^{\rm feed\textnormal{-}down}$ is used.
+The measured $v_2$ of non-prompt J/$\psi$~\cite{Khachatryan:2016ypw} 
+and the available model calculations~\cite{Aichelin:2012ww,Uphoff:2012gb,Greco:2007sz} 
+suggest that $0<v_{\rm 2}^{\rm feed\textnormal{-}down}<v_{\rm 2}^{\rm prompt}$.
 The lower limit, $v_2^{\rm feed-down}=0$, corresponds to the assumptions:
 \begin{itemize}
 \item{at low $\pt$, where $v_2$ is determined by collective motions, 
-$b$ quarks do not flow with the medium and there is not contribution to 
-the B anisotropy from the light quark;}
+$b$ quarks do not flow and hence do not contribute to the anisotropy;}
 \item{at high $\pt$, where $v_2$ is determined by azimuthal dependent 
 energy loss, due to different in-plane and out-of-plane path lengths, 
 $b$ quarks are not affected by the medium.}
 \end{itemize}
-The upper limit, $v_2^{\rm feed-down}=v_2^{\rm prompt}$, corresponds to assuming:
+The upper limit, $v_2^{\rm feed-down}=v_2^{\rm prompt}$, corresponds to assuming that:
 \begin{itemize}
-\item{at low $\pt$ $b$ quarks are as thermalised as $c$ quarks;}
-\item{at high $\pt$ $b$ quark energy loss is the same as that of $c$ quarks.}
+\item{at low $\pt$, $b$ quarks are as thermalised as $c$ quarks;}
+\item{at high $\pt$, $b$ and $c$ quarks lose same amount of energy interacting with the medium.}
 \end{itemize}
-
-
-The assumed range for $v_2^{\rm feed-down}$ includes the measured $v_2$ 
-of non-prompt $J\psi$ at central rapidity~\cite{Khachatryan:2016ypw} and the available 
-model predictions~\cite{Aichelin:2012ww,Uphoff:2012gb,Greco:2007sz,Aichelin:2012ww, Uphoff:2011ad, He:2012df}. 
-In particular, we assumed a uniform probability distribution of $v_2$ in this interval. 
-Therefore the central value of the prompt D-meson $v_2$ was assigned considering 
+Assuming a uniform probability distribution of $v_{\rm 2}^{\rm feed\textnormal{-}down}$ in this interval,
+the central value for $v_{\rm 2}^{\rm prompt}$ is calculated 
+considering:
 \begin{equation}
-v_2^{\rm feed-down}=v_2^{\rm prompt}/2.
+\label{eq:hypoFD}
+v_{\rm 2}^{\rm feed\textnormal{-}down}=v_{\rm 2}^{\rm prompt}/2,
+\end{equation}
+thus:
+\begin{equation}
+\label{eq:finalv2}
+v_{\rm 2}^{\rm prompt}= 2\,v_{\rm 2}^{\rm obs}/(1+f_{\rm prompt}).
 \end{equation}
 
 \section{Systematic uncertainties on $v_2$}
 \label{sec:systsectionV2}
-The sources of systematic uncertainty affecting the measurement of 
-$\Ds$ $v_2$ are related to the signal extraction from the invariant-mass
-distribution, B feed-down subtraction, non-flow effects 
-and centrality dependence in the EP resolution correction $R_2$.
-with the event plane method that we are considering are:
+The main sources of systematic uncertainty affecting the measurement of 
+$v_2$ are related to: 
 \begin{itemize}
-\item{the systematic uncertainty on the yield extraction from the invariant mass distributions}
-\item{the systematic uncertainty coming from the variation 
-in the measured $v_2$ with different sets of cuts. Since we do not use efficiencies extracted 
-from the Monte Carlo, the cut variation is not aimed at estimating the residual
-differences between data and simulations in the description of the cut 
-variables. Rather it tests the stability of $v_2$ extraction against variations
-of the significance and signal over background of the D meson peaks.}
-\item{the systematic uncertainty due to the event plane resolution variation 
-inside the wide centrality bin. The measured D mesons, whose production 
-scales with the number of binary nucleon-nucleon collisions, are preferentially
-coming from more central events inside the considered bin}
-\item{the systematic uncertainty related to the flatness of the event plane distribution}
-%\item{the systematic uncertainty due to the difference in the
-%event plane resolution estimated with different methods.}
+\item signal extraction from the invariant-mass
+distribution;
+\item centrality dependence of resolution term $R_2$;
+\item B feed-down subtraction;
+\item non-flow effects;
+\item residual non-flatness of the event plane.
 \end{itemize}
 
 \subsection{Yield extraction systematics}
 \label{sec:rawYv2}
-The signal extraction is performed with a fit to the invariant mass
-distribution of the candidates, under the assumptions of an
-exponential shape for the background for $\Ds$ and a
-Gaussian shape for the signal.  
 The systematic uncertainty on the yield extraction was 
-estimated by testing different the fit parameters via a multiple trial approach as
-described in Sec.~\ref{}. Fits were performed by varying: (i) background fit functions
+estimated by testing different fit configurations.
+Fits were performed by varying: (i) background fit functions
 (exponential, first and second order polynomial functions), (ii) invariant-mass bin
 widths, (iii) lower and upper limits in the fit, (iv) Gaussian peak widths free or fixed to the value
 extracted from the $\varphi$-integrated distribution. A bin-counting procedure
@@ -1125,40 +1136,26 @@ residuals between the $i^{th}$ trial and the reference $v_2$ value,
 $v_2^{trial}-v_2^{ref}$, were obtained in each $\pt$ interval. 
 The systematic uncertainty was evaluated
 considering both the shift with respect to zero and the RMS of the residual
-distributions. In the case of $\Ds$, the mean value of the residual distribution, 
- together with its error (the RMS of the residual distribution), for 
- the different trials using the fit with single or double Gaussian, 
- and with free/fixed sigma, is shown in Fig.~\ref{fig:Dsv2residuals} 
- for the different $\pt$ intervals.
-
-\begin{figure}
- \centering
- \includegraphics[width=.9\textwidth]{FigCap5/resultsComparison_sFixToMC_ExpoLin.eps}
- \caption{Mean values of the residual $\vtwo-\vtwo^{ref}$ distributions for $\Ds$
-   meson. Uncertainties are the RMS of such distributions.}\label{fig:Dsv2residuals}
-\end{figure} 
+distributions. 
 
 \subsection{Event Plane resolution}
 \label{sec:EPreso}
-An other source of systematic uncertainty that was considered is 
-related to the event plane resolution.
-The centrality dependence of the event plane resolution 
-(see left panel of Fig.~\ref{fig:dplus-4ep} as an example) gives rise to
-an uncertainty because the centrality intervals used to measure the D-meson
-yield are wide and D-meson production (scaling as the number of binary 
-collisions) is more probable in more central events.
-The uncertainty owing to the centrality dependence of the EP
-resolution was estimated from the difference between two ways to
-define the average resolution in the centrality class used in the
-analysis, starting from the resolutions in fine centrality intervals,
-namely, a plain arithmetic average and an average weighted with the
-D-meson yield measured in smaller centrality classes and
-with $N_{\rm coll}$ values (2.5\% wide). The
-latter was estimated using $\Dzero$ meson raw yields in wide $\pt$
-intervals (2-4, 4-8, 8-16 $\GeV/c$) and the sum of the two $\varphi$
-intervals, to reduce the statistical fluctuations. The difference
-between these averages was found to be about 2\% for the 30–50\%
-centrality class.
+The EP resolution correction $R_2$ depends on the 
+collision centrality~\cite{Abelev:2014ipa}.
+The value used in Eq.~(\ref{eq:twobins}) was computed
+ assuming a uniform distribution of the D-meson yield within 
+ the centrality class. The distribution of D mesons within the 
+ centrality class is not uniform, because their production yield
+scales approximately with the number of nucleon-nucleon collisions.
+This value was compared with those obtained from two alternative approaches
+based on weighted averages of the $R_2$ values in narrow centrality 
+intervals, using as weights either the D-meson yields or the number of 
+nucleon-nucleon collisions. 
+In addition, to account for the presence of possible non-flow effects in the estimation of $R_2$, 
+its value was re-computed after introducing two different pseudo-rapidity gaps between the
+sub-events of the TPC tracks with positive/negative $\eta$. 
+A systematic uncertainty of 2\% on $R_2$ was estimated from 
+all these studies.
 
 \subsection{Non-flow contributions}
 \label{sec:NonFlow}
