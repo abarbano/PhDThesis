@@ -321,26 +321,26 @@ prompt efficiencies at high $\pt$.
  \label{fig:d0}
 \end{figure}
 Studies on the impact parameter resolution on the 
-2015 data sample, revealed that this resolution is 
+2015 data sample revealed that this resolution is 
 slightly worse (by about 5-10 micron at all $\pt$) 
-than in Run1 (e.g. 2011 Pb-Pb data) and is not reproduced
+than in Run1 (e.g. 2011 Pb-Pb data) and its values are not fully reproduced
 in the MC (see Fig.~\ref{fig:d0}, left panel).
-The impact parameter distribution is shifted to negative 
-values by up to 20-30 micron at low $\pt$ and 
+Furthermore, the impact parameter distribution is shifted to negative 
+values by up to 10-15 micron at low $\pt$ and 
 decreasing to 5-10 micron at high $\pt$. The shift 
 depends on the azimuthal angle and is not described 
 in the MC (Fig.~\ref{fig:d0}, right panel). Current hypothesis is that part of the shift 
 is due to the presence of SPD modules that were not 
-included in the latest realignment (because they were
- included only after the alignement in the data taking). 
+included in the detector alignment (because they were
+ included only afterwards in the data taking). 
  The impact parameter resolution measured in data 
  was reproduced in MC by applying a scaling in the 
  MC the residuals ${\rm d}_0^{\rm true}-{\rm d}_0^{\rm reco}$ 
  according to the data-to-MC ratio of the impact parameter 
  resolutions. A correction to the shift of the d$_0$ mean in MC was 
- also introduced. The covariance matrix of the single track was also
- updated after the corrections, so not to introduce biases at the level
- of the D-meson topological variables. These corrections were verified
+ also introduced. The covariance matrix of the single track was 
+ updated after the corrections, in order not to introduce biases at the level
+ of D-meson topological variables. These corrections were verified
  to have negligible impact on D-meson efficiencies.\\
  
 
@@ -451,7 +451,7 @@ centrality class.
  \begin{center}
    \includegraphics[angle=0, width=15cm]{./FigCap5/cutbycut_invm_010.eps}
  \end{center}
- \caption{Distribution of $\Ds$ corrected yields in the 0-10\% centrality class, obtained varying the selection on the topological variables with respect to the default value.}
+ \caption{Distribution of $\Ds$ corrected yields in the 0-10\% centrality class, obtained varying the selection on the invariant mass of the reconstructed $K^+K^-$ pair and relative values of reduced $\chi^2$, significance, selection efficiency, selection efficiency normalised to square root of background.}
  \label{DsCutVar_010} 
 \end{figure}
 \begin{figure}[!h]
@@ -477,8 +477,8 @@ reconstructed K$^+$K$^-$ invariant-mass pair is shown in Fig.~\ref{fig:DsCutVar_
 The top-left panel shows the ratios of the corrected yields 
 (at a specific cut value) to the yield obtained with the default
 cut, in different colours for the different $\pt$ intervals.
-Some systematic trends are visible when releasing the selection
-on this variable with respect the default cut (ratio at 1). 
+Some systematic trends are visible when the selection
+on this variable is released with respect to the default cut (ratio values $>1$). 
 This behaviour could be due to a not-reliable yield
 extraction as well as to a different $\pt$ resolutions in data and in MC.
 The statistical significance (top-right panel) of the yields with systematic trend shows indeed good
@@ -544,8 +544,8 @@ was carried out with the N$\sigma$ distributions of time-of-flight signals in TO
 for the above selected pions from V0 decays, to obtained the systematics on pion identification in TOF.
 To obtain the uncertainty on kaon identification in TPC, a tight cut on the PID 
 signal in TOF, requiring the signal to be within N$\sigma < 0.25\sigma$ from kaon hypothesis, was appliednon. 
-The black curve in Fig.~\ref{fig:MCKaonsTPC}, for PID signal in TPC, was obtained
-from reconstructed track in the simulation that satisfy this selection.
+The black curve in Fig.~\ref{fig:MCKaonsTPC} shows the d$E$/d$x$ 
+N$\sigma$ values of reconstructed tracks in the simulation that satisfy this selection.
 Contaminations from other particle species are still present and they
 are shown in different colours in the same Fig.~\ref{fig:MCKaonsTPC}. 
 The black curve was fitted with a Gaussian shape 
@@ -572,7 +572,7 @@ in Sec.~\ref{sec:CutVarsystAA}. The correlation between the
 $\pt$ of the daughter track and that of $\Ds$ mesons is visible in the
 left panel of Fig.~\ref{fig:DsPIDsys}.
 The final values of the systematic uncertainties are around 
-3\% for the tighter (Sec.~\ref{Sec:PID}) PID selection (see $\Fig.~\ref{fig:DsPIDsys}$) and are negligible for the
+3\% for the tighter (Sec.~\ref{Sec:PID}) PID selection (see Fig.~\ref{fig:DsPIDsys}) and are negligible for the
 looser PID selection (Sec.~\ref{sec:PIDsystPP}).
 
 \begin{figure}[!h]
@@ -689,25 +689,32 @@ The observed discrepancy in the results between the two cases
 may be due to the less precise estimate
 of the fraction of primary tracks due to looser resolution power as well as
 to a non valid assumption on the correction factor. For this reason, the systematic 
-uncertainty on the ITS-TPC matching efficiency was
+uncertainty on the ITS-TPC matching efficiency for the single track was
 assigned by averaging the two results, resulting in
-2.5-4\% for $0.5 < \pt < 5 \, \Gevc$, 2.5-1\% for $5 < \pt < 10 \, \Gevc$, 1\% for $10 < \pt < 15\, \Gevc$.
+2.5-4\% for $0.5 < \pt < 5 \, \Gevc$, 2.5-1\% for $5 < \pt < 10 \, \Gevc$, 1\% for $10 < \pt < 15\, \Gevc$.\\
 
 
+The values of the systematic uncertainties on the $\pt$-dependent corrected yields
+are summarised in Tab.~\ref{tab:sysunc_yieldtable}.
 \begin{table}[!h]
 \centering
 \begin{tabular}{|l|l|l|c|c|c|c|c|}
 \hline
-\multicolumn{6}{|c|}{0--10\% centrality class}       \\                                                                                                                                                                                                                                               \hline
-$\pt$ interval ($\gev/c$)           & 2--4        &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
-Yield extraction & & & & & \\
-Tracking efficiency & & & & & \\
-PID efficiency & & & & & \\
-Cut efficiency & & & & & \\
-MC $\pt$ shape & & & & & \\
-Feed-down subtraction & & & & & \\
-Branching ratio & & & & & \\
-Total & & & & & \\
+\multicolumn{5}{|c|}{0--10\% centrality class}       \\                                                                                                                                                                                                                                               \hline
+$\pt$ interval ($\gev/c$)        &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
+\hline
+Yield extraction & 6\% & 6\%& 6\%& 6\%\\
+Tracking efficiency & 11\% &11.5\% &11.5\% & 10\% \\
+PID efficiency & 3\%& 3\% & 0\%&  0\%\\
+Cut efficiency & 13\%& 10\%& 10\%& 10\%\\
+MC $\pt$ shape & 7\%& 2\%& 1\%& 0\% \\
+Feed-down (FONLL scales) & 2.9\% & 4.6\%& 3.9\%& 3.7\%\\
+Feed-down ($\RAA^{\rm feed-down}$ hypothesis) & 10.3\%& 15.7\%& 14.7\%& 15.6\% \\
+\hline
+Branching ratio & \multicolumn{4}{c|}{3.5\%}  \\
+\hline
+\hline
+Total & $^{+20.7\%}_{-22.8\%}$& $^{+18.6\%}_{-23.6\%}$ & $^{+17.9\%}_{-22.5\%}$ & $^{+17.1\%}_{-22.3\%}$  \\
 \hline
 \end{tabular}
 \caption{Relative systematic uncertainties on the $\pt$-differential yields of $\Ds$ in the 0-10\% centrality class.}
@@ -751,14 +758,13 @@ $\pt$-differential $\Dsplus$-meson cross section at $\sqrt s=7$~TeV.
 The second contribution is the $\pt$-dependent scaling factor 
 from $\sqrts=7~\tev$ to $\sqrts=5.02~\tev$, determined by varying
 the FONLL parameters (charm-quark mass, factorisation and renormalisation scales) 
-as described in~\cite{Averbeck:2011ga}. This uncertainty ranges from 
-$^{+17}_{-\phantom{1}4}\%$ for $1<\pt<2~\gev/c$ to about $\pm3\%$ for $\pt>10~\gev/c$.
+as described in~\cite{Averbeck:2011ga}. 
 In the interval $12<\pt<16~\Gevc$, the FONLL calculation at 
 $\sqrt s=5.02~\tev$~\cite{Cacciari:2012ny} was used as a reference 
 by scaling the values to match the central value of the data at lower $\pt$. 
 This procedure is described in Ref.~\cite{Adam:2015sza}. The total 
 systematic uncertainty on the $\pt$-extrapolated cross section is about 
-$^{+42}_{-29}\%$ for $\Ds$ in the $\pt$ interval 12--16~$\Gevc$.
+$^{+29}_{-42}\%$ for $\Ds$ in the $\pt$ interval 12--16~$\Gevc$.
 
 
 \subsection{Normalization}
@@ -773,14 +779,20 @@ ratio.
 
 \begin{table}[!h]
 \centering
-\begin{tabular}{|l|l|l|c|c|c|c|c|}
+\begin{tabular}{|l|l|l|c|c|c|c|}
 \hline
-\multicolumn{6}{|c|}{0--10\% centrality class}       \\                                                                                                                                                                                                                                               \hline
-$\pt$ interval ($\gev/c$)           & 2--4        &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
-Data syst. & & & & & \\
-FONLL scales & & & & & \\
-Raa hypo & & & & & \\
-Normalisation & & & & & \\
+\multicolumn{5}{|c|}{0--10\% centrality class}       \\                                                                                                                                                                                                                                               \hline
+$\pt$ interval ($\gev/c$)         &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
+\hline
+Data syst. AA          & 20.2\%& 17\%& 17\%& 15.4\%\\
+Data syst. pp + $\s$-scaling     & $^{+13.2\%}_{-13.7\%}$  &$^{+12.9\%}_{-13.2\%}$ &$^{+12.9\%}_{-13.0\%} $ &$^{+29.3\%}_{-42.2\%}$  \\
+Feed-down (FONLL scales)    &  $^{+1.5\%}_{-1.0\%}$& $^{+0.8\%}_{-0.4\%}$&  $^{+1.1\%}_{-0.7\%}$&  $^{+2.7\%}_{-3.2\%}$\\
+Feed-down ($\RAA^{\rm feed-down}$ hypothesis)          & $^{+3.6\%}_{-9.6\%}$& $^{+5.8\%}_{-14.4\%}$& $^{+5.5\%}_{-13.6\%}$& $^{+5.8\%}_{-14.4\%}$\\
+\hline
+Normalisation     & \multicolumn{4}{|c|}{4.8\%} \\
+\hline
+\hline
+Total  & $^{+24.5\%}_{-26.3\%}$& $^{+22.1\%}_{-25.6\%}$& $^{+21.7\%}_{-25.0\%}$&$^{+33.8\%}_{-43.4\%}$\\
 \hline
 \end{tabular}
 \caption{Relative systematic uncertainties on the $\RAA$ of $\Ds$ in the 0-10\% centrality class.}
@@ -905,13 +917,10 @@ The determination of the event plane in ALICE can be performed using
 either the tracks reconstructed in the TPC, which has an uniform
 azimuthal coverage in the central rapidity region, or the V0
 detectors, located at forward ($2.8<\eta<5.1$) and backward
-($-3.7<\eta<-1.7$) pseudo-rapidity.\\
+($-3.7<\eta<-1.7$) pseudo-rapidity.
 In this analysis the event plane was obtained from the 
 signals produced by the charged particles in the eight 
-azimuthal sectors of each V0 array.
-
-
-Since the V0s sub-detectors cover different rapidity 
+azimuthal sectors of each V0 array. Since the V0s sub-detectors cover different rapidity 
 regions and measure different multiplicities, at least 
 three sub-events of charged particles are required to 
 compute the event plane resolution.
@@ -943,17 +952,17 @@ The resolution obtained with three sub-events and full V0 for the event
 plane measurement (default configuration) and the 
 resolutions obtained with configurations 1 or 2 are very similar. 
 The current uncertainties on the $v_2$ values do not allow to
-appreciate different non-flow contributions using different detectors
+appreciate different non-flow contributions (i.e.\,correlations not 
+induced by the collective expansion but rather by decays and 
+jet production) using different detectors
 for the event plane measurement, thus, introducing different
 rapidity gaps between the tracks used for the event plane measurement
-and the D mesons (see Fig.~\ref{fig:QoverMCalibration}, left panel,
+and the D mesons (see left panel of Fig.~\ref{fig:QoverMCalibration},
 as an example for the $v_2$ of $\Ds$ meson with different detector configurations).
-However, the separation of at least 0.9 units of pseudo-rapidity 
+Nevertheless, the separation of at least 0.9 units of pseudo-rapidity 
 ($|\Delta\eta|>0.9$) between the D mesons (reconstructed in the TPC)
 and the particles (detected with V0) used in the $\psi_2$ calculation
-suppresses non-flow contributions (i.e.\,correlations not 
-induced by the collective expansion but rather by decays and 
-jet production) in the $v_2$ measurement with respect
+suppresses non-flow contributions in the $v_2$ measurement with respect
 to the measurement of the event plane considering tracks in the same
 pseudo-rapidity region of the D meson candidates (TPC event planes).
 \\
@@ -977,8 +986,9 @@ The resolution of the V0A (V0C)
 
 \begin{figure}
 \centering
- \includegraphics[width=0.6\textwidth]{FigCap5/V0EvPlaneDitrib.eps}
- \caption{Event plane distributions obtained with the V0 multiplicity after gain equalisation, re-centering and alignment corrections, using the $Q/M$ normalisation.}
+  \includegraphics[width=0.45\textwidth]{FigCap5/v2_diffDetComparison.eps}
+ \includegraphics[width=0.53\textwidth]{FigCap5/V0EvPlaneDitrib.eps}
+ \caption{Left: $\Ds$ $v_2$ calculated with different detector configurations. Right: event-plane angle distributions obtained with the V0 multiplicity after gain equalisation, re-centering and alignment corrections, using the $Q/M$ normalisation.}
    \label{fig:QoverMCalibration}
 \end{figure}
 
@@ -988,32 +998,23 @@ The resolution of the V0A (V0C)
 Effects of non-uniformity of the detectors can generate 
 non-flat distribution of the event planes.
 For this purpose, a gain equalisation of individual 
-V0 detector channels was applied: $M_c' = M_c / \langle M_c \rangle$, 
-where $M_c$ is the multiplicity in a given channel, as
-well as a re-centering of the distributions of the components
-of $\vec{Q}_n$ vector ($X_n$, $Y_n$), by subtracting
-the ($X_n$, $Y_n$) values averaged over all events:
+V0 detector channels was applied, correcting the multiplicity $M_c$ 
+as: $M_c' = M_c / \langle M_c \rangle$. 
+A re-centering of the distributions of the components
+of $\vec{Q}_n$ vector ($X_n$, $Y_n$) can also be applied, by subtracting
+the ($\langle X_n\rangle$, $\langle Y_n \rangle$) values averaged over all events:
 \begin{equation}
 \begin{split}
 \emph{{X}}_n' =& \emph{X}_n - \langle \emph{X}_n \rangle,\\
 \emph{{Y}}_n' = &\emph{Y}_n - \langle \emph{Y}_n \rangle.
 \end{split}
 \end{equation}
-Further corrections can be applied, like for example
-a shifting of $\vec{Q}_n$ vector: one fits the non-flat distribution of 
-event plane $\psi_n$ averaged over many events with a Fourier expansion 
-and calculates the shifts for $\psi_n$ of each event necessary to force
-a flat distribution on average.
-Furthermore, the $\vec{Q}_n$ vector was normalised for the
+Further corrections can be introduced but, as the right panel of 
+Fig.~\ref{fig:QoverMCalibration} shows, already the re-centering
+procedure leaves unaffected the event-plane distribution.
+The $\vec{Q}_n$ vector was normalised for the
 multiplicity M of the event to reduce the sensitivity to multiplicity
 fluctuations. 
-Fig.~\ref{} shows the event plane
-distribution obtained with the $\vec{Q}_n/M$ normalisation using 
-V0 detector, after gain equalisation, re-centering and shifting calibration steps. 
-Only the first two corrections were applied for the final
-$\vec{Q}_n$ computation, since the shifting procedure leaves
-unaffected the event-plane distribution.
-
 
 
 \subsection{Event-plane based methods for $v_2$ extraction} 
@@ -1029,7 +1030,7 @@ where $k$ is a normalisation constant.
 The $v_2$ coefficient can be obtained by integrating Eq.~\ref{eq:dNdphi}
 in two $\Delta \varphi$ intervals and including a correction for the
 resolution. In the analysis presented here, the sample of candidates was 
-divided in two $\Delta\phi$ regions: the \textit{in-plane} region 
+divided in two $\Delta\phi$ regions: the \textit{in-plane} 
 and the \textit{out-of-plane} regions. We define the in-plane 
 region (centred on the event plane) as the region 
 $\left(-\frac{\pi}{4},\frac{\pi}{4}\right]\cup\left(\frac{3\pi}{4},\frac{5\pi}{4}\right]$ and
@@ -1056,7 +1057,7 @@ contribution to $N_\text{in-plane}$ and $N_\text{out-of-plane}$
 due to symmetry, and therefore they do not affect $v_2$ calculated with 
 Eq.~\ref{eq:anis}. The contribution of $v_6$, $v_{10}$ and higher 
 harmonics is assumed to be negligible based on the 
-values measured for light-flavour hadrons~\cite{Aamodt:2011by,ATLAS:2012atc}.
+values measured for light-flavour hadrons~\cite{Aamodt:2011by,ATLAS:2012at}.
 The factor $\frac{1}{R_2}$ in Eq.~\ref{eq:anis} is the correction for the finite resolution in the
 estimate of the symmetry plane $\Psi_2$ via the event plane $\psi_2$.
  Simulations showed that the D-meson reconstruction 
@@ -1075,7 +1076,7 @@ D-meson raw yields, without an efficiency correction.
  intervals. The $\Dspm$ in- and out-of-plane invariant-mass distributions, 
 with the event plane determined by the V0 multiplicity 
 in the 30-50\% centrality class, are shown in Fig.~\ref{fig:deltaphibinsds} 
-for the interval $6 < \pt < 8 \, \Gevc$.
+as an example for the interval $6 < \pt < 8 \, \Gevc$.
 The fit was performed using a double Gaussian function to model 
 the $\Ds$ peak and the contribution of the $\DplustoKKpi$ and 
 an exponential shape to model the background.
@@ -1098,8 +1099,7 @@ are reported in Table~\ref{signalsDs}.
 \end{figure}
 \begin{figure}
 \centering
- \includegraphics[width=.43\textwidth]{FigCap5/MeanDsInOutFull.pdf}
- \includegraphics[width=.43\textwidth]{FigCap5/SigmaDsInOutFull.pdf}
+ \includegraphics[width=.98\textwidth]{FigCap5/sigmaComparison.eps}
 \caption{$\Dspm$ means (left) and widths (right) from the Gaussian fits for $\varphi$-integrated, in-plane and out-of-plane fits. For left panel, in dashed green colour the value from PDG is also shown.}
 \label{fig:deltaphibinsds}
 \end{figure}
@@ -1154,7 +1154,7 @@ $b$ quarks do not flow and hence do not contribute to the anisotropy;}
 energy loss, due to different in-plane and out-of-plane path lengths, 
 $b$ quarks are not affected by the medium.}
 \end{itemize}
-The upper limit, $v_2^{\rm feed-down}=v_2^{\rm prompt}$, corresponds to assuming that:
+The upper limit, $v_2^{\rm feed-down}=v_2^{\rm prompt}$, implies that:
 \begin{itemize}
 \item{at low $\pt$, $b$ quarks are as thermalised as $c$ quarks;}
 \item{at high $\pt$, $b$ and $c$ quarks lose same amount of energy interacting with the medium.}
@@ -1192,8 +1192,7 @@ estimated by testing different fit configurations.
 Fits were performed by varying: (i) background fit functions
 (exponential, first and second order polynomial functions), (ii) invariant-mass bin
 widths, (iii) lower and upper limits in the fit, (iv) Gaussian peak widths free or fixed to the value
-extracted from the $\varphi$-integrated distribution. A bin-counting procedure
-was also performed. The distributions of
+extracted from the $\varphi$-integrated distribution. Furthermore, the yield was defined bycounting the histogram entries in the invariant-mass region of the signal, after subtracting the backgroundcontribution estimated from a fit to the side bands. The distributions of
 residuals between the $i^{th}$ trial and the reference $v_2$ value, 
 $v_2^{trial}-v_2^{ref}$, were obtained in each $\pt$ interval. 
 The systematic uncertainty was evaluated
@@ -1207,22 +1206,18 @@ The event-plane resolution correction $R_2$ depends on the
 collision centrality~\cite{Abelev:2014ipa}. Left-hand panel of Fig.~\ref{fig:EtaGapSyst} shows
 resolution $R_2$ as a function of the centrality in the interval
 30-50\%, computed using V0 arrays, negative and positive TPC
-regions, with and without the introduction of an 
-eta gap between the two considered TPC regions.
-The value used in Eq.~\ref{eq:anis} was computed
+regions, with and without the introduction of a 
+pseudo-rapidity gap between the two considered TPC regions.
+The value of resolution used in Eq.~\ref{eq:anis} was computed
  assuming a uniform distribution of the D-meson yield within 
- the centrality class. The distribution of D mesons within the 
- centrality class is not uniform, because their production yield
+ the centrality class, event though their production yield
 scales approximately with the number of nucleon-nucleon collisions.
-This value was compared with those obtained from two alternative approaches
+This value was hence compared with those obtained from two alternative approaches
 based on weighted averages of the $R_2$ values in narrow centrality 
 intervals, using as weights either the D-meson yields or the number of 
 nucleon-nucleon collisions. 
-In addition, to account for the presence of possible non-flow effects in the estimation of $R_2$, 
-its value was re-computed after introducing two different pseudo-rapidity gaps between the
-sub-events of the TPC tracks with positive/negative $\eta$. 
 A systematic uncertainty of 2\% on $R_2$ was estimated from 
-all these studies.
+this study.
 \begin{figure}
 \centering
   \includegraphics[width=.49\textwidth]{FigCap5/EPresolution_VZERO_NonFlowSyst.pdf}
@@ -1316,23 +1311,11 @@ The uncertainty on $f_{\rm prompt}$ is obtained from the
 variation of the renormalisation and factorisation scales and of the charm
 mass in the FONLL calculation, and from the variation of the 
 $R_{\rm AA}^{\rm feed\textnormal{-}down}$ hypothesis in  
-$\frac{1}{3}< R_{\rm AA}^{\rm feed\textnormal{-}down}/R_{\rm AA}^{\rm prompt}<3$~\cite{Adam:2015jda}. The values of $f_{\rm prompt}$ 
+$\frac{1}{3}< R_{\rm AA}^{\rm feed\textnormal{-}down}/R_{\rm AA}^{\rm prompt}<3$~\cite{Adam:2015jda}. 
+The values of $f_{\rm prompt}$ of $\Ds$ mesons
 are shown in Fig.~\ref{fig:fPrompt} and the error bars include the
 contributions of the FONLL scales variations and of the variation of
 the $\RAA$ hypothesis. The value of the absolute systematic uncertainty from feed-down ranges from 0.001 to 0.030.
-
-\section{Results}
-\label{sec:PbPbResults}
-The transverse-momentum distributions d$N$/d$\pt$ of prompt $\Ds$ meson 
-iares shown in Fig.~\ref{fig:DmesCorrYields010}
-for the 0--10\%, 30--50\% and 60--80\% centrality classes. 
-The vertical bars represent the statistical uncertainties, the empty boxes
-the systematic uncertainties from the data analysis, and the shaded boxes
-the systematic uncertainty due to the subtraction of the feed-down from 
-B-hadron decays. The uncertainty on the branching ratios is quoted separately.\\
-%Uncertainties on the pp cross section
-%normalisation and on the branching ratios are quoted separately.
-
 \begin{figure}[!t]
  \begin{center}
 \includegraphics[width=.49\textwidth]{FigCap5/Ds_dNdpt_010.pdf}
@@ -1346,15 +1329,29 @@ at $\sqrtsNN=5.02~\tev$. }
  \label{fig:DmesCorrYields010} 
 \end{figure} 
 
+\section{Results}
+\label{sec:PbPbResults}
+The transverse-momentum distributions d$N$/d$\pt$ of prompt $\Dsplus$ mesons 
+are shown in Fig.~\ref{fig:DmesCorrYields010}
+for the 0--10\%, 30--50\% and 60--80\% centrality classes. 
+They are compared to the corresponding pp cross-section
+reference multiplied by $\langle T_{\rm AA} \rangle$.
+The vertical bars represent the statistical uncertainties, the empty boxes
+the systematic uncertainties from the data analysis, and the shaded boxes
+the systematic uncertainty due to the subtraction of the feed-down from 
+B-hadron decays. The uncertainty on the branching ratios is quoted separately.\\
+%Uncertainties on the pp cross section
+%normalisation and on the branching ratios are quoted separately.
 
 
 
-Figure~\ref{fig:DmesRatio} shows in the top panels the $\pt$-dependent ratios of
-$\Ds/\Dzero$ and $\Ds/\Dplus$ meson yields in the three centrality classes and, for 
-comparison, the ratios of non-strange $\Dplus$/$\Dzero$, $\Dstar$/$\Dzero$ meson yields
-are shown in the bottom panels.
-The $\pt$-dependent yield ratios in pp collisions at $\sqrt s=7~\tev$~\cite{Acharya:2017jgo}
-are displayed in the same figure. 
+
+
+Figure~\ref{fig:DmesRatio} shows, in the top panels, the $\pt$-dependent ratios of
+$\Ds/\Dzero$ and $\Ds/\Dplus$ meson yields in the three centrality classes and in pp 
+collisions at $\s = 7$ TeV~\cite{Acharya:2017jgo}. For comparison, the ratios of 
+non-strange $\Dplus$/$\Dzero$, $\Dstar$/$\Dzero$ meson yields
+are also shown in the bottom panels.
 The $\Dplus$/$\Dzero$ and $\Dstar$/$\Dzero$ ratios are compatible in Pb-Pb and pp collisions, 
 indicating no significant modification of their relative abundances. 
 The $\Ds/\Dzero$ and $\Ds/\Dplus$ ratios are measured with better 
@@ -1363,7 +1360,7 @@ The central values of these ratios are larger in Pb-Pb than in pp collisions,
 in all three centrality classes, however the measurements in the two systems 
 are compatible within about one standard deviation of the combined uncertainties.\\
 
-\begin{figure}[!t]
+\begin{figure}[!h]
  \begin{center}
 \includegraphics[width=0.49\textwidth]{FigCap5/RatioDsD0-PbPb-010-3050-6080-502-pp-7.pdf}
 \includegraphics[width=0.49\textwidth]{FigCap5/RatioDsDplus-PbPb-010-3050-6080-502-pp-7.pdf}
@@ -1377,12 +1374,12 @@ Statistical (bars) and systematic (boxes) uncertainties are shown.}
 
 \begin{figure}[!h]
 \centering
-\includegraphics[angle=0, width=0.45\textwidth]{FigCap5/DmesonAverageDs_010_.eps}
-\includegraphics[angle=0, width=0.45\textwidth]{FigCap5/DmesonAverageDs_3050_.eps}
-\includegraphics[angle=0, width=0.45\textwidth]{FigCap5/DmesonAverageDs_6080_.eps}
+\includegraphics[angle=0, width=0.45\textwidth]{FigCap5/DmesonAverageDs_010.pdf}
+\includegraphics[angle=0, width=0.45\textwidth]{FigCap5/DmesonAverageDs_3050.pdf}
+\includegraphics[angle=0, width=0.45\textwidth]{FigCap5/DmesonAverageDs_6080.pdf}
  \caption{$\RAA$ 
-  of prompt $\Ds$ mesons 
-  compared with the average $\RAA$ of$\Dzero$, $\Dplus$ and $\Dstar$ mesons for the 
+  of prompt $\Dsplus$ mesons 
+  compared with the average $\RAA$ of $\Dzero$, $\Dplus$ and $\Dstar$ mesons for the 
 0--10\%, 30--50\% and 60--80\%. 
 Statistical (bars),  systematic (empty boxes), and normalisation (shaded box) 
 uncertainties are shown.}
@@ -1394,8 +1391,7 @@ uncertainties are shown.}
 The $\Raa$ of prompt $\Dsplus$ mesons is shown, for the three different centrality classes,
 in the Fig.~\ref{fig:DmesRaa}, where it is compared to the average $\Raa$ of non-strange 
 D mesons. The $\Dsplus$ nuclear modification factors in the 0--10\% 
-and 30--50\% centrality classes (right-hand panels of 
-Fig.~\ref{fig:DmesRaa}) show a suppression that is
+and 30--50\% centrality classes show a suppression that is
 maximal at $\pt=6$--$10~\gev/c$, where a reduction of the yields by
 a factor of about 3 and 1.5 with respect to the binary-scaled
  pp reference is observed in the two centrality classes, respectively.
@@ -1404,15 +1400,18 @@ with unity, without a pronounced dependence on $\pt$.
  The central values of the $\RAA$ are larger for $\Ds$ mesons, but the measurements 
  of strange and non-strange D-meson suppression are 
 compatible within one standard deviation of the combined 
-uncertainties, as in the case of the ratios shown in Fig.~\ref{fig:DmesRatio}.
+uncertainties, as in the case of the ratios shown in Fig.~\ref{fig:DmesRatio}.\\
+
+
 
 
 In Fig.~\ref{fig:DandDsRaaWithModels},  the non-strange and 
 strange D-meson $\RAA$ are compared with  
-the models that provide both observables. A large increase of
- the $\Ds$ $\RAA$ is expected in the two models, PHSD~\cite{Song:2015ykw} and 
- TAMU~\cite{He:2014cla}, in particular for $\pt<5~\gev/c$, with respect to 
- non-strange D mesons. Both the calculations are transport models.  
+the PHSD~\cite{Song:2015ykw} and 
+ TAMU~\cite{He:2014cla} models that provide both observables. A large increase of
+ the $\Ds$ $\RAA$ is expected in the two models, in particular for $\pt<5~\gev/c$, with respect to 
+ non-strange D mesons. Both the calculations are heavy-flavour transport code
+ based on a Langevin approach.
 In TAMU the interactions are only described by collisional (i.e.\,elastic) processes, 
 while in PHSD~\cite{Song:2015ykw} also energy loss from medium-induced gluon radiation
 is considered, in addition to collisional process.
@@ -1424,16 +1423,18 @@ the hadronic phase of the system evolution. It is interesting
  PHSD model and that the central values of the two measured $\RAA$ differ also 
 in the region around $\pt=10~\gev/c$, where the effect in the 
 models becomes small, although the present experimental 
-uncertainties prevent us from drawing a firm conclusion. 
+uncertainties prevent us from drawing a firm conclusion. \\
 
 
 \begin{figure}[!t]
  \begin{center}
-\includegraphics[angle=0, width=0.49\textwidth]{FigCap5/DmesonAverageDs_010_Models_logx_.eps}
+\includegraphics[angle=0, width=0.49\textwidth]{FigCap5/DmesonAverageDs_010_Models.pdf}
  \end{center}
  \caption{Average $\RAA$ of $\Dzero$, $\Dplus$ and $\Dstar$ mesons and $\RAA$ of $\Ds$ mesons in the 0--10\% centrality class compared with the PHSD~\cite{Song:2015ykw}  and TAMU~\cite{He:2014cla} model calculations.}
  \label{fig:DandDsRaaWithModels} 
 \end{figure} 
+
+
 
 
 The $v_2$ of prompt $\Ds$ mesons in
@@ -1443,30 +1444,29 @@ reconstructed mesons: this value was determined as the
 average of the $\pt$ distribution of candidates in the signal invariant-mass region, 
 after subtracting the contribution of the background 
 candidates estimated from the side bands.
-The average of the $v_2$ measurements for $\Ds$ mesons in
- the three $\pt$ intervals within $2<\pt<8~\gev/c$ is 
+The average $v_2$ of $\Ds$ meson in
+ the intervals $2<\pt<8~\gev/c$ is 
  positive with a significance of 2.6\,$\sigma$,
 where $\sigma$ is the uncertainty of the average $v_2$, 
 calculated using quadratic error propagation for the
  statistical and uncorrelated systematic uncertainties 
 (signal extraction) and linear propagation for the correlated 
 systematic uncertainties ($R_2$ and feed-down correction).
-The average $v_2$ and $\pt$ of $\Dzero$, $\Dplus$ and 
-$\Dstar$, shown in the right panel of Fig.~\ref{fig:v2_Ds}, was 
-computed using the inverse of the squared statistical uncertainties as weights. 
-The systematic uncertainties were propagated by
-treating the contributions from $R_2$
-and the feed-down correction as correlated among D-meson species. 
+The $v_2$ of $\Ds$ is compared to the average $v_2$ of
+$\Dzero$, $\Dplus$ and $\Dstar$ as a function of $\pt$ in the right
+panel of Fig.~\ref{fig:v2_Ds}.\\
 
 
-The simultaneous comparison of $\RAA$ and elliptic flow 
-$v_2$ measurements at $\sqrtsNN=5.02~\tev$~\cite{Acharya:2017qps} 
-with models can provide more stringent constraints to the 
-implementation of the interaction and hadronisation processes for heavy quarks. 
-This comparison is shown in Fig.~\ref{RAAandv2} for the $\RAA$  
-and $v_2$, in the 0--10\% and 30--50\% centrality classes
- respectively, together with models that provide 
- simultaneous description of the observables.
+In Fig.~\ref{fig:v2_models}, a comparison of $v_2$ measurement
+and theoretical calculations is presented.
+Both TAMU and PHSD predict similar $v_2$ for strange and non-strange
+D mesons. The TAMU model describes the magnitude of the elliptic flow, 
+but fails in reproducing the shape, probably due to the missing radiative term for the energy loss. 
+Larger statistical samples are essential to reduce the current
+uncertainties and will allow firmer constraints on the models
+via simultaneous comparison of $\RAA$ and elliptic flow $v_2$
+measurements.
+
 \begin{figure}[!t]
 \begin{center}
 \includegraphics[width=.49\textwidth]{FigCap5/Dsv2_3050.pdf}
@@ -1481,8 +1481,8 @@ of $\pt$, in 30-50\% Pb-Pb collisions. }
 
 \begin{figure*}[!t]
 \begin{center}
-\includegraphics[width=.49\textwidth]{FigCap5/D0DplusAverageDsv2_modelComparison_05May2017.pdf}
-\caption{}
+\includegraphics[width=.55\textwidth]{FigCap5/D0DplusAverageDsv2_modelComparison_05May2017.pdf}
+\caption{$v_2$ of $\Ds$ mesons in the 30-50\% centrality class compared with the PHSD~\cite{Song:2015ykw}  and TAMU~\cite{He:2014cla} model calculations.}
 \label{fig:v2_models} 
 \end{center}
 \end{figure*}
