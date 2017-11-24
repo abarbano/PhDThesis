@@ -1,17 +1,21 @@
 \chapter{$\Dsplus$ production in pp collisions at $\s$ = 7 TeV}
 \label{chap:pp}
-The 7 TeV sample is the one providing up to now the most precise pp reference for
+In this Chapter, the $\pt$-differential cross section of prompt charm-strange $\Dsplus$ meson 
+measured in the rapidity range $|y| < $0.5 in pp collisions at 
+$\sqrt{s}$ = 7 TeV with the ALICE detector will be discussed.
+The sample of pp collisions at $\sqrt{s}$ = 7 TeV is the one providing up to now the most precise reference for
 the nuclear modification factors $\RAA$ and $\RpPb$. 
-Furthermore, it constitutes a benchmark for pQCD predictions
+Furthermore, the measurement of D-meson cross-section in pp collisions 
+constitutes a benchmark for pQCD calculations
 at this energy.
 In comparison to previous ALICE publications based on the same data 
 sample~\cite{ALICE:2011aa,Abelev:2012tca,Adam:2016ich}, the present 
-results~\cite{Acharya:2017jgo} have total uncertainties reduced by a factor of about two. This improvement 
+results, which have been published in ~\cite{Acharya:2017jgo}, have total uncertainties reduced by a factor of about two. This improvement 
 has several sources: 
 \begin{itemize}
 \item changes in the detector calibration, alignment and track reconstruction 
 algorithm, which resulted in better $\pt$ resolution, thus higher signal-to-background ratio; 
-\item optimization of the D-meson selection procedure; 
+\item optimization of the $\Ds$-meson selection procedure; 
 \item refinements in the estimation of the systematic uncertainties, which is now more data-driven;
 \item a data sample with 20\% larger integrated luminosity.
 \end{itemize} 
@@ -22,13 +26,10 @@ The number of analysed events is 370M, while it was 300M for the previous recons
 
 \section{$\Dsplus$ reconstruction and strategy}
 \label{sec:DsRecoStrategy}
-The transverse momentum spectra of prompt charm-strange $\Dsplus$ meson 
-was measured in the rapidity range $|y| < $0.5 in pp collisions at 
-$\sqrt{s}$ = 7 TeV with the ALICE detector.\\
 The $\Dsplus$ mesons can not be directly detected because of 
 their mean proper decay length $c\tau = 150\pm 2$ $ \mu$m~\cite{Olive:2016xmw} 
 that prevent them from reaching the detectors. Hence, the analysis is 
-based on the reconstruction of the full decay chain.
+based on the reconstruction of the decay products.
 $\Dsplus$ mesons and their antiparticles were 
  reconstructed in the decay channel $\Dstophipi$ 
  (and its charge conjugate) followed by $\PhitoKK$ 
@@ -46,21 +47,21 @@ Other $\Dsplus$ decay channels can give rise to the same final products
  $\phi$ resonance, being the one that provides the best discrimination 
  between signal and background, was used in this analysis. 
  The $\Dsplus$ signal is extracted from 
- the invariant-mass\footnote{The invariant mass equation is \\ 
- \begin{align*} m^2 =& E^2 -\vec{p}^{\, 2} = (E_1 + E_2)^2 -(\vec{p_1} + \vec{p_2})^2 \\ m^2 =& m_1^2 +m_2^2 + 2(E_1E_2 -p_1p_2cos\theta) \end{align*}} 
+ the invariant-mass\footnote{The invariant mass is defined as:\\ 
+ \begin{align*} m^2 =& E^2 -\vec{p}^{\, 2} = (E_1 + E_2)^2 -(\vec{p_1} + \vec{p_2})^2 \\ m^2 =& m_1^2 +m_2^2 + 2(E_1E_2 -p_1p_2{\rm cos}\theta) \end{align*}} 
  distribution of the candidates, which are obtained by 
  combinatorial association of three reconstructed tracks with the correct 
  charge-sign combination. Hence, 
  the invariant-mass distribution will have a contribution from real 
  $\Dsplus$ decays ($\DstoKKpi$) and an other 
- from combinatorial background of uncorrelated tracks. In order to have a reduction of the
-  background, specific cuts were applied on the decay topology, on
+ from background candidates. In order to improve the signal-to-background
+ratio, specific cuts were applied on the decay topology, on
    the invariant mass of $\KK$ pair and on the particle identification, 
    as explained in the following sections. 
-$\Dsplus$ meson mean proper decay length of $\sim 150\, \mu$m  
+In particular, the selections based in the decay topology exploit the
+fact that $\Dsplus$ meson mean proper decay length of $\sim 150\, \mu$m  
 makes it possible to separate their decay vertex from the primary vertex
 of the pp interaction. 
-This gives a fundamental contribution in rejecting tracks which do not come from a displaced vertex.
 \begin{figure}[!t]
 \centering
 \includegraphics[width=12cm]{FigCap4/Ds.png}
@@ -75,19 +76,21 @@ be illustrated.
 
 
 \section{Single-track selections}
+\label{sec:singleTrCuts}
 Reconstructed tracks were selected by requiring:
 \begin{itemize}
+\item successful fit with the Kalman filter in TPC and ITS
 \item pseudo-rapidity $|\eta| < 0.8$
-\item minimum $\pt > 0.3~\GeV/c$
-\item at least 70 (out of a maximum of 159, i.e. number of TPC pad rows) 
+\item $\pt > 0.3~\GeV/c$
+\item at least 70 (out of a maximum of 159)
 associated space points in the TPC
-\item $\chi^2/\mathrm{ndf} < 2$ in the TPC (where ndf is the number of degrees of 
-freedom involved in the tracking procedure)
-\item at least two (out of six) hits in the ITS, out of which at least one 
-in either of the two SPD layers
 \item ratio of crossed rows (total number of hit TPC pad rows, i.e. corrected 
 for pad rows with missing signal) over findable clusters (pad rows which, 
 based on the geometry of the track, are possible clusters) in the TPC larger than 0.8
+\item $\chi^2/\mathrm{ndf} < 2$ for the track-momentum fit in the TPC (where ndf is the number of degrees of 
+freedom involved in the tracking procedure)
+\item at least two (out of six) hits in the ITS, out of which at least one 
+in either of the two SPD layers
 \end{itemize}
 For tracks that satisfy the above selection criteria, the transverse momentum 
 resolution is better than 1$\%$ at $\pt = 1\, \Gevc$ and about 2\% at $\pt = 10 \, \Gevc$. 
@@ -106,51 +109,57 @@ tracks after excluding the candidate decay tracks.
 \end{center}
 \end{figure}
 
-The single-track selection criteria reduce the $\Dsplus$-meson acceptance, which drops 
+The single-track selection criteria reduce the $\Dsplus$-meson acceptance
+in the rapidity-transverse momentum plane. The acceptance drops 
 steeply to zero for $|y| > 0.5$ at low $\pt$ and for $|y| > 0.8$ 
 at $\pt > 5~\Gevc$. A $\pt$-dependent fiducial acceptance region was therefore defined as 
 $|y| < y_{\mathrm{fid}}(\pt)$, with $y_{\mathrm{fid}}(\pt)$ increasing 
 from 0.5 to 0.8 in the transverse momentum range $0 < \pt < 5~\Gevc$ 
 according to a second-order polynomial function, and $y_{\mathrm{fid}}=0.8$ 
-for $\pt > 5~\Gevc$.
+for $\pt > 5~\Gevc$:
+\begin{equation}
+\label{eq:yFid}
+y_{\rm fid} (\pt) = -\frac{0.2}{15}\pt^2 + \frac{1.9}{15}\pt + 0.5.
+\end{equation}
 
 \section{Decay-chain and topology selection}
 \label{sec:topolPP}
-The single-track selection provids a certain number of candidate
- decay tracks. Then, $\Dspm$ candidates are build from combinatorial 
- association of three candidate tracks, with the correct combination of charge 
- sign. In this way, a huge number of candidates is created, most of them 
- being combinatorial background. The goal is to separate background from
-  $\Dspm$ signals (i.e. corresponding to real  $\Dspm$ decays). Candidates 
-  are thus selected by applying topological cuts, specific to the meson and its 
-  decay channel and varying as a function of the D-meson $\pt$.
+The $\Dspm$ candidates are build from combinatorial 
+ association of three candidate tracks passing the selection criteria 
+ described in Sec.~\ref{sec:singleTrCuts}, with the correct combination of charge 
+ signs. In this way, a huge number of candidates is created, most of them 
+ being combinatorial background. Strict selections are therefore needed to increase
+ the signal-to-background ratio and the statistical significance of the signal,
+ by applying cuts on variables that have the potential to discriminate
+ $\Dsplus$ signal (i.e. corresponding to real  $\Dspm$ decays) 
+ from background candidates. Candidates 
+  are thus selected by applying geometrical cuts on the displaced decay vertex 
+  topology, which are tuned as a function of the D-meson $\pt$.
 The main feature of the $\Dsplus$-decay topology is the presence of three tracks displaced from 
 the primary vertex and compatible with the hypothesis of being originated from 
 a common point. 
-The variable that allows one to evaluate the displacement of a track is the 
-impact parameter. The two most important detectors for the measurement
- of the impact parameter are the two SPD inner layers of the Inner Tracking System. \\
-Below, the topological cuts used for $\Dspm$ signal selection
- are explained in detail. Fig.~\ref{fig:var1},~\ref{fig:var2} and~\ref{fig:var3} complement
+The variable that allows one to evaluate the displacement of a track from the interaction point is the 
+impact parameter, whose resolution is mostly determined by the hits in the 
+two SPD inner layers of the Inner Tracking System. \\
+The other selections are applied by exploiting the secondary vertex
+which is reconstructed from the three tracks that compose the $\Ds$
+candidate. The topological cuts used for $\Dspm$ signal selection
+ are explained in detail below. Fig.~\ref{fig:var1},~\ref{fig:var2} and~\ref{fig:var3} complement
  the description, showing distributions of some of the below listed variables
  for signal and background candidates, in the interval $2 < \pt < 16 \, \Gevc$, 
  extracted from Monte Carlo production (PYTHIA~\cite{Sjostrand:2006za}) and data, respectively.
-  New topological variables were introduced with respect to the 
-  previous analysis of this sample. They are the projections of the cosine of 
-the Pointing angle and of the (normalised) decay length in the $xy$ plane 
- and the single-track normalised impact parameter residual.
 \begin{itemize}
 \item \textbf{Decay length $D_{len}$}, defined as the distance between
  primary and secondary vertex. $\Dspm$ decay vertexes are displaced by
-  a few hundred $\mu$m from the interaction vertex. Since real $\Dspm$ 
+  a few hundred $\mu$m from the interaction vertex ($c\tau \approx 150\, \mu$m). Since real $\Dspm$ 
   decay vertices have, on average, larger values of decay length than the
-   background, as can be seen in Fig.~\ref{fig:var1} (left), 
+   background, as it can be seen in Fig.~\ref{fig:var1} (left), 
    this allows one to discriminate signal from background. 
    Likely cut values are $D_{len} > 300-400\, \mu $m. 
-   To be noted that candidates coming from weak decays of beauty hadrons have larger $D_{len}$
+   To be noted that $\Ds$ mesons coming from weak decays of beauty hadrons have larger $D_{len}$
    with respect to prompt $\Ds$ from charm decay, due to more displaced decay vertices.
-\item \textbf{Normalized decay length $L$}, defined as the decay length 
-divided by its uncertainty (Fig.~\ref{fig:var1} right).
+\item \textbf{Normalized decay length NDL$_{\rm xy}$}, defined as the decay length 
+in the transverse plane ($xy$) divided by its uncertainty (Fig.~\ref{fig:var1} right).
 \item \textbf{Cos$\theta_{point}$}, where $\theta_{point}$ is the angle
  between the momentum of the reconstructed $\Dspm$ meson and the 
  $\Dspm$ flight line (line connecting primary and secondary vertex, see
@@ -169,75 +178,79 @@ divided by its uncertainty (Fig.~\ref{fig:var1} right).
 \centering
 \includegraphics[width=6.5cm]{FigCap4/cosP.eps}
 \includegraphics[width=6.5cm]{FigCap4/sigVert.eps}
-\caption{Distributions of cos$\theta_{point}$ (left) and track dispersion around secondary vertex $\sigma_{vertex}$ (right) for signal (red) and background (blue) $\Ds$ candidates.}
+\caption{Distributions of cos$\theta_{point}$ (left) and track dispersion around secondary vertex $\sigma_{vtx}$ (right) for signal (red) and background (blue) $\Ds$ candidates.}
 \label{fig:var2}
 \end{figure}
 \begin{figure}[!h]
 \centering
 \includegraphics[width=6.5cm]{FigCap4/CosPiKPhi3.eps}
 \includegraphics[width=6.5cm]{FigCap4/normIP.eps}
-\caption{Left: distributions of $|cos^3(\theta'(K))|$ for signal (red) and background (blue) $\Ds$ candidates. Right: distributions of normalised decay length in the transverse plane for prompt (red), feed-down (green) signal and background (blue) $\Ds$ candidates.}
+\caption{Left: distributions of $|{\rm cos}^3(\theta'(K))|$ for signal (red) and background (blue) $\Ds$ candidates. Right: distributions of maximum normalised single-track impact parameter among the three $\Ds$ daughters, in the transverse plane, for prompt (red), feed-down (green) signal and background (blue) $\Ds$ candidates.}
 \label{fig:var3}
 \end{figure}
 
-\item \textbf{Track dispersion $\sigma_{vertex}$} around the decay vertex, defined as:
+\item \textbf{Track dispersion $\sigma_{vtx}$} around the decay vertex, defined as:
 \[
-\sigma_{vertex}=\sqrt{d^2_1+d^2_2+d^2_3}
+\sigma_{vtx}=\sqrt{d^2_1+d^2_2+d^2_3}
 \]
 where $d_i$ is the distance of minimal approach between the decay 
 track \textit{i} and the decay vertex. All tracks should originate from 
-the secondary vertex, and $\sigma_{vertex}$ should be $\sim$ 0; in 
+the secondary vertex, and $\sigma_{vtx}$ should be $\sim$ 0; in 
 real cases, as a consequence of the tracking and vertexing resolution, 
-the $\sigma_{vertex}$ has non-zero values and an upper cut is needed 
+the $\sigma_{vtx}$ has non-zero values and an upper cut is needed 
 to exclude vertices made of random combination of tracks. Typical cut
- values on the track dispersion were between 0.02 $< \sigma_{vertex}<$ 0.05 cm 
+ values on the track dispersion were between 0.02 $< \sigma_{vtx}<$ 0.05 cm 
  (see Fig.~\ref{fig:var2} right).
 \item \textbf{$\theta^*(\pi)$ angle}, it is the angle between the pion 
 in the KK$\pi$ rest frame and the KK$\pi$ flight line. Cuts were applied
  on the distribution of the cos$\theta^*(\pi)$, with typical values 
- between 0.95 $<cos\theta^*(\pi)  <$ 1.0.
+ between 0.95 $<{\rm cos}\theta^*(\pi)  <$ 1.0.
 \item \textbf{$\theta'$(K) angle}, it is defined as the angle between
  one of the kaons and the pion in the KK rest frame. Cuts were 
- applied on the distribution of the $|cos^3(\theta'(K))|$ (Fig.~\ref{fig:var3}, left), with typical 
- values between 0.0 $<|cos^3(\theta'(K))| <$ 0.05.
-\item \textbf{Single-track normalised impact parameter residual $IP$} : it is defined 
-as the difference between the expected 
-impact parameter value $d^{exp}_{0,r,\phi} \approx D_{len}^{xy} \cdot sin(\theta_{xy})$
- ($D_{len}^{xy}$ is the decay length on $xy$ plane and $\theta_{xy}$ is the angle 
-between the reconstructed D meson and the $i$-th daughter track on $xy$ plane) 
-and the reconstructed one $d^{reco}_{0,r,\phi}$ for the $i$-th daughter
-track, then normalised by the square 
-root of their respective uncertainties summed in quadrature. 
-In Fig.~\ref{fig:var3} (right) the distributions of the maximum $IP$ among 
-the three daughter tracks of $\Ds$ candidates are shown, in different colours for
-background and true candidates, distinguished between prompt and beauty 
-feed-down components. Since the distributions of the normalised $IP$ residuals 
-are quite different for prompt and feed-down D mesons, 
-a selection based on this variable can reduce the feed-down D-meson efficiency while keeping 
-higher that of prompt D mesons. In this analysis selections on the single-track $IP \sim 2$
-were applied.
-\end{itemize}
-
-The selections on $\theta^*(\pi)$ and $\theta'$(K) angles have already 
+ applied on the distribution of the $|{\rm cos}^3(\theta'(K))|$ (Fig.~\ref{fig:var3}, left), with typical 
+ values between 0.0 $<|{\rm cos}^3(\theta'(K))| <$ 0.05.
+ The selections on $\theta^*(\pi)$ and $\theta'$(K) angles have already 
 been used in various experiments which measured $\Dsplus$ production 
 like ZEUS \cite{Chekanov:2005mm} and ATLAS \cite{ATLAS:2011fea} as well as 
 in previous ALICE analyses~\cite{ALICE:2011aa,Abelev:2012tca,Adam:2016ich,Adam:2015jda}
  and are based on kinematical 
 considerations on the decay chain with a $\phi$ in the intermediate state.
-Further selections were applied on the projections of the decay length, 
-the normalized decay length and the cos$\theta_{point}$ in the transverse 
-plane $xy$. The projections of the variables in the $xy$ plane are instead justified by 
-the improving of the impact parameter resolution with respect to $z$-direction.\\
+\item \textbf{Single-track normalised impact parameter residual $d_0$} : it is defined 
+as the difference between the expected 
+impact parameter value $d^{exp}_{0,r,\phi} \approx D_{len}^{xy} \cdot {\rm sin}(\theta_{xy})$
+ ($D_{len}^{xy}$ is the decay length on $xy$ plane and $\theta_{xy}$ is the angle 
+between the reconstructed D-meson momentum and the $i$-th daughter track on $xy$ plane) 
+and the reconstructed one $d^{reco}_{0,r,\phi}$ for the $i$-th daughter
+track. The difference $d^{reco}_{0}-d^{exp}_{0}$ is normalised by its uncertainty
+calculated as the sum in quadrature of the uncertainties on $d^{reco}_{0}$ and $d^{exp}_{0}$.
+In Fig.~\ref{fig:var3} (right) the distributions of the $D_{d_{0}} = max[d^{reco}_{0}-d^{exp}_{0}/\sigma]$ among 
+the three daughter tracks of $\Ds$ candidates are shown, in different colours for
+background and signal candidates, distinguished between prompt and beauty 
+feed-down components. Since the distributions of $D_{d_{0}}$ 
+are quite different for prompt and feed-down D mesons, 
+a selection based on this variable can reduce the feed-down D-meson contribution with respect to 
+that of prompt D mesons. In this analysis selections on the $D_{d_{0}} \sim 2$
+were applied.
+\end{itemize}
+
+  New topological variables were introduced with respect to the 
+  previous analysis of this sample. They are the projections of the cosine of 
+the Pointing angle and of the (normalised) decay length in the $xy$ plane 
+ and the single-track normalised impact parameter residual.
+The projections of the variables in the $xy$ plane are justified by 
+the better resolution of the impact parameter resolution with respect to $z$-direction.\\
 
 
-A further parameter which allowed to reduce the background is the
- \textbf{invariant mass of the reconstructed $K^+K^-$ pair}. This is not a topological 
+A further selection which allowed to reduce the background is the requirement that the
+ \textbf{invariant mass of the reconstructed $K^+K^-$ pair} is compatible 
+ with the $\phi$-meson mass. This is not a topological 
  cut (i.e. a cut exploiting the displacement of the decay vertex), 
- but rather a selection on the decay chain. It is required that at least 
+ but a selection on the decay chain. It is required that at least 
  one of the two pairs of tracks with opposite charge has an invariant
-  mass compatible with the $\phi$ mass. The selection is done on 
+  mass compatible with the $\phi$ mass when the kaon mass is assigned to
+  the two tracks. The selection is done on 
   the absolute value of the difference between the $\phi$ 
-   invariant mass from PDG and the reconstructed one:
+   invariant mass from PDG ($\sim 1.019\, \Gevc$)and the reconstructed one:
 \[
 \Delta M = |M^{inv}_{rec}-M_{\phi}|.
 \]
@@ -248,20 +261,19 @@ Typical values for cuts on $\Delta M$ are between 3 $<\Delta M<$ 15 MeV$/c^2$.
 The Particle IDentification (PID) selection is based on the specific energy loss 
 d$E$/d$x$ in the TPC and the time-of-flight from the interaction vertex to the 
 TOF detector. This is used in the D-meson analysis to reduce the background, 
-but it is essential for $\Dsplus$ studies because low values of signal-over-background
+and it is essential for $\Dsplus$ studies because of the low values of signal-over-background
  ratios (S/B).
 A track is  considered compatible with a certain particle species 
 ($\pi$, K or p) if the measured signal has a difference 
-within $n\sigma$ from the expected one for the various mass hypotheses
-  with the theoretical predictions:
+within $n\sigma$ from the expected one for the corresponding mass hypothesis:
 \[
 |S_{meas}-S^{\pi,k,p}_{expected}| < n^{\pi,k,p}\sigma ,
 \]
-where $\sigma$ is the RMS of the Gaussian fit of the theoretical 
-curve to the energy-loss or time-of-flight signals for each species.
+where $\sigma$ is the resolution on the energy-loss or time-of-flight signals for each species.
 Candidate triplets were required to have two tracks compatible with 
 the kaon hypothesis and one with the pion hypothesis. In addition, 
-since the decay particle with opposite charge sign has to be a kaon, 
+since the decay particle with opposite charge sign with respect to the $\Dsplus$
+mother particle in the $\DstoKKpi$ chain has to be a kaon, 
 a triplet was rejected if the opposite-sign track was not compatible 
 with the kaon hypothesis. 
 The criterion used to classify tracks on the basis of their PID
@@ -270,8 +282,7 @@ illustrated in Fig.~\ref{fig:strongPID}, where $n\sigma^{\rm max,TPC} = 1$ for
 $0.6 < \pt < 0.8 \, \Gevc$ and 2 elsewhere and $n\sigma^{\rm max,TOF} = 3$ at all $\pt$.  
 To combine PID information in the two detectors,
 the response values in TPC and TOF (green values in Fig.~\ref{fig:strongPID}) 
-are summed linearly together 
-and the track is considered
+are summed together and the track is considered
 compatible with a species hypothesis if the combined response value is 1 or 2. This
 PID selection preserves $\sim$85-90\% of the signal depending on the $\pt$.
 
@@ -284,50 +295,46 @@ PID selection preserves $\sim$85-90\% of the signal depending on the $\pt$.
 \end{figure}
 
 
-\section{Invariant mass spectra and signal extraction}
+\section{Invariant mass spectra, cut optimization and signal extraction}
 \label{sec:invMassPlotsPP}
 For each candidate, two values of invariant mass can be computed, 
 corresponding to the two possible assignments of the kaon and the 
-pion mass to the two same-sign track. In fact, considering the $\Dsplus$
+pion mass to the two same-sign tracks. In fact, considering the $\Dsplus$
  decay, the charge configuration of the tracks (+, -, +) can be interpreted
-  both as to ($K^+,K^-,\pi^+$) and ($\pi^+,K^-,K^+$). Signal candidates with 
+  both as to ($K^+,K^-,\pi^+$) and ($\pi^+,K^-,K^+$) mass assignements. Signal candidates with 
   wrong mass assignement to the same-sign tracks would give rise to 
   a contribution to the invariant mass distributions that could introduce
-   a bias in the raw yield of $\Dsplus$ mesons. It was verified, both in 
+   a bias in the extraction of the raw yield of $\Dsplus$ mesons. It was verified, both in 
    data and in simulations, that this contribution is reduced to a negligible 
    level by particle identification selection and by the requirement that the
     invariant mass of the two tracks identified as kaons is compatible with 
     the $\phi$ PDG mass.
 
-Once that $\Dsplus$ candidates pass the selections they are 
-used to fill invariant mass histograms in different $\pt$ intervals.
+$\Dsplus$ candidates that pass all the selections are 
+used to fill invariant mass histograms in different intervals of candidate $\pt$.
 The histograms are fitted by a function consisting of a sum of 
 a Gaussian and an exponential function to describe the signal peak and 
 the background shape respectively:
 \begin{equation}
 f(x)= Ae^{-B\cdot x}+Ce^{-\frac{(x-\mu)^2}{2\sigma^2}}.
 \end{equation}
-The selected criterion for the yield extraction is a particle selection 
- strategy that preserves high selection efficiency and high statistical 
+The selection criteria used in the analysis as  ``central cuts'' were tuned to 
+preserve high selection efficiency and high statistical 
  significance for the D meson signal, defined as:
 \[
 Signif = \frac{S}{\sqrt{S+B}},
 \]
 where S and B are the extracted signal and background obtained 
 from the fit procedure integrated within 3$\sigma$ 
-around the peak of the Gaussian shape ($\sigma$ being the
-RMS of the peak from the fit). The statistical significance is related to the 
+around the peak of the Gaussian ($\sigma$ being the
+Gaussian width of the peak from the fit). The statistical significance is related to the 
 relative statistical uncertainty on the extracted signal, so higher 
 significance means lower statistical uncertainty on the raw yield. 
-A second variable which is used in the cut optimisation procedure
- is the signal-over-background ratio S/B, as 
- an estimator of the powerfulness of the selection strategy. 
- The maximisation of the significance was required together
-  with the request that the position of the peak and the width 
-  of the Gaussian shape were compatible with the values
+A third variable which is considered in the cut optimisation procedure
+ is the signal-over-background ratio S/B. In addition it was also
+required that the position and the width 
+  of the Gaussian peak were compatible with the values
    obtained in simulated events, with the same selection strategy.
-Since the topological variables have a certain degree of correlation among them, 
-for each $\pt$ interval, different variables 
 were simultaneously varied in wide ranges to consider all possible combinations. 
 The selection values depend on the $\pt$ of the $\Ds$-meson candidate and 
 are detailed in Table~\ref{tab:cutsDs}.
@@ -343,7 +350,7 @@ Decay length ($\mum$)        & $>$300 & $>$350 & $>$350 & $>$400\\
 Decay length XY ($\mum$)     & $>$0 & $>$200 & $>$200 & $>$200\\
 Norm Decay length XY          & $>$2.0& $>$0.0 & $>$2.0 & $>$2.0\\
 Cosine pointing              & $>$0.94 & $>$0.95 & $>$0.95 & $>$0.97\\
-$\sigma_{vertex}$  (cm)          & $<$0.02 & $<$0.03 & $<$0.03 & $<$0.06\\
+$\sigma_{vtx}$  (cm)          & $<$0.02 & $<$0.03 & $<$0.03 & $<$0.06\\
 $\Delta M$ (MeV/$c^{2}$) & $<$8.0 & $<$10.0 & $<$4.5 & $<$9.0\\
 $\cos \theta^*(\pi)$    & $<$1.0 & $<$1.0 & $<$1.0 & $<$0.95\\
 $|\cos^3 \theta^\prime({\rm K})|$        & $>$0.10 & $>$0.05 & $>$0.05 & $>$0.05\\
@@ -356,11 +363,12 @@ Norm. IP residual Pion  & $<$2.5 & $<$2.0 & $<$2.0 & $<$2.0 \\[1ex]
 \end{table}
 In Fig.~\ref{fig:invmassDs} the invariant mass distributions 
 of $\Dspm$ mesons in four $\pt$ intervals from 2 to 12 $\Gevc$ are shown 
-and in Tabletab:signalDs the values of S/B, statistical significance and extracted yields are reported.
+and in Table~\ref{tab:signalDs} the values of S/B, statistical significance and extracted yields 
+with their statistical uncertainties are reported.
 \begin{figure}[!htb]
 \begin{center}
  \includegraphics[width=.99\textwidth]{FigCap4/DsMassHistos_ppPass4.eps}
-\caption{Invariant mass distributions of $\Dspm$ candidates and charge
+\caption{Invariant mass distributions of $\Dsplus$ candidates and charge
 conjugates in the four considered $\pt$ intervals.}             
 \label{fig:invmassDs}
 \end{center}
@@ -396,25 +404,25 @@ results of the previous reconstruction, for both data and MC.
 
 \section{Corrections}
 \label{sec:corrPP}
-The $\Dspm$ raw yields extracted from the fits to the invariant-mass distributions
+The $\Dspm$ raw yields (sum of particle and anti-particle) extracted from the fits to the invariant-mass distributions
 were corrected to obtain the $\pt$-differential production cross sections of prompt
- D mesons. The production cross section was calculated as:
+ $\Dsplus$ mesons. The production cross section was calculated as:
 \begin{equation}
   \label{eq:dsdpt}
   \left.\frac{{\rm d} \sigma^{\rm D^{+}_{\rm s}}}{{\rm d}\pt}\right|_{|y|<0.5}=
-  \frac{1}{ \Delta \pt}\frac{1}{{\rm BR} \cdot L_{\rm int}}\frac{\left.f_{\rm prompt}(\pt)\cdot \frac{1}{2} N^{\rm D^\pm_{\rm s}~raw}(\pt)\right|_{|y|<y_{\rm fid}}}{ 2 y_{\rm fid}(\pt) \,({\rm Acc}\times\epsilon)_{\rm prompt}(\pt)}\,,
+  \frac{1}{ \Delta \pt}\frac{1}{{\rm BR} \cdot L_{\rm int}}\frac{\left.f_{\rm prompt}(\pt)\cdot \frac{1}{2} N^{\rm D^\pm_{\rm s}~raw}(\pt)\right|_{|y|<y_{\rm fid}}}{ C_{\Delta y} \,({\rm Acc}\times\epsilon)_{\rm prompt}(\pt)}\,,
 \end{equation}
 where $N^{\rm D^\pm_{\rm s}~raw}(\pt)$ is the value of the raw yield 
 (sum of particles and antiparticles),
  which needs to be corrected for the B-meson decay feed-down contribution 
 (i.e.\ multiplied by the prompt fraction $f_{\rm{prompt}}$), divided by the 
-acceptance-times-efficiency term for prompt $\Ds$ mesons 
+acceptance-times-efficiency of prompt $\Ds$ mesons 
 $(\rm Acc \times \epsilon)_{\rm{prompt}}$, and divided by a factor of two to 
 obtain the charge (particle and antiparticle) averaged yields.
 The corrected yields were further divided by the decay channel branching ratio (BR), 
 the $\pt$ interval width ($\Delta \pt$), the rapidity coverage 
 ($2 y_{\rm fid}$) and the integrated luminosity $L_{\rm int}$.
-The rapidity acceptance correction factor $\Delta y=2\,y_{\rm fid}$ assumes
+The rapidity acceptance correction factor $C_{\Delta y}=2\,y_{\rm fid}(\pt)$ assumes
 a uniform rapidity  distribution for D mesons in the measured $y$ range.
 This assumption was verified to the $1\%$ level with PYTHIA proton-proton simulations 
 with the Perugia-0 tuning.
@@ -438,19 +446,20 @@ simulations, considering also their evolution over time during the 2010 LHC
 data taking period.
 In the production, only events containing a $c\bar{c}$ or a $b\bar{b}$ pair 
 were transported through the apparatus and reconstructed and
-D mesons were forced to decay hadronically via the decay channel relevant to
-the specific analysis.
+D mesons were forced to decay hadronically via the decay channels relevant to
+the specific analyses.
 The efficiency was extracted separately for prompt and feed-down D-mesons and 
-is shown in the right panel of Fig.~\ref{fig:sigma4vs2}.
-D mesons from beauty decay have higher efficiency than
-the prompt ones in all the $\pt$ intervals, due to the more displaced 
-decay vertex from interaction point.
+is shown in the right panel of Fig.~\ref{fig:sigma4vs2}, for the selection criteria
+reported in Tab.~\ref{tab:signalDs}.
+D mesons from beauty-hadron decays have higher efficiency than
+the prompt ones in all the $\pt$ intervals, due to the larger average displacement of their 
+decay vertices from interaction point.
 In general, with the chosen topological selections, efficiencies in this analysis
-are on average 15\% lower than those used in the previous reconstruction. 
+are on average 15\% lower than those used in the previously published analysis~\cite{Abelev:2012tca}. 
 The present analysis uses more powerful selection variables 
 (projections on $xy$ plane and impact parameter residual) that
 enhance the signal-over-background ratio for $\Ds$ meson by a factor 
-from 2 to 5 depending on the $\pt$ interval, with an acceptable worsening
+from 2 to 5 depending on the $\pt$ interval, with a slight reduction
 of the global efficiency. Large signal-over-background ratios are indeed essential 
 to assure a good stability of the extracted yield.
 
@@ -465,12 +474,13 @@ Fig.~\ref{fig:sigma4vs2} (right):
 \label{eq:fpr}
 \begin{split}
 f_{\mathrm{prompt}} = \, & 1- \frac{N^{\text{D~feed-down}}_{\mathrm{raw}}}{N^{\mathrm{D}}_{\mathrm{raw}}}=\\
-& 1- \left (\frac{\rm d^2 \sigma}{\mathrm d\pt \mathrm d y} \right)^{\rm FONLL}_{\text{feed-down}} \cdot \frac{(\mathrm{Acc} \times \epsilon)_\text{feed-down} \cdot \Delta y \Delta \pt \cdot \mathrm{BR} \cdot L_{\rm int}}{N^{\rm D +\overline{D},raw}/2}\,,
+& 1- \left (\frac{\rm d^2 \sigma}{\mathrm d\pt \mathrm d y} \right)^{\rm FONLL}_{\text{feed-down}} \cdot \frac{(\mathrm{Acc} \times \epsilon)_\text{feed-down} \cdot C_{\Delta y} \Delta \pt \cdot \mathrm{BR} \cdot L_{\rm int}}{N^{\rm D +\overline{D},raw}/2}\,,
 \end{split}
 \end{equation}
 where the $\pt$ dependence of $f_{\rm prompt}$, $N^{\rm D +\overline{D},raw}$ and
 $(\mathrm{Acc} \times \epsilon)_\text{feed-down}$ is omitted for brevity.
-The values of $f_{\rm prompt}$ of $\Ds$ meson are shown in Fig.~\ref{fig:fprompt} as a function of $\pt$.
+The values of $f_{\rm prompt}$ of $\Ds$ meson vary between 0.89 and 0.92 as a function
+of $\pt$ and are shown in Fig.~\ref{fig:fprompt}.
 \begin{figure}[!t]
 \begin{center}
 \includegraphics[width=.48\textwidth]{FigCap4/promptFraction_pass4.eps}
@@ -483,42 +493,42 @@ The values of $f_{\rm prompt}$ of $\Ds$ meson are shown in Fig.~\ref{fig:fprompt
 
 \section{Systematic uncertainties}
 \label{sec:systPP}
-In this section the study of the systematic uncertainties for the
+In this section the studies carried out to estimate the systematic uncertainties on the
  measurement of the $\Dsplus$ cross section as a function of $\pt$ is presented. 
- The contributions to the systematic uncertainty from different 
- sources were studied separately and described in detail in the following.
+ The contributions to the systematic uncertainty from the different 
+ sources were studied separately and are described in detail in the following.
 
 \subsection{Raw yield extraction}
 \label{sec:RawYieldSyst}
-Fluctuations of the extracted yields are observed when varying fit 
-configurations. 
-In order to keep under control variations of the raw yields, a possible
-approach is to explore all the possible fit configurations and build
-a distribution of the yields. The fits to the invariant-mass 
+The value extracted for the yield depends on the  
+configuration of the invariant-mass fit.
+In order to estimate the systematic uncertainty on the raw yield,
+a possible approach is to explore all the possible fit configurations and build
+a distribution of the yields, via a multiple-trial approach. The fits to the invariant-mass 
 distributions were repeated several times varying
-i) the invariant-mass bin width, ii) lower and upper limit of the fit, 
-iii) background fit function (3 cases: exponential, linear and second 
-order polynomial), iv) Gaussian mean and width of the signal line shape 
-free of fixed to MC
+i) the lower and upper limits of the fit, 
+ii) the background fit function (3 cases: exponential, linear and second 
+order polynomial), iii) the Gaussian mean and width of the signal line shape, 
+which were left free or fixed to MC
 values. The fits which did not converge or had $\chi^2$/ndf $>$ 2.0 
 were rejected and not considered in the evaluation of the 
 systematic uncertainty. It was verified that the yields extracted with the
-default fit parameters had similar values to the mean of
-the distribution of yields from multiple trial fits. 
-The RMS of such distributions can be used as an estimator of
-the systematic uncertainty on the extraction and, with the above
-selection criteria, their values result $\sim$6\%.
+default fit parameters had compatible values to the mean of
+the distribution of yields from the multiple-trial approach. 
+The RMS of the distributions of the multiple trials an be used as an estimator of
+the systematic uncertainty on the raw yield extraction. With the above
+selection criteria, their values result to be $\sim$6\% in all $\pt$ intervals.
 In addition, the results obtained with 
 the fitting technique were compared to those obtained by 
 counting the entries in the invariant mass histogram after 
 subtracting the background counts calculated from the 
-background fit function and their relative difference resulted
-to be smaller than 6\%. 
-To further investigate whether the estimate of the systematic uncertainty
-derived from this approach is not to much conservative, a slightly
-different approach was tested. We assume that 
-possible systematics on the yield extraction via fit procedure 
-arise only from variations in the line shape of the signal and 
+background fit function. Their relative difference resulted
+to be smaller than 6\% and therefor no additional uncertainty was assigned from this check. 
+To further investigate whether the systematic uncertainty estimated with
+this approach is not too much conservative, a slightly
+different approach was tested. We assumed that 
+the systematic uncertaintiy on the yield extraction via the fit procedure 
+arises only from variations in the line shape of the signal and 
 in the fitting function for the 
 background. Let's examine these two contributions separately.\\
 
@@ -526,10 +536,12 @@ background. Let's examine these two contributions separately.\\
 The uncertainty from signal line shape was calculated by 
 considering the combinations among these fit
 configurations: (i) free Gaussian width parameter, (ii) width parameter 
-fixed to MC value, (iii) width parameter varied by 20\% with 
-respect to MC value,  (iv) free mean parameter, (v) mean parameter fixed to MC value.
-The error was extracted as the maximum error (max. value - min. value) divided by $\sqrt{12}$.
-It resulted in a $\sim$5\% systematic uncertainty in all the $\pt$ intervals.
+fixed to MC value, (iii) Gaussian width varied by 20\% with 
+respect to MC value,  (iv) free peak position, (v) peak position fixed to MC value.
+The uncertainty was estimated as the maximum error (max. value - min. value) divided by $\sqrt{12}$.
+It resulted to be $\sim$5\% in all the $\pt$ intervals. It is reduced 
+by a factor 3-4 with respect to the analysis of the old reconstrunction,
+where it was around 15-20\% depending on the $\pt$ interval. 
 
 \begin{table}[!t]
 \centering
@@ -561,31 +573,33 @@ order polynomial functions for background, in $2 < \pt < 4 ~\Gevc$.}
 
 
 \emph{Background fit function}
-Using different functions to fit the background could in 
-principle introduce some systematic difference in the extracted yields.
-The default shape used to give the central yield is an 
+Using different functions to fit the background introduces 
+some systematic differences in the extracted yields.
+The default shape used for the central value of raw yield is an 
 exponential function, but first and second 
-order polynomial shapes were also tested. In Table~\ref{tab:chi2bkg} 
+order polynomial shapes were also tested to estimate the systematic 
+uncertainty. In Table~\ref{tab:chi2bkg} 
 the values of reduced chi square referred to the compatibility 
-of the background function with data (excluding peak region) are 
+of the background function with data (excluding the region within 3$\sigma$ from the peak) are 
 reported. One can see that all the three shapes 
 give a good description of data, but in general no improvements 
 are visible when adding more parameters in the fit
 with respect to exponential shape, so the latter confirms itself as a good choice.
 Neverthless, it is important to look also at the values of the 
-extracted yield to assess about possible biases.
+extracted yield to assess possible biases.
  In order to do this, 50 simulated samples were generated via 
  Poissonian smearing of the fit function with the exponential background.
- For each sample, yields extracted with exponential 
- background were compared with those using linear and 
+ For each sample, the yields extracted utilising a fit function with exponential 
+ background were compared with those obtained using linear and 
  polynomial functions with the same
-configuration for pole, sigma, mass range and bin width, and their
-difference, normalised to the yield extracted using a fit with exponential background, 
+configuration for the parameters of the Gaussian peak, mass range and bin width. The
+difference of the yields with linear and parabolic backgrounds relative to 
+the yield extracted using a fit with exponential background, 
 was used to fill a histogram. The procedure was repeated for different
 configurations of lower and upper limits for the fit and 
 invariant-mass bin widths for each of the
 50 samples. 
-A potential shift from zero of the mean of the resultant distribution 
+A potential shift from zero of the mean of the resulting distribution 
  should reveal the bias from the change of background. The
   spread of the distribution is related to statistical fluctuations. 
   In Fig.~\ref{fig:diffBkgPt0} an example of the above 
@@ -597,28 +611,19 @@ A potential shift from zero of the mean of the resultant distribution
  
  
  
- 
-The systematic of yield extraction from the second approach is hence $\sim$5\%, which
-is consistent with the $\sim 6$\% found with the first approach. 
-It results reduced by a factor 3-4 with respect to the analysis of the old reconstrunction,
-where it was around 15-20\% depending on the $\pt$ interval. 
-
 \subsection{Selection efficiency}
 \label{sec:CutVariation}
-The systematics on the selection efficiency accounts for 
-possible imperfections in the MC description ($\pt$, 
-impact parameter resolution) which could 
-impact the raw yield correction via the efficiency term.
-A possible test to quantify the effect of imperfections in the 
+The systematic uncertainty on the selection efficiency accounts for 
+possible imperfections in the description in the simulation of the variables used to select the signal, which could introduce a bias in the efficiency. A possible test to quantify the effect of imperfections in the 
 description of topological variables in the MC is to exploit different sets of cuts
 that have different selection efficiencies and to compare the corrected
 yields. In this analysis, twelve sets of cuts with 
 medium-high statistical significance of the extracted yields were compared, 
 their respective efficiencies spanning a variation of
-a factor from 2 to 6, depending on the $\pt$ interval, between minimum 
-and maximum efficiency considered. We take the RMS 
-of the corrected yield distribution in each $\pt$ interval as an estimator of 
-the systematic uncertainty. The uncertainty resulted in a 7\% in all $\pt$ bins.
+a factor from 2 to 6, depending on the $\pt$ interval, between the loosest and  
+the tightest sets of cuts considered. We took the RMS 
+of the corrected yield distributions in each $\pt$ interval as an estimator of 
+the systematic uncertainty. The uncertainty resulted to be 7\% in all $\pt$ bins.
 \begin{figure}[!b]
 \begin{center}
  \includegraphics[width=1\textwidth]{FigCap4/DCAxyReso_Pions.eps}
@@ -626,18 +631,21 @@ the systematic uncertainty. The uncertainty resulted in a 7\% in all $\pt$ bins.
 \label{fig:DCAxyReso}
 \end{center}
 \end{figure}
-The effect of a variation of the impact parameter resolution in the transverse plane
-was also investigated. Fig.~\ref{fig:DCAxyReso} (left) shows, as an example for pion tracks, distributions of
+In particular, the effect of possible imperfections in the description 
+of the residual misalignment in the simulations were studied separately 
+starting from the differences observed on the impact parameter resolution
+in data and in the simulation.
+Fig.~\ref{fig:DCAxyReso} (left) shows, as an example for pion tracks, distributions of
 DCA$_{\rm xy}$ resolution as a function of $\pt$ in data and in simulation 
 in pp collisions at $\s = 7 $ TeV. The values were extracted via fits to the DCA$_{\rm xy}$ distributions
-of tracks in data and in MC, in different $\pt$ intervals, and resulted from the RMS of
-such fits. The right panel of the Fig.~\ref{fig:DCAxyReso} shows the 
-MC-to-data ratio of DCA$_{\rm xy}$ resolutions. 
-The agreement is overall good. To estimate the effect of the residual discrepancy at hight $\pt$,
-the resolution values in MC were reduced up to 10\% and the
+of tracks in data and in MC, in different $\pt$ intervals. 
+The right panel of the Fig.~\ref{fig:DCAxyReso} shows the 
+MC-to-data ratio of the DCA$_{\rm xy}$ resolutions. 
+The agreement is overall good. To estimate the effect of the residual discrepancy,
+the resolution values in the MC were reduced by 10\% and the
 DCA$_{\rm xy}$ of tracks in MC smeared according to the new resolution.
-The variation of the efficiencies resulted less than 3\%, hence
-already included in the quoted 7\% from the cut variation study.
+The variation of the efficiencies resulted less than 3\%, lower
+than the 7\% from the cut variation study, which includes this contribution.
 \iffalse
 \begin{figure}[!htb]
 \begin{center}
@@ -653,21 +661,23 @@ cuts and compared to the yield from the best set of cuts (chosen for the central
 
 \subsection{PID efficiency}
 \label{sec:PIDsystPP}
-To test the efficiency correction of PID selections, a looser PID cut
-was used with respect to the default selection described in Sec.~\ref{Sec:PID}. 
+To test the efficiency correction of PID efficiency, looser PID selection criteria were
+used with respect to the default selection described in Sec.~\ref{Sec:PID}. 
 In fact, in the $\Ds$ case, the rare signal and the large background 
-do not allow for a signal extraction without 
+do not allow for a reliable signal extraction without 
 particle identification. The looser PID selection accepts those cases 
 reported in Fig.~\ref{fig:strongPID} where combined response values from TPC and TOF 
-detectors are 0,1 or 2.
+detectors are 0,1 or 2, which correspond to a 3$\sigma$ cut on the d$E$/d$x$ and
+time-of-flight signals.
 In Fig.~\ref{fig:rmsPID} the ratio
 of the corrected yields obtained with looser-to-default PID selection is shown, 
 for the twelve different sets of cuts discussed in Sec.~\ref{sec:CutVariation}.
 The evaluation of the systematic uncertainty, estimated as the RMS of the distributions in each $\pt$ 
-interval, was made considering only the region $\pt > 4 \, \Gevc$, since at lower $\pt$ 
-yield extraction with looser PID does not guarantee a statistical significance
-of the signal peak larger than 3. The RMS of the yield distributions for the considered
-$\pt$ intervals is around 7\% and this value is attributed as uncertainty at all $\pt$.
+interval, was made considering only the region $\pt > 4 \, \Gevc$, since 
+with looser PID we could not obtain a stable extraction of the raw yield, given 
+that the statistical significance is $<3$ and the S/B os lower than ??.
+of the signal peak larger than 3. The RMS of the corrected yield distributions for the considered
+$\pt$ intervals is about 7\% and this value is assigned as uncertainty in all $\pt$ intervals.
 
 \begin{figure}[!htb]
 \begin{center}
@@ -699,46 +709,49 @@ The following selections were tested:
 \begin{enumerate}
 \item additional cut on number TPC crossed rows $> 120-(5/\pt)$;
 \item additional number of TPC clusters $>0.65 \times$ number of TPC crossed rows;
-\item ratio of crossed rows over findable clusters in the TPC $>0.9$.
+\item tighter selection on the ratio of crossed rows over findable clusters in the TPC ($>0.9$ instead of 0.8).
 \end{enumerate}
 The systematic uncertainty was assigned based on the observed variation of
 the prompt $\Dzero$ and $\Dplus$ cross sections with respect to the default selections.
-Based on this check systematic uncertainties of 2\% and 3\% were 
+Based on this check systematic uncertainties of 2\% and 3\% independent of D-meson $\pt$ were 
 respectively estimated for $\Dzero$ (two-body decay) and $\Dplus$ (three-body decay) 
 due to variation of track cuts. The values are consistent with a 1\% per-track systematic
-uncertainty.
+uncertainty, that was inherited for the $\Ds$-meson analysis.
 
 \subsubsection{ITS-TPC matching efficiency}
 
-Matching efficiency, i.e. efficiency of track prolongation from TPC to ITS, 
-is defined as the fraction of tracks with 
-clusters in both ITS and TPC over the number of tracks with clusters in TPC.
+The matching efficiency, i.e. efficiency of track prolongation from TPC to ITS, 
+is defined as the fraction of tracks successfully prolonged from TPC to ITS (having
+at least one cluster in the SPD layers)
+over the number of tracks reconstructed in TPC.
 Systematic uncertainty on its determination arises from discrepancies 
-in efficiency between data and Monte Carlo.
-Matching efficiency for primary tracks is expected to be higher than 
-for secondary tracks (originating from strangeness decay, thus 
-with secondary vertices likely to be out of SPD or for tracks arising
- from interaction with material).
+in the tracking performance between data and Monte Carlo.
+Matching efficiency for primary tracks is higher than 
+for secondary tracks (originating from strange-hadron decays, thus 
+with secondary vertices likely to be outside the SPD layers or for particles produced
+in interactions with material).
 If the fractions of primary and secondary tracks are different in data 
-and in Monte Carlo, this could lead to a wrong estimation of the systematic 
-uncertainty in the matching. Hence, the idea of this study is to 
-use data-driven corrections of primary and secondary fractions to weight the MC
-and obtain a corrected inclusive MC efficiency. The latter will be compared 
-with efficiency on data to extract the systematic uncertainty.\\
-The ingredients are:
+and in Monte Carlo, this could lead to a discrepancy in the matching efficiency
+which is not due to the tracking performance and therefore it should not be
+accounted in the systematic uncertainty on tracking. Hence,
+data-driven corrections for primary and secondary fractions were used to re-weight the MC
+and obtain a corrected inclusive MC efficiency, which is then used in the
+comparison to data, to estimate the systematic uncertainty.\\
+The steps in the procedure are:
 \begin{itemize}
-\item matching efficiencies for different particle types: 
+\item extract the matching efficiencies for different particle types: 
 Eff$^{\rm MC}_{\rm primaries}$, Eff$^{\rm MC}_{\rm secondaries}$, Eff$^{\rm Data}_{\rm inclusive}$
-\item fraction of primary tracks in data: f'$_{\rm primaries}$
-\item corrected MC-inclusive efficiency: 
+\item extract the fraction of primary tracks in data: f'$_{\rm primaries}$
+\item compute a corrected MC-inclusive efficiency: 
 Eff$^{\rm MC}_{\rm inclusive}$ = f'$_{\rm primaries}$ x Eff$^{\rm MC}_{\rm primaries}$ + (1- f'$_{\rm primaries}$) x Eff$^{\rm MC}_{\rm secondaries}$
-\item systematic uncertainty: 
+\item estimate the relative systematic uncertainty: 
 (Eff$^{\rm Data}_{\rm inclusive}$ - Eff$^{\rm MC}_{\rm inclusive}$)/Eff$^{\rm Data}_{\rm inclusive}$.
 \end{itemize}
-A minimum-bias Monte Carlo production anchored to 2010 pp data taking at 
-$\s = 7$ TeV was used. Charm-enriched productions were not used in this study 
+A minimum-bias Monte Carlo production (with the PYTHIA 6 event generator and
+GEANT 3 for particle transport through the apparatus) anchored to 2010 pp data taking at 
+$\s = 7$ TeV was used for this study. Charm-enriched productions were not used in this study 
 since the shape of DCA distribution of tracks (used to extract data-driven 
-primary track fraction) is affected by the heavy-flavour enhancement
+primary track fraction) is affected by the heavy-flavour particle enhancement
 and may bias the fit.
 Efficiency was studied as a function of:
 \begin{itemize}
@@ -752,29 +765,30 @@ calculate the systematic uncertainty.
 \begin{enumerate}
 \item {\bf ITS-TPC matching efficiency:} calculated separately for 
 primary and secondary tracks in MC, inclusively on data. For 
-the numerator of the efficiency, tracks were selected requiring 
-to have a hit in one of the two SPD layers, 
+the numerator of the matching efficiency, tracks were selected requiring 
+to have a successful fit with the Kalman filter in the TPC and ITS, a hit in one of the two SPD layers, 
 $|$DCAxy$|<$ 2.4 cm and $|$DCAz$|<$ 3.2 cm.
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=1\textwidth]{FigCap4/ITSTPC_matchEff_vsPt_LowFullpt.eps}
-\caption{Matching efficiency for primaries and secondaries tracks as a function of $\pt$ in MC for $\pt$ interval from 0.1 to 1 $\Gevc$ (left) and up to 20 $\Gevc$ (righ). }
+\caption{Matching efficiency for primary and secondary tracks as a function of $\pt$ in MC for $\pt$ interval from 0.1 to 1 $\Gevc$ (left) and up to 20 $\Gevc$ (righ). }
 \label{fig:matcheff_pt}
 \end{figure}
 
 In Fig.~\ref{fig:matcheff_pt}, ITS-TPC matching efficiency 
 of charged tracks in MC as a function of 
 $\pt$ is shown. The left panel is referred to the low $\pt$ region (0.1-1 $\Gevc$), 
-the right one up to 20 $\Gevc$. 
+the right one extends the $\pt$ interval up to 20 $\Gevc$. 
 
-\item {\bf Fractions of primary tracks:} extracted from a fit to
- the track impact parameter distribution in data using MC templates for 
- DCA$_{\rm xy}$ distributions of primary and secondary tracks. The ROOT TFractionFitter 
- package was used to perform the fit. The fit could be resolved 
+\item {\bf Fractions of primary tracks:} they are extracted with a data-driven technique based on a fit to
+ the measured track impact parameter distribution using MC templates for 
+ DCA$_{\rm xy}$ distributions of primary and secondary tracks, in different
+ $\pt$, $\eta$ and $\varphi$ intervals. The ROOT TFractionFitter 
+ package was used to perform the fit. The fit was configured 
  using three templates describing primary tracks, secondaries tracks
- from strangeness decay and tracks from interaction with material. 
- A selection on tracks requiring at least one hit in the two SPD layers 
- was used, to assure enough resolution to distinguish primary and 
+ from strange-hadron decays and tracks produced in interactions in the material. 
+ A selection on tracks requiring at least one hit in either of the two SPD layers 
+ was used, to assure good enough resolution to distinguish primary and 
  secondary DCA$_{\rm xy}$ distributions.
 \begin{figure}[!htb]
 \begin{center}
@@ -791,12 +805,12 @@ the right one up to 20 $\Gevc$.
 \end{center}
 \end{figure}
 Fits were performed on the DCA$_{\rm xy}$ distributions of charged particles 
-in the range [-1,1] cm, in different intervals of $\pt$, $\phi$, $\eta$ 
-and constraining the three fractions within reasonable minimum and maximum values.
+in the range [-1,1] cm, in different intervals of $\pt$, $\varphi$, $\eta$ 
+and constraining the three fractions in the TFractionFitter class within reasonable minimum and maximum values.
 The fractions were then calculated by integrating the histogram 
 resulting from the fit in the range $|$DCA$_{\rm xy}|<$ 2.4 cm, for
-consistency with what done for matching efficiency calculation. 
-As a closure test, it was verified that the MC values for fractions of primary and secondary tracks 
+consistency with what done for the matching efficiency calculation. 
+As a closure test, it was verified that the MC values for the fractions of primary and secondary tracks 
 were in agreement with the values extracted when performing the fit with TFractionFitter 
 on the inclusive MC distribution (instead of data), with the three MC templates.  
 In Fig.~\ref{fig:DCAxyDataMCVsPt} the distributions of DCA$_{\rm xy}$ 
@@ -806,9 +820,9 @@ In Fig.~\ref{fig:DCAxyRatioDataFitVsPt} the ratio of DCA$_{\rm xy}$ distribution
 in data to the distribution resulting from the fit are plotted. 
 Finally, in Fig.~\ref{fig:Fractions}, the data-driven values of primary and secondary
  fractions are shown and compared to 
- the ones obtained from original values in MC (empty markers). 
-The fraction of secondaries in the figure already includes contribution 
-from material. We conclude that the fraction of secondaries is underestimated in MC.
+ the ones from the PYTHIA + GEANT 3 simultion (empty markers). 
+The fraction of secondaries in the figure already includes the contributions 
+from material. We conclude that the fraction of secondaries is underestimated in the simulations.
 \begin{figure}[!hb]
 \begin{center}
 \includegraphics[width=.6\textwidth]{FigCap4/MEfractions.png}
@@ -819,41 +833,42 @@ from material. We conclude that the fraction of secondaries is underestimated in
 
 \item {\bf Correction to the primary fraction:} since the fraction of primary
  particles was calculated using tracks with the request of a hit in one of the SPD layers, 
-the primary fraction of this sample 
-needs to be rescaled to the primary fraction of the sample of tracks in the TPC. 
+the primary fraction estimated for this sample of tracks 
+needs to be rescaled to the primary fraction of the sample of tracks reconstructed in the TPC. 
 The correction factor is based on MC information and obtained as 
 the ratio of the fraction of primary tracks in TPC to the fraction of primary
- tracks with TPC-ITS matching. The final fraction of primary tracks is hence
+ tracks with TPC-ITS matching and one point in the SPD. The final fraction of primary tracks is hence
   f'$_{\rm primaries}$ = f$_{\rm primaries}$ x correction factor, 
   where f$_{\rm primaries}$ is the fraction obtained at step 2. 
-  Typical values of correction factor for primary tracks are around $\sim$ 0.95-0.98. 
+  Typical values of correction factor for primary tracks are around $\sim$ 0.95-0.98
+  as a function of $\pt$. 
   In Fig.~\ref{fig:MCfractions} an example of fractions of primary 
   and secondary tracks in MC requiring ITS-TPC matching or points in the TPC detector only are 
   shown in different colours as a function of $\pt$.
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[width=.50\textwidth]{FigCap4/MCfractions_ESDTrOnly_VsPt_PiK.eps}
-\caption{Example of fractions of primary and secondary tracks in MC requiring ITS-TPC or TPC only in different colours as a function of $\pt$.}
+\caption{Example of fractions of primary and secondary tracks in MC requiring ITS-TPC and one point in SPD layers or TPC only selections in different colours as a function of $\pt$.}
 \label{fig:MCfractions}
 \end{center}
 \end{figure}
 
-\item {\bf ITS-TPC corrected matching efficiency:} calculated 
+\item {\bf ITS-TPC corrected matching efficiency:} it is calculated 
 as  Eff$^{\rm MC}_{\rm inclusive}$ = f'$_{\rm primaries}$ x Eff$^{\rm MC}_{\rm primaries}$ + (1- f'$_{\rm primaries}$) x Eff$^{\rm MC}_{\rm secondaries}$. The corrected matching efficiency 
 is shown in Fig.~\ref{fig:CorrMatchEffVsPt},~\ref{fig:CorrMatchEffVsPhi} 
 (left) and~\ref{fig:CorrMatchEffVsEta} (left)
 as a function of $\pt$, $\phi$, $\eta$ respectively, for kaons and 
-pions (requiring a 3$\sigma$ PID cut in TPC). 
+pions (selected with a 3$\sigma$ PID cut on d$E$/d$x$ in TPC). 
 It was verified that no substantial changes are obtained if 
-considering all the species ($\pi, {\rm K}, p, e, \mu$). 
-The drops in efficiency at some $\phi$ regions are due to SPD
+considering all the species ($\pi, {\rm K, p, e,} \mu$). 
+The drops in efficiency in some $\phi$ regions are due to SPD
 inefficiencies during the data taking.
-Finally, the ratios of MC inclusive corrected efficiencies to
+Finally, the ratios of MC inclusive (i.e. including primary and secondary tracks) matching efficiencies to
 efficiency in data are shown in Fig.~\ref{fig:MatchEffSystVsPt},~\ref{fig:CorrMatchEffVsPhi} 
 (right) and~\ref{fig:CorrMatchEffVsEta} (right) as a function of 
 $\pt$, $\phi$, $\eta$ respectively. The data driven weighting procedure 
-in MC allows to quote a truthful and reduced systematic uncertainty
-especially as a function of $\pt$. 
+in MC allows to obtain better description of the data and a reduced systematic uncertainty
+as compared to the one obtained using the uncorrected MC.
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[height=7cm]{FigCap4/ITSTPCmatchEff_10bpass4_vsPt.eps}
@@ -864,32 +879,32 @@ especially as a function of $\pt$.
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[height=7cm]{FigCap4/ITSTPCmatchEffSyst_10bpass4_vsPt.eps}
-\caption{ITS-TPC matching efficiency systematics as a function of $\pt$ before (red) and after (blue) data-driven correction.}
+\caption{Ratio of ITS-TPC matching efficiencies in data and MC as a function of $\pt$ before (red) and after (blue) data-driven correction.}
 \label{fig:MatchEffSystVsPt}
 \end{center}
 \end{figure}
-A final systematic uncertainty of 2\% per track was assigned for particles 
-between 2-6 $\Gevc$, and of 1\% at lower and higher $\pt$.
+Based on these ratios, a systematic uncertainty of 2\% per track was assigned for particles 
+with $2< \pt <6$ $\Gevc$, and of 1\% at lower and higher $\pt$.
 This per-track uncertainty is then summed in quadrature with the 
-1\% per-track systematic uncertainty on track selection. 
+1\% per-track systematic uncertainty on track selection discussed in the previous section. 
 {\bf Qui devo ricontrollare: con gli output che ho per il 10bpass4, non riesco ad ottenere
 gli stessi valori (leggeremente piu' piccoli) per la ME che avevamo usato per il paper. Mi ricordo che ad un certo punto avevamo rigirato sul pass4 dopo che avevamo scoperto un baco: non e' molta la differenza appunto, ma non torna con i plot 4.21 specialmente ad alto pt... Non so se val la pena rimandare dei jobs per rifare il plot 4.21 ed essere coerenti qui.}
 \end{enumerate}
-Finally, a MC simulation was used to propagate the uncertainty at the 
-track level to the D-meson level through the daughter's 
-kinematic. In the simulation the same topological and PID cuts used in data were 
+Finally, the information from the simulations was used to propagate the uncertainty at the 
+track level to the D-meson level through the decay 
+kinematics. In the simulation the same topological and PID cuts used in data were 
 applied. In the left column of Fig.~\ref{fig:SysMatchEffDmeson}, the scatter plots of 
 $\pt$  of daughter tracks versus 
 D-meson $\pt$ (for $\Dplus$, $\Ds$, $\Dzero$ and $\Dstar$ from top to bottom) are presented. 
 The right column shows the final systematic uncertainty of tracking 
-efficiency for 2- and 3-prong D mesons as a function of $\pt$, propagated via
-daughter track kinematics.
+efficiency for 2- and 3-prong D-meson decays as a function of D-meson $\pt$, 
+as obtained with this MC-based procedure.
 
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[width=.49\textwidth]{FigCap4/ITSTPCmatchEff_10bpass4_vsPhi.eps}
 \includegraphics[width=.49\textwidth]{FigCap4/ITSTPCmatchEffSyst_10bpass4_vsPhi.eps}
-\caption{Left: ITS-TPC matching efficiency as a function of $\phi$ for 2010 pp data taking at $\s = 7$ TeV. The matching efficiency is shown for data (blu), for MC primary (green) and secondary (from strangeness decay and material interaction, in red) tracks, for inclusive MC tracks with (black) and without (magenta) data-driven correction. Right: ITS-TPC matching efficiency systematics as a function of $\phi$ before (red) and after (blue) data-driven correction.}
+\caption{Left: ITS-TPC matching efficiency as a function of $\phi$ for 2010 pp data taking at $\s = 7$ TeV. The matching efficiency is shown for data (blu), for MC primary (green) and secondary (from strangeness decay and material interaction, in red) tracks, for inclusive MC tracks with (black) and without (magenta) data-driven correction. Right: ratio of ITS-TPC matching efficiencies in data and MC as a function of $\phi$ before (red) and after (blue) data-driven correction.}
 \label{fig:CorrMatchEffVsPhi}
 \end{center}
 \end{figure}
@@ -898,7 +913,7 @@ daughter track kinematics.
 \begin{center}
 \includegraphics[width=.49\textwidth]{FigCap4/ITSTPCmatchEff_10bpass4_vsEta.eps}
 \includegraphics[width=.49\textwidth]{FigCap4/ITSTPCmatchEffSyst_10bpass4_vsEta.eps}
-\caption{Left: ITS-TPC matching efficiency as a function of $\eta$ for 2010 pp data taking at $\s = 7$ TeV. The matching efficiency is shown for data (blu), for MC primary (green) and secondary (from strangeness decay and material interaction, in red) tracks, for inclusive MC tracks with (black) and without (magenta) data-driven correction. Right: ITS-TPC matching efficiency systematics as a function of $\eta$ before (red) and after (blue) data-driven correction.}
+\caption{Left: ITS-TPC matching efficiency as a function of $\eta$ for 2010 pp data taking at $\s = 7$ TeV. The matching efficiency is shown for data (blu), for MC primary (green) and secondary (from strangeness decay and material interaction, in red) tracks, for inclusive MC tracks with (black) and without (magenta) data-driven correction. Right: ratio of ITS-TPC matching efficiency in data and MC as a function of $\eta$ before (red) and after (blue) data-driven correction.}
 \label{fig:CorrMatchEffVsEta}
 \end{center}
 \end{figure}
@@ -914,8 +929,8 @@ daughter track kinematics.
 
 \subsection{B feed-down}
 \label{sec:BfdSub}
-The systematic uncertainty on the subtraction of feed-down component from 
-beauty-hadron decay was estimated by varying the $\pt$-differential 
+The systematic uncertainty on the feed-down contribution, i.e. $\Ds$ mesons
+originating from beauty-hadron decays in the raw yield, was estimated by varying the $\pt$-differential 
 cross section of feed-down D mesons within the theoretical uncertainties
 of the FONLL calculation. The procedure for the variation of the $b$-quark mass, 
 of the perturbative scales and of the parton distribution functions is described 
@@ -927,17 +942,19 @@ where $m_{\rm t}=\sqrt{\pt^2+m_{\rm c}^2}$.
 The mass of the c and b quarks were varied within $1.3<m_{\rm c}<1.7~\gev/c^2$ 
 and $4.5<m_{\rm b}<5~\gev/c^2$, respectively.
 The uncertainty related to the B decay 
-kinematics was disregarded, after verifying that the difference resulting 
+kinematics was neglected, after verifying that the difference resulting 
 from using the PYTHIA~\cite{Sjostrand:2006za} decayer instead of 
 EvtGen~\cite{Lange:2001uf} is negligible 
 with respect to the FONLL B-meson cross-section uncertainty.
+{\bf There is also an uncertainty due to the B-meson admixture, i.e. 
+the fractions $f(b\rightarrow {\rm B}^0, {\rm B}^+, {\rm B}_s, \Lambda_b)$.}
 Previous D-meson analyses in 
 ALICE~\cite{ALICE:2011aa,Adam:2016ich,Adam:2015jda} 
-used to compare two different methods for the subtraction of the beauty feed-down component 
-and include their difference in this systematic uncertainty. 
+used to compare two different methods to correct for the beauty feed-down component 
+and include their difference in the systematic uncertainty. 
 The first method, used to give the central value for $f_{\rm prompt}$, 
-is presented in Eq.~\ref{eq:fpr} and needs as inputs FONLL predictions
-of B-meson cross-sections and selection efficiency for B feed-down 
+is the one presented in Eq.~\ref{eq:fpr} and needs as inputs FONLL predictions
+of B-meson cross-sections and the selection efficiency for feed-down 
 D mesons. The alternative method takes as inputs FONLL predictions for both 
 feed-down and prompt D mesons and their respective Monte Carlo efficiencies, 
 as follows:
@@ -947,11 +964,12 @@ f^\prime_{\rm prompt} = \left( 	1 + 	\frac{({\rm Acc}\times\epsilon)_{{\rm feed-
 \right)^{-1} \, .
 \label{eq:fc}
 \end{equation}
-A review of currently available measurements of beauty and 
+The usage of this alternative approach has been reconsidered after a
+review of currently available measurements of beauty and 
 charmed meson cross-sections at the LHC was carried out. The measurements 
 were compared to FONLL predictions for heavy-flavoured hadrons 
 for the specific center-of-mass energy and rapidity interval.
-In Fig.~\ref{fig:Bmesons}, B$^{+}$-, B$^{0}$-, B$^0_{\rm s}$-meson and 
+In Fig.~\ref{fig:Bmesons}, the B$^{+}$-, B$^{0}$-, B$^0_{\rm s}$-meson and 
 $\Lambda_{\rm b}$-baryon cross sections measured by CMS in pp collisions 
 at $\s = $ 7 TeV~\cite{Khachatryan:2011mk,Chatrchyan:2011pw,Chatrchyan:2011vh,Chatrchyan:2012xg},
 in the rapidity interval $|y| <$ 2.4, are compared to FONLL predictions. 
@@ -963,21 +981,57 @@ and $\Lambda_{\rm b}$-baryon cross sections.
 In Fig.~\ref{fig:LHCbBmesons}, measurements of B$^{+}$-, B$^0_{\rm s}$-meson
 and $\Lambda_{\rm b}$-baryon cross sections from
 LHCb in pp collisions at $\s =$ 7 TeV at forward rapidity 
-\mbox{2.0 $< y_{\rm cm} <$ 4.5} are shown~\cite{Aaij:2013noa,Aaij:2015fea}.
+\mbox{2.0 $< y <$ 4.5} are shown~\cite{Aaij:2013noa,Aaij:2015fea}.
 FONLL predictions were scaled by the fragmentation fraction values 
 of $b$ quarks into B hadrons measured by LHCb in the rapidity interval 
-2.0 $< y_{\rm cm} <$ 4.5~\cite{Aaij:2011jp}. The latter indicate an 
+2.0 $< y <$ 4.5~\cite{Aaij:2011jp}. The latter indicate an 
 enhancement of baryon production from $b$-quark fragmentation at forward rapidity with respect to 
 mid-rapidity and a consequent decrease of non-strange B-meson production. 
-In Fig.~\ref{fig:LHCbBmesons}, starting from top left panel, the 
-comparison between LHCb B$^{+}$-meson cross-section and FONLL
- curve shows good agreement. As regards $\Lambda_{\rm b}$ cross section 
-(top right plot), FONLL describes the shape of data 
-but needs a rescaling of a factor 2 (which may account 
-for large uncertainties on the determination of the BR of the channel ($\Lambda_{b} \rightarrow J/\psi \,{\rm p\, K}$) 
+In the top left panel of Fig.~\ref{fig:LHCbBmesons} the 
+comparison between LHCb B$^{+}$-meson cross-section and the FONLL
+ calculations shows a good agreement. As regards $\Lambda_{\rm b}$ cross section 
+(top right panel), FONLL calculations for B mesons describe the shape of data 
+but need a rescaling of a factor 2 (which may be related to the 
+large uncertainties on the determination of the BR of the channel $\Lambda_{b} \rightarrow J/\psi \,{\rm p\, K}$ 
 used by LHCb to provide the cross section) to match the measurement. 
+
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[width=.45\textwidth]{FigCap4/Bplus_7TeV_y_24_24.eps}
+\includegraphics[width=.45\textwidth]{FigCap4/Bzero_7TeV_y_22_22.eps}
+\includegraphics[width=.45\textwidth]{FigCap4/Bs_7TeV_y_24_24.eps}
+\includegraphics[width=.45\textwidth]{FigCap4/Lambdab_7TeV_y_20_20.eps}
+\caption{B$^{+}$-, B$^{0}$-, B$_{\rm s}$-meson and $\Lambda_{\rm b}$-baryon differential cross-sections (red points) as a function of $\pt$ measured by CMS in pp collisions at $\s =$ 7 TeV at mid-rapidity~\cite{Khachatryan:2011mk,Chatrchyan:2011pw,Chatrchyan:2011vh,Chatrchyan:2012xg} compared to FONLL predictions~\cite{Cacciari:1998it, Cacciari:2001td} at the same energy (blue boxes). }
+\label{fig:Bmesons}
+\end{center}
+\end{figure}
+
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[width=.45\textwidth]{FigCap4/Bplus_7TeV_y_20_45_FF35.eps}
+\includegraphics[width=.45\textwidth]{FigCap4/Lambdab_7TeV_y_20_45_FF21_BR6.eps}
+\includegraphics[width=.45\textwidth]{FigCap4/Bs_7TeV_y_20_45.eps}
+\includegraphics[width=.4\textwidth]{FigCap4/FONLL_CMSvsLHCb_3.eps}
+\caption{B$^{+}$, $\Lambda_{\rm b}$ and B$^0_{\rm s}$ differential cross-sections (red points) measured by LHCb in pp collisions at $\s =$ 7 TeV at \mbox{2 $< y_{cm} <$ 4.5} compared to FONLL predictions at the same energy (blue boxes)~\cite{Aaij:2013noa,Aaij:2015fea}.
+In the bottom right panel, B$^0_{\rm s}$-meson differential cross-section as a function of $y$ from LHCb is compared to same measurements from CMS at mid-rapidity (8 $< p_{\rm T} <$ 50 GeV/$c$) and to FONLL predictions~\cite{Cacciari:1998it, Cacciari:2001td} in the full rapidity range. }
+\label{fig:LHCbBmesons}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[width=.45\textwidth]{FigCap4/Jpsi_7TeV_y_20_45.eps}
+\includegraphics[width=.45\textwidth]{FigCap4/Dplus_7TeV_y_05_05.eps}
+\includegraphics[width=.45\textwidth]{FigCap4/Dzero_7TeV_y_05_05.eps}
+\includegraphics[width=.45\textwidth]{FigCap4/Dstar_7TeV_y_05_05.eps}
+\caption{J/$\psi$- (from LHCb, \mbox{2 $< y_{cm} <$ 4.5}~\cite{Aaij:2011jh}), D$^{+}$-, D$^{0}$- and D$^+_{\rm s}$-meson (from ALICE, mid-rapidity~\cite{ALICE:2011aa}) differential cross-sections (red points) as a function of $\pt$ in pp collisions at $\s = $ 7 TeV compared to FONLL predictions~\cite{Cacciari:1998it, Cacciari:2001td} at the same energy (blue boxes). }
+\label{fig:Dmesons}
+\end{center}
+\end{figure}
+
  A better agreement is found for 
-LHCb B$^0_{\rm s}$-meson cross-section with FONLL (left bottom panel), measured in a wider 
+LHCb B$^0_{\rm s}$-meson cross-section with FONLL calculations (left bottom panel), measured in a wider 
 $p_{T}$ range than CMS. The CMS and LHCb B$^0_{\rm s}$-meson cross-sections in 
 8 $< p_{\rm T} <$ 50 GeV/$c$ are shown in 
 the bottom right panel as a function of $y$, together with FONLL predictions in the 
@@ -986,18 +1040,21 @@ reported, one obtained using the 2015 PDG~\cite{Agashe:2014kda} value for
 BR(B$_{\rm s} \rightarrow J/{\rm \psi} ~\phi$),
 the other obtained using the 2010 PDG~\cite{Nakamura:2010zzi} value, 
 referenced in the CMS paper. 
-In Fig.~\ref{fig:Dmesons} beauty feed-down $J/\psi$-meson 
-cross-section in pp collisions at $\s = $ 7 TeV measured by LHCb~\cite{Aaij:2011jh} and 
-D$^{+}$-, D$^{0}$-, D$^{*+}$-meson cross-sections at $\s = $ 7 TeV by ALICE~\cite{ALICE:2011aa}
-are presented. For $J/\psi$ meson, FONLL provides a good description of 
-the 7 TeV data, as well as for the 8 TeV ones~\cite{Aaij:2013yaa} (not shown here). 
+In Fig.~\ref{fig:Dmesons} cross-section 
+of $J/\psi$-meson from beauty-hadron decays in pp collisions at 
+$\s = $ 7 TeV measured by LHCb~\cite{Aaij:2011jh} and 
+of D$^{+}$-, D$^{0}$-, D$^{*+}$-meson cross-sections in pp collisions at $\s = $ 7 TeV by ALICE~\cite{ALICE:2011aa}
+are presented. For $J/\psi$ mesons from beauty decays, FONLL provides a good description of 
+the data (note that this holds also for data at $\s =$ 8 TeV ones~\cite{Aaij:2013yaa}, not shown here). 
 The D-meson results show that the measurements 
 systematically lay on the upper edge of FONLL uncertainty 
-band, thus charm production being underestimated by FONLL.\\
+band, thus charm production being underestimated by the FONLL
+calculation with the central values of charm mass ($m_c = 1.5 \, \Gevc$) and
+factorisation and renormalisation scales.\\
 \begin{figure}[!b]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{FigCap4/DsParents.png}
-\caption{Fraction of $\Ds$ from $b$-hadron decays.}
+\caption{Fraction of $\Ds$ originating from decays of different species of beauty hadrons.}
 \label{fig:DsParents}
 \end{center}
 \end{figure}
@@ -1005,7 +1062,7 @@ Considering that:
 \begin{itemize}
 \item FONLL provides a good description of B$^{+}$- and B$^{0}$-meson 
 cross-sections at $\s =$ 7 TeV both at mid- and forward rapidity and of 
-B feed-down $J/{\rm \psi}$-meson cross-section at forward rapidity at  $\s =$ 7, 8 TeV;
+the cross-section of $J/{\rm \psi}$ from beauty-hadron decays at forward rapidity at  $\s =$ 7, 8 TeV;
 \item FONLL provides a good description also for the 
 B$^0_{\rm s}$-meson cross-section at forward rapidity where data are available in a wider $p_{T}$ range 
 than at mid-rapidity, allowing for a safer comparison; FONLL also describes 
@@ -1016,23 +1073,24 @@ the large uncertainty of the branching ratio of the channel used in the LHCb ana
 the calculation of $f_{\rm prompt}$ with the method in Eq.~\ref{eq:fpr} is then fully justified.
 In fact, as Fig.~\ref{fig:DsParents} shows, around half of B feed-down 
 $\Ds$ originates from B$^0$- and B$^+$-meson decays 
-and half from B$^0_{\rm s}$-meson decays.
+and half from B$^0_{\rm s}$-meson decays, which are all described
+by FONLL calculations.
 The method in Eq.~\ref{eq:fc}, instead, would suffer from the 
-underestimation of charm production at the LHC energies. 
+fact that FONLL underestimates charm production at LHC energies. 
 It is reasonable to conclude that, on the basis of the current 
-measurements, Eq.~\ref{eq:fc} would artificially introduce a bias if 
-used to subtract the beauty feed-down component, thus artificially enhancing 
-the systematics uncertainty.
+measurements, Eq.~\ref{eq:fc} could introduce a bias if 
+used to correct for the beauty feed-down component, thus artificially enhancing 
+the systematic uncertainty.
 
 
 \subsection{Generated $\pt$ shape}
 
 The influence of the shape of the generated $\Ds$ $\pt$ spectrum used in 
-Monte Carlo simulations on the efficiency corrections was also evaluated. 
-To estimate this contribution, the reconstruction and selection 
-efficiency computed with PYTHIA with Perugia-0 tune
-were compared to the ones obtained with FONLL calculations. 
-This resulted in a systematic effect on the $\Ds$ selection efficiency of $\sim$ 3\% 
+Monte Carlo simulations on the efficiency calculated on the $\pt$ intervals used
+in the measuremtent was also evaluated. 
+To estimate this contribution, the efficiencies computed with the $\Ds$ $pt$ shape from PYTHIA with Perugia-0 tune
+were compared to the ones obtained with that from FONLL calculations. 
+This resulted in a systematic effect on the $\Ds$ efficiency of $\sim$ 3\% 
 in the two lowest $\pt$ intervals and of $\sim$ 2\% at higher transverse momenta.\\
 
 \begin{table}[!tb]
@@ -1067,16 +1125,16 @@ cross section in the old reconstruction-based publication and the new analysis~\
 \end{figure}
 
 
-The values of the systematic uncertainties above discussed are summarised
-in Table~\ref{tab:SystDs}. The uncertainty on the $\Dsplus$-meson production 
-cross-section normalisation has a further contribution from the 3.5\%
-uncertainty on the minimum-bias trigger cross section~\cite{Abelev:2012sea} 
-and a contribution from the uncertainties on the branching ratio (2.27 $\pm$ 0.08 \%)
-of the considered decay channel. The systematic uncertainty 
-on minimum-bias cross section originates from the uncertainty 
-in the determination of the cross section of collisions 
-which give signals in both sides of the V0 scintillator detector and 
-that was measured by means of van der Meer scan technique~\cite{vanderMeer:296752}.
+The values of the systematic uncertainties estimated according to the procedures 
+discussed above are summarised
+in Table~\ref{tab:SystDs}. The $\Dsplus$-meson production 
+cross-section normalisation has also a further normalisation uncertainty
+due to the 3.5\% uncertainty on the luminosity~\cite{Abelev:2012sea} 
+and to the uncertainty on the branching ratio 
+of the considered decay channel (2.27 $\pm$ 0.08 \%). The systematic uncertainty 
+on the luminosity originates from the uncertainty 
+in the determination of the cross section of the minimum-bias trigger 
+that was measured by means of the van der Meer scan technique~\cite{vanderMeer:296752}.
 In Fig.~\ref{fig:UncNewVsOld} the values of statistical and global
 systematic uncertainties are shown as a function of $\pt$ and compared to values from 
 the analysis of previous reconstruction of this sample.  
@@ -1087,7 +1145,7 @@ the analysis of previous reconstruction of this sample.
 \subsection{$\Dsplus$ $\pt$-differential cross section}
 \label{sec:ppCrosSec}
 The $\pt$-differential cross section for prompt $\Ds$ 
-production in $|y|<0.5$ are shown in black data points in 
+production in $|y|<0.5$ is shown in  
 Fig.~\ref{fig:CrossSecDsvsGMVFNS}~\cite{Acharya:2017jgo}.
 The error bars represent the statistical uncertainties, while the systematic 
 uncertainties are shown as boxes around the data points. 
@@ -1114,8 +1172,8 @@ cross sections in pp collisions at $\s=$ 7 TeV~\cite{ALICE:2011aa,Abelev:2012tca
 but the total uncertainties (sum in quadrature of statistical and systematic
 errors) are reduced by a factor 1.5-2, depending on the the $\pt$ interval.
 The measured $\pt$-differential cross section is also compared with results from 
-perturbative QCD calculations GM-VFNS~\cite{Kniehl:2004fy,Kniehl:2005mk,Kniehl:2012ti}
-and $k_{\rm T}$-factorisation~\cite{Maciula:2013wg}.
+perturbative QCD calculations with the GM-VFNS~\cite{Kniehl:2004fy,Kniehl:2005mk,Kniehl:2012ti}
+and leading-order (LO) $k_{\rm T}$-factorisation~\cite{Maciula:2013wg} approaches.
 The results of these calculations, performed in the same $\pt$ intervals of the 
 measurement, are shown as filled boxes spanning the theoretical uncertainties
 and a solid line representing the values obtained with the central values of 
@@ -1150,7 +1208,7 @@ theoretical uncertainty band.}
 \end{figure}
 
 
-\subsection{D-meson ratios}
+\subsection{$\pt$-differential D-meson ratios}
 \label{sec:ppDratios}
 The ratios of the $\pt$-differential cross sections of $\Dzero$, $\Dplus$, 
 $\Dstar$ and $\Ds$ mesons are reported in Fig.~\ref{fig:DratiosVsPt}~\cite{Acharya:2017jgo}.
@@ -1163,7 +1221,7 @@ correlated among the different D-meson species.
 The measured D-meson ratios do not show a significant $\pt$ dependence within 
 the experimental uncertainties, thus suggesting a small difference 
 between the fragmentation functions of charm quarks to pseudoscalar 
-($\Dzero$, $\Dplus$ and $\Ds$) and vector ($\Dstar$) mesons and to strange and 
+($\Dzero$, $\Dplus$ and $\Dsplus$) and vector ($\Dstar$) mesons and to strange and 
 non-strange mesons.
 The data are compared to the ratios of the D-meson cross sections from FONLL 
 (only for $\Dzero$, $\Dplus$ and $\Dstar$ mesons), GM-VFNS and LO 
@@ -1184,7 +1242,7 @@ and from the different contribution from decays of higher excited states.
 The parton fragmentation models used in the calculations provide
 an adequate description of the measured data.
 In the LO $\kt$-factorisation calculations, the same fragmentation function 
-(Peterson~\cite{Peterson:1982ak}) is used for $\Dzero$, $\Dplus$ and $\Ds$ 
+(Peterson~\cite{Peterson:1982ak}) is used for $\Dzero$, $\Dplus$ and $\Dsplus$ 
 mesons, resulting in the same shape of the $\pt$ distributions of these three 
 meson species, while 
 the fragmentation functions for vector mesons from Ref.~\cite{Braaten:1994bz} 
@@ -1204,10 +1262,11 @@ in Table~\ref{tab:ptintegcs}.
 $\Dsplus$     & $2<\pt<12~\GeV/c$ & $\phantom{0}40 \pm \phantom{0}8 ({\rm stat}) \pm \phantom{0}5 ({\rm syst}) \pm \phantom{0}1 ({\rm lumi}) \pm 1 ({\rm BR})$\\[1ex]
 \hline
 \end{tabular}
-\caption{Visible production cross sections of prompt D mesons in $|y| < 0.5$ in pp collisions at $\sqrts = 7~\TeV$.}
+\caption{Visible production cross sections of prompt $\Dsplus$ mesons in $|y| < 0.5$ in pp collisions at $\sqrts = 7~\TeV$.}
 \label{tab:ptintegcs}
 \end{table}
-The systematic uncertainty was defined by propagating the yield extraction uncertainties as uncorrelated among $\pt$ intervals and all the other uncertainties 
+The systematic uncertainty was defined by propagating the yield extraction 
+uncertainties as uncorrelated among the four $\pt$ intervals of the measurements and all the other uncertainties 
 as correlated.
 
 The production cross section per unit of rapidity, ${\rm d}\sigma/{\rm d}y$, 
@@ -1222,20 +1281,20 @@ considering the contributions due to i) the uncertainties on the
 CTEQ6.6 PDFs~\cite{Pumplin:2002vw} and ii) the variation of the charm-quark 
 mass and the renormalisation and factorisation scales in the FONLL 
 calculation, as proposed in~\cite{Cacciari:2012ny}.
-Since for $\Ds$ mesons a FONLL prediction is not available,
+Since for $\Dsplus$ mesons a FONLL prediction is not available,
 the central value of the extrapolation factor was computed 
 from the prediction based on the $\pt$-differential cross section of charm 
-quarks from FONLL, the fractions $f({\rm c\rightarrow \Ds})$ and 
+quarks from FONLL, the fractions $f({\rm c\rightarrow \Dsplus})$ and 
 $f({\rm c\rightarrow D_{\rm s}^{*+}})$ from ALEPH~\cite{Barate:1999bg}, and the 
 fragmentation functions from~\cite{Braaten:1994bz}, which have one parameter, 
 $r$, that was set to 0.1 as done in FONLL~\cite{Cacciari:2003zu}.
 The ${\rm D}_{\rm s}^{*+}$ mesons produced in the c quark fragmentation were 
-made to decay with PYTHIA and the resulting $\Ds$ mesons were summed to the 
+made to decay with PYTHIA and the resulting $\Dsplus$ mesons were summed to the 
 primary ones to obtain the prompt yield.
 An additional contribution to the systematic uncertainty  was assigned
-for $\Ds$ mesons based on the envelope of the results obtained using the 
+based on the envelope of the results obtained using the 
 FONLL $\pt$-differential cross sections of $\Dzero$, 
-$\Dplus$ and $\Dstar$ mesons to compute the $\Ds$ extrapolation factor.
+$\Dplus$ and $\Dstar$ mesons to compute the $\Dsplus$ extrapolation factor.
 The resulting values for the extrapolation factor and for the prompt $\Dsplus$-meson 
 production cross section per unit of rapidity ${\rm d}\sigma/{\rm d}y$ are 
 reported in Table~\ref{tab:dsdy}.
@@ -1248,17 +1307,17 @@ reported in Table~\ref{tab:dsdy}.
 $\Ds$     & $2.23^{+0.71}_{-0.65}$ &  $\phantom{0}89 \pm 18 ({\rm stat}) \pm 11 ({\rm syst}) \pm \phantom{0}3 ({\rm lumi}) \pm 3 ({\rm BR})^{+28}_{-26} ({\rm extrap})$\\[1ex]
 \hline
 \end{tabular}
-\caption{Production cross sections of prompt D mesons in $|y| < 0.5$ and full $\pt$ range in pp collisions at $\sqrts = 7~\TeV$.}
+\caption{Production cross sections of prompt $\Dsplus$ mesons in $|y| < 0.5$ and full $\pt$ range in pp collisions at $\sqrts = 7~\TeV$.}
 \label{tab:dsdy}
 \end{table}
 \subsection{$\pt$-integrated D-meson ratios}
 \label{sec:ppDratiosPtint}
-The $\Dsplus$ and non-strange D-meson integrated cross-sections~\cite{Acharya:2017jgo} values 
+The $\Dsplus$ and non-strange D-meson integrated cross-sections taken from~\cite{Acharya:2017jgo} values 
 were used to compute the ratios of the $\pt$-integrated D-meson 
 production cross sections, which are reported in Table~\ref{tab:ptintegrat}.
 The systematic uncertainties on the ratios were computed taking into
 account the sources correlated and uncorrelated among the different D-meson
-species as described above.
+species as described in Sec.~\ref{sec:ppDratios}.
 The measured ratios are compatible within uncertainties with the results at
 $\sqrts=2.76~\TeV$~\cite{Abelev:2012vra} and with the measurements of
 the LHCb collaboration at forward rapidity ($2.0<y<4.5$) at three 
