@@ -280,3 +280,61 @@ d^2_i=\left(\frac{x_i-x_0}{\sigma_{x_i}}\right)^2+
 \left(\frac{y_i-y_0}{\sigma_{y_i}}\right)^2+\left(\frac{z_i-z_0}{\sigma_{z_i}}\right)^2\end{equation}
 The resolution of the reconstructed secondary vertex is shown in fig. \ref{fig:vertexer} (right) as example for  the D$^+$ meson.
 \fi
+\begin{figure}[!t]
+\centering
+\includegraphics[width=.49\textwidth]{FigCap3/V0sumdiff.png}
+\includegraphics[width=.49\textwidth]{FigCap3/SPDcltsVsTcklts.png}
+\caption{Left: correlation between the sum and difference of signal times in V0A and V0C. Right: correlation between reconstructed SPD clusters and tracklets. }
+\label{fig:V0sumdiff}
+\end{figure}
+
+\section{Background rejection}
+\label{sec:BkgRejection}
+The operation of detectors at LHC can be affected by machine-induced
+background (MIB), originating from the beam interactions with the matter in the machine.
+This background scales with beam intensity and mainly depends on the 
+residual gas pressure in the beam pipe and the cleaning efficiency of collimator systems.
+The background rejection is done by exploiting the arrival time of the signal in the two V0 modules.
+The background caused by one of the LHC beams produces an early
+signal on one of the two V0 (depending on the side from where the beam arrives) 
+compared to the collision time at the nominal interaction point.
+The difference between the expected beam and background signals 
+is about 22.6 ns in the A side and 6 ns in the C side. As shown in the left panel of Fig.~\ref{fig:V0sumdiff}, 
+background events accumulate mainly in two peaks at (-14.3 ns, -8.3 ns)
+and at (14.3 ns, 8.3 ns) in the V0 time sum-difference plane, 
+well separated from the main (collision) peak at (8.3 ns, 14.3 ns). 
+The V0 time information is 
+used to set the trigger conditions on collision or background events. 
+The collected events are further selected offline to remove any residual
+contamination from MIB and satellite collisions.
+The V0 trigger logic is validated using a V0 arrival time 
+computed offline using a weighted average of all detector elements.
+In pp physics, an additional information on the correlation
+between number of hits and track segments (tracklets) in SPD detector in used.
+In fact, background particles usually cross the pixel layers in a 
+direction parallel to the beam axis, producing hits that are not associated 
+to any tracklets in the reconstruction (right panel of Fig.~\ref{fig:V0sumdiff}).
+The dashed green line represents the cut used in the offline selection: 
+events lying in the region above the line are tagged as background and rejected.
+This cut rejects a negligible number of events beyond those already rejected by the V0. 
+The fraction of background events that survives the above cuts was determined
+by a control data taking with only one of the beams crossing the ALICE 
+interaction point and was found to be about 0.3\% in the pp data taking 
+during the 2010 run, but it strongly depends 
+on the running conditions and on the specific trigger configuration under study. 
+In Pb-Pb collisions the fraction was found to be smaller than 0.02\%.
+Collisions of main bunches and satellite bunches located at short 
+distance from the main bunch are also a source of background. 
+Satellite events are rejected using the correlation between the sum and the difference 
+of times measured in the ZDC, as shown in Fig.~\ref{fig:ZNAselection} for Pb-Pb collisions.
+The large cluster in the middle corresponds to collisions between ions 
+in the main bunches, while the small clusters along the diagonals (spaced by 
+2.5 ns in time difference) correspond to collisions in which one of the ions belongs
+to satellite bunches.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=.49\textwidth]{FigCap3/ZNAselection.png}
+\caption{Correlation between the sum and the difference of times recorded by the neutron ZDCs on either side (ZNA and ZNC) in Pb?Pb collisions. }
+\label{fig:ZNAselection}
+\end{figure}
