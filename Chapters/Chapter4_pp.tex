@@ -29,13 +29,18 @@ reconstruction).
  A minimum-bias (MB)
 trigger was used to collect the data sample, by requiring
 at least one hit in either of the V0 counters or in the SPD.
-This trigger was estimated to be sensitive to about 87\% of the pp inelasticcross section~\cite{Gagliardi:2011he}. 
+This trigger was estimated to be sensitive to about 87\% of the pp inelastic
+cross section~\cite{Gagliardi:2011he}. 
  Contamination from machine-induced background was rejected 
  offline using the timing information from the V0 and the correlation 
- between the number of hits and tracklets in the SPDdetector (see Sec.~\ref{sec:BkgRejection}).
- The SPD detector can also be used to identify the presence of multiple interactionvertices in pp collisions (pile-up vertices). Since the readout time of the SPD is200 ns, several bunch crossings are expected to occur in one SPD event.
+ between the number of hits and tracklets in the SPD
+detector (see Sec.~\ref{sec:BkgRejection}).
+ The SPD detector can also be used to identify the presence of multiple interaction
+vertices in pp collisions (pile-up vertices). Since the readout time of the SPD is
+200 ns, several bunch crossings are expected to occur in one SPD event.
 The algorithm of pile-up identification runs the vertexing algorithm 
-on the SPD tracklets not associated to themain vertex, which is the one with largest associated multiplicity. 
+on the SPD tracklets not associated to the
+main vertex, which is the one with largest associated multiplicity. 
 A vertex is tagged as of pile-up if there is a minimum number of 
 tracklets associated to it (N$^{\rm tkl}_{\rm min}$) and if the 
 $z$-separation between primary and pile-up vertex ($\Delta z$) is larger than a cut value.
@@ -56,14 +61,14 @@ Furthermore, the requirement for the $z$-vertex coordinate to be $|z_{\rm RecoVe
 select tracks within $\eta < 0.9$, which is the acceptance region of ITS and TPC,
 and contribute to reject satellite collisions (see Sec.~\ref{sec:BkgRejection}) 
 that mostly occur at positions well outside the fiducial vertex region. 
-The fraction of events of this sample rejected during the vertex and physics selection
+The percentage of events of this sample rejected during the vertex and physics selection
 is shown in Fig.~\ref{fig:vxtReso} (right panel). 
 
 \begin{figure}[!t]
 \centering
 \includegraphics[width=.49\textwidth]{FigCap4/VtxReso.png}
 \includegraphics[width=.49\textwidth]{FigCap4/RejFracPass4.png}
-\caption{Left: resolutions of $x$- and $y$- vertices reconstructed with SPD tracklets or global tracks. Right: fractions of events rejected during vertex and physics selection.}
+\caption{Left: resolutions of $x$- and $y$- vertices reconstructed with SPD tracklets or global tracks as a function of the event multiplicity. Right: fractions of events rejected during vertex and physics selection.}
 \label{fig:vxtReso}
 \end{figure}
 
@@ -187,8 +192,8 @@ a common point.
 The variable that allows one to evaluate the displacement of a track from the interaction point is the 
 impact parameter, whose resolution is mostly determined by the hits in the 
 two SPD inner layers of the Inner Tracking System. \\
-The request of a minimum $\pt$ of 0.3 $\Gevc$ of the daughter tracks contributes to 
-the background rejection exploiting the harder distribution of
+The request of a minimum $\pt = 0.3$ $\Gevc$ of the daughter tracks contributes to 
+the background rejection exploiting the harder  $\pt$ distribution of
 the $\Ds$ decay products with respect to the background tracks. 
 The other selections are applied by exploiting the secondary vertex
 which is reconstructed from the three tracks that compose the $\Ds$
@@ -305,12 +310,12 @@ A further selection which allowed to reduce the background is the requirement th
   mass compatible with the $\phi$ mass when the kaon mass is assigned to
   the two tracks. The selection is done on 
   the absolute value of the difference between the $\phi$ 
-   invariant mass from PDG ($\sim 1.019\, \Gevc$)and the reconstructed one:
+   invariant mass from PDG ($\sim 1.019\, \Gevc$) and the reconstructed one:
 \[
 \Delta M = |M^{inv}_{rec}-M_{\phi}|.
 \]
 Typical values for cuts on $\Delta M$ are between 3 $<\Delta M<$ 15 MeV$/c^2$,
-thus preserving more than 85\% of the signal.
+thus always preserving more than 85\% of the signal.
 
 \section{Particle identification}
 \label{Sec:PID}
@@ -344,7 +349,7 @@ detector. For both the detectors, a final response value of -1 is assigned
 if the PID signal of the track is different from the expected one
 by more than 3$\sigma$. In cases where the TPC or TOF information is not
 available, a response value of 0 is assigned
-to the detector. This holds in particular for the TOF for tracks at low momentum.  
+to the detector. This holds in particular for tracks at low momentum that may not reach the TOF.  
 To combine PID information in the two detectors,
 the response values in TPC and TOF 
 are summed together and the track is considered
@@ -388,7 +393,7 @@ The selection criteria used in the analysis as  ``central cuts'' were tuned to
 preserve high selection efficiency and high statistical 
  significance for the D meson signal, defined as:
 \[
-Signif = \frac{S}{\sqrt{S+B}},
+Signif = \frac{\rm S}{\sqrt{\rm S+B}},
 \]
 where S and B are the extracted signal and background obtained 
 from the fit procedure integrated within 3$\sigma$ 
@@ -405,8 +410,8 @@ were simultaneously varied in wide ranges to consider all possible combinations.
 The selection values depend on the $\pt$ of the $\Ds$-meson candidate, since
 the number of background candidates depends on $\pt$ as well.
 At low momentum, where the contribution from the combinatorial
-background is important, tighter selections are needed but, due to less displaced 
-vertices with respect to the higher $\pt$ region, too strong selections
+background is dominant, tighter selections are needed but, due to less displaced 
+vertices with respect to the higher $\pt$ candidates, too strong selections
 on the decay topology (e.g. decay length) are not allowed.
 The cuts used in the analysis are detailed in Table~\ref{tab:cutsDs}.
 \begin{table}[tbh!]
@@ -462,10 +467,10 @@ conjugates in the four considered $\pt$ intervals.}
 
 An indication of the improved resolution provided by the new 
 reconstruction of the sample is shown in the left panel of Fig.~\ref{fig:sigma4vs2}, where the 
-Gaussian sigmas of the invariant mass fits are shown in comparison to 
-results of the previous reconstruction for the MC. In the right
+Gaussian sigmas of the simulated signal peak for the current and old
+reconstruction are compared. In the right
 panel of the same figure, the Gaussian widths of $\Ds$ peak are shown 
-as a function of $\pt$ for current reconstruction in data (solid points)
+as a function of $\pt$ for the current reconstruction in data (solid points)
 and in MC (dashed) and the values agree within uncertainties. 
 \begin{figure}[!hb]
 \begin{center}
@@ -503,10 +508,12 @@ obtain the charge (particle and antiparticle) averaged yields.
 The corrected yields were further divided by the decay channel branching ratio (BR), 
 the $\pt$ interval width ($\Delta \pt$), the rapidity coverage 
 ($C_{\Delta y} = 2 y_{\rm fid}$) and the integrated luminosity $L_{\rm int}$.
-The rapidity acceptance correction factor $C_{\Delta y}$ was computed with the PYTHIA 6.4.21 event generatorwith Perugia-0 tune as the ratio between the generated D-meson yield in $\Delta y = 2y_{\rm fid}$, 
+The rapidity acceptance correction factor $C_{\Delta y}$ was computed with the PYTHIA 6.4.21 event generator
+with Perugia-0 tune as the ratio between the generated D-meson yield in $\Delta y = 2y_{\rm fid}$, 
 (with $y_{\rm fid}$ varying from 0.5 at low $\pt$ to 0.8 at high $\pt$) 
 and that in $|y| < 0.5$. It was checked that calculations of the $C_{\Delta y}$ correction 
-factor based on FONLL pQCD calculations or on the assumption of uniform D-mesonrapidity distribution in $|y| < y_{\rm fid}$ would give the same result, 
+factor based on FONLL pQCD calculations or on the assumption of uniform D-meson
+rapidity distribution in $|y| < y_{\rm fid}$ would give the same result, 
 because both in PYTHIA and in FONLL the D-meson yield is uniform within 1\% in the range $|y| < 0.8$.
 The integrated luminosity was computed as $L_{\rm int} = N_{ev}/\sigma_{pp,MB}$,
 where $N_{ev}$ is the number of analysed events and 
@@ -604,19 +611,21 @@ were rejected and not considered in the evaluation of the
 systematic uncertainty. It was verified that the yields extracted with the
 default fit parameters had compatible values to the mean of
 the distribution of yields from the multiple-trial approach. 
-An example of the distribution of yields from multiple-trial approach on fit and on
-bin counting method is shown in the right panel of Fig.~\ref{fig:fpromptAndMT},
-for the interval $6 < \pt < 8 \, \Gevc$. The values of the mean and the RMS
-of the distributions are also reported in the plot.
-The RMS of the distributions of the multiple trials can be used as an estimator of
-the systematic uncertainty on the raw yield extraction. With the above
-selection criteria, their values result to be $\sim$6\% in all $\pt$ intervals.
-In addition, the results obtained with 
-the fitting technique were compared to those obtained by 
-counting the entries in the invariant mass histogram after 
+An example of the distribution of yields from multiple-trial approach applied on fit and on
+bin counting is shown in the right panel of Fig.~\ref{fig:fpromptAndMT},
+for the interval $6 < \pt < 8 \, \Gevc$. 
+In the blue distribution, the signal extraction is done via a fit of the invariant mass, while
+in the green distribution it is estimated from the counting of the entries in the invariant-mass histogram after 
 subtracting the background counts calculated from the 
-background fit function. Their relative difference resulted
-to be smaller than 6\% and therefor no additional uncertainty was assigned from this check. 
+background fit function.
+The values of the mean and the RMS
+of both the distributions are reported in the plot.
+The RMS of the distribution of the multiple trials on fit can be used as an estimator of
+the systematic uncertainty on the raw yield extraction. With the above
+selection criteria, the value resulted to be $\sim$6\% in all $\pt$ intervals.
+The relative difference between the means of the distributions
+for the extraction via fit and via bin counting resulted
+to be smaller than 6\% at all $\pt$ and therefor no additional uncertainty was assigned from this check. 
 The assigned uncertainty results reduced by a factor 3-4 with respect to the analysis of the old reconstruction,
 where it was around 15-20\% depending on the $\pt$ interval. 
 To further investigate whether the systematic uncertainty estimated with
@@ -720,8 +729,8 @@ The systematic uncertainty on the selection efficiency accounts for
 possible imperfections in the MC description of the variables used to select the signal, 
 which could introduce a bias in the efficiency. A possible test to quantify the effect of any discrepancy in the 
 description of topological variables between data and MC is to exploit different sets of cuts
-that have different selection efficiencies and to compare the corrected
-yields. In this analysis, twelve sets of cuts were compared, 
+that have different selection efficiencies and to compare the cross sections.
+In this analysis, twelve sets of cuts were compared, 
 their respective efficiencies spanning a variation up to 
 a factor of $\sim$6 with respect the default efficiency, depending on the $\pt$ interval.
 Only the cuts that provided 
@@ -731,13 +740,13 @@ Fig.~\ref{fig:cutVar} shows the ratios of raw yields (top left panel) and effici
 extracted with the different sets of cuts with respect
 to the reference values with the default selections as a function of $\pt$.
 To find several sets of cuts that provide a good signal stability, 
-more than one variables needs to be varied at the same time. It is very likely that
+more than one variables need to be varied at the same time. It is very likely that,
 while the selection on some variables needs to be released, the selection
-on others requires to be tightened. In general the extracted yields with lower selection efficiency are not simply
+on others requires to be tightened. For this reason, the extracted yields with lower selection efficiency are in general not simply
 sub-samples of those with higher efficiency, thus making not straightforward the calculation
 of the error on the ratios of raw yields and hence, of the cross sections.
-The ratios of the different cross-sections to the default one are shown in the bottom panel of the
-same figure. We took the RMS of the their distributions in each $\pt$ interval as an estimator of 
+The ratios of the different cross sections to the default one are shown in the bottom panel of the
+same Fig.~\ref{fig:cutVar}. We took the RMS of the their distributions in each $\pt$ interval as an estimator of 
 the systematic uncertainty. The uncertainty resulted to be 7\% in all $\pt$ bins.
 \begin{figure}[!h]
 \begin{center}
@@ -782,7 +791,7 @@ In fact, in the $\Ds$ case, the rare signal and the large background
 do not allow for a reliable signal extraction without 
 particle identification. The looser PID selection accepts those cases 
 reported in Fig.~\ref{fig:strongPID} where combined response values from TPC and TOF 
-detectors are 0,1 or 2, which correspond to a 3$\sigma$ cut on the d$E$/d$x$ and
+detectors are 0, 1 or 2, which correspond to a 3$\sigma$ cut on the d$E$/d$x$ and
 time-of-flight signals.
 In Fig.~\ref{fig:rmsPID} the ratio
 of the corrected yields obtained with looser-to-default PID selection is shown, 
@@ -963,7 +972,7 @@ needs to be rescaled to the primary fraction of the sample of tracks reconstruct
 The reason for this correction is that the primary fraction is then used 
 to (re)-weight the matching efficiency, that is normalised to the number of tracks in the TPC only. 
 The fractions of primary tracks are expected to 
-be different in ITS and TPC due to the different amount of 
+be different in ITS and TPC due to their different amount of 
 secondary tracks from strangeness decays,
 whose secondary vertices are likely to be outside the SPD layers. 
 The correction factor is based on MC information and obtained as 
@@ -1103,7 +1112,7 @@ $\Lambda_{\rm b}$-baryon cross sections measured by CMS in pp collisions
 at $\s = $ 7 TeV~\cite{Khachatryan:2011mk,Chatrchyan:2011pw,Chatrchyan:2011vh,Chatrchyan:2012xg},
 in the rapidity interval $|y| <$ 2.4, are compared to FONLL predictions. 
 The latter were rescaled for the fragmentation fractions of $b$ quark into 
-B hadrons from PDG~\cite{Agashe:2014kda}, that provides the production 
+B hadrons from PDG~\cite{Patrignani:2016xqp}, that provides the production 
 fractions of $b$-hadrons in hadronic Z decays.
 The measurements lay within FONLL uncertainty bands in the case 
 of non-strange B mesons. A worse agreement for FONLL is found to B$^0_{\rm s}$-meson
@@ -1144,7 +1153,7 @@ In the top left panel of Fig.~\ref{fig:LHCbBmesons} the
 comparison between LHCb B$^{+}$-meson cross section and the FONLL
  calculations shows a good agreement. Also the $\Lambda_{\rm b}$-baryon cross section (top-right panel)
  is well described by FONLL, provided that the value of $f(b\rightarrow \Lambda_{\rm b})$
-measured in p$\bar{\rm p}$ collisions is used.
+measured in pp collisions is used.
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics[width=.45\textwidth]{FigCap4/Bplus_7TeV_y_24_24.eps}
@@ -1212,12 +1221,12 @@ cross-sections at $\s =$ 7 TeV both at mid- and forward rapidity and of
 the cross-section of $J/{\rm \psi}$ from beauty-hadron decays at forward rapidity at  $\s =$ 7, 8 TeV;
 \item FONLL provides a good description also for the 
 B$^0_{\rm s}$-meson cross-section at forward rapidity where data are available in a wider $p_{T}$ range 
-than at mid-rapidity, allowing for a safer comparison; FONLL also describes 
+than at mid-rapidity, allowing for a safer comparison. FONLL also describes 
 $\Lambda_{\rm b}$-baryon cross-section, provided 
-the usage of the $f(b\rightarrow \Lambda_{\rm b})$ measured in p$\bar{\rm p}$ collisions;
+the usage of the $f(b\rightarrow \Lambda_{\rm b})$ measured in pp collisions;
 \end{itemize}
 the calculation of $f_{\rm prompt}$ with the method in Eq.~\ref{eq:fpr} is then fully justified.
-In fact, as Fig.~\ref{fig:DsParents} (left) shows, around half of B feed-down 
+In fact, as Fig.~\ref{fig:DsParentsAndFDunc} (left) shows, around half of B feed-down 
 $\Ds$ originates from B$^0$- and B$^+$-meson decays 
 and half from B$^0_{\rm s}$-meson decays, which are all described
 by FONLL calculations.
