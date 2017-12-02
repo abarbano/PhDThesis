@@ -56,7 +56,8 @@ needed to build and store the candidates. \\
 In Tables~\ref{tab:topologicalselections_ds_010},~\ref{tab:topologicalselections_ds_3050} 
 and~\ref{tab:topologicalselections_ds_6080}, the topological selections applied 
 in the 0-10$\%$, 30-50\% and 60-80$\%$ centrality classes
-to extract the raw yields in different $\pt$ intervals are reported.\\
+to extract the raw yields in different $\pt$ intervals are reported. Tighter cuts 
+are needed for most central events due the larger amount of background.\\
 
 
 
@@ -67,8 +68,7 @@ if both its d$E$/d$x$ and time-of-flight are within 3$\sigma$ from the expected 
 Tracks without a TOF signal (mostly at low momentum) are 
 identified using only the TPC information and requiring a 2$\sigma$ 
 compatibility with the expected d$E$/d$x$. This selection was used 
-in the low $\pt$ region for the 0-10\% and 30-50\% centrality classes 
-($\pt < 6 \, \Gevc$ and $\pt < 8 \, \Gevc$ respectively) 
+for $\pt < 8 \, \Gevc$ in the 0-10\% and 30-50\% centrality classes. 
 and for the most peripheral 60-80\% class at all $\pt$. For the high $\pt$ regions
 in the 0-10\% and 30-50\% classes, the looser PID selection introduced in Sec.~\ref{sec:PIDsystPP}
 was applied since it provided good values of statistical significance of the extracted yields.
@@ -181,11 +181,10 @@ Norm. IP residual                               & $<$3.0 & $<$3.0 & $<$3.0 & $<$
 
  The $\Ds$ signal in the 0-10$\%$ and 30-50\% centrality classes was extracted in four $\pt$ 
  intervals in the transverse momentum region $4 < \pt <16 \, \Gevc$, while the lower limit was extended down to 2 GeV/$c$
-for the 60-80\% class. Fig.~\ref{fig:FigInvMassDs_pbpb} shows the signal extraction
-from fits to the invariant-mass histograms, in the selected $\pt$ intervals
-$4 < \pt <6 \, \Gevc$ and $12 < \pt < 16 \, \Gevc$ for the 0-10\% (top row) and 30-50\%
-(middle) classes and in $2 < \pt < 4 \, \Gevc$ and  $8 < \pt < 12 \, \Gevc$ for
-the 60-80\% class. The distributions were fitted with two Gaussian functions to model
+for the 60-80\% class. Fig.~\ref{fig:FigInvMassDs_pbpb010}, ~\ref{fig:FigInvMassDs_pbpb3050} and ~\ref{fig:FigInvMassDs_pbpb6080} show the signal extraction
+from fits to the invariant-mass histograms, in the analysed $\pt$ intervals
+for the 0-10\%, 30-50\% and 60-80\% centrality classes respectively.
+The distributions were fitted with two Gaussian functions to model
 the $\Ds$ peak and that of $\DplustoKKpi$ decays, with BR = ($0.264 \pm 0.011\%$),
 which gives rise to a bump in the background shape around 1.870 $\Gevcc$. 
 An exponential function was used to model the background.
@@ -199,14 +198,26 @@ peak line shape are compared to the values obtained from the simulation, as a fu
 three considered centrality classes.
 
  
-\begin{figure}[!htbp]
+\begin{figure}[!h]
  \begin{center}
-  \includegraphics[width=.9\textwidth]{FigCap5/MassDs_PbPb010_5TeV_pt_4-6_12-16.pdf}
-  \includegraphics[width=.9\textwidth]{FigCap5/MassDs_PbPb3050_5TeV_pt_4-6_12-16.pdf}
-  \includegraphics[width=.9\textwidth]{FigCap5/MassDs_PbPb6080_5TeV_pt_2-4_8-12.pdf}
+  \includegraphics[width=.9\textwidth]{FigCap5/DsMassHistos_010.eps}
 \end{center}
- \caption{Fits to the invariant-mass distribution of $\DstoKKpi$ candidates (and charge conjugates) in selected $\pt$ intervals for the 0-10\%, 30-50$\%$ and 60-80\% centrality classes. }
- \label{fig:FigInvMassDs_pbpb} 
+ \caption{Fits to the invariant-mass distribution of $\DstoKKpi$ candidates (and charge conjugates) in the four $\pt$ intervals between $4 < \pt < 16 \, \Gevc$ in the 0-10\% centrality class. }
+ \label{fig:FigInvMassDs_pbpb010} 
+\end{figure} 
+\begin{figure}[!h]
+ \begin{center}
+  \includegraphics[width=.9\textwidth]{FigCap5/DsMassHistos_3050.eps}
+\end{center}
+ \caption{Fits to the invariant-mass distribution of $\DstoKKpi$ candidates (and charge conjugates) in the four $\pt$ intervals between $4 < \pt < 16 \, \Gevc$ in the 30-50\% centrality class. }
+ \label{fig:FigInvMassDs_pbpb3050} 
+\end{figure} 
+\begin{figure}[!ht]
+ \begin{center}
+  \includegraphics[width=.9\textwidth]{FigCap5/DsMassHistos_6080.eps}
+\end{center}
+ \caption{Fits to the invariant-mass distribution of $\DstoKKpi$ candidates (and charge conjugates) in the five $\pt$ intervals between $2 < \pt < 16 \, \Gevc$ in the 60-80\% centrality class. }
+ \label{fig:FigInvMassDs_pbpb6080} 
 \end{figure} 
  
 
@@ -258,15 +269,17 @@ $\pt$-differential yields of prompt $\Dsplus$ mesons:
    C_{\Delta y} \cdot ({\rm Acc}\times\epsilon)_{\rm prompt}(\pt)
     \cdot{\rm BR} \cdot N_{\rm events}}\,.
 \end{equation}
-The raw yields $N_{\rm raw}^{\rm \Dspm}$ were divided by 
+The difference with respect to Eq.~\ref{sec:corrPP} is that the raw yields $N_{\rm raw}^{\rm \Dspm}$ were divided
+by the number of events ($N_{\rm events}$) instead of the integrated luminosity.
+The raw yields $N_{\rm raw}^{\rm \Dspm}$ were also divided by 
 a factor of two to obtain the charge-averaged (particle and antiparticle) 
 yields. To correct for the contribution of feed-down from B-meson decays,
  the raw yields were multiplied by the fraction of promptly produced D 
  mesons, $f_{\rm prompt}$. Furthermore, they were divided by the product 
  of prompt D-meson acceptance and efficiency 
  $({\rm Acc}\times\epsilon)_{\rm prompt}$, by the branching ratio {\rm BR} 
- of the decay channel, by the transverse momentum interval width 
- ($\Delta \pt$) and by the number of events ($N_{\rm events}$). The rapidity acceptance 
+ of the decay channel and by the transverse momentum interval width 
+ ($\Delta \pt$). The rapidity acceptance 
  correction factor $C_{\Delta y}= 2 y_{\rm fid}(\pt)$ was calculated as described in Sec.~\ref{sec:corrPP}.
 
 The correction for acceptance and efficiency $({\rm Acc}\times\epsilon)_{\rm prompt}$ 
@@ -387,13 +400,20 @@ production in Pb-Pb collisions. The resulting sample of
 feed-down $\Ds$ mesons is composed of two 
 contributions: about 50\% of the feed-down originates from 
 B$^0_{\rm s}$-meson decays, while the remaining 50\% comes from decays of 
-non-strange B mesons (B$^0$ and B$^+$) (see Fig.~\ref{fig:DsParents}).
+non-strange B mesons (B$^0$ and B$^+$) (see Fig.~\ref{fig:DsParentsAndFDunc} left).
 To determine the central value of $f_{\rm prompt}$ in the 0-10\% 
 and 30-50\% centrality classes, it was assumed that the 
 nuclear modification factors of feed-down and prompt $\Ds$ mesons were equal 
 ($\RAA^{\textnormal{feed-down}}=\RAA^{\rm prompt}$). 
 The resulting feed-down contribution is about 10\%, depending on the
-$\pt$ interval.
+$\pt$ interval, as it is shown in Fig.~\ref{fig:promptAA}
+\begin{figure}[!htb]
+ \begin{center}
+\includegraphics[width=.54\textwidth]{./FigCap5/fprompt010.eps}
+\end{center}
+ \caption{Prompt fraction of $\Ds$ yield in the 0-10\% centrality class as a function of $\pt$.}
+ \label{fig:promptAA}
+\end{figure}
 To determine the systematic uncertainty the hypothesis
 was varied in the range $1/3<\RAA^{\textnormal{feed-down}}/\RAA^{\rm prompt}<3$, as 
 discussed in detail in Section~\ref{sec:systematics}.
@@ -435,7 +455,7 @@ Most of the sources of systematic uncertainty considered for the analysis
 of the corrected yields and the methods used to estimate them were already described in Sec.~\ref{sec:systPP}. 
 Hence in the next sections we will concentrate on the differences with respect to the 
 pp analysis. Table~\ref{tab:sysunc_yieldtable} summarises the 
-assigned systematic uncertainties, as an example for the 0-10\% class. 
+assigned systematic uncertainties in the three analysed centrality classes.
 
 \subsection{Yield extraction systematics}
 \label{sec:YieldExsystAA}
@@ -477,7 +497,7 @@ centrality class and are reported in Tab.~\ref{tab:sysunc_yieldtable}.
    \includegraphics[angle=0, width=15cm]{./FigCap5/cutbycut_invm_010.eps}
  \end{center}
  \caption{Distribution of the $\Ds$ corrected yields in the 0-10\% centrality class, obtained varying the selection on the invariant mass of the reconstructed $K^+K^-$ pair (top left panel). The other panels report the values of reduced $\chi^2$, significance, selection efficiency, selection efficiency divided by the to square root of the background counts.}
- \label{DsCutVar_010} 
+ \label{fig:DeltaMDsCutVar_010} 
 \end{figure}
 \begin{figure}[!h]
  \begin{center}
@@ -502,7 +522,7 @@ on the basis of the $\chi^2/ndf$ ($<2.5$) of the invariant-mass fits and the sta
 of the signal was applied to reject the sets of cuts that were not showing a robust 
 determination of the raw yield.  
 An example of the scan performed on the cut on the
-reconstructed K$^+$K$^-$ invariant-mass pair is shown in Fig.~\ref{fig:DsCutVar_010}.
+reconstructed K$^+$K$^-$ invariant-mass pair is shown in Fig.~\ref{fig:DeltaMDsCutVar_010}.
 The top-left panel shows the ratios of the corrected yields 
 (at a specific cut value) to that obtained with the default
 cut, in different colours for the different $\pt$ intervals.
@@ -520,17 +540,18 @@ Finally, in the bottom-middle panel the ratio of the selection efficiency to the
 background counts in the interval within $3\sigma$ around the peak complements 
 the information from the statistical significance,
 and it is less affected by possible fluctuations of the signal.
-The corrected yields from this study were collected, for each $\pt$ interval,
-into final distributions, whose RMS values provide an estimate for the systematic uncertainty.
+Since the values of the reduced $\chi^2$ and of the statistical significance do
+not allow to reject any set of cuts shown in Fig.~\ref{fig:DeltaMDsCutVar_010},
+the corrected yields from this study were collected, for each $\pt$ interval,
+into inclusive distributions. The RMS values of these distributions provide an estimate for the systematic uncertainty.
 Fig.~\ref{DsCutVar_010} shows an example of these final distributions 
 for the 0-10\% centrality class, in the four analysed $\pt$ intervals. 
-The values of the RMS of the Gaussian distributions are reported, as well as
-the values of the full spread of the distribution divided by $\sqrt{12}$,
-for comparison. 
+The values of the RMS of the Gaussian distributions are reported
+in the last panel.
 
 \subsection{PID selection efficiency}
 \label{sec:PIDsystAA}
-To estimate the systematic uncertaintiy due to PID efficiency,
+To estimate the systematic uncertainty due to PID efficiency,
 two particle identification selections (a tighter one, discussed in Sec.~\ref{Sec:PID}, and a 
 looser, in Sec.~\ref{sec:PIDsystPP}) were compared. Fig.~\ref{fig:DsPID010} 
 shows, as an example for 0-10\% centrality class, the ratio of the corrected yields 
@@ -559,9 +580,9 @@ The N$\sigma$ distributions of pions (in green) selected utilising the MC truth 
 those of tracks passing the selection as pions from V0 decays 
 (in blue). A peak centred at N$\sigma=0$ is the dominant contribution for both
 track samples.
-A second population is visible at the right of the peak at low $\pt$ in the in the N$\sigma$ distribution
+A second population (less that 1\% of the total) is visible at the right of the peak at low $\pt$ in the in the N$\sigma$ distribution
 of pion candidate tracks from V0 decays. This second population is present
-also in the N$\sigma$ distribution obtained obtained from data and shown in
+also in the N$\sigma$ distribution obtained from data and shown in
 Fig.~\ref{fig:DataPionsTPC} and it is likely a contamination from electrons passing
 the pion selection criteria. For this reason, 
 only the left side of the peak will be used to study the systematic uncertainty.
@@ -677,8 +698,8 @@ and without hot-medium effects parametrised based on the $\RAA$ in central colli
 TAMU~\cite{He:2014cla} model and in semi-central collisions from 
 BAMPS~\cite{Uphoff:2014hza} model were used in this study.
 The values assigned as systematic uncertainty are reported in 
-Table~\ref{tab:sysunc_yieldtable} for the 0-10\% centrality class, but are similar in 
-30-50\% and 60-80\% classes. 
+Table~\ref{tab:sysunc_yieldtable} for the three centrality classes.
+
 
 \iffalse
 \begin{figure}[!htp]
@@ -698,10 +719,35 @@ B-meson decays was estimated by varying i)
 the $\pt$-differential B-meson cross section in the 
 FONLL calculation within the theoretical uncertainties (that originate from variations of 
 $b$-quark mass, perturbative scales and from uncertainties on the parton distribution functions~\cite{Cacciari:2012ny}), 
-ii) the ratio of $\frac{1}{3} < \RAA^{\rm  feed-down}/\RAA^{\rm prompt} < 3$ 
-for the centrality classes 0-10\% and 30-50\%. The range was limited to 
+ii) the variation of the hypothesis on $\RAA^{\rm  feed-down}/\RAA^{\rm prompt} $. 
+Several theoretical models predict that charm quarks lose more energy 
+in the medium than heavier quarks. As a consequence, the nuclear modification 
+factor of B mesons should be larger than that of D mesons and hence the ratio 
+R$^{feed-down}_{AA}$/R$^{prompt}_{AA}$ should be larger than unity. 
+This assumption was confirmed by the comparison of the $\RAA$ of prompt D mesons at 
+$\sNN = 2.76$ TeV~\cite{Adam:2015nna} with that of J/$\psi$ from B-meson decays~\cite{Khachatryan:2016ypw} 
+measured by the CMS experiment (see Sec.~\ref{sec:resAAcap2}).
+If recombination plays a role in the charm hadronisation, however,  
+the ratio R$^{feed-down}_{AA}$/R$^{prompt}_{AA} $ could assume values 
+less than unity. The ratio of the nuclear modification factors of feed-down and 
+prompt $\Ds$ mesons was therefore varied in the range 
+$\frac{1}{3} < \RAA^{\rm  feed-down}/\RAA^{\rm prompt} < 3$, in 
+the 0-10\% and 30-50\% centrality classes.
+The relative variation of prompt $D^+_s$ yield is presented as a function of the hypothesis on  
+$\RAA^{\rm  feed-down}/\RAA^{\rm prompt}$ in Fig.~\ref{fig:promptAA}
+for the 0-10\% centrality class. 
+respectively. The range was limited to 
 $1 < \RAA^{\rm  feed-down} / \RAA^{\rm prompt} < 1.6$ 
-for the centrality class 60-80\%, as anticipated in Sec.~\ref{sec:CorrectionsAA}.
+for the centrality class 60-80\%, as anticipated in Sec.~\ref{sec:CorrectionsAA},
+due to the milder medium effects.
+\begin{figure}[!h]
+ \begin{center}
+\includegraphics[width=.49\textwidth]{./FigCap5/RaaVariationVsRbHypo.png}
+\end{center}
+ \caption{Relative variation of of prompt $D^+_s$ yield in the 0-10\% centrality class as a function of the hypothesis on $\RAA^{\textnormal{feed-down}}/\RAA^{\rm prompt}$.}
+ \label{fig:promptAA}
+\end{figure}
+
 
 \subsection{Track reconstruction efficiency}
 \label{sec:TrackEffSystPbPb}
@@ -731,8 +777,13 @@ of the fraction of primary tracks due to looser resolution, in the case of not r
 to a non valid assumption on the MC-based correction factor, in case in which 
 the SPD point is required. For this reason, the systematic 
 uncertainty on the ITS-TPC matching efficiency for the single track was
-assigned by averaging the two results, resulting in
-2.5-4\% for $0.5 < \pt < 5 \, \Gevc$, 2.5-1\% for $5 < \pt < 10 \, \Gevc$, 1\% for $10 < \pt < 15\, \Gevc$.\\
+assigned by averaging the two results, and the resulting plot is shown in Fig.~\ref{fig:systME_AA}.\\
+\begin{figure}
+\centering
+ \includegraphics[width=0.6\textwidth]{FigCap5/MatchEffSyst_LHC15o_16g1abc_wcutV0multTPCout_wTOFbc_AverITSTPCtracks.eps}
+ \caption{Systematic uncertainty on ITS-TPC track-matching efficiency in Pb-Pb at $\sNN=5.02$ TeV as a function of $\pt$ of the track.}
+ \label{fig:systME_AA}
+\end{figure}
 
 
 The values of the systematic uncertainties on the $\Ds$-meson corrected yields
@@ -740,29 +791,69 @@ are summarised in Tab.~\ref{tab:sysunc_yieldtable}, in the $\pt$ intervals consi
 the analysis. The uncertainties on the fraction of the hadronic cross section used in the Glauber fit to determinethe centrality are shown as well in the Table.
 \begin{table}[!h]
 \centering
-\begin{tabular}{|l|l|l|c|c|c|c|c|}
+\begin{tabular}{|l|l|l|c|c|c|c|c|c|}
 \hline
-\multicolumn{5}{|c|}{0--10\% centrality class}       \\                                                                                                                                                                                                                                               \hline
-$\pt$ interval ($\gev/c$)        &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
+\multicolumn{6}{|c|}{0--10\% centrality class}       \\                                                                                                                                                                                                                                               \hline
+$\pt$ interval ($\gev/c$) & 2--4        &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
 \hline
-Yield extraction & 6\% & 6\%& 6\%& 6\%\\
-Tracking efficiency & 11\% &11.5\% &11.5\% & 10\% \\
-PID efficiency & 3\%& 3\% & 0\%&  0\%\\
-Cut efficiency & 13\%& 10\%& 10\%& 10\%\\
-MC $\pt$ shape & 7\%& 2\%& 1\%& 0\% \\
-Feed-down (FONLL scales) & 2.9\% & 4.6\%& 3.9\%& 3.7\%\\
-Feed-down ($\RAA^{\rm feed-down}$ hypothesis) & 10.3\%& 15.7\%& 14.7\%& 15.6\% \\
+Yield extraction & - & 6\% & 6\%& 6\%& 6\%\\
+Tracking efficiency & -  & 11\% &11.5\% &11.5\% & 10\% \\
+PID efficiency & -  & 3\%& 3\% & 0\%&  0\%\\
+Cut efficiency & -  & 10\%& 10\%& 10\%& 10\%\\
+MC $\pt$ shape & -  & 7\%& 2\%& 1\%& 0\% \\
+Feed-down (FONLL scales) & -  & $^{+2.2\%}_{-2.9\%}$ &$ ^{+3.5\%}_{-4.6\%} $& $^{+3.1\%}_{-3.9\%}$& $^{+3.1\%}_{-3.7\%}$\\
+Feed-down ($\RAA^{\rm feed-down}$ hypothesis)  & - & $^{+4.0\%}_{-10.3\%}$& $^{+6.6\%}_{-15.7\%} $&$ ^{+6.3\%}_{-14.7\%}$ & $^{+6.7\%}_{-15.6\%} $\\
 \hline
-Centrality limit & \multicolumn{4}{c|}{0.1\%}  \\
-\hline
-\hline
-Branching ratio & \multicolumn{4}{c|}{3.5\%}  \\
+Centrality limit & \multicolumn{5}{c|}{0.1\%}  \\
 \hline
 \hline
-Total & $^{+20.7\%}_{-22.8\%}$& $^{+18.6\%}_{-23.6\%}$ & $^{+17.9\%}_{-22.5\%}$ & $^{+17.1\%}_{-22.3\%}$  \\
+Branching ratio & \multicolumn{5}{c|}{3.5\%}  \\
+\hline
+\hline
+Total  & - & $^{+20.7\%}_{-22.8\%}$& $^{+18.6\%}_{-23.6\%}$ & $^{+17.9\%}_{-22.5\%}$ & $^{+17.1\%}_{-22.3\%}$  \\
+\hline
+\hline
+\multicolumn{6}{|c|}{30--50\% centrality class}       \\                                                                                                                                                                                                                                               \hline
+$\pt$ interval ($\gev/c$)   & 2--4     &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
+\hline
+Yield extraction & -  & 9\% & 7\%& 6\%& 5\%\\
+Tracking efficiency & -  & 11\% &11.5\% &11.5\% & 10\% \\
+PID efficiency  & - & 3\%& 3\% & 0\%&  0\%\\
+Cut efficiency  & - & 15\%& 15\%& 10\%& 10\%\\
+MC $\pt$ shape & -  & 4\%& 1\%& 2\%& 1\% \\
+Feed-down (FONLL scales) & -  &$ ^{+3.3\%}_{-4.2\%}$ & $^{+4.5\%}_{-5.8\%} $&$ ^{+3.5\%}_{-4.5\%}$& $^{+2.5\%}_{-3.0\%}$\\
+Feed-down ($\RAA^{\rm feed-down}$ hypothesis)  & - & $^{+5.5\%}_{-13.4\%}$& $^{+7.8\%}_{-18.1\%} $&$ ^{+7.2\%}_{-16.8\%} $& $^{+5.6\%}_{-13.8\%}$ \\
+\hline
+Centrality limit & \multicolumn{5}{c|}{0.1\%}  \\
+\hline
+\hline
+Branching ratio & \multicolumn{5}{c|}{3.5\%}  \\
+\hline
+\hline
+Total  & - & $^{+20.7\%}_{-24.8\%}$& $^{+24.5\%}_{-29.6\%}$ & $^{+16.3\%}_{-22.4\%}$ & $^{+14.7\%}_{-19.5\%}$  \\
+\hline
+\hline
+\multicolumn{6}{|c|}{60--80\% centrality class}       \\                                                                                                                                                                                                                                               \hline
+$\pt$ interval ($\gev/c$)  &2--4      &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
+\hline
+Yield extraction & 10\%  & 6\% & 6\%& 5\%& 5\%\\
+Tracking efficiency & 11\%  & 11\% &11.5\% &11.5\% & 10\% \\
+PID efficiency  & 3\% & 3\%& 3\% & 3\%&  3\%\\
+Cut efficiency  & 14\% & 10\%& 12\%& 10\%& 12\%\\
+MC $\pt$ shape  & 6\% & 2\%& 2\%& 1\%& 1\% \\
+Feed-down (FONLL scales) & $^{+7.2\%}_{-8.5\%} $& $^{+4.5\%}_{-6.0\%}$ & $^{+6.2\%}_{-8.0\%}$ & $^{+5.2\%}_{-6.6\%}$& $^{+2.9\%}_{-3.4\%}$\\
+Feed-down ($\RAA^{\rm feed-down}$ hypothesis)  & $^{+3.4\%}_{-3.1\%} $& $^{+2.6\%}_{-2.6\%}$& $^{+3.6\%}_{-3.4\%}$ &$ ^{+3.3\%}_{-3.1\%} $& $^{+2.0\%}_{-1.9\%}$ \\
+\hline
+Centrality limit & \multicolumn{5}{c|}{0.1\%}  \\
+\hline
+\hline
+Branching ratio & \multicolumn{5}{c|}{3.5\%}  \\
+\hline
+\hline
+Total  & $^{+28.4\%}_{-28.7\%}$& $^{+18.3\%}_{-18.7\%}$ & $^{+21.4\%}_{-22.0\%}$ & $^{+18.0\%}_{-18.4\%}$  & $^{+17.7\%}_{-17.7\%}$  \\
 \hline
 \end{tabular}
-\caption{Relative systematic uncertainties on the $\pt$-differential yields of $\Ds$ in the 0-10\% centrality class.}
+\caption{Relative systematic uncertainties on the $\pt$-differential yields of $\Ds$ in the 0-10\%, 30-50\% and 60-80\% centrality classes.}
 \label{tab:sysunc_yieldtable}
 \end{table}
 
@@ -843,23 +934,52 @@ ratio.
 
 \begin{table}[!h]
 \centering
-\begin{tabular}{|l|l|l|c|c|c|c|}
+\begin{tabular}{|l|l|l|c|c|c|c|c|}
 \hline
-\multicolumn{5}{|c|}{0--10\% centrality class}       \\                                                                                                                                                                                                                                               \hline
-$\pt$ interval ($\gev/c$)         &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
+\multicolumn{6}{|c|}{0--10\% centrality class}       \\                                                                                                                                                                                                                                               \hline
+$\pt$ interval ($\gev/c$)     & 2--4    &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
 \hline
-Data syst. AA          & 20.2\%& 17\%& 17\%& 15.4\%\\
-Data syst. pp + $\s$-scaling     & $^{+13.2\%}_{-13.7\%}$  &$^{+12.9\%}_{-13.2\%}$ &$^{+12.9\%}_{-13.0\%} $ &$^{+29.3\%}_{-42.2\%}$  \\
-Feed-down (FONLL scales)    &  $^{+1.5\%}_{-1.0\%}$& $^{+0.8\%}_{-0.4\%}$&  $^{+1.1\%}_{-0.7\%}$&  $^{+2.7\%}_{-3.2\%}$\\
-Feed-down ($\RAA^{\rm feed-down}$ hypothesis)          & $^{+3.6\%}_{-9.6\%}$& $^{+5.8\%}_{-14.4\%}$& $^{+5.5\%}_{-13.6\%}$& $^{+5.8\%}_{-14.4\%}$\\
+Data syst. AA    &   -     & 20.1\%  & 17.0\%  & 16.5\%  & 15.5\% \\
+Data syst. pp + $\s$-scaling  &   -      & $^{+13.2\%}_{-13.7\%}$  & $^{+12.9\%}_{-13.2\%}$  & $^{+12.9\%}_{-13.0\%}$  & $^{+29.3\%}_{-42.3\%}$\\
+Feed-down (FONLL scales)  &   -    & $^{+1.2\%}_{-0.9\%}$  & $^{+0.2\%}_{-0.1\%}$  & $^{+0.7\%}_{-0.4\%}$  & $^{+3.1\%}_{-3.7\%}$ \\
+Feed-down ($\RAA^{\rm feed-down}$ hypothesis)   &   -        & $^{+3.9\%}_{-10.2\%}$  & $^{+6.6\%}_{-15.6\%}$  & $^{+6.1\%}_{-14.7\%}$  & $^{+6.5\%}_{-15.6\%}$\\
 \hline
-Normalisation     & \multicolumn{4}{|c|}{4.8\%} \\
+Normalisation     & \multicolumn{5}{|c|}{4.8\%} \\
 \hline
 \hline
-Total  & $^{+24.5\%}_{-26.3\%}$& $^{+22.1\%}_{-25.6\%}$& $^{+21.7\%}_{-25.0\%}$&$^{+33.8\%}_{-43.4\%}$\\
+Total  &   - & $^{+24.4\%}_{-26.5\%}$  & $^{+22.4\%}_{-26.6\%}$  & $^{+21.8\%}_{-25.7\%}$  & $^{+34.0\%}_{-47.8\%}$\\
+\hline
+\hline
+\multicolumn{6}{|c|}{30--50\% centrality class}       \\                                                                                                                                                                                                                                               \hline
+$\pt$ interval ($\gev/c$) & 2--4        &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
+\hline
+Data syst. AA       &   -     & 24.0\%  & 22.7\%  & 14.2\%  & 13.4\%\\
+Data syst. pp + $\s$-scaling  &   -  & $^{+13.2\%}_{-13.7\%}$  & $^{+12.9\%}_{-13.2\%}$  & $^{+12.9\%}_{-13.0\%}$  & $^{+29.3\%}_{-42.3\%}$ \\
+Feed-down (FONLL scales)   &   -   & $^{+0.1\%}_{-0.1\%}$  & $^{+1.0\%}_{-1.0\%}$  & $^{+0.1\%}_{-0.1\%}$  & $^{+2.5\%}_{-3.0\%}$   \\
+Feed-down ($\RAA^{\rm feed-down}$ hypothesis)  &   -       & $^{+5.5\%}_{-13.3\%}$  & $^{+7.8\%}_{-18.0\%}$  & $^{+7.1\%}_{-16.7\%}$  & $^{+5.6\%}_{-13.8\%}$\\
+\hline
+Normalisation     & \multicolumn{5}{|c|}{4.9\%} \\
+\hline
+\hline
+Total  &   - & $^{+28.0\%}_{-30.7\%}$  & $^{+27.3\%}_{-31.9\%}$  & $^{+20.4\%}_{-25.5\%}$  & $^{+32.8\%}_{-46.6\%}$ \\
+\hline
+\hline
+\multicolumn{6}{|c|}{60--80\% centrality class}       \\                                                                                                                                                                                                                                               \hline
+$\pt$ interval ($\gev/c$)  & 2--4       &    4--6          & 6--8      &   8--12            & 12--16                  \\ 
+\hline
+Data syst. AA        &   27.2\%    & 17.6\%& 20.2\%& 16.9\%& 17.3\%\\
+Data syst. pp + $\s$-scaling  &    $^{+12.9\%}_{-14.5\%}$    & $^{+13.2\%}_{-13.7\%}$  &$^{+12.9\%}_{-13.2\%}$ &$^{+12.9\%}_{-13.0\%} $ &$^{+29.3\%}_{-42.3\%}$  \\
+Feed-down (FONLL scales)   &    $^{+3.3\%}_{-4.2\%}$   &  $^{+1.4\%}_{-2.0\%}$& $^{+2.5\%}_{-3.4\%}$&  $^{+1.6\%}_{-2.1\%}$&  $^{+2.9\%}_{-3.4\%}$\\
+Feed-down ($\RAA^{\rm feed-down}$ hypothesis)   &   $^{+3.4\%}_{-3.1\%}$     & $^{+2.6\%}_{-2.5\%}$& $^{+3.6\%}_{-3.3\%}$& $^{+3.3\%}_{-3.1\%}$& $^{+2.0\%}_{-1.9\%}$\\
+\hline
+Normalisation     & \multicolumn{5}{|c|}{6.7\%} \\
+\hline
+\hline
+Total  &   $^{+30.5\%}_{-31.1\%}$ & $^{+22.2\%}_{-22.5\%}$& $^{+24.4\%}_{-24.6\%}$& $^{+21.6\%}_{-21.7\%}$&$^{+34.2\%}_{-45.9\%}$\\
+\hline
 \hline
 \end{tabular}
-\caption{Relative systematic uncertainties on the $\RAA$ of $\Ds$ in the 0-10\% centrality class.}
+\caption{Relative systematic uncertainties on the $\RAA$ of $\Ds$ in the 0-10\%, 30-50\% and 60-80\% centrality classes.}
 \label{tab:sysunc_yieldtable}
 \end{table}
 
