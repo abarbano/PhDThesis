@@ -560,66 +560,72 @@ those of tracks passing the selection as pions from V0 decays
 (in blue). A peak centred at N$\sigma=0$ is the dominant contribution for both
 track samples.
 A second population is visible at the right of the peak at low $\pt$ in the in the N$\sigma$ distribution
-of pion candidate tracks from V0 decays, 
+of pion candidate tracks from V0 decays. This second population is present
+also in the N$\sigma$ distribution obtained obtained from data and shown in
+Fig.~\ref{fig:DataPionsTPC} and it is likely a contamination from electrons passing
+the pion selection criteria. For this reason, 
 only the left side of the peak will be used to study the systematic uncertainty.
 A part from this small contamination, we conclude that the utilised selections provide a pure
 enough sample of pions. 
 In Fig.~\ref{fig:DataPionsTPC}, the N$\sigma$ distributions in data (blue) are compared
 to the distributions of true MC pions (green), in the different $\pt$ intervals.  
-Finally, efficiencies in data and in MC are obtained by integrating the respective 
+Finally, the efficiencies of the N$\sigma$ selection in data and in MC are obtained by integrating the corresponding 
 distributions (blue and green distributions in Fig.~\ref{fig:DataPionsTPC})
-within 1, 2 or 3$\sigma$, and normalising these values to the integral 
+within 1$\sigma$, 2$\sigma$ or 3$\sigma$, and normalising these values to the integral 
 of the distributions within 5$\sigma$. It was verified that enlarging the number of $\sigma$ from 5 to 10 at the 
 denominator of the efficiency does not affect the final results.
+The systematic uncertainty is defined as the difference between the efficiencies 
+ of the N$\sigma$ selection in data and in MC.
 The same procedure
-was carried out with the N$\sigma$ distributions of time-of-flight signals in TOF
-for the above selected pions from V0 decays, to obtained the systematics on pion identification in TOF.
+was carried out with the N$\sigma$ distributions of the time-of-flight signals 
+for the pions from V0 decays, to estimate the systematic uncertainty on pion identification with TOF.
 To obtain the uncertainty on kaon identification in TPC, a tight cut on the PID 
-signal in TOF, requiring the signal to be within N$\sigma < 0.25\sigma$ from kaon hypothesis, was appliednon. 
-The black curve in Fig.~\ref{fig:MCKaonsTPC} shows the d$E$/d$x$ 
-N$\sigma$ values of reconstructed tracks in the simulation that satisfy this selection.
+signal in TOF, requiring the signal to be within N$\sigma < 0.25\sigma$ from the 
+kaon expectation value, was applied. 
+The black curve in Fig.~\ref{fig:MCKaonsTPC} shows the 
+N$\sigma$ distribution for the d$E$/d$x$ of simulated tracks that satisfy this selection.
 Contaminations from other particle species are still present and they
 are shown in different colours in the same Fig.~\ref{fig:MCKaonsTPC}. 
-The black curve was fitted with a Gaussian shape 
-to extrapolate the kaon contribution. The ranges of the fits are set, for each $\pt$ interval, in 
-the regions less affected by other species contribution.
-In Fig.~\ref{fig:DataKaonsTPC}, the distribution of d$E$/d$x$ in data is displayed. 
-The yellow Monte Carlo templates of true 
-kaons are superimposed to the data distributions, 
-only for visualisation purposes, and not used in the fits. The curve in data
-was fitted with a Gaussian function in the $x$-axis range previously tuned with the MC,
-to extrapolate the kaon component from the inclusive distribution, in each $\pt$ interval.\\
-The values of the final systematics, obtained as the data-to-MC ratio
-of the efficiencies are shown in Fig~\ref{fig:PerTrackPIDsys}, as a function of $\pt$,
-for cuts at 1, 2 and 3$\sigma$ on the PID signal. 
-Since the systematic uncertainties on pion and kaon identification in 
-TPC show similar values, an assumption for the systematic uncertainty 
-on kaon identification in TOF is done and it is considered to be similar to that of pions in TOF,
-considering that it is not possible to extract a pure enough kaon
-sample with standalone TOF.
-The per-track systematics can be propagated to the D-meson level, via the kinematics of
+The black curve was fitted in a region around N$\sigma=0$ with a Gaussian shape 
+to extract the kaon contribution. The ranges of the fits are set, for each $\pt$ interval, to exclude 
+the regions more affected by contamination from other species.
+In Fig.~\ref{fig:DataKaonsTPC}, the distribution of N$\sigma$ for d$E$/d$x$ in data is displayed. 
+The Monte Carlo templates for true 
+kaons (yellow filled histograms) are superimposed to the data distributions, 
+only for visualisation purposes, but they are not used in the fits. The distribution of candidate kaons from the data
+was fitted with a Gaussian function in the N$\sigma$-axis range previously tuned on the simulation,
+to extract the kaon distribution, in each $\pt$ interval.\\
+The values of the data-to-MC ratios
+of the efficiencies estimated with this procedure are shown in Fig~\ref{fig:PerTrackPIDsys}, as a function of $\pt$,
+for cuts at 1, 2 and 3$\sigma$ on the PID signals. 
+Since it is not possible to select a pure sample of kaons to compare the TOF N$\sigma$
+distributions, an assumption for the systematic uncertainty on kaon
+identification with the TOF is needed. The same uncertainty estimated
+for pion identification with TOF is assigned also to kaon identification, based on
+the observation that the systematic uncertainties on pion and kaon identification
+with the TPC are similar.
+The $\pt$-dependent per-track systematics can be propagated to the $\Ds$-meson level, via the kinematics of
 the daughter tracks.
-These $\pt$-dependent per-track values were then associated to
-$\Ds$' daughter tracks, depending on their transverse momentum, and linearly summed together 
-for each candidate that passed the topological selections discussed 
-in Sec.~\ref{sec:CutVarsystAA}. The correlation between the
-$\pt$ of the daughter track and that of $\Ds$ mesons is visible in the
+This was done by assigning to the $\Ds$ daughter tracks a PID uncertainty 
+which depends on their $\pt$. The PID uncertainties of the three daughter tracks
+were assumed to be fully correlated and were summed linearly.
+The correlation between the $\pt$ of the daughter track and that of $\Ds$ mesons is shown in the
 left panel of Fig.~\ref{fig:DsPIDsys}.
 The final values of the systematic uncertainties are around 
-3\% for the tighter (Sec.~\ref{Sec:PID}) PID selection (see Fig.~\ref{fig:DsPIDsys}) and are negligible for the
-looser PID selection (Sec.~\ref{sec:PIDsystPP}).
+3\% for the tighter (Sec.~\ref{Sec:PID}) PID selection, utilised for $\Ds$ at low $\pt$ in the 0-10\% and 30-50\% classes and at all $\pt$ in 60-80\% (see Fig.~\ref{fig:DsPIDsys}), and are negligible for the
+looser PID selection, used at high $\pt$ in the 0-10\% and 30-50\% classes (Sec.~\ref{sec:PIDsystPP}).
 
 \begin{figure}[!h]
  \centering
  \includegraphics[angle=0, width=15cm]{./FigCap5/PionTPC_MC.png}
- \caption{N$\sigma$ distribution for d$E$/d$x$ signal in TPC for pion hypothesis in Monte Carlo. In green pions selected by PDG code, in blue tracks passing the selection for pions from V0 decays.}
+ \caption{N$\sigma$ distribution of d$E$/d$x$ signal in TPC for pions in Monte Carlo. In green pions selected by PDG code, in blue tracks passing the selection for pions from V0 decays.}
  \label{fig:MCPionsTPC} 
 \end{figure}
 
 \begin{figure}[!h]
  \centering
  \includegraphics[angle=0, width=15cm]{./FigCap5/PionTPC_DataMC.png}
- \caption{N$\sigma$ distribution for d$E$/d$x$ signal in TPC for pion hypothesis in data (blue) and Monte Carlo (green)}
+ \caption{N$\sigma$ distribution of d$E$/d$x$ signal in TPC for pions in data (blue) and Monte Carlo (green)}
  \label{fig:DataPionsTPC} 
 \end{figure}
 
@@ -627,7 +633,7 @@ looser PID selection (Sec.~\ref{sec:PIDsystPP}).
 \begin{figure}[!h]
  \centering
  \includegraphics[angle=0, width=13cm]{./FigCap5/MCPionTOF_AllTrueSig.eps}
- \caption{Monte Carlo N$\sigma$ distribution for t.o.f. signal in TOF for pion hypothesis in Monte Carlo. In green pions selected by PDG code, in blue and in red pions passing the selection for V0 decays without and with PDG code selection respectively.}
+ \caption{N$\sigma$ distribution of t.o.f. signal in TOF for pion hypothesis in Monte Carlo. In green pions selected by PDG code, in blue and in red pions passing the selection for V0 decays without and with PDG code selection respectively.}
  \label{fig:MCPionsTOF} 
 \end{figure}
 \fi
@@ -635,14 +641,14 @@ looser PID selection (Sec.~\ref{sec:PIDsystPP}).
 \begin{figure}[!h]
  \centering
  \includegraphics[angle=0, width=15cm]{./FigCap5/KaonTPCFromTOF_MC.png}
- \caption{Monte Carlo N$\sigma$ distribution for d$E$/d$x$ signal in TPC for tracks that pass the selections as kaons (black curve). In yellow, contribution from true kaons, in magenta from pions and in green from protons. In red, the fit to extrapolate the kaon component in the inclusive distribution.}
+ \caption{N$\sigma$ distribution of d$E$/d$x$ signal in TPC for tracks from the Monte Carlo simulation that pass the selections as kaons (black curve). In yellow, contribution from true kaons, in magenta from pions and in green from protons. The fit to extact the kaon component from the inclusive distribution is shown in red.}
  \label{fig:MCKaonsTPC} 
 \end{figure}
 
 \begin{figure}[!h]
  \centering
  \includegraphics[angle=0, width=15cm]{./FigCap5/KaonTPCFromTOF_DataMC.png}
- \caption{N$\sigma$ distribution for d$E$/d$x$ signal in TPC for kaon hypothesis in data. In yellow, contribution from true MC kaons superimposed to data. In red, the fit to extrapolate the kaon component in the inclusive distribution.}
+ \caption{N$\sigma$ distribution of d$E$/d$x$ signal in TPC for kaons selected based on TOF information in data. The distribution of true kaons form the Monte Carlo is shown in yellow. The fit to extract the kaon component from the inclusive distribution is shown in red.}
  \label{fig:DataKaonsTPC} 
 \end{figure}
 
@@ -651,14 +657,14 @@ looser PID selection (Sec.~\ref{sec:PIDsystPP}).
  \includegraphics[angle=0, width=7cm]{./FigCap5/PIDsyst_1over5sigmaCut.eps}
  \includegraphics[angle=0, width=7cm]{./FigCap5/PIDsyst_2over5sigmaCut.eps}
  \includegraphics[angle=0, width=7cm]{./FigCap5/PIDsyst_3over5sigmaCut.eps}
- \caption{Per-track systematics for kaons and pions in TPC and TOF in different colours, as a function of $\pt$, for 1, 2 and 3$\sigma$ selection, normalised to a 5$\sigma$ cut. }
+ \caption{Ratios of N$\sigma$ selection efficiencies in data and MC for kaons and pions in TPC and TOF in different colours, as a function of $\pt$, for 1$\sigma$ (top left), 2$\sigma$ (top right) and 3$\sigma$ (bottom) selection, normalised to a 5$\sigma$ cut. }
  \label{fig:PerTrackPIDsys} 
 \end{figure}
 
 \begin{figure}[!h]
  \centering
  \includegraphics[angle=0, width=13cm]{./FigCap5/PIDsystDs_MCall.eps}
- \caption{Left: scatter plot of $\Ds$ daughter $\pt$ as a function of $\Ds$-meson $\pt$. Right: final systematics on the tighter PID selection used for $\Ds$ meson as a function of $\pt$.}
+ \caption{Left: scatter plot of $\Ds$ daughter $\pt$ as a function of $\Ds$-meson $\pt$. Right: systematic uncertainty on the tighter PID selection used for $\Ds$ meson as a function of $\Ds$ $\pt$.}
  \label{fig:DsPIDsys} 
 \end{figure}
 
@@ -687,50 +693,51 @@ Table~\ref{tab:sysunc_yieldtable} for the 0-10\% centrality class, but are simil
 
 \subsection{Feed-down subtraction}
 \label{sec:FDsystAA}
-The systematic uncertainty on the subtraction of feed-down from 
+The systematic uncertainty on the correction for the contribution of feed-down from 
 B-meson decays was estimated by varying i)
-the $\pt$-differential feed-down D-meson cross section from the 
-FONLL calculation within the theoretical uncertainties (that originate from variations on 
-$b$-quark mass, perturbative scales and on the parton distribution functions~\cite{Cacciari:2012ny}), 
-ii) the ratio of the prompt and feed-down $\Ds$-meson $\Raa$ in the 
-range $\frac{1}{3} < \RAA^{\rm  feed-down}/\RAA^{\rm prompt} < 3$ 
+the $\pt$-differential B-meson cross section in the 
+FONLL calculation within the theoretical uncertainties (that originate from variations of 
+$b$-quark mass, perturbative scales and from uncertainties on the parton distribution functions~\cite{Cacciari:2012ny}), 
+ii) the ratio of $\frac{1}{3} < \RAA^{\rm  feed-down}/\RAA^{\rm prompt} < 3$ 
 for the centrality classes 0-10\% and 30-50\%. The range was limited to 
 $1 < \RAA^{\rm  feed-down} / \RAA^{\rm prompt} < 1.6$ 
-for the centrality class 60-80\%. 
+for the centrality class 60-80\%, as anticipated in Sec.~\ref{sec:CorrectionsAA}.
 
 \subsection{Track reconstruction efficiency}
 \label{sec:TrackEffSystPbPb}
-The procedure to estimate the difference
-of tracking efficiency between data and MC was discussed in Sec.~\ref{sec:TrackEffSystPP}.
+The procedure to estimate the systematic uncertainty due to
+ tracking efficiency was discussed in Sec.~\ref{sec:TrackEffSystPP}.
 The per-track uncertainty quoted to account for track-quality selection efficiencies
-is 1.5\% in the 10\% most central events and 1\% in 30-50\% and 60-80\% 
-centrality classes. As regards the systematic uncertainty on the ITS-TPC 
-track-matching efficiency, some discrepancies (up to 4\%, for $2 < \pt < 4\, \Gevc$) 
-are observed in the final systematics for Pb-Pb data
-when switching off the request of a hit in one of the two SPD 
-layers for the tracks used to perform the DCA$_{\rm xy}$ fits.
-As explained in Sec.~\ref{sec:TrackEffSystPP}, this request is 
-preferable since the DCA$_{\rm xy}$
-resolution is more accurate, thus differences between primary and secondary track DCA$_{\rm xy}$ 
-distributions can be appreciated. This request also implies 
-a correction factor to rescale the fraction of primary tracks in the ITS
-to the same fraction in TPC. Such factor is extracted from MC and it
-lays on the hypothesis that simulation can reproduce the ITS to TPC 
-relative abundance of primary tracks 
-as in data. For the case 
-without the request of hit in the SPD, the DCA$_{\rm xy}$
-resolution is worse, anyhow the fits can be performed with still acceptable data-to-fit agreement.
-The observed discrepancy in the results between the two cases 
+based on a cut variation approach is 1.5\% in the 10\% most central events and 1\% in 30-50\% and 60-80\% 
+centrality classes. The systematic uncertainty on the ITS-TPC 
+track-matching efficiency was estimated by comparing its values in data and simulations
+after correcting for the different contribution of secondary particles, according to
+the procedure described in Sec.~\ref{sec:TrackEffSystPP}.
+Some discrepancies are observed in the systematic uncertainties (up to 4\%, for $2 < \pt < 4\, \Gevc$)
+if the request of a point in SPD is applied or not on the tracks used to fill the DCA$_{\rm xy}$ distribution.
+The two approaches have different pros and cons. The extraction of the primary
+and secondary fractions from the fit to DCA$_{\rm xy}$ distribution of
+tracks with a point in SPD is more robust thanks to the better resolution on the track 
+parameters as compared to the TPC-only tracks. However, the request of
+ITS points requires to introduce a correction factor to rescale the fraction of primary tracks in the ITS
+to that in TPC. This factor is extracted from MC and it
+relies on the fact that the simulation should reproduce well the data for what concerns
+the dependence of the relative abundance of primary tracks on the radial distance from the beam axis.
+For the case without the request of hit in the SPD, the DCA$_{\rm xy}$
+resolution is worse, anyhow the fits can be performed with acceptable quality.
+The observed discrepancy in the results between the two approaches 
 may be due to the less precise estimate
-of the fraction of primary tracks due to looser resolution power as well as
-to a non valid assumption on the correction factor. For this reason, the systematic 
+of the fraction of primary tracks due to looser resolution, in the case of not requiring the SPD point, as well as
+to a non valid assumption on the MC-based correction factor, in case in which 
+the SPD point is required. For this reason, the systematic 
 uncertainty on the ITS-TPC matching efficiency for the single track was
 assigned by averaging the two results, resulting in
 2.5-4\% for $0.5 < \pt < 5 \, \Gevc$, 2.5-1\% for $5 < \pt < 10 \, \Gevc$, 1\% for $10 < \pt < 15\, \Gevc$.\\
 
 
-The values of the systematic uncertainties on the $\pt$-dependent corrected yields
-are summarised in Tab.~\ref{tab:sysunc_yieldtable}.
+The values of the systematic uncertainties on the $\Ds$-meson corrected yields
+are summarised in Tab.~\ref{tab:sysunc_yieldtable}, in the $\pt$ intervals considered in 
+the analysis. The uncertainties on the fraction of the hadronic cross section used in the Glauber fit to determinethe centrality are shown as well in the Table.
 \begin{table}[!h]
 \centering
 \begin{tabular}{|l|l|l|c|c|c|c|c|}
@@ -745,6 +752,9 @@ Cut efficiency & 13\%& 10\%& 10\%& 10\%\\
 MC $\pt$ shape & 7\%& 2\%& 1\%& 0\% \\
 Feed-down (FONLL scales) & 2.9\% & 4.6\%& 3.9\%& 3.7\%\\
 Feed-down ($\RAA^{\rm feed-down}$ hypothesis) & 10.3\%& 15.7\%& 14.7\%& 15.6\% \\
+\hline
+Centrality limit & \multicolumn{4}{c|}{0.1\%}  \\
+\hline
 \hline
 Branching ratio & \multicolumn{4}{c|}{3.5\%}  \\
 \hline
@@ -763,20 +773,21 @@ The nuclear modification factor $\RAA$ of prompt $\Dsplus$ mesons was defined as
 \label{eq:RAADs}
 \RAA (\pt) = \frac{1}{\langle \TAA \rangle} \frac{{\rm d} N_{\rm AA}/{\rm d}\pt}{{\rm d} \sigma_{\rm pp}/{\rm d} \pt},
 \end{equation}
-where ${\rm d} N_{\rm AA}/{\rm d}\pt$ is the corrected $\pt$-spectrum of 
-Eq.~\ref{eq:dNdpt}, $\langle \TAA \rangle$ is the 
-average nuclear overlap function and ${\rm d} \sigma_{\rm pp}/{\rm d} \pt$ is 
-proton-proton reference at $\s = 5.02$ TeV.
+where ${\rm d} N_{\rm AA}/{\rm d}\pt$ is the $\pt$-differential yield of prompt $\Dsplus$ mesons
+of Eq.~\ref{eq:dNdpt}, $\langle \TAA \rangle$ is the 
+average nuclear overlap function for the considered centrality class and ${\rm d} \sigma_{\rm pp}/{\rm d} \pt$ is 
+the $\Dsplus$ $\pt$-differential cross section in pp collisions at $\s = 5.02$ TeV.
 \section{Systematic uncertainty on the $\RAA$}
 \label{sec:SystRAA}
-The systematic uncertainties on the $\Raa$ measurement include those 
-on the $\Ds$-meson corrected $\pt$-spectrum described above. The systematic 
+The systematic uncertainty on the $\Raa$ measurement was computed by combining the uncertainties  
+on the $\Ds$-meson yield in Pb-Pb collisions described in Sec.~\ref{sec:systematics} and those 
+on the pp reference cross-section. The systematic 
 uncertainty on the feed-down subtraction deriving from
 the variation of the parameters of the FONLL calculation was considered to be
-correlated in the $\PbPb$ and pp measurements. All the 
+correlated between the $\PbPb$ and pp measurements. All the 
 other sources of systematic uncertainties were treated as uncorrelated. 
-Additional systematic uncertainties on the $\Raa$ are on 
-the proton--proton reference cross section and on the $\RAA$ normalisation. 
+An additional source of systematic uncertainty originates from the uncertainty
+on the $\langle T_{\rm AA}$ used in the $\Raa$ calculation.
 
 \subsection{Proton-proton reference}
 \label{sec:PPrefSyst}
@@ -785,18 +796,36 @@ $|y|<0.5$ in pp collisions at $\sqrt s=5.02~\tev$, used as reference
 for the nuclear modification factor, was obtained by scaling the 
 measurement at $\sqrt{s}=7~\TeV$ described in 
 Chapter~\ref{chap:pp}~\cite{Acharya:2017jgo} to $\s = 5.02$ TeV 
-with FONLL calculations~\cite{Cacciari:2012ny}. This measurement 
+with FONLL calculations~\cite{Cacciari:2012ny}. 
+This measurement 
 reaches up to $12~\Gevc$ for $\Ds$ mesons.
+In particular, the value of the cross section measured at $\s$ = 7 TeV 
+at central rapidity $|y| < 0.5$ was scaled in each $\pt$ interval by 
+the ratio of the FONLL predictions at the two energies in the same rapidity region as follows:
+\begin{equation}
+\label{eq:scalingPP}
+\sigma^{\rm 5.02 TeV}_{\rm scaled} (\pt) = \frac{\sigma^{\rm 5.02 TeV}_{\rm FONLL} (\pt)}{\sigma^{\rm 7 TeV}_{\rm FONLL} (\pt)} \sigma^{\rm 7 TeV}_{\rm meas} (\pt).
+\end{equation}
 The uncertainty on the pp reference 
-has two contributions. The first one is the global uncertainty on the measured 
+has two contributions. The first one is the uncertainty on the measured 
 $\pt$-differential $\Dsplus$-meson cross section at $\sqrt s=7$~TeV.
 The second contribution is the $\pt$-dependent scaling factor 
 from $\sqrts=7~\tev$ to $\sqrts=5.02~\tev$, determined by varying
 the FONLL parameters (charm-quark mass, factorisation and renormalisation scales) 
-as described in~\cite{Averbeck:2011ga}. 
+as described in~\cite{Averbeck:2011ga}. The values of these parameters were 
+varied coherently at the two energies.
 In the interval $12<\pt<16~\Gevc$, the FONLL calculation at 
 $\sqrt s=5.02~\tev$~\cite{Cacciari:2012ny} was used as a reference 
 by scaling the values to match the central value of the data at lower $\pt$. 
+\iffalse
+The cross section measurements of $\Ds$ meson in pp collisions at $\s = $ 7 TeV 
+is limited to $\pt < 12 \, \Gevc$. For the interval $12 \leq \pt < 16 \, \Gevc$ 
+the pp reference was obtained using the cross section from the FONLL calculation at $\s = 5.02$ TeV. 
+Since the central value of the FONLL calculation at $\s = 5.02$ TeV underestimates the measurement 
+for $\pt > 5 \, \Gevc$ at both ?and ?s = 7 TeV [45, 60], the FONLL cross section was multiplied by a scaling factor (?) 
+
+The factor ? was determined by fitting with a constant the data-to-theory ratio at ?s = 7 TeV in the?s = 2.76 TeV are less precise, they do not interval 5 < pT < 16 GeV/c. Since the measurements at ??constrain further the scaling factor. 
+\fi
 This procedure is described in Ref.~\cite{Adam:2015sza}. The total 
 systematic uncertainty on the $\pt$-extrapolated cross section is about 
 $^{+29}_{-42}\%$ for $\Ds$ in the $\pt$ interval 12--16~$\Gevc$.
@@ -805,7 +834,7 @@ $^{+29}_{-42}\%$ for $\Ds$ in the $\pt$ interval 12--16~$\Gevc$.
 \subsection{Normalization}
 \label{sec:NormalizSyst}
 The uncertainties on the $\RAA$ normalisation are the quadratic sum of 
-(i) the pp normalisation uncertainty (3.5\%), 
+(i) the normalisation uncertainty on the integrated luminosity used for the measurement of the $\Ds$ cross section in pp collisions (3.5\%), 
 (ii) the uncertainty on $\langle T_{\rm AA} \rangle$, which ranges from 3.3\% to 6.2\% depending on the centrality, and
 (iii) the uncertainty on the fraction of the hadronic cross section used in the 
 Glauber fit to determine the centrality ($<0.1\%$, $2\%$ and $3\%$ for the 0--10\%, 30--50\% 
@@ -835,64 +864,73 @@ Total  & $^{+24.5\%}_{-26.3\%}$& $^{+22.1\%}_{-25.6\%}$& $^{+21.7\%}_{-25.0\%}$&
 \end{table}
 
 \section{$\Ds$ elliptic flow}
-In this section, the first measurement at LHC of the $v_2$ of 
-$\Ds$ meson in Pb--Pb collisions at 
+In this section, the first measurement of the $v_2$ of prompt
+$\Ds$ mesons in Pb-Pb collisions at 
 $\sqrtsNN = 5.02$~$\TeV$ is reported. The analysis was carried 
 out for the 30-50\% centrality class, because it is the centrality
 interval where the elliptic flow reaches its maximum value~\cite{Adam:2016izf}. 
 
 \subsection{Event characterization: event plane}
 \label{sec:EventPlane}
-Let's briefly recall that the reaction plane ($\Psi_{\rm RP}$) is the 
-plane formed by the impact parameter of the two colliding nuclei and the beam
-direction. The orientation of the reaction plane or, in case of flow fluctuations, 
-of the $n^{th}$-harmonic collision symmetry plane is estimated 
-from the particle azimuthal distribution event-by-event
-with the $n^{th}$-harmonic event-plane angle, $\psi_n^{\rm EP}$.
-For a given harmonic $n$, one constructs the two-dimensional event-plane 
-vector $\vec{Q}_n$ from the measured azimuthal distribution of 
-particles produced in the event as follows:
+The measurement of the azimuthal anisotropy of charm and beauty hadrons
+with respect to the symmetry plane of the collision can provide important information on the properties of the QGP medium 
+and the interactions between heavy quarks and the medium.
+The $\pt$-differential azimuthal distribution of produced particles can be described by a Fourier series:
 \begin{equation}
-\label{f:qvector}
+\label{eq:fourier}
+\frac{{\rm d}^2N}{{\rm d} \varphi {\rm d}\pt} =  \frac{{\rm d}N}{2\pi {\rm d}\pt} \Big [ 1+ 2 \sum_{n=1}^{\infty} v_n(\pt) \,{\rm cos} \,n(\varphi- \Psi_n)\Big ], 
+\end{equation}
+where $v_n$ are the Fourier coefficients, that can be evaluated as 
+$v_n = \langle {\rm cos} \, n(\varphi - \Psi_n)\rangle$ and $\langle \rangle$ indicates an average over 
+ all particles in all events, with their azimuthal angle $\varphi$ in a given rapidity and $\pt$ 
+ momentum at a fixed centrality. In Eq.~\ref{eq:fourier},
+$\Psi_n$ is the initial-state spatial plane of symmetry (reaction plane) of
+ the $n^{\rm th}$ harmonic defined by the geometrical distribution of the nucleons participating in the collision.
+The symmetry plane $\Psi_n$ of a given $n^{\rm th}$ harmonic is estimated 
+ event-by-event from the azimuthal distribution of the produced particles
+via the $n^{th}$-harmonic event-plane angle, $\psi_n^{\rm EP}$.
+For a given harmonic $n$, one constructs the two-dimensional event-plane 
+vector $\vec{Q}_n$:
+\begin{equation}
+\label{eq:qvector}
  \vec{Q}_n= {Q_{n,x} \choose Q_{n,y}} = {\sum_{i=0}^{N} w_i \cos (n\varphi_i) \choose \sum_{i=0}^{N} w_i \sin (n\varphi_i)}.
 \end{equation}
 The sums run over all reconstructed tracks in the case 
-of the TPC, or segments of detectors with azimuthal 
-segmentation like V0 or ZDC. The angle $\varphi_i$ is 
-the azimuthal emission angle of the $i^{th}$ particle or the 
+of the TPC, or over the scintillator tiles of the V0 detector.
+The angle $\varphi_i$ is the azimuthal emission angle of the centre of the $i^{th}$ particle or the 
 azimuthal coordinate of the $i^{th}$ detector element, respectively. 
 For TPC tracks the weight $w_i$ can be unity or a specific 
 function of $\pt$, useful to enhance the 
 contribution of particle with large flow, improving 
-the resolution on the event plane. For segmented detectors, $w_i$ is the 
-signal observed in the $i^{th}$ detector element. The observed plane 
+the resolution on the event plane. For segmented detectors, $w_i$ is the amplitude of the 
+signal measured in the $i^{th}$ detector element. The observed plane 
 angle of the $n^{th}$ harmonic is given by the orientation of $\vec{Q}_n$:
 \begin{equation}
 \psi_n = \dfrac{1}{n} \tan^{-1} \left(\dfrac{Q_{n,y}}{Q_{n,x}}\right).
 \end{equation}
 Due to the finite number of detected particles, the
-angular resolution on reaction plane $\Psi_{\rm RP}$ is limited and 
+angular resolution on the reaction plane $\Psi_{\rm RP}$ is limited and 
 can be estimated for the $n^{th}$ harmonic as:
 \begin{equation}
 R_n = \langle {\rm cos}[n({\rm \psi}_n-{\rm \Psi}_{\rm RP})]) \rangle ,
 \end{equation}
 where the angle brackets denote an average over a large event sample.
-The resolution term must be used to correct the flow coefficients as:
+The resolution term must be used to correct the Fourier coefficients as:
 \begin{equation}
-v_n = \frac{v_n^{obs}}{R_n}.
+v'_n = \frac{v_n}{R_n}.
 \end{equation}
-It can be demonstrated that the the event plane resolution 
+It can be demonstrated that the the event plane resolution correction factor
 can be expressed as~\cite{Poskanzer:1998yz}:
 \begin{equation}
 \label{eq:epreso}
 \left\langle \cos [km\left( \psi_m-\Psi_{\rm RP}\right)]\right\rangle = \sqrt{\dfrac{\pi }{8}} \chi_m \cdot {\rm e}^{-\chi_m^2/4} \cdot I_{(k-1)/2}(\chi_m^2/4)+I_{(k+1)/2}(\chi_m^2/4),
 \end{equation}
 where the equation has been written in terms of $km$ 
-instead of $n$, $\chi_m= v_m/\sigma = v_m\sqrt{2N}$ ($N$ is the multiplicity) and 
-$I_\nu$ is the Bessel function of order $\nu$.
+instead of $n$, $\chi_m= v_m/\sigma = v_m\sqrt{2N}$ ($N$ is the multiplicity) is the variable concerning the
+resolution, $I_\nu$ is the Bessel function of order $\nu$ and
 $k$ is an integer number that accounts for the fact that the 
 event plane of $m^{th}$ order can be used to compute all Fourier harmonics that are multiples
-of $m$ (i.e. $km$). The expression for resolution in Eq.~\ref{eq:epreso} is
+of $m$ (i.e. $km$). The resolution correction factor from Eq.~\ref{eq:epreso} is
 drawn in Fig.~\ref{fig:resoBessel} as a function of $\chi_m$, for 
 different values of $k$. 
 The mean cosine values are less than one, thus the 
@@ -903,12 +941,11 @@ correction always increases the Fourier coefficients.
  \caption[Event plane resolution vs $\chi_m$]{The event plane resolution for the $n^{ th}$ ($n=km$, according the conventions of Eq.~(\ref{eq:epreso})) harmonic of the particle distribution with respect to the $m^{ th}$ harmonic plane, as a function of $\chi_m$.}
  \label{fig:resoBessel}
 \end{figure}
-To measure the event plane resolution, one usually divide the
-full sample of tracks into two independent sub-samples 
-$a$ and $b$, with same multiplicity and rapidity coverage.
-The two sub-events can for example be obtained by 
-splitting the full event in two subsets of tracks using a random generator.
-There is a simple relation for the correlations between 
+To estimate the event plane resolution, the correlations of the event planes determined
+from different samples of tracks, or different detectors are exploited.
+If the full sample of tracks can be divided into two independent sub-samples 
+$a$ and $b$, with same multiplicity and rapidity coverage,
+the following relation holds for the correlations between the
 two independent sub-sets and the true event plane:
 \begin{equation}
 \langle {\rm cos} [n({\rm \psi}^a_n-{\rm \psi}^b_n)) \rangle = 
@@ -920,18 +957,10 @@ once the correlation between the two samples is known:
 \begin{equation}
 R_{n, sub} = \langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_{\rm RP})] \rangle = \sqrt{\langle {\rm cos} [n({\rm \psi}^a_n-{\rm \psi}^b_n)] \rangle}.
 \end{equation}
-\iffalse
-The full event resolution is obtained using 
-Eq.?? from the resolution of sub-events {\bf trovare reference}:
-\begin{equation}
-R_{full} = R(\sqrt{2}\chi_{sub})
-\end{equation}
-because $\chi \propto \sqrt{N}$ and the full event has twice the multiplicity of the sub-events.\\
-\fi
 If the two sub-events are not equal or have different rapidity coverage,
 at least three sub-samples are needed to determine the 
 event-plane resolution in each of them. In this case, 
-the resolution of the first sub-set $a$, for example, is determined as:
+the resolution of the first sub-set $a$ is determined as:
 \begin{equation}
  \langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_{\rm RP})] \rangle = 
 \sqrt{\frac{\langle\cos [n(\psi_n^a-\psi_n^c)] \rangle \langle\cos [n(\psi_n^a-\psi_n^b)] \rangle}{\langle\cos [n(\psi_n^b-\psi_n^c)] \rangle}}\, .
@@ -947,21 +976,42 @@ the resolution of the first sub-set $a$, for example, is determined as:
 \end{figure}
 
 \subsection{Event plane measurement and corrections}
-
+The azimuthal angle of the $\vec{Q}$ vector in Eq.~\ref{eq:qvector}:
+\begin{equation}
+\label{eq:psi2}
+\psi_2= \frac{1}{2} {\rm tan}^{-1} \Big (\frac{Q_y}{Q_x} \Big )
+\end{equation}
+is called event plane angle and it is an estimate of the second harmonic symmetry plane $\Psi_2$.
+The event plane method was used to measure the $\Ds$ meson 
+Fourier coefficient $v_2$ (elliptic flow) in this analysis.
 The determination of the event plane in ALICE can be performed using
-either the tracks reconstructed in the TPC, which has an uniform
+either the tracks reconstructed in the TPC, which has a uniform
 azimuthal coverage in the central rapidity region, or the V0
 detectors, located at forward ($2.8<\eta<5.1$) and backward
 ($-3.7<\eta<-1.7$) pseudo-rapidity.
 In this analysis the event plane was obtained from the 
 signals produced by the charged particles in the eight 
-azimuthal sectors of each V0 array. Since the V0s sub-detectors cover different rapidity 
-regions and measure different multiplicities, at least 
-three sub-events of charged particles are required to 
-compute the event plane resolution.
-They are the V0 detector itself and the 
+azimuthal sectors of each V0 array. 
+The current uncertainties on the $v_2$ values do not allow to
+appreciate different non-flow contributions (i.e.\,correlations not 
+induced by the collective expansion but rather by particle decays and 
+jet production) using different detectors
+for the event plane measurement, thus, introducing different
+rapidity gaps between the tracks used for the event plane measurement
+and the D mesons. %(see left panel of Fig.~\ref{fig:QoverMCalibration},
+%as an example for the $v_2$ of $\Ds$ meson with different detector configurations).
+The separation of at least 0.9 units of pseudo-rapidity 
+($|\Delta\eta|>0.9$) between the D mesons (reconstructed in the TPC)
+and the particles (detected with V0) used in the $\psi_2$ calculation
+suppresses non-flow contributions in the $v_2$ measurement with respect
+to the measurement of the event plane considering tracks in the same
+pseudo-rapidity region of the D meson candidates (TPC event planes).
+Since the V0s sub-detectors cover different rapidity 
+regions and measure different multiplicities, the
+three events technique was used to compute the event plane resolution.
+The three event planes were computed with the V0 detector itself and the 
 positive and negative $\eta$ regions of the TPC.
-The average resolution value in the 30-50\% centrality class is
+The average resolution correction factor in the 30-50\% centrality class is
 $R_2 = 0.77045 \pm 0.00007$ (see left panel 
 of Fig.~\ref{fig:resoVsDetConfig}) 
 Other detector 
@@ -969,37 +1019,23 @@ configurations have been tested in order to compare
 the resolution and check the consistency of the different 
 results obtained:
 \begin{enumerate}
-\item event plane measured with $\eta > 0$ TPC region,  
-resolution $R_2$ with two sub-samples: $\eta < 0$ TPC region, 
-$\eta > 0$ TPC region;
-\item event plane measured with $\eta > 0$ TPC region,  
-resolution $R_2$ with three sub-samples: V0A, V0C, $\eta > 0$ TPC region; 
+\item event plane measured with TPC tracks with $\eta > 0$,  
+resolution $R_2$ with the event planes from the two samples with same resolution: 
+TPC tracks with $\eta < 0$ and $\eta > 0$;
+\item event plane measured with TPC tracks with $\eta > 0$,  
+resolution $R_2$ with three sub-samples: V0A, V0C, TPC region at $\eta > 0$; 
 \item event plane measured with full TPC,  
 resolution $R_2$ with three sub-samples: V0A, V0C, full TPC; 
 \item event plane measured with V0C,  
-resolution $R_2$ with three sub-samples:  $\eta < 0$ TPC region, $\eta > 0$ TPC region, V0C.
+resolution $R_2$ with three sub-samples:  V0C, TPC regions at $\eta < 0$ and $\eta > 0$.
 \end{enumerate}
 The best resolution is obtained considering configuration 3, 
-while the lowest resolution using configuration 4, due to
-limited acceptance of the C-side of the V0 detector (see right panel 
+while the worst resolution using configuration 4, due to
+the limited acceptance of the C-side of the V0 detector (see right panel 
 of Fig.~\ref{fig:resoVsDetConfig}). 
-The resolution obtained with three sub-events and full V0 for the event
+The resolution obtained with full V0 for the event
 plane measurement (default configuration) and the 
 resolutions obtained with configurations 1 or 2 are very similar. 
-The current uncertainties on the $v_2$ values do not allow to
-appreciate different non-flow contributions (i.e.\,correlations not 
-induced by the collective expansion but rather by decays and 
-jet production) using different detectors
-for the event plane measurement, thus, introducing different
-rapidity gaps between the tracks used for the event plane measurement
-and the D mesons (see left panel of Fig.~\ref{fig:QoverMCalibration},
-as an example for the $v_2$ of $\Ds$ meson with different detector configurations).
-Nevertheless, the separation of at least 0.9 units of pseudo-rapidity 
-($|\Delta\eta|>0.9$) between the D mesons (reconstructed in the TPC)
-and the particles (detected with V0) used in the $\psi_2$ calculation
-suppresses non-flow contributions in the $v_2$ measurement with respect
-to the measurement of the event plane considering tracks in the same
-pseudo-rapidity region of the D meson candidates (TPC event planes).
 \\
 
 
@@ -1023,18 +1059,20 @@ The resolution of the V0A (V0C)
 \centering
   \includegraphics[width=0.45\textwidth]{FigCap5/v2_diffDetComparison.eps}
  \includegraphics[width=0.53\textwidth]{FigCap5/V0EvPlaneDitrib.eps}
- \caption{Left: $\Ds$ $v_2$ calculated with different detector configurations. Right: event-plane angle distributions obtained with the V0 multiplicity after gain equalisation, re-centering and alignment corrections, using the $Q/M$ normalisation.}
+ \caption{Left: $\Ds$ $v_2$ calculated with different detector configurations. Right: event-plane angle distributions obtained with the V0 detector without corrections and after gain equalisation, re-centering and alignment corrections.}
    \label{fig:QoverMCalibration}
 \end{figure}
 
 
 
-
-Effects of non-uniformity of the detectors can generate 
-non-flat distribution of the event planes.
+The distribution of the event plane angles recorded by an ideal detector is completely
+flat, since there is not a preferred direction for the $\Psi_{RP}$ angle.
+Effects of non-uniformity of the detector performance and tracking efficiency (in the case of the TPC) 
+can generate a non-flat distribution of the event plane angle. 
 For this purpose, a gain equalisation of individual 
-V0 detector channels was applied, correcting the multiplicity $M_c$ 
-as: $M_c' = M_c / \langle M_c \rangle$. 
+V0 detector channels was applied, correcting the raw amplitudes $M_c$ 
+as: $M_c' = M_c / \langle M_c \rangle$, where $\langle M_c \rangle$ is the average amplitude
+of the V0 channels in intervals of $z$ vertex z and V0A(C) multiplicity. 
 A re-centering of the distributions of the components
 of $\vec{Q}_n$ vector ($X_n$, $Y_n$) can also be applied, by subtracting
 the ($\langle X_n\rangle$, $\langle Y_n \rangle$) values averaged over all events:
@@ -1044,10 +1082,10 @@ the ($\langle X_n\rangle$, $\langle Y_n \rangle$) values averaged over all event
 \emph{{Y}}_n' = &\emph{Y}_n - \langle \emph{Y}_n \rangle.
 \end{split}
 \end{equation}
-Further corrections can be introduced but, as the right panel of 
-Fig.~\ref{fig:QoverMCalibration} shows, already the re-centering
-procedure leaves unaffected the event-plane distribution.
-The $\vec{Q}_n$ vector was normalised for the
+Further corrections can be introduced but, as shown in the right panel of 
+Fig.~\ref{fig:QoverMCalibration}, already the re-centering
+procedure, applied after the gain equalisation, does not provide a substantial improvement.
+The $\vec{Q}_n$ vector was normalised to the
 multiplicity M of the event to reduce the sensitivity to multiplicity
 fluctuations. 
 
@@ -1056,32 +1094,26 @@ fluctuations.
 \label{sec:epMethodsDescript}
 The basic principle in flow analysis is to quantify the azimuthal 
 anisotropies via Fourier coefficients obtained through a 
-decomposition of the measured azimuthal yields in a Fourier series:
-\begin{equation}
-\label{eq:dNdphi}
-\frac{{\rm d} N}{{\rm d} \varphi} = k \cdot \big ( 1 + 2 \sum_{n=1}^{\infty} v_n {\rm cos}[n (\varphi - \Psi_n)] ),
-\end{equation}
-where $k$ is a normalisation constant. 
-The $v_2$ coefficient can be obtained by integrating Eq.~\ref{eq:dNdphi}
+decomposition of the azimuthal distributions of reconstructed particles in a Fourier series (see Eq.~\ref{eq:fourier}).
+The $v_2$ coefficient of D mesons can be obtained by integrating Eq.~\ref{eq:fourier}
 in two $\Delta \varphi$ intervals and including a correction for the
 resolution. In the analysis presented here, the sample of candidates was 
-divided in two $\Delta\phi$ regions: the \textit{in-plane} 
+divided in two $\Delta\phi = \varphi_{\rm D}-\psi_n$ regions: the \textit{in-plane} 
 and the \textit{out-of-plane} regions. We define the in-plane 
 region (centred on the event plane) as the region 
 $\left(-\frac{\pi}{4},\frac{\pi}{4}\right]\cup\left(\frac{3\pi}{4},\frac{5\pi}{4}\right]$ and
  the out-of-plane as $\left(\frac{\pi}{4},\frac{3\pi}{4}\right]\cup\left(\frac{5\pi}{4},\frac{7\pi}{4}\right]$. 
- Reducing the splitting in $\Delta\phi$ to only two bins allows 
- to improve the statistics for each invariant mass fit. Resolving 
- Eq.~\ref{eq:dNdphi} for the number of signals measured 
+ In each $\Delta\phi$ interval the $\Ds$ yield is extracted via
+an invariant-mass fit. Resolving Eq.~\ref{eq:fourier} for the number of $\Ds$ measured 
  in the in-plane and out-of-plane regions separately we obtain:
 \begin{equation}\label{eq:ninout}
  \begin{split}
-  & N_\text{in-plane} = k\int_\text{in-plane}1+2v_2\cos(2\varphi)d\varphi = k'\cdot(\pi+4v_2)\\
-  & N_\text{out-plane} = k\int_\text{out-plane}1+2v_2\cos(2\varphi)d\varphi= k'\cdot(\pi-4v_2),
+  & N_\text{in-plane} = k\int_\text{in-plane}1+2v_2\cos(2\Delta \varphi)d\Delta \varphi = k'\cdot(\pi+4v_2)\\
+  & N_\text{out-plane} = k\int_\text{out-plane}1+2v_2\cos(2\Delta \varphi)d\Delta \varphi= k'\cdot(\pi-4v_2),
  \end{split}
 \end{equation}
 and therefore it is possible to compute $v_2$ from the relative 
-difference between the number of signal observed in-plane and out-of-plane:
+difference between the number of $\Ds$ mesons observed in-plane and out-of-plane:
 \begin{equation}
 \label{eq:anis}
  v_2 = \frac{1}{R_2} \frac{\pi}{4}\frac{N_\text{in-plane}-N_\text{out-plane}}{N_\text{in-plane}+N_\text{out-plane}}.
@@ -1102,18 +1134,18 @@ D-meson raw yields, without an efficiency correction.
 
  \subsection{In- and out-of-plane signal extraction}
  \label{sec:SigExtracV2}
- The topological selections used for the extraction of
- in-plane and out-of-plane $\Dspm$ yields in the 30-50\% centrality class
+ The topological selections used for the selection of $\Ds$ candidates in the 30-50\% centrality class
  are very similar to those reported in Table~\ref{tab:topologicalselections_ds_3050} for the
  $\varphi$-integrated yields in the same centrality class.
  Only the selections on NDL$_{\rm xy}$, $\sigma_{vertex}$, $\Delta M$ 
  and $|\cos^3 \theta^\prime({\rm K})|$ were slightly released in some $\pt$
- intervals. The $\Dspm$ in- and out-of-plane invariant-mass distributions, 
-with the event plane determined by the V0 multiplicity 
-in the 30-50\% centrality class, are shown in Fig.~\ref{fig:deltaphibinsds} 
+ intervals. The invariant-mass distributions were analysed separately for $\Dsplus$ candidates
+ in the in-plane and out-of-plane $\Delta \varphi$ intervals, 
+with the event plane determined with the V0 
+in the 30-50\% centrality class, as shown in Fig.~\ref{fig:deltaphibinsds} 
 as an example for the interval $6 < \pt < 8 \, \Gevc$.
-The fit was performed using a double Gaussian function to model 
-the $\Ds$ peak and the contribution of the $\DplustoKKpi$ and 
+To extract the $\Ds$ raw yield, the invariant mass distribution was fitted using a two Gaussian
+functions to model the $\Ds$ peak and the contribution of the $\DplustoKKpi$ and 
 an exponential shape to model the background.
 The mean and the width of the Gaussians were fixed to those obtained from a fit to
 the invariant-mass distribution integrated over $\Delta \varphi$, 
@@ -1135,7 +1167,7 @@ are reported in Table~\ref{signalsDs}.
 \begin{figure}
 \centering
  \includegraphics[width=.98\textwidth]{FigCap5/sigmaComparison.eps}
-\caption{$\Dspm$ means (left) and widths (right) from the Gaussian fits for $\varphi$-integrated, in-plane and out-of-plane fits. For left panel, in dashed green colour the value from PDG is also shown.}
+\caption{Position (left) and widths (right) of the Gaussian peak in the $\Ds$ candidate invariant-mass fits for $\varphi$-integrated, in-plane and out-of-plane samples. In the left panel, the value of $\Ds$ mass from PDG is also shown (dashed green line).}
 \label{fig:deltaphibinsds}
 \end{figure}
 
@@ -1157,42 +1189,44 @@ are reported in Table~\ref{signalsDs}.
 12-16 & $25 \pm 6$  & 3.00 & $18 \pm 5$  & 1.89 \\
 \hline
   \end{tabular}
- \caption{$\Dspm$ raw yields and signal-over-background ratios per $\pt$ intervals and $\Delta\varphi$ region.}
+ \caption{$\Dspm$ raw yields and signal-over-background ratios in the different $\pt$ intervals and $\Delta\varphi$ regions.}
  \label{signalsDs}
  \end{center}
 \end{table}  
 
 \subsection{B feed-down subtraction}
 \label{sec:FDv2}
-The measured $\Dspm$ meson raw yield includes a contribution (around 90\%)
-from prompt D mesons and a contribution from beauty feed-down.
+The measured $\Dspm$ meson raw yield includes a contribution (of about 90\%)
+from prompt $\Ds$ mesons and a contribution from beauty feed-down.
 Considering that $v_2$ is an additive quantity, the measured $v_2$ is therefore given by:
 \begin{equation}
 \label{eq:bfeed}
 v_2^{\rm obs}=f_{\rm prompt} v_2^{\rm promptD} + (1-f_{\rm prompt})v_2^{\rm feed-down}.
 \end{equation}
-The value of $f_{\rm prompt}$ is estimated using the FONLL prediction for B mesons, 
-the B$\rightarrow$D decay kinematics from the EvtGen package and
-the Monte Carlo efficiencies for feed-down D mesons, via Eq.~\ref{eq:fprAA},
-with the same hypothesis for the $\RAA^{\rm feed-down}$ of 
-Sec.~\ref{sec:CorrectionsAA}.
+The value of $f_{\rm prompt}$ is estimated via Eq.~\ref{eq:fprAA} using FONLL calculations for B meson
+cross sections, the B$\rightarrow$D decay kinematics from the EvtGen package and
+the Monte Carlo efficiencies for feed-down D mesons and a
+hypothesis for the $\RAA^{\rm feed-down}$, which is the same used for
+$\RAA$ analyses and discussed in Sec.~\ref{sec:CorrectionsAA}.
 To calculate $v_{\rm 2}^{\rm prompt}$, a hypothesis on 
 $v_{\rm 2}^{\rm feed\textnormal{-}down}$ is used.
 The measured $v_2$ of non-prompt J/$\psi$~\cite{Khachatryan:2016ypw} 
 and the available model calculations~\cite{Aichelin:2012ww,Uphoff:2012gb,Greco:2007sz} 
 suggest that $0<v_{\rm 2}^{\rm feed\textnormal{-}down}<v_{\rm 2}^{\rm prompt}$.
-The lower limit, $v_2^{\rm feed-down}=0$, corresponds to the assumptions:
+The lower limit, $v_2^{\rm feed-down}=0$, corresponds to the extreme assumption case in which:
 \begin{itemize}
-\item{at low $\pt$, where $v_2$ is determined by collective motions, 
-$b$ quarks do not flow and hence do not contribute to the anisotropy;}
-\item{at high $\pt$, where $v_2$ is determined by azimuthal dependent 
-energy loss, due to different in-plane and out-of-plane path lengths, 
+\item{at low $\pt$, where $v_2$ is determined by collective flow, 
+$b$ quarks do not take part in the collective expansion and hence do 
+not contribute to the observed D-meson anisotropy;}
+\item{at high $\pt$, where $v_2$ is determined by 
+energy loss, due to different path lengths for quarks emitted in-plane and out-of-plane,
 $b$ quarks are not affected by the medium.}
 \end{itemize}
 The upper limit, $v_2^{\rm feed-down}=v_2^{\rm prompt}$, implies that:
 \begin{itemize}
-\item{at low $\pt$, $b$ quarks are as thermalised as $c$ quarks;}
-\item{at high $\pt$, $b$ and $c$ quarks lose same amount of energy interacting with the medium.}
+\item{at low $\pt$, $b$ quarks are flowing as $c$ quarks;}
+\item{at high $\pt$, $b$ and $c$ quarks lose same amount of energy interacting with 
+the medium (i.e. no effect due to the different quark mass).}
 \end{itemize}
 Assuming a uniform probability distribution of $v_{\rm 2}^{\rm feed\textnormal{-}down}$ in this interval,
 the central value for $v_{\rm 2}^{\rm prompt}$ is calculated 
