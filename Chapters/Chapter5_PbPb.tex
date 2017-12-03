@@ -330,7 +330,8 @@ in rejecting the feed-down component, allowing higher
 prompt efficiencies at high $\pt$.
 The reconstruction and selection efficiencies for prompt and feed-down
 $\Ds$ mesons in Pb-Pb collisions are smaller than the results in pp 
-collisions up to a factor of 3 as a consequence ofthe tighter topological selection applied. \\
+collisions up to a factor of 3 as a consequence of
+the tighter topological selection applied. \\
 
 \begin{figure}[!htb]
  \begin{center}
@@ -442,9 +443,9 @@ uncertainty was reduced.
 
 \begin{figure}[!htb]
  \begin{center}
-\includegraphics[width=15.cm]{./FigCap5/MT_Pt46_010.png}
+\includegraphics[width=15.cm]{./FigCap5/MT_Pt812.png}
 \end{center}
- \caption{Output of multiple-trial fits to $\Ds$ invariant-mass distributions in the $\pt$ intervals 4-6 $\Gevc$, for the 0-10$\%$ centrality class.}
+ \caption{Output of multiple-trial fits to $\Ds$ invariant-mass distributions in the $\pt$ intervals 8-12 $\Gevc$, for the 0-10$\%$ centrality class.}
  \label{fig:multitrial_Ds_010}
 \end{figure}
 
@@ -463,27 +464,29 @@ The estimate of the systematic uncertainty on the yield extraction
 was based on the multiple-trial fit approach described in Sec.~\ref{sec:RawYieldSyst}
 (it is the first approach of the two presented there).
 Fig.~\ref{fig:multitrial_Ds_010} shows an example of the multiple trial fit procedure on the invariant-mass
-distribution in the interval $4 < \pt < 6 \, \Gevc$, for the 0-10\% centrality class.
+distribution in the interval $8 < \pt < 12 \, \Gevc$, for the 0-10\% centrality class.
 The panels of the figure show, starting from top left plot:
 (i) the raw yield distributions from the multiple trials,
 with the histograms obtained via fit and bin counting shown
 in different colours; (ii) the distribution of raw yields from multiple 
 trials, distinguishing the cases in which the Gaussian width of the signal function was left as free parameter 
-in the fit, or was fixed to its MC value or fixed to MC value $\pm$ 15\%; 
+in the fit, or was fixed to its MC value or fixed to MC value +15\% (where
+15\% is the average underestimate of the width value in MC with respect to data in some
+$\pt$ intervals); 
 (iii) the distribution of the reduced $\chi^{2}$ of the fits; 
 (iv) the Gaussian width of the peak as a function of the trial 
 number; (v) the raw yield distribution as a 
 function of the trial number; (vi) a panel reporting the Gaussian RMS value (used as
 estimator of the systematic uncertainty) of the yield distribution
-in three cases: considering the yields extracted from the fits with 
-all possible values for the Gaussian sigma parameter (free, fixed to MC, fixed to MC $\pm$ 15\%), 
-as well as those obtained considering only the cases with sigma free, fixed to MC, fixed to 
-MC +15\% or with sigma free, fixed to MC, fixed to MC -15\%. 
-In this way, for those $\pt$ intervals for which the values 
-of the Gaussian width as free parameter were on average displaced towards 
-values around MC sigma values +(-)15\%, the RMS of the second (third) 
-distribution was chosen to give the final systematics. 
-It was verified that the difference between the mean values of the yield distributions from fit
+in two cases: considering the yields extracted from the fits with 
+the Gaussian sigma left as free parameter in the fit or fixed to its MC values
+as well as those obtained considering the cases with sigma free, fixed to MC and fixed to 
+MC +15\%. The systematic uncertainty was estimated from the RMS
+of the first distribution. For those $\pt$ intervals where the value of the width in 
+simulation underestimates that in data, it was verified that
+the RMS of the second distribution was in agreement with the assigned value for the
+systematic uncertainty. 
+It was also verified that the difference between the mean values of the yield distributions from fit
 and from bin counting methods was contained within the RMS value quoted 
 as systematic uncertainty.
 The final assigned uncertainties range from 5\% to 10\% depending on $\pt$ and
@@ -788,7 +791,8 @@ assigned by averaging the two results, and the resulting plot is shown in Fig.~\
 
 The values of the systematic uncertainties on the $\Ds$-meson corrected yields
 are summarised in Tab.~\ref{tab:sysunc_yieldtable}, in the $\pt$ intervals considered in 
-the analysis. The uncertainties on the fraction of the hadronic cross section used in the Glauber fit to determinethe centrality are shown as well in the Table.
+the analysis. The uncertainties on the fraction of the hadronic cross section used in the Glauber fit to determine
+the centrality are shown as well in the Table.
 \begin{table}[!h]
 \centering
 \begin{tabular}{|l|l|l|c|c|c|c|c|c|}
@@ -903,11 +907,20 @@ $\pt$-differential $\Dsplus$-meson cross section at $\sqrt s=7$~TeV.
 The second contribution is the $\pt$-dependent scaling factor 
 from $\sqrts=7~\tev$ to $\sqrts=5.02~\tev$, determined by varying
 the FONLL parameters (charm-quark mass, factorisation and renormalisation scales) 
-as described in~\cite{Averbeck:2011ga}. The values of these parameters were 
-varied coherently at the two energies.
+as described in Sec.~\ref{sec:BfdSub} and in~\cite{Averbeck:2011ga}. The values of these parameters were 
+varied coherently at the two energies. The scaling factor 
+and its uncertainties from FONLL calculations are shown in Fig.~\ref{fig:FONLLscalFact}.
 In the interval $12<\pt<16~\Gevc$, the FONLL calculation at 
 $\sqrt s=5.02~\tev$~\cite{Cacciari:2012ny} was used as a reference 
 by scaling the values to match the central value of the data at lower $\pt$. 
+\begin{figure}[!h]
+\centering
+ \includegraphics[width=0.6\textwidth]{FigCap5/FONLLscaling7To5TeV.png}
+ \caption{Scaling factor obtained for cross sections of prompt $\Dsplus$ mesons in pp collisions, from $\sqrts=7~\tev$ to $\sqrts=5.02~\tev$, as a function of $\pt$. The red line corresponds to the result used as central value for the correction; the uncertainty bands are obtained from variation of FONLL perturbative parameters. }
+ \label{fig:FONLLscalFact}
+\end{figure}
+
+
 \iffalse
 The cross section measurements of $\Ds$ meson in pp collisions at $\s = $ 7 TeV 
 is limited to $\pt < 12 \, \Gevc$. For the interval $12 \leq \pt < 16 \, \Gevc$ 
@@ -915,7 +928,9 @@ the pp reference was obtained using the cross section from the FONLL calculation
 Since the central value of the FONLL calculation at $\s = 5.02$ TeV underestimates the measurement 
 for $\pt > 5 \, \Gevc$ at both ?and ?s = 7 TeV [45, 60], the FONLL cross section was multiplied by a scaling factor (?) 
 
-The factor ? was determined by fitting with a constant the data-to-theory ratio at ?s = 7 TeV in the?s = 2.76 TeV are less precise, they do not interval 5 < pT < 16 GeV/c. Since the measurements at ??constrain further the scaling factor. 
+The factor ? was determined by fitting with a constant the data-to-theory ratio at ?s = 7 TeV in the
+?s = 2.76 TeV are less precise, they do not interval 5 < pT < 16 GeV/c. Since the measurements at ?
+?constrain further the scaling factor. 
 \fi
 This procedure is described in Ref.~\cite{Adam:2015sza}. The total 
 systematic uncertainty on the $\pt$-extrapolated cross section is about 
@@ -1280,9 +1295,15 @@ are reported in Table~\ref{signalsDs}.
 
 \begin{figure}
 \centering
- \includegraphics[width=.7\textwidth]{FigCap5/MassDsInOutOfPlane_PbPb3050_5TeV_pt6-8.pdf}
-\caption{$\Dspm$ in- and out-of-plane invariant-mass distributions in the interval $6 < \pt <8 \, \Gevc$.}
-\label{fig:deltaphibinsds}
+ \includegraphics[width=1\textwidth]{FigCap5/InvMassDs_Phi0_3050.eps}
+\caption{$\Dspm$ in-plane invariant-mass distributions in the analysed $\pt$ intervals.}
+\label{fig:deltaphi0binsds}
+\end{figure}
+\begin{figure}
+\centering
+ \includegraphics[width=1\textwidth]{FigCap5/InvMassDs_Phi1_3050.eps}
+\caption{$\Dspm$ out-of-plane invariant-mass distributions in the analysed $\pt$ intervals.}
+\label{fig:deltaphi1binsds}
 \end{figure}
 \begin{figure}
 \centering
