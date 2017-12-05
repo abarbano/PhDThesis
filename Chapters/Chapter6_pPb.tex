@@ -3,8 +3,12 @@
 
 In this Chapter the measurement of the ratios of $\Dsplus$-meson yield to that of the 
 non-strange $\Dplus$ meson is presented as a function of the primary
-charged-particle multiplicity produced in p-Pb collisions and compared to results from 
-pp~\cite{Acharya:2017jgo} and Pb-Pb~\cite{ALICE-PUBLIC-2017-003} interactions. Primary charged particles are defined as prompt
+charged-particle multiplicity produced in p-Pb collisions at $\sNN=5.02$ TeV and compared to results from 
+pp collisions at $\s=7$ TeV~\cite{Acharya:2017jgo} and Pb-Pb interactions at $\sNN=5.02$ TeV~\cite{ALICE-PUBLIC-2017-003}. 
+A primary charged particle is a charged particle with mean proper lifetime $\tau$ larger
+than 1 cm, which is either produced directly in the interaction or from decay of particles
+with $\tau < 1$ cm/$c$.
+Primary charged particles are defined as prompt
 particles produced in the collisions, including their decay products,
 except those from weak decay of strange particles.
 In presence of a medium 
@@ -12,8 +16,8 @@ composed of deconfined quarks and gluons, a modification of the hadronisation
 mechanisms is expected due to the possible formation of hadrons via
 coalescence of charm quarks with other quarks from the 
 medium during the deconfined phase or at the phase boundary
-~\cite{Greco:2003mm,Greco:2003vf, Andronic:2007zu, He:2012df} in addition to
-fragmentation. The enhancement of strange particle production in presence of QGP 
+~\cite{Greco:2003mm,Greco:2003vf, Andronic:2007zu, He:2012df}. This coalescence mechanism competes with
+fragmentation. The enhancement of strange quark abundance in the QGP 
 (see Sec.~\ref{subsec:StrangEnhancSPS}) could affect the production of charmed hadrons if 
 the dominant mechanism for D-meson formation at low and 
 intermediate momenta is in-medium recombination. 
@@ -23,16 +27,19 @@ predicted to be enhanced in nucleus-nucleus collisions as compared to pp
 interactions~\cite{Andronic2003,RafelskiKuznetsova,HeFriesRapp}.
 The measurements of $\Dsplus$/$\Dzero$ and $\Dsplus$/$\Dplus$ ratios in Pb-Pb collisions presented in 
 Chapter~\ref{chap:PbPb} indicate higher values in Pb-Pb than in pp collisions, although
-the values are compatible within $1\sigma$ of the combined uncertainties.
+the values are compatible within $1\sigma$ of the combined statistical and systematic uncertainties.
 Given the observed increase of strange particle production with increasing particle multiplicity
-in pp and p-Pb collisions~\cite{Abelev:2013haa,Adam:2015vsf,ALICE:2017jyt}, the presence of 
-coalescence mechanism at low $\pt$ could result in an enhancement 
+in pp and p-Pb collisions~\cite{Abelev:2013haa,Adam:2015vsf,ALICE:2017jyt}, which reaches
+yields compatible with those observed in Pb-Pb collisions at similar multiplicities. The possible 
+hadronisation via coalescence could result in an enhancement 
 of the relative yield of $\Dsplus$ meson with respect to non-strange
 D mesons in high multiplicity p-Pb collisions.
 
 
 \section{Event selection}
 \label{sec:EvSelpPb}
+The analysis was performed on the data sample of p-Pb collisions at $\sNN=5.02$ TeV
+collected in 2016.
 Events were recorded with a minimum-bias (MB) interaction trigger 
 that required coincident signals in both scintillator arrays of the V0 detector.
 The V0 timing information was used together with that from the ZDCs for offline rejection 
@@ -40,14 +47,16 @@ of events produced by the interaction of the beams with residual gas in the vacu
 The MB trigger was estimated to be sensitive to about 96.4\% of the p-Pb inelastic cross section.
 For the data sample analysed here, the probability of event pile-up in the 
 same bunch crossing was below 0.5\% per triggered p-Pb event.
-The remaining undetected pile-up (events from different bunch crossings) 
-is negligible in the present analysis.
+The remaining undetected pile-up is negligible in the present analysis.
 The piled-up events were largely rejected using an algorithm based on the tracklets,
 to detect multiple interaction vertices.
 Only events with a primary vertex reconstructed within $\pm 10$~cm from the 
 centre of the detector along the beam line were considered. 
 The number of events passing these selection criteria was about $6\times 10^8$.
-The corresponding integrated luminosity is 
+This number is larger by a factor of $\sim$6 with respect to the number of events analysed with the p-Pb sample collected in 
+2013~\cite{Abelev:2014hha,Adam:2016mkz,Adam:2016ich} where, due to the limited statistics, the measurement of $\Ds$ production
+in multiplicity classes was not possible. 
+The corresponding integrated luminosity of the current sample is 
 $L_{\rm int} =N_{\rm MB}/\sigma_{\rm MB}=292 \pm 11~\mu{\rm b}^{-1}$,
 where $\sigma_{\rm MB}=2.09$~b is the MB-trigger cross section  
 measured via a van der Meer scan, with negligible statistical uncertainty 
@@ -66,7 +75,7 @@ During the p-Pb data taking, two different detector clusters were used to collec
 availability of the SDD detector in the readout. Consequently, the respective reconstructions have different
 detector configurations and their $\pt$ resolution may differ. It was verified that the 
 width and the position of the D-meson signal peaks were compatible in the two
-reconstruction, as a function of $\pt$.The two samples were hence merged and 
+reconstructions, as a function of $\pt$.The two samples were hence merged and 
 used in the analysis in order to maximise the statistics.
 
 \begin{figure}[h]
@@ -86,73 +95,85 @@ of tracklets reconstructed in the SPD within a
 pseudo-rapidity range of $|\eta| <$ 1. A tracklet in the SPD is obtained by
 joining space points on the two SPD layers and it is required to point to 
 the reconstructed primary vertex. 
-Events that do not have a reconstructed vertex do not pass the selection criteria, hence
-do not contribute to the tracklet distribution. 
-In Fig.~\ref{fig:NtrklVsZ2D}, the distribution of tracklets ($\Ntrkl$) as a function
+In Fig.~\ref{fig:NtrklVsZ2D}, the distribution of the number of tracklets ($\Ntrkl$) in $|\eta|<1$ as a function
 of the $z$ coordinate of the vertex ($\zVtx$) is shown.
- The average profile of the distribution can also be observed superimposed on the plots
- and it reveals a dependence of the average $\averNtrkl$ value on $\zVtx$. 
- The trend of $\averNtrkl$ as a function of $\zVtx$ is related to the SPD acceptance.
- The modification of the SPD configuration during the data acquisition 
- modifies also the number of reconstructed tracklets.
+ The average number of tracklets $\averNtrkl$ as a function of $\zVtx$ is also shown in the plots.
+ The trend of $\averNtrkl$ as a function of $\zVtx$ is related to the SPD geometrical acceptance,
+ which does not cover the range $-1 < \eta < 1$ for collisions with $|\zVtx|> 6-7$ cm.
  Lower $\averNtrkl$ values towards $\zVtx \sim 10 $ cm are due to the 
  finite acceptance of the SPD layers. 
-The distribution of $\Ntrkl$ vs $\zVtx$ needs to be equalised 
+The modification of the number of active SPD modules during the data acquisition 
+ affects also the number of reconstructed tracklets.
+ Therefore, the distribution of $\averNtrkl$ as a function of $\zVtx$ and as a function of the time
+ during the data taking needs to be equalised 
 in order to consistently define the $\Ntrkl$ intervals in which the analysis is performed.
 Otherwise, a given $\Ntrkl$ interval would correspond to different real charged particle
-multiplicities, depending on $\zVtx$ or data taking period.
+multiplicities, depending on $\zVtx$ or data taking time.
 To this purpose, the average profile of $\Ntrkl$ as a function of $\zVtx$ was analysed on a run-by-run basis 
 over the full period, to evaluate the stability of $\averNtrkl$ versus $\zVtx$ 
-as a function of time. Four bunches of runs were found with 
-up to $\sim$10\% difference in the $\averNtrkl$ values at positive values 
+as a function of time. Four bunches of runs were defined corresponding to different SPD
+configurations and showing up to $\sim$10\% difference in the $\averNtrkl$ values at positive values 
 of $\zVtx$. Fig.~\ref{fig:FourBunches} (left) shows the ratios of the $\Ntrkl$ profiles
-of the run bunches 1, 2 and 3 to bunch 4, which is the one with the lowest tracklet multiplicity.
- The equalisation of $\averNtrkl$ over $\zVtx$ was applied on an 
- event-by-event basis on each of the four bunches of runs separately.
+of the run groups 1, 2 and 3 to group 4, which is the one with the lowest average tracklet multiplicity.
+ The equalisation of $\averNtrkl$ as a function of $\zVtx$ was applied on an 
+ event-by-event basis on each of the four groups of runs separately.
 The $\averNtrkl$ value that was used as the absolute reference multiplicity 
 value was defined as the maximum of $\averNtrkl$ value as a function of $\zVtx$ and time,
 resulting $N_{\rm ref} =  29.2$. 
 The number $N_{\rm raw}$ of reconstructed tracklets in each event
-is corrected by using a Poissonian extraction as follows:
+is corrected by using a Poissonian distribution correction as follows:
 \begin{equation} 
 \label{eq:NtrklCorr}
-N_{\rm corr} = N_{\rm raw} + {\rm Pois}(\Delta N),
+N_{\rm trkl}^{\rm corr} = N_{\rm trkl}^{\rm raw} + {\rm Pois}(\Delta N),
 \end{equation}
 where:
 \begin{equation} 
 \label{eq:NtrklCorr}
-\Delta N = \Big (\frac{N_{\rm ref}}{\langle N(\zVtx) \rangle} -1 \Big ) \cdot N_{\rm raw}.
+\Delta N = \Big (\frac{N_{\rm ref}}{\langle N(\zVtx) \rangle} -1 \Big ) \cdot N_{\rm trkl}^{\rm raw}.
 \end{equation}
- It is advisable that the reference multiplicity value $N_{\rm ref}$ is chosen as the
+ The reference multiplicity value $N_{\rm trkl}^{\rm ref}$ was chosen as the
  maximum value of the $\averNtrkl$ distribution, in order to assure
- that $N_{\rm corr}$ follows a Poissonian distribution. 
+ that $\Delta N$ follows a Poissonian distribution. 
 The average $\averNtrkl$ profiles of the four bunches of runs 
 after the $\zVtx$ equalisation are shown in the right panel of 
-Fig.~\ref{fig:FourBunches}, eventually fitted with a pol1 function in order
-to check the flatness of the distribution. 
+Fig.~\ref{fig:FourBunches}. They were fitted with a pol1 function in order
+to check the flatness of the distribution. The slope of the fit function resulted compatible with zero
+validating the efficiency of the correction procedure.
 
 \begin{figure}[h]
 \centering
  \includegraphics[width=.49\textwidth]{FigCap6/UncorrNtrklProfileDataRatio.eps}
  \includegraphics[width=.49\textwidth]{FigCap6/NtrkProfilesDataAfterZVxtEqual.eps}
- \caption{Left: ratio of $\averNtrkl$ distributions of run bunches 1, 2 and 3 to bunch 4 in different colours, as a function of $\zVtx$. Right: $\averNtrkl$ distributions as a function of $\zVtx$ for the four bunches of runs in different colours, after equalisation over $\zVtx$.}
+ \caption{Left: ratio of $\averNtrkl$ distributions of run groups 1, 2 and 3 to group 4 in different colours, as a function of $\zVtx$. Right: $\averNtrkl$ distributions as a function of $\zVtx$ for the four groups of runs in different colours, after equalisation over $\zVtx$.}
  \label{fig:FourBunches}
 \end{figure}
 
 \section {Raw-yield extraction}
 \label{sec:Rawyields_vs_mult}
 The $\Ds$ signal was extracted in five $\pt$ intervals from 2 to 16 $\Gevc$, 
-in three different classes of $N_{\rm trkl}$: $[1,40)$, $[40,70)$, $[70,200]$ tracklets.
+in three different classes of $N_{\rm trkl}^{\rm corr}$: $[1,40)$, $[40,70)$, $[70,200]$ tracklets,
+corrected for SPD acceptance effects described in Sec.~\ref{sec:zVxtEq}.
 The intervals were chosen in order to have sufficient statistics for the $\Ds$-meson yield extraction.
-They contain, in the order, 27.5\%, 40.5\% and 30\% of total events.
-The same topological selections were used in the three multiplicity class for he same $\pt$
-interval. They were tuned to have good statistical significance of the extracted yields
-and are summarized in Tab.~\ref{tab:cutsDsVsNtrkl}.
+They contain, in the order, 27.5\%, 40.5\% and 30\% of total number of events.
+The $\DstoKKpi$ candidates were built from triplets of tracks as described in Chapter~\ref{chap:pp}
+and they were selected by applying cuts on the displaced vertex topology, the
+invariant mass of the K$^+$K$^-$ pair and the d$E$/d$x$ and time of flight of the decay tracks.
+The $\Ds$ raw yield was extracted via fits to the invariant-mass distributions of candidates passing the
+selection criteria described above. The fit function is composed of two Gaussians to model
+the $\Ds$ peak and the $\Dplus$ decay contribution in the same channel of $\Dsplus$ (around 1.88 MeV/$c^2$) 
+and an exponential function to describe the background.
+The cuts were tuned in each $\pt$ interval to have good statistical significance of the extracted yields
+and are summarised in Tab.~\ref{tab:cutsDsVsNtrkl}. The same selection criteria
+were used in the three multiplicity classes. The particle identification selection is described in Sec.~\ref{Sec:PID}. 
+It considers a track to be compatible with the kaon or pion hypothesis if both its d$E$/d$x$ and time of flight 
+are within 3$\sigma$ from the expected values. Tracks without a TOF signal 
+(mostly at low momentum) are identified using only the TPC information and requiring a 2$\sigma$ 
+compatibility with the expected d$E$/d$x$. 
 \begin{table}[h!]
 \centering
 \begin{tabular}{|l|c|c|c|c|c|}
 \hline
-$\Ds$ topological selections & \multicolumn{5}{c|}{$\pt$ interval (GeV/$c$)}\\
+$\Ds$ selections & \multicolumn{5}{c|}{$\pt$ interval (GeV/$c$)}\\
 \cline{2-6}
   & 2--4  & 4--6 & 6--8 & 8--12 & 12--16\\
 \hline
@@ -167,85 +188,89 @@ $|\cos^3 \theta^\prime({\rm K})|$        & $>$0.10 & $>$0.05 & $>$0.05 & $>$0.05
 Norm. IP residual  & $<$2.5 & $<$2.0 & $<$2.0 & $<$2.0  & $<$2.0 \\
 \hline
 \end{tabular}
-\caption{Topological selections used for the $\Ds$ meson in the five transverse momentum intervals considered for the three $N_{\rm trkl}$ classes.}
+\caption{Selection criteria used for $\Ds$ candidates in the five transverse momentum intervals considered for the three $N_{\rm trkl}$ classes.}
 \label{tab:cutsDsVsNtrkl}
 \end{table}
 Fig.~\ref{fig:DsInvMassVsNtrkl_1},~\ref{fig:DsInvMassVsNtrkl_2} and~\ref{fig:DsInvMassVsNtrkl_3} 
 show the invariant-mass fits performed in the five $\pt$ intervals, for the three 
-multiplicity classes. The peak on the left of $\Ds$ signal, around 1.88 MeV/$c^2$,
-corresponds to $\Dplus$ decay contribution in the same channel of $\Dsplus$.
+multiplicity classes. 
 \begin{figure}[htpb]
 \centering
  \includegraphics[width=1\textwidth]{FigCap6/DsMass_140Trkl.eps}
-  \caption{$\Dsplus$ invariant-mass spectra, from 2 to 16 $\Gevc$, in the $1 \leq N_{\rm trkl} < 40$ interval.}
+  \caption{$\Dsplus$ candidate (and charge conjugates) invariant-mass spectra, in five $\pt$ intervals from $2 < \pt < 16$ $\Gevc$, in the $1 \leq N_{\rm trkl} < 40$ multiplicity interval.}
  \label{fig:DsInvMassVsNtrkl_1}
 \end{figure}
 \begin{figure}[htpb]
 \centering
  \includegraphics[width=1\textwidth]{FigCap6/DsMass_4070Trkl.eps}
-  \caption{$\Dsplus$ invariant-mass spectra, from 2 to 16 $\Gevc$, in the $40 \leq N_{\rm trkl} < 70$ interval.}
+  \caption{$\Dsplus$ candidate (and charge conjugates) invariant-mass spectra, in five $\pt$ intervals from $2 < \pt < 16$ $\Gevc$, in the $40 \leq N_{\rm trkl} < 70$ multiplicity interval.}
  \label{fig:DsInvMassVsNtrkl_2}
 \end{figure}
 \begin{figure}[htpb]
 \centering
  \includegraphics[width=1\textwidth]{FigCap6/DsMass_70200Trkl.eps}
-  \caption{$\Dsplus$ invariant-mass spectra, from 2 to 16 $\Gevc$, in the $70 \leq N_{\rm trkl} \leq 200$ interval.}
+  \caption{$\Dsplus$ candidate (and charge conjugates) invariant-mass spectra, in five $\pt$ intervals from $2 < \pt < 16$ $\Gevc$, in the $70 \leq N_{\rm trkl} \leq 200$ multiplicity interval.}
  \label{fig:DsInvMassVsNtrkl_3}
 \end{figure}
 To avoid fluctuations, the $\Ds$ peak widths were fixed to the values obtained from the 
-minimum-bias simulation (which were verified to be compatible to the values
-from minimum-bias fits in data). In Fig.~\ref{fig:DsFitParamsVsNtrkl} 
+multiplicity-integrated sample of simulated $\DstoKKpi$ decays (which were verified to be compatible with thos
+extracted form the fits to the invariant-mass distributions in data). In Fig.~\ref{fig:DsFitParamsVsNtrkl} 
 the comparison of the Gaussian means and widths 
-in data and minimum-bias MC is shown, as an example for the interval $40 \leq N_{\rm trkl} < 70$. 
+in data for the interval $40 \leq N_{\rm trkl}^{\rm corr} < 70$ and in the simulation. 
 
 \begin{figure}[htpb]
 \centering
  \includegraphics[width=1\textwidth]{FigCap6/DsMeanSigma_DataMC_4070_Ntrkl.eps}
-  \caption{$\Ds$ peak width (left) and mean (right) obtained in the $40 \leq N_{\rm trkl} < 70$ interval in data and in minimum-bias simulation.}
+  \caption{$\Ds$ peak width (left) and mean (right) obtained form the fits to the invariant mass distribution in the $40 \leq N_{\rm trkl} < 70$ interval in data compared to the simulations integrated over multiplicity.}
  \label{fig:DsFitParamsVsNtrkl}
 \end{figure}
 
 \section{Corrections}
 \label{sec:Corrections}
-The $\Dsplus$/$\Dplus$ ratios in the multiplicity class $i$ were calculated
+The $\Dsplus$/$\Dplus$ ratios in the multiplicity class $i$ and the $\pt$ interval $j$ were calculated
 as:
 \begin{equation} 
 \label{eq:NtrklCorr}
- \frac{({\rm d}^2N_{\Dsplus}/{\rm d}\pt {\rm d}y)}{({\rm d}^2N_{\Dplus}/{\rm d}\pt {\rm d}y)} \Big |_i = \frac{Y^i_{\Dsplus}  f^i_{\rm prompt, \Dsplus} / ({\rm Acc} \times \epsilon)^i_{\rm prompt \Dsplus}}{Y^i_{\Dplus}  f^i_{\rm prompt, \Dplus} / ({\rm Acc} \times \epsilon)^i_{\rm prompt \Dplus}} \cdot \frac{\rm BR(\DstoKKpi)}{\rm BR(\DplustoKpipi)},
+ \frac{({\rm d}^2N_{\Dsplus}/{\rm d}\pt {\rm d}y)}{({\rm d}^2N_{\Dplus}/{\rm d}\pt {\rm d}y)} \Big |_i = \frac{Y^{i, j}_{\Dsplus}  f^{i, j}_{\rm prompt, \Dsplus} / ({\rm Acc} \times \epsilon)^{i, j}_{\rm prompt \Dsplus}}{Y^{i, j}_{\Dplus}  f^{i, j}_{\rm prompt, \Dplus} / ({\rm Acc} \times \epsilon)^{i, j}_{\rm prompt \Dplus}} \cdot \frac{\rm BR(\DstoKKpi)}{\rm BR(\DplustoKpipi)},
 \end{equation}
-where $Y$ is the extracted yield, which is corrected for the prompt fraction
-$f_{\rm prompt}$, for the acceptance-times-efficiency term $({\rm Acc} \times \epsilon)$ and for
-the branching ratio BR of the decay channel.\\
+where $Y^{i, j}_{\rm D}$ is the extracted yield of $\Dsplus$ and $\Dplus$, which is corrected for the prompt fraction
+$f^{i, j}_{\rm prompt}$, for the acceptance-times-efficiency term $({\rm Acc} \times \epsilon)^{i, j}$ and for
+the branching ratio BR of the decay channel, which is different for $\Dsplus$ and $\Dplus$.\\
 
 
 
 The acceptance-times-efficiency term was obtained via Monte Carlo simulations
 using PYTHIA v6.4.21~\cite{Sjostrand:2006za} with Perugia-2011 tuning as event generator.  
+A HIJING~\cite{Wang:1991hta} p-Pb event is added as underlying event to the PYTHIA
+one in a fraction of events corresponding to the probability of having $N_{\rm coll}>1$ in the
+Glauber MC simulations of p-Pb collisions. 
 Particles were transported through the detectors using the GEANT3 package~\cite{Brun:1994aa}.
-A $N_{\rm coll}$ value is extracted for each PYTHIA event via a minimum-bias 
-distribution obtained starting from a Glauber MC simulation. If the 
-extracted number of binary collisions is larger than 1, a HIJING~\cite{Wang:1991hta} p-Pb 
-event is added as underlying event. 
-Fig.~\ref{fig:NtrklDataMC} shows the distributions of $\Ntrkl$ in data and simulation.
-The events selected to fill the distributions were required to have at least a $\Dzero$-meson candidate 
-passing the topological selection, with the invariant mass compatible within 3$\sigma$ to the $\Dzero$ mass from PDG.
-The choice of $\Dzero$ meson was made in order to maximise the statistics.
-The real distribution in Fig.~\ref{fig:NtrklDataMC} is shown before the correction for the $\zVtx$ equalisation. 
+Fig.~\ref{fig:NtrklDataMC} shows the distributions of the number of SPD tracklets $\Ntrkl$ in $|\eta|<1$ in data and simulation.
+The events selected to fill the distributions were required to have at least a $\DtoKpi$ meson candidate 
+passing the selection criteria, with the invariant mass compatible within 3$\sigma$ to the $\Dzero$ mass from PDG 
+($\sigma$ being the width of $\DtoKpi$ invariant-mass peak).
+The choice of $\Dzero$ meson was made in order to study the multiplicity distribution
+of events with charm production which differ from that of minimum bias events.
+Measurements in pp collisions~\cite{} show that the events with charm production
+have on average higher multiplicity than minimum-bias collisions.
+In particular, among the different D-meson species, the $\DtoKpi$ decays
+were used in this study because of their large abundance and high signal-to-background ratio.
+The distributions in Fig.~\ref{fig:NtrklDataMC} are shown before the correction for the $\zVtx$ equalisation. 
 It is evident that the $\Ntrkl$ distributions in data and MC are different.
-In general, to not introduce differences at the level of the multiplicity selection between data and MC, 
-the distribution in the minimum-bias simulation has to be corrected
-with data-driven weights. On top of this difference, since the simulation reproduces 
-the detector configurations during time of the data taking, 
-data-driven corrections tuned for each of the four bunches of runs discussed in Sec.~\ref{sec:zVxtEq}
-must be applied separately. This is shown in Fig.~\ref{fig:RatioNtrklMC}, that presents the ratios of the data-driven
-weights for the four simulated samples of the different run bunches to the data-driven
-weights obtained for the MB simulated sample.
-Furthermore, the simulated $\Ntrkl$ distribution reaches
-lower $\Ntrkl$ values with respect to data. It was verified 
-that the selection efficiency of $\Ds$ meson does not depend on
-the tracklet multiplicity above 20 tracklets per event. Hence, the different
+For this reason, since the selection efficiency depends on multiplicity, the calculation
+of $({\rm Acc} \times \epsilon)$ from the simulation was done with 
+with data-driven multiplicity weights. These multiplicity weights were extracted
+separately for each of the four groups of runs discussed in Sec.~\ref{sec:zVxtEq},
+corresponding to different SPD configurations.
+The weights were defined as the ratios of the multiplicity distribution in data and in 
+the simulations. The ratios of the weights from the four groups of runs to the ones integrated over
+all runs is shown in Fig.~\ref{fig:RatioNtrklMC}.
+Furthermore, the simulated $\Ntrkl$ distribution does not reach the highest 
+$\Ntrkl$ values observed in data. However, it was verified 
+that the selection efficiency of $\Ds$ mesons does not depend on
+the tracklet multiplicity for $\Ntrkl > 20$. Hence, the different
 maximum $\Ntrkl$ values in data and MC does not introduce a bias.
-The re-weighted acceptance-times-efficiency terms are presented in 
+The re-weighted acceptance-times-efficiency values for the three $\Ntrkl$ classes are presented in 
 Fig.~\ref{fig:DsEffVsMult} as a function of $\Ntrkl$, for the five analysed $\pt$ intervals
 in different colours. As shown in this figure, the efficiency is almost flat 
 as a function of the event multiplicity.\\
@@ -261,35 +286,36 @@ as a function of the event multiplicity.\\
 \begin{figure}[h]
 \centering
  \includegraphics[width=.9\textwidth]{FigCap6/NtrkDistrMC_17d2a_EvWithD_zVxtUnCorr_896_897.eps}
- \caption{Ratio of data-driven weights applied to simulation for each of the four bunches of runs to the weights computed for the MB sample.}
+ \caption{Ratios of multiplicity weights for each of the four groups of runs to the weights computed for the full sample.}
  \label{fig:RatioNtrklMC}
 \end{figure}
 
 \begin{figure}[h]
 \centering
  \includegraphics[width=.5\textwidth]{FigCap6/PromptDsEfficiency_times_Acceptance_VsNtrkl.eps}
- \caption{$\Ds$ efficiency as a function of the tracklet multiplicity, for the five $\pt$ intervals in different colours.}
+ \caption{$\Ds$ efficiency as a function of the tracklet multiplicity for the three $N_{\rm trkl}^{\rm corr}$ intervals used in the analysis, for the five $\pt$ intervals in different colours. The dashed lines represent the uncertainty band on $f_{\prompt}$.}
  \label{fig:DsEffVsMult}
 \end{figure}
 
 
 
-For the subtraction of the B feed-down component in the raw yields, the FONLL-based method 
+For the subtraction of the B feed-down contribution to the raw yields, the FONLL-based method 
 described in Eq.~\ref{eq:fprAA} was used. It was 
-assumed that the fraction of prompt $\Ds$ does not depend on the 
-multiplicity and therefore the prompt fraction computed in 
-the minimum-bias sample with the topological selections in Tab.~\ref{tab:cutsDsVsNtrkl} 
-(Fig~\ref{fig:DsfPrompt}) was used for all the $\Ntrkl$ classes. 
-This hypothesis also holds for $\Dplus$ meson and is supported 
-by the results obtained for the D-meson $\QpPb$ analysis on this data sample~\cite{ALICEPAS2017008}, 
-where the fractions of prompt D mesons in the two centrality classes used (0-10\% and 60-100\%
-percentiles of ZNA) and in the minimum-bias sample were found to be compatible. 
+assumed that the fractions of prompt $\Dsplus$ and $\Dplus$ do not depend on the 
+multiplicity and therefore the prompt fractions computed in 
+the multiplicity-integrated samples were used for all the $\Ntrkl$ classes. 
+This hypothesis is supported by the results obtained for the D-meson nuclear modification factor 
+analysis in different centrality classes~\cite{ALICEPAS2017008}, 
+where the fractions of prompt D mesons in the 0-10\% and 60-100\%
+centrality classes and in the minimum-bias sample were found to be compatible. 
 In Eq.~\ref{eq:fprAA}, a hypothesis on $\RAA^{\rm feed-down}$
 was applied to account for different modification of beauty and charm 
 production in Pb-Pb collisions. In a similar way, for the calculation of $f_{\rm prompt}$ in 
 the minimum-bias p-Pb sample, the assumption of $R_{\rm pPb}^{\rm feed-down} = R_{\rm pPb}^{\rm prompt}$ 
 was done, for both $\Ds$ and $\Dplus$ mesons.
 This hypothesis was varied for the assignment of the systematic uncertainty. 
+The resulting $f_{\rm prompt}$ for $\Dsplus$ mesons selected according to the criteria reported
+in Tab.~\ref{tab:cutsDsVsNtrkl} is shown in Fig~\ref{fig:DsfPrompt} as a function of $\pt$.
 %$0.9 < R_{\rm pPb}^{\rm feed-down} = R_{\rm pPb}^{\rm prompt} <1.3$ 
 %to estimate the systematic uncertainty, as will be described in more details in the dedicated section. 
 
@@ -302,41 +328,45 @@ This hypothesis was varied for the assignment of the systematic uncertainty.
 
 \section {Systematic uncertainties}
 \label{sec:systpA}
-Most of the sources of systematic uncertainty are in common with 
-the pp and Pb-Pb analyses, and the methodology for their evaluation was 
-already discussed. They are the systematics on the yield extraction, 
-the selection, PID and tracking efficiency and the generated D-meson $\pt$ shape.
+Most of the sources of systematic uncertainty and the methodology for their evaluation are the same
+that were discussed in Chapters~\ref{chap:pp} and~\ref{chap:PbPb} for
+the pp and Pb-Pb analyses. They are the systematics on the yield extraction, 
+the selection, on the efficiency (including $\Ds$ meson selection, track reconstruction and particle
+identification) and on the generated D-meson $\pt$ shape.
 As regards the systematic uncertainty on the calculation of the prompt 
 fraction, the hypothesis on the $\RpPb$ of feed-down D mesons 
 was varied in the range $0.9 <\RpPb^{\rm feed-down}/\RpPb^{\rm prompt} < 1.3$.
-The error bars of $f_{\rm prompt}$ shown in Fig.~\ref{fig:DsfPrompt} include the
+The error bars on $f_{\rm prompt}$ shown in Fig.~\ref{fig:DsfPrompt} include the
 contribution of the variation of the hypothesis on $\RpPb^{\rm feed-down}$ 
-as well as of the variation of FONLL renormalisation scales. 
+as well as of the variation of factorisation and renormalisation scales and charm quark mass in FONLL. 
 All the values of the assigned systematic uncertainties are reported
 in Tab.~\ref{tab:DsVsMult_syst} as a function of $\pt$, for the 
 three multiplicity classes. \\
 
 
-The only source of systematic uncertainty not previously discussed 
-is the one concerning the re-weighting procedure of the efficiencies.  
-Since the simulated $\Ntrkl$ distribution does not reproduce the real distribution in data, 
-a correction was introduced to re-weight the $\Ds$-meson efficiencies, as described 
+An additional source of systematic uncertainty, which is specific of this analysis, is the one related to 
+the re-weighting procedure of the efficiencies.  
+Since the simulated $\Ntrkl$ distribution does not reproduce the distribution in data, 
+a correction was introduced to re-weight the $\Ds$-meson efficiencies in each of the three $N_{\rm trkl}^{\rm corr}$ intervals, as described 
 in Sec.~\ref{sec:Corrections}. 
-The default $\Ntrkl$ distribution in data used to provide the data-driven weights
-was filled with events that have at least a $\Dzero$-meson candidate
-passing the selections, with invariant mass compatible within 3$\sigma$ to $\Dzero$ mass from PDG.
+The data-driven weights used for the central value of the efficiencies were obtained from
+events that have at least a $\Dzero$-meson candidate
+passing the selections, with invariant mass compatible within 3$\sigma$ to $\Dzero$ mass from PDG, as mentioned 
+in Sec.~\ref{sec:Corrections}.
 To estimate the systematic uncertainty on this procedure,
 the efficiencies were corrected with weights from events that have at 
-least a $\Dzero$-meson candidate, with no further request on the invariant mass. 
-The two distributions of data-driven weights discussed above is presented in Fig.~\ref{fig:NtrklWeights_EvWithD_EvWithCand_Comparison} for the four groups of runs. 
+least a $\Dzero$-meson candidate, with no further request on its invariant mass. 
+The two multiplicity dependent weights obtained in the two cases are shown in 
+Fig.~\ref{fig:NtrklWeights_EvWithD_EvWithCand_Comparison} for the four groups of runs. 
 Fig.~\ref{fig:DsDplusVsMult_SystEffWeights} shows the ratios of the efficiencies re-weighted 
-with these two weights, from where a
-a 1\% systematic uncertainty was assigned.\\
+with these two options for the multiplicity weights for the three intervals on $N_{\rm trkl}^{\rm corr}$ used
+in the analysis. A 1\% systematic uncertainty was assigned based on the difference between 
+the re-weighted efficiencies.\\
 
 \begin{figure}[htpb]
 \centering
  \includegraphics[width=.9\textwidth]{FigCap6/NtrkWeightsD-Cand_4Bunches_DsDplusVsmult.pdf}
- \caption{Comparison of the $\Ntrkl$ weights for the simulation obtained from events with at least a $\Dzero$ candidate and from events with at least a $\Dzero$ candidate in the $\Dzero$ mass range (default).}
+ \caption{Comparison of the $\Ntrkl$ weights obtained from events with at least a $\Dzero$ candidate and from events with at least a $\Dzero$ candidate in the $\Dzero$ mass range (default).}
  \label{fig:NtrklWeights_EvWithD_EvWithCand_Comparison}
 \end{figure}
 
@@ -344,29 +374,30 @@ a 1\% systematic uncertainty was assigned.\\
 \begin{figure}[htpb]
 \centering
  \includegraphics[width=.49\textwidth]{FigCap6/SystOnDWeightsWithCandVsWithD_Dsonly.eps}
- \caption{Ratio between the efficiency corrected with weights obtained from events with at least a $\Dzero$ candidate and from events with at least a $\Dzero$ candidate in the $\Dzero$ mass range (default).}
+ \caption{Ratio between the efficiency re-weighted with the two options considered for the $\Ntrkl$-dependent weights: events with 
+ at least a $\Dzero$ candidate and events with at least a $\Dzero$ candidate in the $\Dzero$ mass range (default).}
  \label{fig:DsDplusVsMult_SystEffWeights}
 \end{figure}
 
 
 
 
-In the $\Ds/\Dplus$ yield ratios, the following sources of systematic 
+In the calculation of the $\Ds/\Dplus$ yield ratios, the following sources of systematic 
 uncertainties were considered as uncorrelated:
 \begin{itemize}
 \item raw-yield extraction;
 \item selection efficiency;
 \item PID selection efficiency;
-\item generated D-meson $\pt$ shape (negligible);
+\item generated D-meson $\pt$ shape, which is however a small contribution as compared to the other sources;
 \item hypothesis on $\RpPb^{feed-down}$ for the feed-down D meson subtraction;
 \end{itemize}
-while:
+while these other sources:
 \begin{itemize}
 \item efficiency correction with data-driven weights;
 \item tracking efficiency;
 \item variation of FONLL scales for the feed-down D meson subtraction;
 \end{itemize} 
-were considered as fully correlated.
+were considered as fully correlated between $\Dsplus$ and $\Dplus$ yields.
 
 
 \begin{table}[h!]
@@ -407,7 +438,7 @@ Feed-down  &	$^{+3}_{-4}$	& $^{+3}_{-4}$ & $^{+3}_{-4}$ & $^{+3}_{-4}$	&$^{+5}_{
 Multiplicity weights & 1 &  1 &  1 &  1 &  1 \\
 \hline
 \end{tabular}}
-\caption{Systematic uncertainties on $\Ds$ for the $\Ds/\Dplus$ versus multiplicity measurement.}
+\caption{Systematic uncertainties on $\Ds$ yield used in the $\Ds/\Dplus$ versus multiplicity measurement.}
 \label{tab:DsVsMult_syst}
 \end{table}
 
