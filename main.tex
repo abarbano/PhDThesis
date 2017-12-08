@@ -57,6 +57,8 @@ headsepline, % Uncomment to get a line under the header
 %\usepackage[utf8]{inputenc}
 
 \hyphenation{strange-ness}
+\hyphenation{e-spe-ri-men-to}
+\hyphenation{mo-di-fi-ca-zio-ne}
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
@@ -227,87 +229,100 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 \iffalse
 \begin{abstract}
-\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 The aim of this thesis is the study of the $\Dsplus$-meson production in pp collisions at the centre-of-mass energy 
 $\s=7$ TeV and in p-Pb and Pb-Pb collisions at $\sNN=5.02$ TeV, with the ALICE 
-detector at the Large Hadron Collider. 
+detector at the CERN Large Hadron Collider. 
 Heavy quarks provide an excellent way to investigate the properties of the 
 Quark-Gluon Plasma (QGP) created in high-energy nucleus-nucleus collisions 
-via the measurements of the nuclear modification factors ($\RAA$) and azimuthal anisotropy  
-of hadrons originating from their hadronisation. At low and intermediate $\pt$, the study of the $\Dsplus$ meson 
-should also reveal information about the charm-quark in-medium hadronisation mechanism. 
-If charm quarks recombine with thermalised lighter quarks in the medium, the relative abundance of $\Dsplus$ mesons with respect to 
+via the measurements of the nuclear modification factor ($\RAA$) and azimuthal anisotropy  
+of hadrons originating from their hadronisation. At low and intermediate transverse momentum $\pt$, the study of the $\Dsplus$ meson 
+should also reveal information about the charm-quark hadronisation mechanism. 
+If charm quarks hadronise by recombining with lighter quarks 
+from the medium, the relative abundance of $\Dsplus$ mesons with respect to 
 non-strange D mesons is expected to be larger in Pb-Pb than in pp collisions, at low and intermediate $\pt$,
-thanks to the large abundance of strange quarks in the QGP.
-The analyses presented in this thesis were based on the full reconstruction of the decay topology of 
-the channel $\DstoKKpi$. The $\pt$-differential cross-section 
-of $\Dsplus$ mesons and the  relative yields of $\Dsplus$ to non-strange D mesons 
-were measured in pp collisions. The $\pt$-differential yields, the relative
-yields of $\Dsplus$ to non-strange D mesons, the nuclear modification factors and, 
-for the first time at LHC, the elliptic flow of $\Ds$ mesons were measured in 
-Pb-Pb collisions for central, semi-peripheral and peripheral events. Observations of 
-increased strange particle production with increasing particle multiplicity in 
-pp and p-Pb collisions suggests the presence of an enhancement of the relative yield of 
-$\Dsplus$ meson with respect to non-strange D mesons also in high multiplicity p-Pb collisions.
-To this purpose, the relative yields of $\Dsplus$ mesons 
-with respect to non-strange D mesons were measured in p-Pb collisions as a function of the event particle multiplicity.\\
+due to the large abundance of strange quarks in the QGP.
+The analyses presented in this thesis are based on the full reconstruction of the  
+$\DstoKKpi$ decay, exploiting the displacement of the decay vertex from the interaction point. The $\pt$-differential cross-section 
+of $\Dsplus$ mesons and the relative yields of $\Dsplus$ to non-strange D mesons 
+were measured in pp and Pb-Pb collisions. In particular, the nuclear modification factors and, 
+for the first time at LHC, the elliptic flow of $\Dsplus$ mesons were measured in 
+Pb-Pb collisions for central, semi-peripheral and peripheral collisions. The observed increase of
+strange particle yield relative to pion yield with increasing particle multiplicity in 
+pp and p-Pb collisions suggested to investigate whether a similar enhancement is observed in the relative yield of 
+$\Dsplus$ mesons with respect to non-strange D mesons in high multiplicity p-Pb collisions.
+To this purpose, the relative ratios of $\Dsplus$-meson 
+and $\Dplus$-meson yields were measured in p-Pb collisions as a function of the event particle multiplicity
+in different $\pt$ intervals.\\
 
 
 
-In the first Chapter, the physics of heavy-ion collisions will be introduced. The second Chapter 
-is entirely dedicated to the heavy-flavour physics. A description of the main features of the ALICE apparatus 
-and the detectors used in the analysis will be found in the third Chapter. 
-The fourth, fifth and sixth Chapters will present the work of this thesis, focusing on the strategy
-used in ALICE to reconstruct the $\Dsplus$ mesons and discussing the analyses and results in the pp, Pb-Pb and p-Pb collision systems
-respectively. 
+In the first Chapter, the physics of heavy-ion collisions is introduced. The second Chapter 
+is entirely dedicated to the role of heavy-flavour observables in the investigation of the QGP.
+A description of the main features of the ALICE apparatus 
+and the detectors used in the analysis is illustrated in the third Chapter. 
+The fourth, fifth and sixth Chapters present the work of this thesis, focusing on the strategy
+used in ALICE to reconstruct the $\Dsplus$ mesons and discussing the results obtained in pp, Pb-Pb and p-Pb collisions,
+respectively. \\
+
+The measurements presented in this thesis were approved by the ALICE Collaboration 
+and presented in various conferences. The proton-proton analysis has already been published, 
+while the proton-nucleus and the nucleus-nucleus results are still preliminary and will be published soon.
 \end{abstract}
-
+\newpage
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 Il lavoro di questa tesi ha riguardato lo studio della produzione del mesone $\Dsplus$
 in collisioni pp alla energia del centro di massa di $\s=7$ TeV e in collisioni p-Pb e Pb-Pb
-a $\sNN=5.02$ TeV, attraverso il rivelatore ALICE al Large Hadron Collider.
+a $\sNN=5.02$ TeV, attraverso il rivelatore ALICE al Large Hadron Collider del CERN.
 I quark pesanti costituiscono una sonda eccellente per le propriet\`a del Plasma di Quark
 e Gluoni (QGP) che si crea in collisioni nucleo-nucleo ad alta energia, attraverso la misura
 del fattore di modificazione nucleare ($\RAA$) e dell'anisotropia azimutale degli adroni
-che originano dalla loro adronizzazione. A intermedio e basso $\pt$, lo studio del mesone
+che originano dalla loro adronizzazione. A intermedio e basso momento trasverso $\pt$, lo studio del mesone
 $\Dsplus$ dovrebbe inoltre rivelare informazioni riguardo il meccanismo di adronizzazione
 del quark charm all'interno del mezzo. Se il quark charm adronizza per coalescenza con i quark
-pi\`u leggeri termalizzati presenti nel mezzo, l'abbondanza relativa di mesoni $\Dsplus$ rispetto
-ai mesoni D non contenenti stranezza \`e attesa essere maggiore in collisioni Pb-Pb che in collisioni pp,
+pi\`u leggeri presenti nel mezzo, l'abbondanza relativa di mesoni $\Dsplus$ rispetto
+ai mesoni D non contenenti stranezza \`e attesa essere maggiore in collisioni Pb-Pb rispetto a collisioni pp,
 nella regione ad intermedio-basso $\pt$, grazie all'abbondanza di quark strani nel QGP.
 Le analisi presentate in questa tesi sono basate sulla ricostruzione completa della topologia di
-decadimento del canale $\DstoKKpi$. In collisioni pp sono state misurate la sezione d'urto differenziale in $\pt$ 
+decadimento del canale $\DstoKKpi$, sfruttando la distanza del vertice di decadimento dal vertice
+di interazione primario. La sezione d'urto differenziale in $\pt$ 
 per la produzione del mesone $\Dsplus$ e i rapporti di produzione del mesone $\Dsplus$ rispetto
-ai mesoni D non contenti stranezza. L'analisi delle collisioni Pb-Pb ha invece portato alla misura
-della produzione del mesone $\Dsplus$ in funzione del $\pt$, della produzione relativa
-dei mesone $\Dsplus$ rispetto ai mesoni D non strani, del fattore di modificazione nucleare e, per la prima 
-volta a LHC, del flow ellittico del mesone $\Dsplus$ per eventi centrali, semi periferici e periferici. 
-L'osservazione dell'aumento della produzione di particelle contenenti stranezza all'aumentare
-della molteplicit\`a di particelle prodotte in eventi di collisioni pp e p-Pb suggerisce la presenza di un possibile incremento
-della produzione relativa del mesone $\Dsplus$ rispetto ai mesoni D non contenti stranezza
-anche in collisioni p-Pb ad alta molteplicit\`a. A questo proposito, la misura \`e stata effettuata
-analizzando i dati raccolti in collisioni p-Pb in funzione della molteplicit\`a di particelle negli eventi.\\
+ai mesoni D non contenti stranezza sono stati misurati in collisioni pp e Pb-Pb. In particolare, l'analisi delle collisioni 
+Pb-Pb ha portato alla misura del fattore di modificazione nucleare e, per la prima 
+volta a LHC, del flow ellittico del mesone $\Dsplus$ per collisioni centrali, semi periferiche e periferiche. 
+L'osservazione dell'aumento della produzione di particelle contenenti stranezza rispetto alla produzione di pioni con l'aumentare
+della molteplicit\`a di particelle prodotte in collisioni pp e p-Pb ha suggerito di investigare la presenza di un simile incremento
+nella produzione relativa del mesone $\Dsplus$ rispetto ai mesoni D non contenenti stranezza
+in collisioni p-Pb ad alta molteplicit\`a. A questo proposito, la misura del rapporto
+di produzione $\Dsplus/\Dplus$ \`e stata effettuata in funzione della molteplicit\`a di particelle in collisioni p-Pb
+in diversi intervalli di $\pt$.\\
 
 
 
 Nel primo Capitolo verr\`a introdotta la fisica degli ioni pesanti. Il secondo Capitolo \`e invece
-interamente dedicato alla fisica dei quark pesanti. Una descrizioni delle principali caratteristiche
+interamente dedicato al ruolo delle osservabili per lo studio degli adroni pesanti nell'investigazione del QGP. Una descrizioni delle principali caratteristiche
 dell'esperimento ALICE e dei rivelatori utilizzati nelle analisi si pu\`o trovare nel terzo Capitolo.
 Nel quarto, quinto e sesto capitolo verr\`a presentato il lavoro di questa tesi, introducendo 
 la strategia usata in ALICE per la ricostruzione del mesone $\Dsplus$ e passando poi alla discussione
-delle analisi e dei risultati in collisioni pp, p-Pb e Pb-Pb rispettivamente.
+dei risultati in collisioni pp, p-Pb e Pb-Pb rispettivamente.\\
+
+
+
+Le misure presentate in questa tesi sono state approvate dalla Collaborazione ALICE e presentate
+in numerose conferenze. L'analisi dei dati in collisioni pp \`e stata pubblicata, mentre i risultati
+in collisioni p-Pb e Pb-Pb sono ancora preliminari e saranno pubblicati a breve.
+
 \end{abstract}
 \fi
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
-
+\iffalse
 \begin{acknowledgements}
 \addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
 The acknowledgments and the people to thank go here, don't forget to include your project advisor\ldots
 \end{acknowledgements}
-
+\fi
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
 %----------------------------------------------------------------------------------------

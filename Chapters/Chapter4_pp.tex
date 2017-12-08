@@ -10,8 +10,8 @@ constitutes a benchmark for pQCD calculations
 at this energy.
 In comparison to previous ALICE publications based on the same data 
 sample~\cite{ALICE:2011aa,Abelev:2012tca,Adam:2016ich}, the present 
-results, which have been published in~\cite{Acharya:2017jgo}, have total uncertainties reduced by a factor of about two. This improvement 
-has several sources: 
+results, which have been published in~\cite{Acharya:2017jgo}, have total (statistical and systematic) 
+uncertainties reduced by a factor of about two. This improvement has several sources: 
 \begin{itemize}
 \item changes in the detector calibration, alignment and track reconstruction 
 algorithm, which resulted in better $\pt$ resolution, thus higher signal-to-background ratio; 
@@ -25,7 +25,8 @@ algorithm, which resulted in better $\pt$ resolution, thus higher signal-to-back
 
 
 The analysis was performed on 370M of analysed events (it was 300M for the previous
-reconstruction).
+reconstruction). The larger data sample was obtained thanks to improvements in the reconstruction
+and detector alignments.
  A minimum-bias (MB)
 trigger was used to collect the data sample, by requiring
 at least one hit in either of the V0 counters or in the SPD.
@@ -37,7 +38,7 @@ cross section~\cite{Gagliardi:2011he}.
 detector (see Sec.~\ref{sec:BkgRejection}).
  The SPD detector can also be used to identify the presence of multiple interaction
 vertices in pp collisions (pile-up vertices). Since the readout time of the SPD is
-200 ns, several bunch crossings are expected to occur in one SPD event.
+300 ns, several bunch crossings are expected to occur in one SPD event.
 The algorithm of pile-up identification runs the vertex finding algorithm 
 on the SPD tracklets not associated to the
 main vertex, which is the one with largest associated multiplicity. 
@@ -129,7 +130,7 @@ be illustrated.
 \label{sec:singleTrCuts}
 Reconstructed tracks were selected by requiring:
 \begin{itemize}
-\item successful fit with the Kalman filter in TPC and ITS
+\item successful fit with the Kalman filter in TPC and ITS (see Sec.~\ref{sec:tracking})
 \item pseudo-rapidity $|\eta| < 0.8$
 \item $\pt > 0.3~\GeV/c$
 \item at least 70 (out of a maximum of 159)
@@ -177,13 +178,13 @@ y_{\rm fid} (\pt) = -\frac{0.2}{15}\pt^2 + \frac{1.9}{15}\pt + 0.5.
 The $\Dspm$ candidates are built from combinatorial 
  association of three candidate tracks passing the selection criteria 
  described in Sec.~\ref{sec:singleTrCuts}, with the correct combination of charge 
- signs. In this way, a huge number of candidates is created, most of them 
- being combinatorial background. Strict selections are therefore needed to increase
+ signs. In this way, a huge number of candidates (about 885M, corresponding to $\sim$3 candidates per event) 
+ is created, most of them being combinatorial background. 
+ Strict selections are therefore needed to increase
  the signal-to-background ratio and the statistical significance of the signal,
  by applying cuts on variables that have the potential to discriminate
  $\Dsplus$ signal (i.e. corresponding to real $\Dspm$ decays) 
- from background candidates. Values of signal-to-background ratios, integrated within
- 3$\sigma$ from $\Ds$ mass peak, are about 0.1-0.3 at low $\pt$. Candidates 
+ from background candidates. Candidates 
   are thus selected by applying geometrical cuts on the displaced decay vertex 
   topology, which are tuned as a function of the D-meson $\pt$.
 The main feature of the $\Dsplus$-decay topology is the presence of three tracks displaced from 
@@ -333,7 +334,7 @@ within $n\sigma$ from the expected one for the corresponding mass hypothesis:
 \]
 where $\sigma$ is the resolution on the energy-loss or time-of-flight signals for each species
 and $S^{\pi,k,p}_{expected}$ is the expected signal in TPC or TOF
-calculated respectively with Bethe-Bloch or time-of-flight equations for a given mass hypothesis.
+calculated respectively with Bethe-Bloch or time-of-flight equations for a given mass hypothesis (see Sec.~\ref{sec:TPC} and~\ref{sec:TOF}).
 Candidate triplets were required to have two tracks compatible with 
 the kaon hypothesis and one with the pion hypothesis. In addition, 
 since the decay particle with opposite charge sign with respect to the $\Dsplus$
@@ -414,6 +415,7 @@ background is dominant, tighter selections are needed but, due to less displaced
 vertices with respect to the higher $\pt$ candidates which are more boosted, too strong selections
 on the decay topology (e.g. decay length) are not allowed.
 The cuts used in the analysis are detailed in Table~\ref{tab:cutsDs}.
+The number of $\Ds$ candidates per event, after all the selections described above, is about 0.02.
 \begin{table}[tbh!]
 \centering
 \begin{tabular}{|l|c|c|c|c|} 
@@ -829,14 +831,15 @@ It was estimated with the following tests:
 These checks are discussed in the following subsections.
 
 \subsubsection{Variation of track selections}
+\label{subsec:trackEffpp}
 For this purpose, $\Dzero$ and $\Dplus$ mesons were used due to their
 higher statistical significance of the extracted yields.
 The D-meson raw yields and efficiencies were evaluated with 
 different sets of track selection cuts.
 The following selections were tested:
 \begin{enumerate}
-\item additional cut on number TPC crossed rows $> 120$-$[5\, ( \Gevc )/\pt]$;
-\item additional number of TPC clusters $>0.65 \times$ number of TPC crossed rows;
+\item additional cut on number TPC crossed rows $> 120$-$[5\, ( \Gevc )/\pt]$ (not used in the default selections);
+\item additional number of TPC clusters $>0.65 \times$ number of TPC crossed rows (not used in the default selections);
 \item tighter selection on the ratio of crossed rows over findable clusters in the TPC ($>0.9$ instead of 0.8).
 \end{enumerate}
 The systematic uncertainty was assigned based on the observed variation of
@@ -847,7 +850,7 @@ The values are consistent with a 1\% per-track systematic
 uncertainty, that was inherited for the $\Ds$-meson analysis.
 
 \subsubsection{ITS-TPC matching efficiency}
-
+\label{sec:MEpp}
 The matching efficiency, i.e. efficiency of track prolongation from TPC to ITS, 
 is defined as the fraction of tracks successfully prolonged from TPC to ITS (having
 at least one cluster in the SPD layers)
@@ -1097,7 +1100,7 @@ ALICE~\cite{ALICE:2011aa,Adam:2016ich,Adam:2015jda}
 used to compare two different methods to correct for the beauty feed-down component 
 and include their difference in the systematic uncertainty. 
 The first method, used to give the central value for $f_{\rm prompt}$, 
-is the one presented in Eq.~\ref{eq:fpr} and needs as inputs the measured $\Dspm raw yields, the $FONLL predictions
+is the one presented in Eq.~\ref{eq:fpr} and needs as inputs the measured $\Dspm$ raw yields, the FONLL predictions
 of B-meson cross-sections and the selection efficiency for feed-down 
 D mesons. The alternative method takes as inputs FONLL predictions for both 
 feed-down and prompt D mesons and their respective Monte Carlo efficiencies, 
@@ -1189,7 +1192,7 @@ In the bottom right panel, B$^0_{\rm s}$-meson differential cross-section as a f
 \includegraphics[width=.45\textwidth]{FigCap4/Dplus_7TeV_y_05_05.eps}
 \includegraphics[width=.45\textwidth]{FigCap4/Dzero_7TeV_y_05_05.eps}
 \includegraphics[width=.45\textwidth]{FigCap4/Dstar_7TeV_y_05_05.eps}
-\caption{J/$\psi$ from $b$-hadron decays (from LHCb, \mbox{2 $< y <$ 4.5}~\cite{Aaij:2011jh}), D$^{+}$, D$^{0}$ and D$^+_{\rm s}$-meson (from ALICE, mid-rapidity~\cite{ALICE:2011aa}) differential cross-sections (red points) as a function of $\pt$ in pp collisions at $\s = $ 7 TeV compared to FONLL predictions~\cite{Cacciari:1998it, Cacciari:2001td} at the same energy (blue boxes). }
+\caption{J/$\psi$ from $b$-hadron decays (from LHCb, \mbox{2 $< y <$ 4.5}~\cite{Aaij:2011jh}), D$^{+}$, D$^{0}$ and $\Dstar$-meson (from ALICE, mid-rapidity~\cite{ALICE:2011aa}) differential cross-sections (red points) as a function of $\pt$ in pp collisions at $\s = $ 7 TeV compared to FONLL predictions~\cite{Cacciari:1998it, Cacciari:2001td} at the same energy (blue boxes). }
 \label{fig:Dmesons}
 \end{center}
 \end{figure}
@@ -1200,9 +1203,10 @@ $p_{T}$ range than CMS. The CMS and LHCb B$^0_{\rm s}$-meson cross-sections in
 the bottom right panel as a function of $y$, together with FONLL predictions in the 
 two different rapidity intervals. For the CMS data, two cases are 
 reported, one obtained using the 2015 PDG~\cite{Agashe:2014kda} value for 
-BR(B$_{\rm s} \rightarrow J/{\rm \psi} ~\phi$),
-the other obtained using the 2010 PDG~\cite{Nakamura:2010zzi} value, 
-referenced in the CMS paper. 
+BR(B$_{\rm s} \rightarrow J/{\rm \psi} ~\phi$) = (1.40 $\pm$ 0.04)$\times 10^{-3}$,
+the other obtained using the 2010 PDG~\cite{Nakamura:2010zzi} value BR = (1.08 $\pm$ 0.09)$\times 10^{-3}$, 
+referenced in the CMS paper. The agreement of FONLL to the measurements is good
+at forward rapidity and also at mid-rapidity when the updated value of BR(B$_{\rm s} \rightarrow J/{\rm \psi} ~\phi$) is used.
 In Fig.~\ref{fig:Dmesons} the cross-section 
 of $J/\psi$-meson from beauty-hadron decays in pp collisions at 
 $\s = $ 7 TeV measured by LHCb~\cite{Aaij:2011jh} and 
@@ -1237,7 +1241,7 @@ the calculation of $f_{\rm prompt}$ with the method in Eq.~\ref{eq:fpr} is then 
 Indeed, as Fig.~\ref{fig:DsParentsAndFDunc} (left) shows, around half of B feed-down 
 $\Ds$ originates from B$^0$- and B$^+$-meson decays 
 and half from B$^0_{\rm s}$-meson decays, which are all described
-by FONLL calculations.
+by FONLL calculations. The sum of the contributions to the $\Ds$ yield shown in Fig.~\ref{fig:DsParentsAndFDunc} (left) is unity.
 The method in Eq.~\ref{eq:fc}, instead, would suffer from the 
 fact that FONLL underestimates charm production at LHC energies. 
 It is reasonable to conclude that, on the basis of the current 
@@ -1252,7 +1256,7 @@ fraction with Eq.~\ref{eq:fc} is systematically lower than that with Eq.~\ref{eq
 because FONLL calculations underestimate charm production at LHC.
 
 \subsection{Generated $\pt$ shape}
-
+\label{subsec:MCptshapePP}
 The influence of the shape of the generated $\Ds$ $\pt$ spectrum used in 
 Monte Carlo simulations on the efficiency calculated in the $\pt$ intervals used
 in the measurement was also evaluated. 
@@ -1315,6 +1319,7 @@ more more data-driven.
 
 
 \section{Results}
+\label{sec:resultsPP}
 \subsection{$\Dsplus$ $\pt$-differential cross section}
 \label{sec:ppCrosSec}
 The $\pt$-differential cross section for prompt $\Ds$ 
@@ -1457,11 +1462,6 @@ The extrapolation factor was defined as
 the ratio between the total production cross section in $|y|<0.5$ and that 
 in the experimentally covered phase space, both of them calculated with the
 FONLL central parameters. 
-The systematic uncertainty on the extrapolation factor was estimated by
-considering the contributions due to i) the uncertainties on the 
-CTEQ6.6 PDFs~\cite{Pumplin:2002vw} and ii) the variation of the charm-quark 
-mass and the renormalisation and factorisation scales in the FONLL 
-calculation, as proposed in~\cite{Cacciari:2012ny}.
 Since for $\Dsplus$ mesons a FONLL prediction is not available,
 the central value of the extrapolation factor was computed 
 from the prediction based on the $\pt$-differential cross section of charm 
@@ -1469,9 +1469,14 @@ quarks from FONLL, the fractions $f({\rm c\rightarrow \Dsplus})$ and
 $f({\rm c\rightarrow D_{\rm s}^{*+}})$ from ALEPH~\cite{Barate:1999bg}, and the 
 fragmentation functions from~\cite{Braaten:1994bz}, which have one parameter, 
 $r$, that was set to 0.1 as done in FONLL~\cite{Cacciari:2003zu}.
-The ${\rm D}_{\rm s}^{*+}$ mesons produced in the c quark fragmentation were 
+The ${\rm D}_{\rm s}^{*+}$ mesons produced in the $c$-quark fragmentation were 
 made to decay with PYTHIA and the resulting $\Dsplus$ mesons were summed to the 
 primary ones to obtain the prompt yield.
+The systematic uncertainty on the extrapolation factor was estimated by
+considering the contributions due to i) the uncertainties on the 
+CTEQ6.6 PDFs~\cite{Pumplin:2002vw} and ii) the variation of the charm-quark 
+mass and the renormalisation and factorisation scales in the FONLL 
+calculation, as proposed in~\cite{Cacciari:2012ny}.
 An additional contribution to the systematic uncertainty  was assigned
 based on the envelope of the results obtained using the 
 FONLL $\pt$-differential cross sections of $\Dzero$, 
