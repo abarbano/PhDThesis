@@ -1036,17 +1036,17 @@ and the interactions between heavy quarks and the medium.
 The $\pt$-differential azimuthal distribution of produced particles can be described by a Fourier series:
 \begin{equation}
 \label{eq:fourier}
-\frac{{\rm d}^2N}{{\rm d} \varphi {\rm d}\pt} =  \frac{{\rm d}N}{2\pi {\rm d}\pt} \Big [ 1+ 2 \sum_{n=1}^{\infty} v_n(\pt) \,{\rm cos} \,n(\varphi- \Psi_n)\Big ], 
+\frac{{\rm d}^2N}{{\rm d} \varphi {\rm d}\pt} =  \frac{{\rm d}N}{2\pi {\rm d}\pt} \Big [ 1+ 2 \sum_{n=1}^{\infty} v_n(\pt) \,{\rm cos} \,n(\varphi- \Psi_n^{\rm RP})\Big ], 
 \end{equation}
 where $v_n$ are the Fourier coefficients, that can be evaluated as 
-$v_n = \langle {\rm cos} \, n(\varphi - \Psi_n)\rangle$ and $\langle \rangle$ indicates an average over 
+$v_n = \langle {\rm cos} \, n(\varphi - \Psi_n^{\rm RP})\rangle$ and $\langle \rangle$ indicates an average over 
  all particles in all events, with their azimuthal angle $\varphi$ in a given rapidity and $\pt$ 
  momentum at a fixed centrality. In Eq.~\ref{eq:fourier},
-$\Psi_n$ is the initial-state spatial plane of symmetry (reaction plane) of
+$\Psi_n^{\rm RP}$ is the initial-state spatial plane of symmetry (reaction plane) of
  the $n^{\rm th}$ harmonic defined by the geometrical distribution of the nucleons participating in the collision.
-The symmetry plane $\Psi_n$ of a given $n^{\rm th}$ harmonic is estimated 
+The symmetry plane $\Psi_n^{\rm RP}$ of a given $n^{\rm th}$ harmonic is estimated 
  event-by-event from the azimuthal distribution of the produced particles
-via the $n^{th}$-harmonic event-plane angle, $\psi_n^{\rm EP}$.
+via the $n^{\rm th}$-harmonic event-plane angle, $\psi_n$.
 For a given harmonic $n$, one constructs the two-dimensional event-plane 
 vector $\vec{Q}_n$:
 \begin{equation}
@@ -1055,22 +1055,22 @@ vector $\vec{Q}_n$:
 \end{equation}
 The sums run over all reconstructed tracks in the case 
 of the TPC, or over the scintillator tiles of the V0 detector.
-The angle $\varphi_i$ is the azimuthal emission angle of the the $i^{th}$ particle or the 
-azimuthal coordinate of the centre of the $i^{th}$ detector element, respectively. 
+The angle $\varphi_i$ is the azimuthal emission angle of the the $i^{\rm th}$ particle or the 
+azimuthal coordinate of the centre of the $i^{\rm th}$ detector element, respectively. 
 For TPC tracks the weight $w_i$ can be unity or a specific 
 function of $\pt$, useful to enhance the 
 contribution of particle with large flow, improving 
 the resolution on the event plane. For segmented detectors, $w_i$ is the amplitude of the 
-signal measured in the $i^{th}$ detector element. The observed plane 
-angle of the $n^{th}$ harmonic is given by the orientation of $\vec{Q}_n$:
+signal measured in the $i^{\rm th}$ detector element. The observed plane 
+angle of the $n^{\rm th}$ harmonic is given by the orientation of $\vec{Q}_n$:
 \begin{equation}
 \psi_n = \dfrac{1}{n} \tan^{-1} \left(\dfrac{Q_{n,y}}{Q_{n,x}}\right).
 \end{equation}
 Due to the finite number of detected particles, the
-angular resolution on the reaction plane $\Psi_{\rm RP}$ is limited and 
-can be estimated for the $n^{th}$ harmonic as:
+angular resolution on the reaction plane $\Psi_n^{\rm RP}$ is limited and 
+can be estimated for the $n^{\rm th}$ harmonic as:
 \begin{equation}
-R_n = \langle {\rm cos}[n({\rm \psi}_n-{\rm \Psi}_{\rm RP})]) \rangle ,
+R_n = \langle {\rm cos}[n({\rm \psi}_n-{\rm \Psi}_n^{\rm RP})]) \rangle ,
 \end{equation}
 where the angle brackets denote an average over a large event sample.
 The resolution term must be used to correct the Fourier coefficients as:
@@ -1081,23 +1081,24 @@ It can be demonstrated that the the event plane resolution correction factor
 can be expressed as~\cite{Poskanzer:1998yz}:
 \begin{equation}
 \label{eq:epreso}
-\left\langle \cos [km\left( \psi_m-\Psi_{\rm RP}\right)]\right\rangle = \sqrt{\dfrac{\pi }{8}} \chi_m \cdot {\rm e}^{-\chi_m^2/4} \cdot I_{(k-1)/2}(\chi_m^2/4)+I_{(k+1)/2}(\chi_m^2/4),
+\left\langle \cos [km\left( \psi_m-\Psi_n^{\rm RP}\right)]\right\rangle = \sqrt{\dfrac{\pi }{8}} \chi_m \cdot {\rm e}^{-\chi_m^2/4} \cdot I_{(k-1)/2}(\chi_m^2/4)+I_{(k+1)/2}(\chi_m^2/4),
 \end{equation}
 where the equation has been written in terms of $km$ 
 instead of $n$, $\chi_m= v_m/\sigma = v_m\sqrt{2N}$ ($N$ is the multiplicity) is the variable concerning the
 resolution, $I_\nu$ is the Bessel function of order $\nu$ and
 $k$ is an integer number that accounts for the fact that the 
-event plane of $m^{th}$ order can be used to compute all Fourier harmonics that are multiples
+event plane of $m^{\rm th}$ order can be used to compute all Fourier harmonics that are multiples
 of $m$ (i.e. $km$). The resolution correction factor from Eq.~\ref{eq:epreso} is
-drawn in Fig.~\ref{fig:resoBessel} as a function of $\chi_m$, for 
+drawn in Fig.~\ref{fig:resoBesselAndv2} (left) as a function of $\chi_m$, for 
 different values of $k$. 
 The mean cosine values are less than one, thus the 
 correction always increases the Fourier coefficients.
 \begin{figure}
 \centering
- \includegraphics[width=0.5\textwidth]{FigCap5/resolBessel.png}
- \caption[Event plane resolution vs $\chi_m$]{The event plane resolution for the $n^{ th}$ ($n=km$, according the conventions of Eq.~(\ref{eq:epreso})) harmonic of the particle distribution with respect to the $m^{ th}$ harmonic plane, as a function of $\chi_m$.}
- \label{fig:resoBessel}
+ \includegraphics[width=0.49\textwidth]{FigCap5/resolBessel.png}
+  \includegraphics[width=0.49\textwidth]{FigCap5/v2_diffDetComparison.eps}
+ \caption{Left: the event plane resolution for the $n^{ th}$ ($n=km$, according the conventions of Eq.~(\ref{eq:epreso})) harmonic of the particle distribution with respect to the $m^{ th}$ harmonic plane, as a function of $\chi_m$~\cite{Poskanzer:1998yz}. Right: $\Ds$ $v_2$ calculated with different detector configurations. }
+ \label{fig:resoBesselAndv2}
 \end{figure}
 To estimate the event plane resolution, the correlations of the event planes determined
 from different samples of tracks, or different detectors are exploited.
@@ -1107,20 +1108,20 @@ the following relation holds for the correlations between the
 two independent sub-sets and the true event plane:
 \begin{equation}
 \langle {\rm cos} [n({\rm \psi}^a_n-{\rm \psi}^b_n)) \rangle = 
-\langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_{\rm RP})] \rangle \langle {\rm cos} [n({\rm \psi}^b_n-{\rm \Psi}_{\rm RP})] \rangle .
+\langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_n^{\rm RP})] \rangle \langle {\rm cos} [n({\rm \psi}^b_n-{\rm \Psi}_n^{\rm RP})] \rangle .
 \end{equation}
 Since, given the conditions above, the resolution of each sub-sets is expected 
 to be the same, their resolution can be obtained 
 once the correlation between the two samples is known:
 \begin{equation}
-R_{n, sub} = \langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_{\rm RP})] \rangle = \sqrt{\langle {\rm cos} [n({\rm \psi}^a_n-{\rm \psi}^b_n)] \rangle}.
+R_{n, sub} = \langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_n^{\rm RP})] \rangle = \sqrt{\langle {\rm cos} [n({\rm \psi}^a_n-{\rm \psi}^b_n)] \rangle}.
 \end{equation}
 If the two sub-events are not equal or have different rapidity coverage,
 at least three sub-samples are needed to determine the 
 event-plane resolution in each of them. In this case, 
 the resolution of the first sub-set $a$ is determined as:
 \begin{equation}
- \langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_{\rm RP})] \rangle = 
+ \langle {\rm cos} [n({\rm \psi}^a_n-{\rm \Psi}_n^{\rm RP})] \rangle = 
 \sqrt{\frac{\langle\cos [n(\psi_n^a-\psi_n^c)] \rangle \langle\cos [n(\psi_n^a-\psi_n^b)] \rangle}{\langle\cos [n(\psi_n^b-\psi_n^c)] \rangle}}\, .
 \end{equation}
 
@@ -1151,27 +1152,39 @@ In this analysis the event plane was obtained from the
 signals produced by the charged particles in the eight 
 azimuthal sectors of each V0 array. 
 The current uncertainties on the $v_2$ values do not allow to
-appreciate different non-flow contributions (i.e.\,correlations not 
+appreciate different non-flow contributions, i.e.\,correlations not 
 induced by the collective expansion but rather by particle decays and 
-jet production) using different detectors
+jet production. As an example, the right panel of Fig.~\ref{fig:resoBesselAndv2}
+shows the $v_2$ of $\Ds$ meson with different detector configurations
 for the event plane measurement, thus, introducing different
 rapidity gaps between the tracks used for the event plane measurement
-and the D mesons. (see left panel of Fig.~\ref{fig:QoverMCalibration},
-as an example for the $v_2$ of $\Ds$ meson with different detector configurations).
-The separation of at least 0.9 units of pseudo-rapidity 
+and the D mesons. 
+The following detector configurations were compared:
+\begin{enumerate}
+\item event plane measured with V0,  
+resolution $R_2$ with three sub-samples: TPC tracks with $\eta < 0$ and $\eta > 0$, V0; 
+\item event plane measured with V0C,  
+resolution $R_2$ with three sub-samples: V0C, V0A, full TPC; 
+\item event plane measured with TPC tracks with $\eta > 0$,  
+resolution $R_2$ with the event planes from the two samples with same resolution: 
+TPC tracks with $\eta < 0$ and $\eta > 0$;
+\end{enumerate}
+Even though the current statistical uncertainties do no allow to discriminate among these three options,
+the separation of at least 0.9 units of pseudo-rapidity 
 ($|\Delta\eta|>0.9$) between the D mesons (reconstructed in the TPC)
-and the particles (detected with V0) used in the $\psi_2$ calculation
-suppresses non-flow contributions in the $v_2$ measurement with respect
+and the particles (detected with V0) used in the $\psi_2$ calculation was preferred,
+because it suppresses non-flow contributions in the $v_2$ measurement with respect
 to the measurement of the event plane considering tracks in the same
 pseudo-rapidity region of the D meson candidates (TPC event planes).
 Since the V0s sub-detectors cover different rapidity 
 regions and measure different multiplicities, the
 three events technique was used to compute the event plane resolution.
-The three event planes were computed with the V0 detector itself and the 
+The three event planes needed to calculate the resolution were computed with the V0 detector itself and the 
 positive and negative $\eta$ regions of the TPC.
-The average resolution correction factor in the 30-50\% centrality class is
+In the 30-50\% centrality class, the resolution decreases from $\approx 0.83$ to $\approx 0.70$ with increasing centrality
+percentile and the average resolution correction factor is
 $R_2 = 0.77045 \pm 0.00007$ (see left panel 
-of Fig.~\ref{fig:resoVsDetConfig}) 
+of Fig.~\ref{fig:resoVsDetConfig}). 
 Other detector 
 configurations have been tested in order to compare 
 the resolution and check the consistency of the different 
@@ -1215,16 +1228,15 @@ The resolution of the V0A (V0C)
 
 \begin{figure}
 \centering
-  \includegraphics[width=0.45\textwidth]{FigCap5/v2_diffDetComparison.eps}
  \includegraphics[width=0.53\textwidth]{FigCap5/V0EvPlaneDitrib.eps}
- \caption{Left: $\Ds$ $v_2$ calculated with different detector configurations. Right: event-plane angle distributions obtained with the V0 detector without corrections and after gain equalisation, re-centering and alignment corrections.}
+ \caption{Event-plane angle distributions obtained with the V0 detector without corrections and after gain equalisation, re-centering and alignment corrections.}
    \label{fig:QoverMCalibration}
 \end{figure}
 
 
 
 The distribution of the event plane angles recorded by an ideal detector is completely
-flat, since there is not a preferred direction for the $\Psi_{RP}$ angle.
+flat, since there is not a preferred direction for the $\Psi_n^{\rm RP}$ angle.
 Effects of non-uniformity of the detector performance and tracking efficiency (in the case of the TPC) 
 can generate a non-flat distribution of the event plane angle. 
 For this purpose, a gain equalisation of individual 
@@ -1292,26 +1304,26 @@ D-meson raw yields, without an efficiency correction.
 
  \subsection{In- and out-of-plane signal extraction}
  \label{sec:SigExtracV2}
- The topological selections used for the selection of $\Ds$ candidates in the 30-50\% centrality class
+ The topological selections used for the selection of $\Dspm$ candidates in the 30-50\% centrality class
  are very similar to those reported in Table~\ref{tab:topologicalselections_ds_3050} for the
  $\varphi$-integrated yields in the same centrality class.
  Only the selections on NDL$_{\rm xy}$, $\sigma_{vertex}$, $\Delta M$ 
  and $|\cos^3 \theta^\prime({\rm K})|$ were slightly released in some $\pt$
- intervals. The invariant-mass distributions were analysed separately for $\Dsplus$ candidates
+ intervals. The invariant-mass distributions were analysed separately for $\Dspm$ candidates
  in the in-plane and out-of-plane $\Delta \varphi$ intervals, 
 with the event plane determined with the V0 
-in the 30-50\% centrality class, as shown in Fig.~\ref{fig:deltaphibinsds} 
-as an example for the interval $6 < \pt < 8 \, \Gevc$.
-To extract the $\Ds$ raw yield, the invariant mass distribution was fitted using a two Gaussian
-functions to model the $\Ds$ peak and the contribution of the $\DplustoKKpi$ and 
+in the 30-50\% centrality class. To extract the $\Dspm$ raw yield, the invariant mass distribution was fitted using a two Gaussian
+functions to model the $\Dspm$ peak and the contribution of the $\DplustoKKpi$ and 
 an exponential shape to model the background.
 The mean and the width of the Gaussians were fixed to those obtained from a fit to
 the invariant-mass distribution integrated over $\Delta \varphi$, 
 where the signal has higher statistical significance. 
-Fig.~\ref{fig:deltaphibinsds} shows the values of Gaussian means and 
-widths for the in-/out-of-plane and the $\varphi$-integrated extracted yields.
 The yields in the two $\varphi$ regions were extracted in five $\pt$ 
 intervals between 2 and 16 $\Gevc$.
+Figures ~\ref{fig:deltaphi0binsds} and~\ref{fig:deltaphi1binsds} show, respectively, the fits to the in-plane and out-of-plane
+invariant-mass distributions for the five analysed $\pt$ intervals between $2 < \pt <16 \, \Gevc$.
+Figure ~\ref{fig:deltaphibinsds} shows the values of Gaussian means and 
+widths for the in-/out-of-plane and the $\varphi$-integrated extracted yields.
 The values of the extracted raw yields and the signal-over-background 
 ratios for the in-plane and out-of-plane invariant-mass fits 
 are reported in Table~\ref{signalsDs}.
@@ -1428,7 +1440,7 @@ Fits were performed by varying: (i) background fit functions
 extracted from the $\varphi$-integrated distribution. Furthermore, the yield was defined by
 counting the histogram entries in the invariant-mass region of the signal, after subtracting the background
 contribution estimated from a fit to the side bands. The distributions of
-residuals between the $i^{th}$ trial and the reference $v_2$ value, 
+residuals between the $i^{\rm th}$ trial and the reference $v_2$ value, 
 $v_2^{trial}-v_2^{ref}$, were obtained in each $\pt$ interval and are shown in Fig.~\ref{fig:residualsV2}. 
 The systematic uncertainty was assigned
 considering both the shift with respect to zero and the RMS of the residual
@@ -1444,14 +1456,12 @@ distributions. The absolute values of this uncertainty range from
 \subsection{Event Plane resolution}
 \label{sec:EPreso}
 The event-plane resolution correction factor $R_2$ depends on the 
-collision centrality~\cite{Abelev:2014ipa}. The left-hand panel of Fig.~\ref{fig:EtaGapSyst} shows
+collision centrality~\cite{Abelev:2014ipa}. The left-hand panel of Fig.~\ref{fig:resoVsDetConfig} shows
 the resolution $R_2$ of the event plane determined from the V0 detector as a function of the centrality in the interval
 30-50\%. The resolution was computed using three sub-events, i.e. the
 V0 and the TPC tracks in two different $\eta$ intervals,
 with and without the introduction of a 
 pseudo-rapidity gap between the two considered TPC regions.
-The resolution decreases from $\approx 0.83$ to $\approx 0.70$ with increasing centrality
-percentile.
 The value of resolution used in Eq.~\ref{eq:anis} was computed
  assuming a uniform distribution of the D-meson yield within 
  the 30-50\% centrality class.
@@ -1466,22 +1476,22 @@ this study.
 \centering
   \includegraphics[width=.49\textwidth]{FigCap5/EPresolution_VZERO_NonFlowSyst.pdf}
   \includegraphics[width=.49\textwidth]{FigCap5/EPresolution_VZERO_NonFlowSyst_ratio.pdf}
-\caption{Event plane resolution as a function of centrality (left) estimated introducing an eta gap between the sub-events computed using the TPC tracks and the corresponding relative variation with respect to the default configuration (right).}
+\caption{Event plane resolution as a function of centrality (left) estimated introducing an $\eta$ gap between the sub-events computed using the TPC tracks and the corresponding relative variation with respect to the default configuration (right).}
 \label{fig:EtaGapSyst}
 \end{figure}
 
 \subsection{Non-flow contributions}
 \label{sec:NonFlow}
 In order to estimate a possible bias in the $R_2$ correction factor due to non-flow correlations among the three 
-event planes used for the resolution estimates,
+event planes (computed with the V0 and the TPC tracks in two different $\eta$ intervals) used for the resolution estimates,
 the resolution was re-computed introducing 
 a pseudo-rapidity gap between the TPC sub-events. 
 In particular it was considered an eta 
 gap of 0.1 and 0.2 units between the samples of the TPC tracks with positive/negative 
 eta. The left panel of Fig.~\ref{fig:EtaGapSyst} shows
- the comparison of the event plane resolution
-as a function of centrality computed without eta gap, 
-with an eta gap of 0.1 units, with an eta gap 0.2 units. 
+ the comparison of the event plane resolution 
+as a function of centrality computed without $\eta$ gap (default), 
+with an $\eta$ gap of 0.1 units, with an $\eta$ gap 0.2 units. 
 In the latter case the resolution was also computed 
 applying per-track $\pt$ weights in the calculation of the $\vec{Q}_2$ vector with
 the tracks reconstructed in the TPC.
@@ -1561,24 +1571,12 @@ contributions of the FONLL scales variations and of the variation of
 the $\RAA$ hypothesis. The value of the absolute systematic uncertainty on $v_2$
 due to the correction of the feed-down contribution, which includes also the variation
 of the hypothesis on $v_{\rm 2}^{\rm feed-down}$, ranges from 0.001 to 0.030 depending on the $\pt$ interval.
-\begin{figure}[!t]
- \begin{center}
-\includegraphics[width=.49\textwidth]{FigCap5/Ds_dNdpt_010.pdf}
-\includegraphics[width=.49\textwidth]{FigCap5/Ds_dNdpt_3050.pdf}
-\includegraphics[width=.49\textwidth]{FigCap5/Ds_dNdpt_6080.pdf}
- \end{center}
- \caption{Transverse momentum distributions d$N$/d$\pt$ of 
-prompt $\Ds$ meson in the 0--10\%, 30--50\% and 60--80\% 
-centrality classes in $\PbPb$ collisions 
-at $\sqrtsNN=5.02~\tev$. }
- \label{fig:DmesCorrYields010} 
-\end{figure} 
 
 \section{Results}
 \label{sec:PbPbResults}
 The transverse-momentum distributions d$N$/d$\pt$ of prompt $\Dsplus$ mesons in Pb-Pb
 collisions at $\sNN=5.02$ TeV are shown in Fig.~\ref{fig:DmesCorrYields010}
-for the 0-10\%, 30-50\% and 60-80\% centrality classes. 
+for the 0-10\%, 30-50\% and 60-80\% centrality classes~\cite{ALICE-PUBLIC-2017-003}. 
 They are compared to the corresponding cross-section in pp collisions at the same centre-of-mass energy
 multiplied by the $\langle T_{\rm AA} \rangle$ of the considered centrality class.
 The vertical bars represent the statistical uncertainties, the empty boxes
@@ -1592,6 +1590,18 @@ yields in the 0-10\% and 30-50\%. The suppression increases with increasing cent
 and with the transverse momentum.\\
 %Uncertainties on the pp cross section
 %normalisation and on the branching ratios are quoted separately.
+\begin{figure}[!t]
+ \begin{center}
+\includegraphics[width=.49\textwidth]{FigCap5/Ds_dNdpt_010.pdf}
+\includegraphics[width=.49\textwidth]{FigCap5/Ds_dNdpt_3050.pdf}
+\includegraphics[width=.49\textwidth]{FigCap5/Ds_dNdpt_6080.pdf}
+ \end{center}
+ \caption{Transverse momentum distributions d$N$/d$\pt$ of 
+prompt $\Ds$ meson in the 0--10\%, 30--50\% and 60--80\% 
+centrality classes in $\PbPb$ collisions 
+at $\sqrtsNN=5.02~\tev$~\cite{ALICE-PUBLIC-2017-003}. }
+ \label{fig:DmesCorrYields010} 
+\end{figure} 
 
 
 The production yields of the different D-meson species were studied by computing
@@ -1617,7 +1627,7 @@ data sample in the semi-peripheral classes and the improvements in the analysis.
 \includegraphics[width=0.49\textwidth]{FigCap5/RatioDplusDzero-PbPb-010-3050-6080-502-pp-7.pdf}
 \includegraphics[width=0.49\textwidth]{FigCap5/RatioDstarDzero-PbPb-010-3050-6080-502-pp-7.pdf}
  \end{center}
- \caption{Ratio of prompt D-meson yields as a function of $\pt$.
+ \caption{Ratio of prompt D-meson yields as a function of $\pt$~\cite{ALICE-PUBLIC-2017-003}.
 Statistical (bars) and systematic (boxes) uncertainties are shown.}
  \label{fig:DmesRatio} 
 \end{figure} 
@@ -1630,7 +1640,7 @@ Statistical (bars) and systematic (boxes) uncertainties are shown.}
  \caption{$\RAA$ 
   of prompt $\Dsplus$ mesons 
   compared with the average $\RAA$ of $\Dzero$, $\Dplus$ and $\Dstar$ mesons for the 
-0--10\%, 30--50\% and 60--80\%. 
+0--10\%, 30--50\% and 60--80\%~\cite{ALICE-PUBLIC-2017-003}. 
 Statistical (bars),  systematic (empty boxes), and normalisation (shaded box) 
 uncertainties are shown.}
  \label{fig:DmesRaa} 
@@ -1638,9 +1648,9 @@ uncertainties are shown.}
 
 
 The magnitude of the suppression observed in the d$N$/d$\pt$ in Pb-Pb relative to pp collisions 
-can be estimated by looking at the nuclear modification factor presented in Fig.~\ref{fig:DmesRaa}.
+can be estimated by looking at the nuclear modification factor presented in Fig.~\ref{fig:DmesRaa}~\cite{ALICE-PUBLIC-2017-003}.
 The $\Raa$ of prompt $\Dsplus$ mesons is shown, for the three different centrality classes,
-in Fig.~\ref{fig:DmesRaa}, where it is compared to the average $\Raa$ of non-strange 
+and it is compared to the average $\Raa$ of non-strange 
 D mesons. The $\Dsplus$ nuclear modification factors in the 0--10\% 
 and 30--50\% centrality classes show a suppression that is
 maximal at $\pt=6$--$10~\gev/c$, where a reduction of the yields by
@@ -1678,7 +1688,7 @@ at $\pt \approx 10~\gev/c$, although the present experimental
 uncertainties prevent us from drawing a firm conclusion. This 
 difference is absent in the PHSD model. In the TAMU model the difference  
 becomes smaller at $\pt > 10 \, \Gevc$, because the fragmentation mechanism (universal in pp and Pb-Pb) dominates in this region and 
-leads to similar $\RAA$ for D and $\Ds$ mesons. The small residual splitting is induced by an extra suppression of D mesons
+leads to similar $\RAA$ for D and $\Ds$ mesons. The small residual splitting in TAMU model at $\pt > 10 \, \Gevc$ is induced by an extra suppression of D mesons
 due to interactions in the hadronic phase, which are expected to be small for $\Ds$ mesons~\cite{He:2012df} and
 neglected in the calculations. 
 \\
@@ -1688,7 +1698,7 @@ neglected in the calculations.
  \begin{center}
 \includegraphics[angle=0, width=0.49\textwidth]{FigCap5/DmesonAverageDs_010_Models.pdf}
  \end{center}
- \caption{Average $\RAA$ of $\Dzero$, $\Dplus$ and $\Dstar$ mesons and $\RAA$ of $\Ds$ mesons in the 0--10\% centrality class compared with the PHSD~\cite{Song:2015ykw}  and TAMU~\cite{He:2014cla} model calculations.}
+ \caption{Average $\RAA$ of $\Dzero$, $\Dplus$ and $\Dstar$ mesons and $\RAA$ of $\Ds$ mesons in the 0--10\% centrality class~\cite{ALICE-PUBLIC-2017-003} compared with the PHSD~\cite{Song:2015ykw}  and TAMU~\cite{He:2014cla} model calculations.}
  \label{fig:DandDsRaaWithModels} 
 \end{figure} 
 
@@ -1696,7 +1706,7 @@ neglected in the calculations.
 
 
 The $v_2$ of prompt $\Ds$ mesons in
-the 30--50\% centrality class is shown as a function of $\pt$ in Fig.~\ref{fig:v2_Ds}.
+the 30--50\% centrality class is shown as a function of $\pt$ in Fig.~\ref{fig:v2_Ds}~\cite{Acharya:2017qps}.
 The symbols are positioned at the average $\pt$ of the 
 reconstructed $\Ds$ mesons in the considered $\pt$ interval. This $\langle \pt \rangle$ value was determined as the 
 average of the $\pt$ distribution of candidates in the signal invariant-mass region, 
@@ -1707,12 +1717,12 @@ The average $v_2$ of $\Ds$ meson in
 where the uncertainty was calculated using quadratic error propagation for the
  statistical and uncorrelated systematic uncertainties 
 (signal extraction) and linear propagation for the correlated 
-systematic uncertainties ($R_2$ and feed-down correction). The average $v_2$ results
- positive with a significance of 2.6\,$\sigma$ of its uncertainty.
+systematic uncertainties ($R_2$ and feed-down correction). The average $v_2$ of $\Ds$ is positive 
+with a significance of 2.6\,$\sigma$ of its uncertainty.
 The $v_2$ of $\Ds$ mesons is compared to the average $v_2$ of
 $\Dzero$, $\Dplus$ and $\Dstar$ as a function of $\pt$ in the right
-panel of Fig.~\ref{fig:v2_Ds}. he $v_2$ of $\Ds$ and non-strange D mesons are found
-to be compatible within uncertainties.\\
+panel of Fig.~\ref{fig:v2_Ds}. The $v_2$ of $\Ds$ and non-strange D mesons are found
+to be compatible within uncertainties~\cite{Acharya:2017qps}.\\
 
 
 In Fig.~\ref{fig:v2_models}, the measured $v_2$  is compared to theoretical calculations.
@@ -1720,7 +1730,7 @@ Both TAMU and PHSD predict similar $v_2$ for strange and non-strange
 D mesons. In the TAMU model, the small difference between $v_2$ of $\Ds$ and that of
 non-strange D mesons is due to the fact that the $\Ds$ spectra freeze out after
 hadronisation, while D mesons couple to the hadronic medium,
-and further enhances its $v_2$ by 30\%. Therefore,
+and this further enhances their $v_2$ by 30\%. Therefore,
 the $v_2$ splitting between non-strange D and $\Ds$ mesons is also a promising measure of the transport
 properties of the hadronic phase, although the current uncertainties do not allow to draw strong conclusions.
 The TAMU model describes the magnitude of the elliptic flow, 
@@ -1735,9 +1745,9 @@ measurements.
 \includegraphics[width=.49\textwidth]{FigCap5/Dsv2_3050.pdf}
 \includegraphics[width=.49\textwidth]{FigCap5/D0DplusAverageDsv2_05May2017.pdf}
 \caption{Elliptic flow $v_2$ as a function of $\pt$ for prompt $\Ds$ mesons 
-and their charge conjugates for $\PbPb$ collisions at $\sNN = 5.02$ TeV in the centrality class 30-50\%.
+and their charge conjugates for $\PbPb$ collisions at $\sNN = 5.02$ TeV in the centrality class 30-50\%~\cite{Acharya:2017qps}.
 Right: comparison with average non-strange D meson $v_2$ as a function 
-of $\pt$, for the 30-50\% centrality class in Pb-Pb collisions. }
+of $\pt$, for the 30-50\% centrality class in Pb-Pb collisions~\cite{Acharya:2017qps}. }
 \label{fig:v2_Ds} 
 \end{center}
 \end{figure}
@@ -1745,7 +1755,7 @@ of $\pt$, for the 30-50\% centrality class in Pb-Pb collisions. }
 \begin{figure*}[!t]
 \begin{center}
 \includegraphics[width=.55\textwidth]{FigCap5/D0DplusAverageDsv2_modelComparison_05May2017.pdf}
-\caption{$v_2$ of $\Ds$ mesons for Pb-Pb collisions at $\sNN = 5.02$ TeV in the 30-50\% centrality class compared with the PHSD~\cite{Song:2015ykw}  and TAMU~\cite{He:2014cla} model calculations.}
+\caption{$v_2$ of $\Ds$ mesons for Pb-Pb collisions at $\sNN = 5.02$ TeV in the 30-50\% centrality class~\cite{Acharya:2017qps} compared with the PHSD~\cite{Song:2015ykw}  and TAMU~\cite{He:2014cla} model calculations.}
 \label{fig:v2_models} 
 \end{center}
 \end{figure*}
@@ -1793,13 +1803,13 @@ The elliptic flow of $\Dsplus$ meson was measured for the first time. The
  uncertainty in the interval $2 < \pt <8 \, \Gevc$. This together with the results on $v_2$ of $\Dzero$, $\Dplus$ and
  $\Dstar$ indicates that low-momentum charm quarks take part in the
 collective motion of the QGP and that interactions with the medium constituents as well as recombination of charm
-and light quarks both contribute to the observed elliptic flow. The comparison of the $v_2$ of $\Dsplus$ and
+and light quarks contribute to the observed elliptic flow. The comparison of the $v_2$ of $\Dsplus$ and
  non-strange D mesons is also a expected to be sensitive to the properties of the medium during the hadronic phase~\cite{He:2014cla},
  although possible effects are not appreciable with the current statistical sample.\\
  
  
  The measurements will benefit from the larger data sample that will be collected in the Pb-Pb run at 
- $\sNN=5.02$ TeV of 2018. A sample of more than $100$M central
+ $\sNN=5.02$ TeV in 2018. A sample of more than $100$M central
  collisions could be recorded by ALICE. This will allow to reduce the statistical uncertainty
  on the $\Dsplus$ yield in Pb-Pb from $\sim 20\%$ (current) to $\sim 6\%$ in the 
  $\pt$ interval $4 < \pt < 6 \, \Gevc$. Furthermore, with the recent pp run at the same centre-of-mass energy

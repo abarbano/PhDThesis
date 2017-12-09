@@ -361,40 +361,40 @@ interval $b_{min}<$ b $<b_{max}$ (see Fig.~\ref{fig:glaubMC}) is given by:
 \begin{equation}
 c=\frac{1}{\sigma_{AB}}\int_{b_{min}}^{b_{max}} \frac{d\sigma_{AB}}{db'}db'.
 \end{equation}
-A simple approach to utilize the Glauber Model formulation for the
+A simple approach to use the Glauber Model formulation for the
  calculation of geometry related quantities like $N_{part}$ and $N_{coll}$
 is a Monte Carlo implementation. 
 Furthermore, it is possible to simulate experimental quantities 
-like the charged particle multiplicity and to apply similar centrality cuts as in the analysis of real data. 
+like the charged particle multiplicity and to apply centrality cuts similar to those used in the analysis of real data. 
 In the simulation the nucleon distribution in the two colliding nuclei is randomly generated
 according to their nuclear density distributions.
 A random impact parameter $b$ is also associated to the collision according to the distribution
-d$\sigma$/d$b \propto 2\pi b$. The nucleons travel on straight-line
+d$\sigma$/d$b \propto 2\pi b$. The nucleons travel along straight-line
 trajectories and the inelastic nucleon-nucleon cross-section is assumed to be independent
 of the number of collisions a nucleon underwent before. A nucleon-nucleon collision takes place if
-their distance $d$ in the plane orthogonal to the beam axis satisfies:
+their distance $d$ in the plane orthogonal to the beam axis satisfies the following condition:
 \begin{equation}
 d \leq \sqrt{\sigma^{inel}_{NN}/\pi}.
 \end{equation}
 Optical Glauber and MC Glauber show good agreement when calculating 
 simple geometric quantities like $N_{part}$ and $N_{coll}$ as
-a function of impact parameter. Some discrepancies appear at the highest impact parameters.
+a function of impact parameter. Some discrepancies appear at the highest values of the impact parameter.
 This is mainly due to the fact that in the Optical Approximation the incoming nucleon sees the incoming nucleus as a smooth density object and does not account for event-by-event density fluctuations.
 
 
 
 In Chapter 3, more details will be given about the calculation 
-of N\textsubscript{part} and N\textsubscript{coll} and the centrality 
+of N\textsubscript{part} and N\textsubscript{coll} and about the centrality 
 determination in the ALICE experiment.
 
 
 \section{Heavy-ion physics at the LHC}
 \label{sec:HIatLHC}
-Let's now turn into the experiments. The SPS program, with its several experiments, 
+The SPS program, with its several experiments, 
 was mainly aimed at understanding whether a new state of matter, with the 
 characteristics of a Quark-Gluon Plasma, could actually be created in the laboratory.
 For a more quantitative study of the properties of this
-system, we had to wait for the following research era, with the RHIC and LHC colliders.
+system, we had to wait for the following experiment era, at the RHIC and LHC colliders.
 However, the first results from the SPS revealed that Pb-Pb collisions 
 were not simply a trivial superposition of elementary proton-proton (pp) collisions.
 First of all, it was possible to measure quantitatively
@@ -402,9 +402,9 @@ the energy density and temperature of the fireball formed after collisions of tw
 A formula derived by Bjorken~\cite{Bjorken} 
 revealed the energy density of the system to be around
 3 GeV/fm$^{3}$, slightly above the phase transition
-that the Lattice QCD predicts to be at about 0.5-0.6 GeV/fm$^3$~\cite{Hands}. At that energy density,
+predicted by the Lattice QCD at about 0.5-0.6 GeV/fm$^3$~\cite{Hands}. At that energy density,
 Lattice QCD gives a plasma temperature of about 210 MeV. The main experimental observations at the SPS 
-were an abundant production of hadrons
+showed an abundant production of hadrons
 containing strange quarks~\cite{Sandor:2004bg} (``strangeness enhancement"), 
 the reduced production of the J/$\psi$ mesons~\cite{Abreu:2000ni} 
 (``anomalous J/$\psi$ suppression") and the yields of 
@@ -420,10 +420,11 @@ then converted into a final momenta anisotropy. Such a process is only possible
 if the fireball is guided by collective motion effects in a liquid-like medium with  
 small viscosity. The initial results from RICH confirmed the picture 
 of an extremely strongly interacting and almost perfect liquid QGP, enough opaque 
-to quench any fast parton that travels througth.\\
-This effect and the experimental observations mentioned before will be deeper 
-explored during the LHC phase. We will go now through a revision of some of the most 
-important results and open points regarding heavy-ion physics at the higher LHC energies. 
+to quench any fast parton travelling through it.\\
+This effect and the experimental observations mentioned before will 
+have a deeper insight in the LHC research program. In the following, a revision of some of the most 
+important results and open points regarding heavy-ion physics at the higher LHC energies
+is reported. 
 
 \begin{figure}[!t]
   \centering
@@ -436,15 +437,15 @@ important results and open points regarding heavy-ion physics at the higher LHC 
 \subsection{Particle multiplicity and energy density}
 \label{sec:partMult}
 The number of particles produced in the collision (multiplicity) is related to the 
-density of the created medium. Particle multiplicity depends in fact both on the 
-centrality and energy of the collision. This observable is usually presented as 
+density of the created medium. Pn fact particle multiplicity depends both on the 
+centrality and on the energy of the collision. This observable is usually presented as 
 a pseudo-rapidity ($\eta = - {\rm ln}(\tan(\theta/2))$ density of charged particles at 
 mid-rapidity (d$\Nch$/d$\eta |_{\eta=0}$). This is useful to compare experimental 
 results with different acceptances. Furthermore, particle density is usually 
 divided by the average number of nucleon pairs participating to the collision 
-($\langle N_{\rm part}\rangle$/2), to compare results from different 
+($\langle N_{\rm part}\rangle$/2), to compare results of different 
 colliding systems. The measurements by ALICE in the 5\% 
-most central Pb-Pb collisions at $\sNN = 5.02$ TeV found a density of charged 
+most central Pb-Pb collisions at $\sNN = 5.02$ TeV showed a density of charged 
 particles at mid-rapidity $\langle $d$\Nch$/d$\eta \rangle = 1943 \pm 54$ 
 and, normalised per participant pair, (d$\Nch$/d$\eta$)/($\langle N_{\rm part} \rangle/2$) $ 
 = 10.1 \pm 0.3$~\cite{Adam:2015ptt}.  
@@ -452,10 +453,10 @@ The left panel of Fig.~\ref{fig:dNchdEta} presents (d$\Nch$/d$\eta$)/($\langle N
 as a function of the center-of-mass energy per nucleon pair. The energy dependence 
 of the charged multiplicity for central heavy-ion collisions can be fitted with a power 
 law of the form $as^b$, where $b = 0.155 \pm$ 0.004~\cite{Adam:2015ptt}. 
-The rise is much stronger than for pp collisions where $b = 0.103 \pm 0.002$, 
+The rise is much stronger than in pp collisions where $b = 0.103 \pm 0.002$, 
 obtained from a fit to the same function. It can also be noticed that the values 
 of (d$\Nch$/d$\eta$)/($\langle N_{\rm part} \rangle/2$) from p-Pb collisions are included in the figure 
-and lays on the pp curve, indicating that the strong rise in A-A collisions is not 
+and lay on the pp curve, showing that the strong rise in A-A collisions is not 
 only related to the multiple interactions undergone by the participating nucleons, 
 present in p-A collisions as well. The right panel of Fig.~\ref{fig:dNchdEta} 
 shows the values of (d$\Nch$/d$\eta$)/($\langle N_{\rm part} \rangle/2$) 
@@ -470,11 +471,10 @@ shows a strong dependence on $\langle N_{\rm part}\rangle$, decreasing
 by a factor of about 1.8 from most central collisions to peripheral ones. The 
 measurement of particle production per participant pair can be used to 
 constrain models describing particle production in heavy-ion collisions 
-with different mechanisms. Among the others, theoretical calculations that
- are based on gluon saturation 
+with different mechanisms. Among the others, theoretical calculations 
+ based on gluon saturation can give a good description of data
  (rcBK-MC~\cite{Albacete:2011fw}, Kharzeev, Levin and Nardi~\cite{Kharzeev:2004if} 
- and Armesto, Salgado and Wiedemann~\cite{Armesto:2004ud}) can 
- give a good description of data. They are based on the idea of some 
+ and Armesto, Salgado and Wiedemann~\cite{Armesto:2004ud}). These models assume the existence of a
  transverse momentum scale at which the gluon and quark phase space 
  density saturates, thus limiting the number of produced partons and, 
  hence, of particles produced in heavy-ion collisions with respect to pp collisions.  
@@ -502,9 +502,9 @@ around $\sim 14$ GeV/fm$^3$~\cite{Chatrchyan:2012mb}.
 
 \subsection{Hadron multiplicities and chemical freeze-out}
 \label{sec:chemFO}
-If a chemical and thermal equilibrium governs the medium when it
+If we assume that a chemical and thermal equilibrium governs the medium when it
  undergoes chemical freeze-out, the thermal nature of the medium 
- can be expected to be imprinted in the final hadron abundances. 
+ should be imprinted in the final hadron abundances. 
  If these conditions occur, the behavior of the system at the 
  equilibrium can be described via a statistical approach, using a description 
  of the final particle yields in terms of thermodynamical quantities. 
@@ -520,7 +520,7 @@ If a chemical and thermal equilibrium governs the medium when it
   \label{fig:GCThermalFit_PbPb010}
 \end{figure}
 
-In the Grand Canonical (GC) ensemble, which describes a system in which 
+In the Grand Canonical (GC) ensemble describing a system in which 
 energy and charges are on-average conserved within the full volume, the partition function is:
 \begin{equation}
   \label{eq:PartitionFunction}
@@ -590,17 +590,17 @@ in central Pb-Pb collisions suggest elastic re-scattering in the late
 hadronic phases, that becomes quite important for pion production. 
 If protons are excluded from the fits, the fit quality improves and the 
 temperature goes up to $\sim$160 MeV (closer to RHIC results). 
-Non-equilibrium models like SHARE describe most hadrons very 
-nicely but overestimate the nuclei by almost an order of magnitude, 
-while the equilibrium model predicts them very nicely. An other possible
+Non-equilibrium models like SHARE can describe most hadrons  
+but overestimate the nuclei by almost an order of magnitude, 
+while the equilibrium model predicts them very nicely. Another possible
 interpretation is that inelastic processes during the hadronic phase may
 not be completely negligible, rather affecting baryon production. In 
 particular, baryon annihilation in the hadronic phase should lead
 to a reduction of the proton yields~\cite{Becattini:2014hla,Becattini:2012xb}. Other models 
-suggest that a single freeze-out temperature is not enough to describe
+suggest that a single freeze-out temperature for all particle species is not enough to describe
  the data~\cite{Bellwied:2013cta}, but temperature for lighter and heavier
   quarks could be different. So far, the production mechanism is not yet 
-  clearly understood as well as how the temperature from the thermal 
+  clearly understood as well as is not clear the way the temperature from the thermal 
   fit relates to the QCD phase transition temperature.
   
 \subsection{Strangeness enhancement}
@@ -655,7 +655,7 @@ enhancement factors in Pb-Pb collisions, depending on the strangeness
  p-p there is no evidence of strangeness enhancement. 
 
 \subsection{Collective flow and kinetic freeze-out}
-The Flow is a collective phenomenon, which is observed as a collective 
+The Flow of particles produced in the interaction is a collective phenomenon, which is observed as a collective 
 motion pattern superimposed to the chaotic thermal motion of the 
 particles inside the fireball. Its origin is related to the large pressure gradients 
 generated when compressing and heating nuclear matter. It is possible 
@@ -690,8 +690,8 @@ of the temperature $T$ of the exponential slope of Eq.~\ref{eq:SpectraBZ}.
 In the low-$\pt$ region ($\lesssim 1 \, \Gevc$), indeed, particles originate from soft processes
 and their production is governed by a Boltzmann exponential distribution. 
 This law does not anymore describe production at higher $\pt$, where hard processes
-govern particle emission and the production spectra result better reproduced by power law functions.
- The physical interpretation of $T_{slope}$ is the temperature of the particle
+govern particle emission and the production spectra are better reproduced by power law functions.
+ $T_{slope}$ can be interpreted as the temperature of the particle
  emitting source. The universality of $T_{slope}$ for different 
  particle species is commonly referred to as $m_{T}$-scaling. When 
  moving to nucleus-nucleus collisions, a breaking of the $m_T$-scaling 
@@ -749,7 +749,7 @@ Fig.~\ref{fig:BetaTplot} shows the ALICE results
 for the blast-wave parameters for different colliding systems and energies. Blast-wave parameters
   in Pb-Pb collisions at $\sNN = 5.02$ TeV follow the trends with collision centrality observed at
    lower energy ($\sNN = 2.76$ TeV). The largest expansion velocity 
-   is for central Pb-Pb collisions, as well as the lowest temperature
+   is found for central Pb-Pb collisions, as well as the lowest temperature
     for the kinetic freeze-out.\\
 
 \subsubsection{Anisotropic flow}
@@ -759,11 +759,11 @@ finite impact parameter creates a fireball with a geometrical anisotropy.
 Due to particle rescatterings during the system evolution, the initial spatial 
 anisotropy is transferred to a final state momentum-space anisotropy. No
  rescatterings during the system evolution or any delays in time of such 
- interactions would lead to no momentum anisotropy in the final state or
-  to a decrease in the elliptic flow signal. Hence, the characterization of 
-  anisotropic flow is important as it is sensitive to particle interactions very 
+ interactions would lead to null momentum anisotropy in the final state or
+  to a decrease in the elliptic flow signal. Hence, the characterisation of 
+  anisotropic flow is important as it is sensitive to particle interactions occurring very 
   early in the system evolution. Informations of medium properties, such as Equation of 
-  State, sound velocity or shear viscosity can be exctracted by a comparison 
+  State, sound velocity or shear viscosity can be extracted by a comparison 
   of the measured anisotropic flow and hydrodynamic model calculations.
 \begin{figure}[!ht]
   \centering
@@ -775,8 +775,8 @@ In non-central heavy-ion collisions, an almond-shaped interaction
 volume is created (see Fig.~\ref{fig:elliptic_flow_3D_medium}).
 The reaction plane is defined by the impact parameter itself and the 
 beam line (xz plane in Fig.~\ref{fig:elliptic_flow_3D_medium}). 
-A larger pressure gradient in the
- reaction plane than perpendicular to it is expected. This generates an
+A pressure gradient larger in the
+ reaction plane than in the plane perpendicular to it is expected. This generates an
   anisotropy in azimuthal distributions of the particle momenta with 
   respect to the reaction plane, which can be detected in the measured
    particle azimuthal distributions. This distribution can be parametrized 
@@ -797,8 +797,8 @@ $\langle \rangle$ indicates an average over all particles in all events with
 second order Fourier coefficients respectively in the particle azimuthal 
 distribution in Eq.~\ref{eq:FourierAzimuthExpansion}, but coefficients 
 up to at least 6th order were measured at the LHC~\cite{ATLAS:2012at}.
-With the large amount of data provided by the LHC, in fact, it became accessible
-to study not only the on-average anisotropies but the initial space geometries 
+With the large amount of data provided by the LHC, in fact, we have the possibility
+to study not only the average anisotropies but also the initial space geometries 
 fluctuations~\cite{Aad:2013xma,Schukraft:2012ah}, to which first-order and higher-order Fourier 
 coefficients were indeed found to be sensitive. 
 The positions of the nucleons in the overlap region of the colliding nuclei 
@@ -810,10 +810,10 @@ Fig.~\ref{fig:vnHydro} shows
    Fourier coefficients $v_n$ up to 5$th$ order measured by ATLAS~\cite{ATLAS:2012at}
     (left panel) in Pb-Pb collisions at $\sNN = 2.76$ TeV and 
     PHENIX~\cite{Adare:2011tg} and STAR~\cite{Pandit:2012mq} 
-    (right panel) in Au-Au collisions at $\sNN = 200 $ GeV. The value
-     of the shear viscosity $\eta/s$ of the medium that allows a good parametrization 
-     of hydro calculations for Au-Au collisions at top of RICH energy is 0.12, while the value
-      for Pb-Pb collisions at the LHC at $\sNN = 2.76$ TeV is 0.2. 
+    (right panel) in Au-Au collisions at $\sNN = 200 $ GeV. A value
+     of the shear viscosity $\eta/s$ of the medium equal to 0.12 allows a good parametrisation 
+     of hydro calculations for Au-Au collisions at top of RICH energy, while a value of 0.2 is found
+      for Pb-Pb collisions at the LHC at $\sNN = 2.76$ TeV.
       This reveals a dependence of the shear viscosity on the temperature of the system.
 \begin{figure}[!ht]
   \centering
@@ -878,7 +878,7 @@ scenario (Rapp/Wambach~\cite{Rapp:2012zq}).
 \subsection{Jet quenching}
 \label{sec:JetQuenching}
 Partons produced in the hard scattering processes occurring in the early stages of the 
-collisions fragment into collimated cascades of hadrons, that are called jets. 
+collisions fragment into collimated cascades of hadrons, called jets. 
 In heavy-ion collisions partons propagate inside the hot and dense QGP,
  and lose energy because of interactions with the colored medium 
  (jet quenching), primarily via gluon radiation and, to smaller extent, 
@@ -965,7 +965,7 @@ where the additional piece $P_{j\rightarrow j\prime}$ describes the
 effects of the hard parton $j$ interacting with the colored medium 
 before fragmenting into hadrons. \\
 
-It is necessary to disentangle between cold and hot nuclear matter 
+It is necessary to disentangle different contributions from cold and hot nuclear matter 
 effects to have access to the medium transport properties via
  measurements of the $\Raa$. Some of the measurements of $\Raa$
   of high-$\pt$ hadrons and jets at the LHC are presented below.
@@ -997,7 +997,7 @@ particle species, that can further constrain the models. In Fig.~\ref{fig:PiKPRa
  the $\Raa$ of pions, kaons and protons measured in Pb-Pb collisions 
  at $\sNN = 5.02$ TeV is shown, for different centrality classes. First, it 
  has to be noticed that the suppression has a clear dependence on the 
- collision centrality, since it becomes stronger in more central events, 
+ collision centrality. It becomes stronger in more central events, 
  where the medium is more spatially extended, hotter and denser. 
  A second observation from 
   results in Fig.~\ref{fig:PiKPRaa5TeV} is that there is a mass ordering at 
@@ -1027,7 +1027,7 @@ The interest in jet measurement with respect to single hadrons is that
 the kinematics of the leading parton becomes accessible and we are 
 less sensitive to fragmentation effects. Therefore jets are expected to put 
 more stringent constraints on assumptions in models for parton energy loss. 
-Experimental techniques are now able enough to clearly identify jets 
+Experimental techniques are now able to clearly identify jets 
 even in the huge background of high-energy heavy-ion collisions. 
 The interaction of the high-$\pt$ partons with the color field of the medium
  induces the radiation of (mostly) soft ($\omega \ll E_{L}$, $E_L$ being the 
@@ -1115,10 +1115,10 @@ initial energy of the jet, as explained in~\cite{Wang:1996yh}.
 Quarkonium, the bound state of a $c\bar{c}$ (charmonium) or $b\bar{b}$ 
 (bottomonium) pair, was proposed from the very beginning as one of the 
 most powerful signatures of the QGP formation.
-The signature given by the J/$\psi$ vector meson yield is of particular interest
-in the view of assessing about the formation of a deconfined medium.
+The signature given by the J/$\psi$ vector meson production yield is of particular interest
+to access information about the formation of a deconfined medium.
 The J/$\psi$ mesons, and more in general the charmonium states, are formed 
-by a $c\bar{c}$ quark pair, that can only be produced (due to the large mass) 
+by a $c\bar{c}$ quark pair, that can only be produced (due to their large mass) 
 in the initial hard parton scatterings, occurring before the formation of the 
 Quark-Gluon Plasma. Theoretical calculations based on lattice QCD 
 predict a J/$\psi$ suppression to be induced by the screening of the color 
@@ -1147,9 +1147,9 @@ Clear signs of J$/\psi$ suppression were indeed measured at the SPS, as a
 consequence of the strong color field of the plasma~\cite{Abreu:2000ni}. 
 Charmonium states were also expected to melt at different temperatures of 
 the plasma, accordingly to their binding energy, giving rise to a sequential melting 
-scenario~\cite{Du:2015wha,Digal:2001ue}. What turned 
-out to be unexpected when data at higher collision energies became available 
-was that the RICH~\cite{Adare:2011yf,Adare:2006ns} J$/\psi$ suppression 
+scenario~\cite{Du:2015wha,Digal:2001ue}. When
+data at higher collision energies became available 
+at RICH~\cite{Adare:2011yf,Adare:2006ns}, results showed unexpectedly that J$/\psi$ suppression 
 had the same magnitude as the one observed at the SPS~\cite{Scomparin:2007rt}.
 At LHC energies, a reduced suppression as compared to lower
 collision energies was observed~\cite{Abelev:2013ila}.
@@ -1169,11 +1169,11 @@ in the high $\pt$ region, up to $\pt = $ 30 $\Gevc$, confirming a stronger suppr
 low $\pt$~\cite{Khachatryan:2016ypw}. All these observations can be 
 explained by a (re)generation effect of uncorrelated $c$ and $\bar{c}$ quarks, relevant at LHC energies due to the 
 large production cross-section of $c\bar{c}$ quark pairs. 
-An other observable that is sensitive to the J$/\psi$ production 
-mechanism is the elliptic flow $v_2$. If the J$/\psi$ is produced by coalescence 
-of charm quarks, and the charm thermalises in the medium, the J$/\psi$ 
+Another observable sensitive to the J$/\psi$ production 
+mechanism is the elliptic flow $v_2$. If we assume that the J$/\psi$ is produced by coalescence 
+of charm quarks, and that the charm thermalises in the medium, the J$/\psi$ 
 should inherit the flow of the quarks and show a positive $v_2$. 
-A non-zero $v_2$ could also be observed due to the path-length dependence of charmonium
+Nevertheless, a non-zero $v_2$ could also be observed due to the path-length dependence of the charmonium
 in-medium energy loss, thus the final $v_2$ may be an 
 interplay of multiple effects. Fig.~\ref{fig:JPsi} presents recent measurements 
 by ALICE of J$/\psi$ $v_2$ at forward and mid-rapidity in Pb-Pb collisions at 
@@ -1181,7 +1181,7 @@ $\sNN = 5.02$ TeV for semi-central events (20-40\% centrality class)~\cite{Achar
 compared with some of the available theoretical models. At forward rapidity, 
 the maximum $v_2$ is reached in $4 < \pt < 6\; \Gevc$, with a 
 significance for non-zero $v_2$ larger than $6.6\sigma$. Model calculations 
-that include (re)combination of thermalised charm and beauty quarks as 
+including (re)combination of thermalised charm and beauty quarks as 
 source of J$/\psi$ production, together with a path-length dependent in-medium 
 energy loss can describe the data at low $\pt$, but fail in 
 reproducing the measured shape at higher $\pt$, suggesting a missing mechanism in the 
@@ -1195,7 +1195,7 @@ orange lines. At LHC energies also the bottomonium states have been
 measured, opening the way to precision studies for the $\Upsilon$({\it n}S) 
 family. Due to smaller production cross-section of $b$ quarks compared to $c$ quarks, 
 effects of coalescence are
-expected to be of smaller impact with respect to charmonium~\cite{Andronic:2015wma}. 
+expected to have a smaller impact with respect to charmonium~\cite{Andronic:2015wma}. 
 A sequential suppression pattern is expected also for $b\bar{b}$ states, due to 
 different binding energies of the bottomonium states. CMS measured 
 the $\Raa$ of $\Upsilon$(1S), $\Upsilon$(2S) and $\Upsilon$(3S) as a 
@@ -1228,11 +1228,11 @@ The upper limit derived on the nuclear modification factor for $\Upsilon$(3S) is
 
 \subsection{Latest discoveries in small systems}
 In 2010 CMS discovered first signals of long-range rapidity correlations in 
-high-multiplicity pp collisions at $\sqrt{s} = $ 7 TeV~\cite{Khachatryan:2010gv}, an effect that 
-resulted quite unexpected to be found in small systems. Such correlations
+high-multiplicity pp collisions at $\sqrt{s} = $ 7 TeV~\cite{Khachatryan:2010gv}, a quite unexpected effect 
+in small systems. Such correlations
 were already observed in Au-Au collisions at RICH~\cite{Alver:2008aa,Alver:2009id,Abelev:2009jv}
 and naturally explained in terms of collective expansion of the medium formed in the collisions.
-This observation paved the way to search further signals of collective 
+This observation paved the way to searching further signals of collective 
 behaviours in small systems. 
 The interest in the angular correlations among particles lays in the possibility 
 to reveal the underlying mechanisms of particle production. In~\cite{Khachatryan:2010gv}, 
@@ -1291,7 +1291,7 @@ structure that appears around $\Delta \phi \approx 0$ was unexpected,
   \label{fig:CMSLongRangeRidge_pp7TeV}
 \end{figure}
 From this first observation, many studies have been done to unravel the nature of the 
-long-range near side peak. Correlations among several produced particles have been explored, 
+long-range near-side peak. Correlations among several produced particles have been explored, 
 since this allows to further suppress short-range particle correlations, 
 such as jets or resonance decays, in order to further investigate the collective nature 
 of the observed azimuthal correlations. One of the most used methods is the 
@@ -1345,7 +1345,7 @@ of a collective behaviour behind the long-range correlations observed in pp
 collisions. In alternative to the classical scenario of position-space
 anisotropy that must be transposed into final observed momentum-space anisotropies, other theoretical 
 calculations, such as the color glass condensate glasma model~\cite{Schenke:2016ksl}, 
-interpret the collective behaviour as due to momentum space-anisotropies that are
+interpret the collective behaviour as due to momentum space-anisotropies. These are
 already present before the collision via initial interactions of gluons inside the projectile proton or
 nucleus. Besides, in Fig.~\ref{fig:CumulantsCMS} the 
 $v_2^{sub} \{2$, $|\Delta \eta| > 2\}$, defined from two-particle 
