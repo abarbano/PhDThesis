@@ -24,7 +24,7 @@ algorithm, which resulted in better $\pt$ resolution, thus higher signal-to-back
 \label{sec:EvSelec}
 
 
-The analysis was performed on 370M of analysed events (it was 300M for the previous
+The analysis was performed on 370M of events (it was 300M for the previous
 reconstruction). The larger data sample was obtained thanks to improvements in the reconstruction
 and detector alignments.
  A minimum-bias (MB)
@@ -42,9 +42,9 @@ vertices in pp collisions (pile-up vertices). Since the readout time of the SPD 
 The algorithm of pile-up identification runs the vertex finding algorithm 
 on the SPD tracklets not associated to the
 main vertex, which is the one with largest associated multiplicity. 
-A vertex is tagged as from pile-up if there is a minimum number of 
+A vertex is tagged pile-up if there is a minimum number of 
 tracklets associated to it (N$^{\rm tkl}_{\rm min}$) and if the 
-$z$-separation between primary and pile-up vertex ($\Delta z$) is larger than a cut value.
+$z$-separation between primary and pile-up vertex ($\Delta z$) is larger than a certain value.
 In this analysis, N$^{\rm tkl}_{\rm min}>3$ and $\Delta z>0.6$ cm were used.
 A further selection was applied on the event, requiring a primary vertex 
 reconstructed from at least two ITS+TPC tracks (global tracks). In general, the vertex can be reconstructed by
@@ -110,7 +110,7 @@ ratio, specific cuts were applied on the decay topology, on
    the invariant mass of $\KK$ pair and on the particle identification, 
    as explained in the following sections. 
 In particular, the selections based in the decay topology exploit the
-fact that $\Dsplus$ meson mean proper decay length of $\sim 150\, \mu$m  
+fact that the $\Dsplus$ meson mean proper decay length of $\sim 150\, \mu$m  
 makes it possible to separate its decay vertex from the primary vertex
 of the pp interaction. 
 \begin{figure}[!t]
@@ -152,12 +152,11 @@ the beam direction) in pp collisions.
 In order to have unbiased determination of the primary vertex, for each 
 $\Dsplus$ candidate the interaction point was recalculated from the reconstructed 
 tracks after excluding the candidate decay tracks.
-\begin{figure}[!htbp]
-\begin{center}
+\begin{figure}[!h]
+\centering
 \includegraphics[width=.5\textwidth]{FigCap4/YvsPt.png}
-\label{fig:singtrafter}
 \caption{Rapidity versus $\pt$ distribution of the reconstructed $\Dsplus$ mesons. The fiducial acceptance region is defined by $|y| < y_{\rm fid}(\pt)$.}
-\end{center}
+\label{fig:yFiducial}
 \end{figure}
 
 The single-track selection criteria reduce the $\Dsplus$-meson acceptance
@@ -167,7 +166,7 @@ at $\pt > 5~\Gevc$. A $\pt$-dependent fiducial acceptance region was therefore d
 $|y| < y_{\mathrm{fid}}(\pt)$, with $y_{\mathrm{fid}}(\pt)$ increasing 
 from 0.5 to 0.8 in the transverse momentum range $0 < \pt < 5~\Gevc$ 
 according to a second-order polynomial function, and $y_{\mathrm{fid}}=0.8$ 
-for $\pt > 5~\Gevc$ (see Fig.~\ref{fig:singtrafter}):
+for $\pt > 5~\Gevc$ (see Fig.~\ref{fig:yFiducial}):
 \begin{equation}
 \label{eq:yFid}
 y_{\rm fid} (\pt) = -\frac{0.2}{15}\pt^2 + \frac{1.9}{15}\pt + 0.5.
@@ -208,7 +207,7 @@ candidate. The topological cuts used for $\Dspm$ signal selection
  The beauty feed-down component (also obtained from MC) is shown
  in green curve for those variables whose distributions for prompt signal
  from charm decays and for feed-down signal from beauty decays are different.
- 
+ Below the list of the variables on which the cuts are applied.
 \begin{itemize}
 \item \textbf{Decay length $D_{len}$}, defined as the distance between
  primary and secondary vertex. $\Dspm$ decay vertices are displaced by
@@ -259,7 +258,7 @@ where $d_i$ is the distance of minimal approach between the decay
 track \textit{i} and the decay vertex. All tracks should originate from 
 the secondary vertex, and $\sigma_{vtx}$ should be $\sim$ 0; in 
 real cases, as a consequence of the tracking and vertex finding resolution, 
-the $\sigma_{vtx}$ has non-zero values and an upper cut is needed 
+the $\sigma_{vtx}$ differs from 0 and an upper cut is needed 
 to exclude vertices made of random combination of tracks. Typical cut
  values on the track dispersion were between 0.02 $< \sigma_{vtx}<$ 0.05 cm 
  (see Fig.~\ref{fig:var2} right).
@@ -468,10 +467,10 @@ conjugates in the four considered $\pt$ intervals.}
 \end{table}
 
 An indication of the improved resolution provided by the new 
-reconstruction of the sample is shown in the left panel of Fig.~\ref{fig:sigma4vs2}, where the 
-Gaussian sigmas of the simulated signal peak for the current and old
-reconstruction are compared. In the right
-panel of the same figure, the Gaussian widths of $\Ds$ peak are shown 
+reconstruction of the sample is visible in the left panel of Fig.~\ref{fig:sigma4vs2}, 
+that shows an improvement by $\sim$25-30\% on the values of the Gaussian sigmas 
+of the simulated signal peak in the current reconstruction with respect to those in the old one.
+In the right panel of the same figure, the Gaussian widths of $\Ds$ peak are shown 
 as a function of $\pt$ for the current reconstruction in data (solid points)
 and in MC (dashed) and the values agree within uncertainties. 
 \begin{figure}[!hb]
@@ -832,8 +831,8 @@ These checks are discussed in the following subsections.
 
 \subsubsection{Variation of track selections}
 \label{subsec:trackEffpp}
-For this purpose, $\Dzero$ and $\Dplus$ mesons were used due to their
-higher statistical significance of the extracted yields.
+For this purpose, cases with higher statistical significance, such as $\Dzero$ and $\Dplus$ mesons,
+ were used to estimate the systematic uncertainty.
 The D-meson raw yields and efficiencies were evaluated with 
 different sets of track selection cuts.
 The following selections were tested:
@@ -866,7 +865,7 @@ in interactions with material).
 If the fractions of primary and secondary tracks are different in data 
 and in Monte Carlo, this could lead to a discrepancy in the matching efficiency
 which is not due to the tracking performance and therefore it should not be
-accounted in the systematic uncertainty on tracking. Hence,
+accounted for in the systematic uncertainty on tracking. Hence,
 data-driven corrections for primary and secondary fractions were used to re-weight the MC
 and obtain a corrected inclusive MC efficiency, which is then used in the
 comparison to data, to estimate the systematic uncertainty.\\
@@ -915,7 +914,7 @@ the right one extends the $\pt$ interval up to 20 $\Gevc$.
 The difference between matching efficiency of primary and secondary tracks
 is large and increases with $\pt$.
 
-\item {\bf Fractions of primary tracks:} they are extracted with a data-driven technique based on a fit to
+\item {\bf Fractions of primary tracks:} these are extracted with a data-driven technique based on a fit to
  the measured track impact parameter distribution using MC templates for 
  DCA$_{\rm xy}$ distributions of primary and secondary tracks, in different
  $\pt$, $\eta$ and $\varphi$ intervals. The ROOT TFractionFitter 
@@ -981,7 +980,7 @@ to (re)-weight the matching efficiency, that is normalised to the number of trac
 The fractions of primary tracks are expected to 
 be different in ITS and TPC due to their different amount of 
 secondary tracks from strangeness decays,
-whose secondary vertices are likely to be outside the SPD layers. 
+whose secondary vertices are likely to be outside the SPD layers and therefore do not contribute to the number of tracks in the ITS. 
 The correction factor is based on MC information and obtained as 
 the ratio of the fraction of primary tracks in TPC to the fraction of primary
  tracks with TPC-ITS matching and one point in the SPD. The final fraction of primary tracks is hence
@@ -1009,7 +1008,7 @@ pions (selected with a 3$\sigma$ PID cut on d$E$/d$x$ in TPC).
 It was verified that no substantial changes are obtained if 
 considering all the species ($\pi, {\rm K, p, e,} \mu$). 
 The drops in efficiency in some $\phi$ regions are due to SPD
-inefficiencies during the data taking.
+inactive modules during the data taking.
 Finally, the ratios of MC inclusive (i.e. including primary and secondary tracks) matching efficiencies to
 efficiency in data are shown in Fig.~\ref{fig:MatchEffSystVsPt},~\ref{fig:CorrMatchEffVsPhi} 
 (right) and~\ref{fig:CorrMatchEffVsEta} (right) as a function of 
@@ -1111,7 +1110,7 @@ f^\prime_{\rm prompt} = \left( 	1 + 	\frac{({\rm Acc}\times\epsilon)_{{\rm feed-
 \right)^{-1} \, .
 \label{eq:fc}
 \end{equation}
-The usage of this alternative approach has been reconsidered after a
+The use of this alternative approach has been reconsidered after a
 review of currently available measurements of beauty and 
 charmed meson cross-sections at the LHC was carried out. The measurements 
 were compared to FONLL predictions for heavy-flavoured hadrons 
@@ -1207,6 +1206,14 @@ BR(B$_{\rm s} \rightarrow J/{\rm \psi} ~\phi$) = (1.40 $\pm$ 0.04)$\times 10^{-3
 the other obtained using the 2010 PDG~\cite{Nakamura:2010zzi} value BR = (1.08 $\pm$ 0.09)$\times 10^{-3}$, 
 referenced in the CMS paper. The agreement of FONLL to the measurements is good
 at forward rapidity and also at mid-rapidity when the updated value of BR(B$_{\rm s} \rightarrow J/{\rm \psi} ~\phi$) is used.
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=0.49\textwidth]{FigCap4/DsParents.png}
+\includegraphics[width=0.49\textwidth]{FigCap4/comparisonFDerr_pass2_pass4.png}
+\caption{Left: fraction of $\Ds$ originating from decays of different species of beauty hadrons. Right: comparison of systematic uncertainties on beauty feed-down component subtraction with the old and the new procedure.}
+\label{fig:DsParentsAndFDunc}
+\end{center}
+\end{figure}
 In Fig.~\ref{fig:Dmesons} the cross-section 
 of $J/\psi$-meson from beauty-hadron decays in pp collisions at 
 $\s = $ 7 TeV measured by LHCb~\cite{Aaij:2011jh} and 
@@ -1218,14 +1225,6 @@ systematically lay on the upper edge of FONLL uncertainty
 band, thus charm production being underestimated by the FONLL
 calculation with the central values of charm mass ($m_c = 1.5 \, \Gevc$) and
 of factorisation and renormalisation scales.\\
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width=0.49\textwidth]{FigCap4/DsParents.png}
-\includegraphics[width=0.49\textwidth]{FigCap4/comparisonFDerr_pass2_pass4.png}
-\caption{Left: fraction of $\Ds$ originating from decays of different species of beauty hadrons. Right: comparison of systematic uncertainties on beauty feed-down component subtraction with the old and the new procedure.}
-\label{fig:DsParentsAndFDunc}
-\end{center}
-\end{figure}
 Considering that:
 \begin{itemize}
 \item FONLL provides a good description of B$^{+}$- and B$^{0}$-meson 

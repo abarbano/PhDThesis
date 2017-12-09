@@ -7,18 +7,14 @@ Hadrons carrying heavy flavour (charm or beauty quarks)
 constitute a powerful probe to study 
 the properties of the Quark-Gluon Plasma created in high-energy 
 heavy-ion collisions. Heavy quarks are produced in initial hard parton-scattering processes
-of the nucleon-nucleon collisions and on short time scales compared 
-to the QGP formation time~\cite{Liu:2012ax},
-$\tau_0 \sim 1/Q \sim 0.1-1$ fm/c, where $Q$ is the virtuality of the process. 
-The minimum virtuality in the production of $c\overline{c}, b\overline{b}$ pair 
-corresponds indeed to $2\, m_{c,b}$
-implying a space-time scale of $\sim 0.07$ fm for charm and 
-$\sim 0.02$ fm for beauty. Furthermore, in contrast with light quarks and gluons, that can be produced or annihilated 
+of the nucleon-nucleon collisions and on short time scales ($\sim$~0.1 and 0.02~fm/$c$ for charm and beauty, respectively) compared 
+to the QGP formation time, which is about 0.3-1.5~fm/$c$ at Large Hadron Collider (LHC) energies~\cite{Liu:2012ax}.
+Furthermore, in contrast with light quarks and gluons, that can be produced or annihilated 
 during QGP evolution, heavy quarks have negligible annihilation 
 rate~\cite{BraunMunzinger:2007tn} and secondary "thermal" 
-charm production from processes like $gg \rightarrow c\overline{c}$ is 
+charm and beauty production from processes like $gg \rightarrow c\overline{c}$ is 
 expected to be negligible in the QGP~\cite{Zhang:2007dm}, 
-unless the iniial QGP temperatures occur to be much larger than 
+unless the initial QGP temperatures happen to be much larger than 
 those currently reachable at colliders. Therefore,
 heavy quarks preserve their identity when traversing 
 the fireball and can be used as a probe
@@ -43,12 +39,12 @@ $\Xi_c$ reconstruction from $e\, \Lambda$ and $e\, \Xi$ pairs;
 The study of heavy flavours in pp collisions is an 
 important benchmark of perturbative QCD calculations. 
 The large mass of these quarks acts as a cut off; it prevents 
-indeed from divergencies in calculation that arise
+indeed from divergencies in the calculation that arise
 from collinear gluon radiation and that are suppressed 
 in case of massive quarks due to the
 so-called dead-cone effect~\cite{Dokshitzer:1991fd}. 
 For this reason, perturbative calculations are applicable down to low $\pt$ 
-as well as the computation of the total cross-section. 
+as well as for the computation of the total cross-section. 
 The two processes responsible for heavy-quark production 
 at the leading order in perturbative theory are 
 $q \overline{q} \rightarrow Q \overline{Q}$ and $gg \rightarrow Q \overline{Q}$, 
@@ -82,7 +78,7 @@ are FONLL~\cite{Cacciari:1998it,Cacciari:2001td}
 and GM-VFNS~\cite{Kniehl:2004fy}. 
 FONLL is a Fixed-Order calculation with Next-to-Leading-Logarithms 
 resummation and provides calculations in the full kinematic range 
-($\pt \ll m_Q, \pt \sim m_Q, \pt \gg m_Q$),
+($\pt \ll m_q, \pt \sim m_q, \pt \gg m_q$),
 giving description of bottom and charm production at Tevatron, RHIC and LHC. 
 GM-VFNS was originally performed in the massless limit 
 and subsequently improved with finite mass terms.
@@ -113,7 +109,7 @@ since no data are available for individual hadrons like $B^0$ or $B^+$.
   \centering
   \includegraphics[width=7.6cm]{FigCap2/HQxsecPPcoll.png}
       \includegraphics[width=6.4cm]{FigCap2/FONLLBmeson.png}
-  \caption{Left: total production cross-sections for charm, bottom and top quark pairs, in pp collisions as a function of the center-of-mass energy~\cite{Mangano:1997ri}. Right: FONLL calculation and systematics band~\cite{Cacciari:2012ny} for beauty-hadron production, rescaled to the $|y| <$ 0.5 region, and comparison with CMS data~\cite{Khachatryan:2011mk,Chatrchyan:2011pw}.}
+  \caption{Left: total production cross-sections for charm, bottom and top quark pairs, in pp collisions as a function of the center-of-mass energy~\cite{Mangano:1997ri}. Right: FONLL calculation and systematic uncertainty band~\cite{Cacciari:2012ny} for beauty-hadron production, rescaled to the $|y| <$ 0.5 region, and comparison with CMS data~\cite{Khachatryan:2011mk,Chatrchyan:2011pw}.}
   \label{fig:HQxsecPPcoll}
 \end{figure}
 For charm quarks, experimental data for individual D-meson species exist.
@@ -154,20 +150,20 @@ generators, such as PYTHIA~\cite{Sjostrand:2006za}, provide a more complete desc
 of the final state, including decay kinematics. They simulate the 
 final states of high-energy collisions in full detail, including hard and 
 soft interactions, parton distributions, initial- and final-state parton 
-showers, multiparton interactions, fragmentation and decay. They contain a large 
+showers, multiple parton interactions, fragmentation and decay. They contain a large 
 list of hard Standard Model and Beyond Standard Model processes, 
 which are interfaced with parton emission, different models of hadronisation and particle decays. 
 The processes are treated at leading order (LO). The higher order 
 calculations are included only in an
 approximate approach. However, the next-to-leading order (NLO) 
 is needed to compare results with experimental data.
-PYTHIA generator, for example, contains 
+The PYTHIA generator, for example, contains 
 theoretical perturbative QCD calculations that are exact only
 at leading order, where only the pair creation processes 
 $q\overline{q} \rightarrow Q\overline{Q}$ and $gg \rightarrow Q\overline{Q}$
 are included. Higher-order contributions at the NLO to account 
 for flavour excitation processes like $qQ \rightarrow qQ$, $gQ \rightarrow gQ$
-and the gluon splitting $g \rightarrow Q\overline{Q}$ are also accounted. 
+and gluon splitting $g \rightarrow Q\overline{Q}$ are also accounted. 
 The cross-section of these processes 
 diverges as the transverse momentum of the outgoing quarks of the 
 hard interaction ($\pt^{hard}$) goes to zero. 
@@ -180,12 +176,12 @@ other PYTHIA parameters must be tuned to reproduce as well
 as possible NLO predictions.
 The first generator of heavy-quark production that did the effort of matching NLO calculations 
 with LO calculations was MC@NLO~\cite{Frixione:2002ik}.
-It proposed a first solution to the double counting of NLO events, 
-by subtracting the approximated 
-NLO cross section (which were implemented in the general generators)
- from the exact NLO cross section.
-The NLO calculations for the hard processes in heavy-flavour production are obtained within the 
-POWHEG~\cite{Frixione:2007nw} (Positive Weight Hardest Emission Generator) method. 
+It performed a matching to the general-purpose Monte Carlo generator HERWIG~\cite{Corcella:2000bw}, proposing 
+a first solution to the otherwise double counting of NLO events, 
+by subtracting the approximated NLO cross sections (which were implemented in HERWIG) from the exact NLO cross section.
+The NLO calculations for the hard processes in heavy-flavour production are obtained with the 
+POWHEG~\cite{Frixione:2007nw} (Positive Weight Hardest Emission Generator) generator,
+that interfaces with PYTHIA and HERWIG parton showers. 
 
 \begin{figure}[!ht]
   \centering
@@ -216,25 +212,26 @@ formation of a QGP droplet in small collision systems~\cite{Beraudo:2015wsd,Boze
 
 \subsection{Nuclear Parton Distribution Functions}
 \label{sec:nPDFs}
-One can quantify the nuclear modification for the parton distribution function via the ratio:
+One can quantify the nuclear modification of the parton distribution function via the ratio:
 \begin{equation}
 \label{eq:RA}
 R_i^A(x,Q^2) = f_{i/A}(x,Q^2) / f_{i/p}(x,Q^2)
 \end{equation}
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=15cm]{FigCap1/PartonNMF.png}
-  \caption{The nuclear modification factor (Eq.~\ref{eq:RA}) in a Pb nucleus $R_i^A(x,Q^2)$ for three different flavours as given by the available nPDF parameterizations at LO~\cite{Eskola:2009uj}.}
+  \includegraphics[width=.49\textwidth]{FigCap2/RvEPPS16.png}
+  \includegraphics[width=.49\textwidth]{FigCap2/RsEPPS16.png}
+  \includegraphics[width=.49\textwidth]{FigCap2/RgEPPS16.png}
+  \caption{The nuclear modifications (Eq.~\ref{eq:RA}) in a Pb nucleus $R_i^A(x,Q^2)$ for three different flavours as given by the EPS09~\cite{Sassot:2009sh}, EPPS16~\cite{Eskola:2016oht} and DSSZ~\cite{deFlorian:2011fp} nPDF parameterisations.}
   \label{fig:nPDF}
 \end{figure}
 where $f_{i/A}(x,Q^2)$ and $f_{i/p}(x,Q^2)$ are the parton distribution functions in the 
 nucleus and in the proton respectively, and the variable $x$ represents the fraction of 
-the nucleon momentum carried by a parton. Fig.~\ref{fig:nPDF} 
+the nucleon momentum carried by a parton. Figure~\ref{fig:nPDF} 
 shows the ratios $R_i^A(x,Q^2)$ for the valence quarks, sea quarks and 
-gluons inside a Pb nucleus as obtained from LO global DGLAP 
-calculations with EKS98~\cite{Eskola:1998df,Eskola:1998iy}, 
-EKPS~\cite{Eskola:2007my},
-nDS~\cite{Eskola:2008ca}, HKN07~\cite{Hirai:2007sx} and EPS09LO~\cite{Eskola:2009uj}
+gluons inside a Pb nucleus as obtained from global DGLAP 
+calculations with leading-order EPS09LO~\cite{Eskola:2009uj} and next-to-leading order 
+EPPS16~\cite{Eskola:2016oht} and DSSZ~\cite{deFlorian:2011fp}
 parameterisations of the nuclear PDFs which are tuned on measurements
 of DIS, Drell-Yan and hadron and dijet production in p-A collisions. 
 In general, four different regions are visible in the trend of $R_i^A(x,Q^2)$ versus $x$,
@@ -251,9 +248,9 @@ with the momentum distribution
 of nucleons $f_N(z)$ inside the nucleus: 
 $F^A_2(x) = \int_x^A dz f_N(z) F_2^N(x/z)$.
 This is the dominant effect for $x > 0.7$.
-\item {\bf EMC effect:} first observed in 1982 by EMC collaboration~\cite{Aubert:1983xm},
+\item {\bf EMC effect:} first observed in 1982 by the EMC collaboration~\cite{Aubert:1983xm},
 this effect appears as $R_i^A(x,Q^2)<1$, especially affecting the region 
-of valence quarks $0.2 < x < 1$. Fig.~\ref{fig:EMC} left shows the ratio of the structure functions 
+of valence quarks $0.2 < x < 1$. Figure~\ref{fig:EMC} shows the ratio of the structure functions 
 of iron $F^{iron}_2(x)$ and deuterium $F^D_2(x)$, that one would expect to be at 1 (except for 
 some corrections at high $x$ from Fermi motion). From further
 experimental investigations, it was clear that the effect is almost independent from the 
@@ -291,7 +288,7 @@ region, thus favouring the population of the anti-shadowing region.
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=7cm]{FigCap2/EMC.jpg}
+  \includegraphics[width=6cm]{FigCap2/EMC.png}
 %  \includegraphics[width=7.5cm]{FigCap2/EMC2.png}
   \caption{Ratio of iron $F^{iron}_2(x)$ and deuterium $F^D_2(x)$ structure function as a function of Bjorken-$x$~\cite{Aubert:1983xm}.% Right: ratio of nucleus $F^{A}_2(x)$ and deuterium $F^D_2(x)$ for different nuclei as a function of Bjorken-$x$~\cite{Seely:2009gt}.
   }
@@ -326,7 +323,7 @@ modification factor gets close to unity.\\
 
 
 
-Let's turn now to understand which are the ranges of Bjorken $x$
+It is important to understand which are the ranges of Bjorken $x$
 at play when producing $c\overline{c}$ and $b\overline{b}$ pairs at the LHC. 
 The probed $x$ value depends on the center-of-mass energy
 of the collision, on the invariant mass $M_{Q\overline{Q}}$ of the 
@@ -337,8 +334,8 @@ in the nucleon is negligible, the four-momenta of the two
 incoming gluons are $(x_1,0,0,x_1)\cdot(Z_1/A_1)\sqrt{s_{\rm pp}}/2$
 and $(x_2,0,0,-x_2)\cdot(Z_2/A_2)\sqrt{s_{\rm pp}}/2$, where 
 $x_1$ and $x_2$ are the momentum fractions 
-carried by the gluons, and $\sqrt{s_{\rm pp}}$ is the c.m.s. energy for pp collisions,
-that differs from the c.m.s $\sNN$ energy of colliding nuclei by the factor $Z/A$. 
+carried by the gluons, and $\sqrt{s_{\rm pp}}$ is the c.m.s. energy for pp collisions.
+The c.m.s $\sNN$ energy of nucleon-nucleon collisions is obtainable as $\sNN=Z/A\sqrt{s_{\rm pp}}$.
 The square of the invariant mass of the produced $Q\overline{Q}$ pair is given by:
 \begin{equation}
 \label{eq:Mqq}
@@ -365,15 +362,16 @@ The $x$ regime relevant for charm production at the LHC ($\approx 10^{-4}$) is a
 2 orders of magnitude lower than at RHIC and 3 orders of magnitude lower than at the SPS.
 Measurements of charm and beauty particles in the forward (or backward) rapidity region ($|y| \sim 4 $) 
 gives access to $x$ regimes about 2 orders of magnitude lower, down to $x \approx 10^{-6}$.
-Fig.~\ref{fig:xBjork}~\cite{Alessandro:2006yt} shows the ($x_1, x_2$) 
+Figure~\ref{fig:xBjork}~\cite{Alessandro:2006yt} shows the ($x_1, x_2$) 
 plane for charm and bottom production at the LHC
 covered by the ALICE acceptance, for Pb-Pb
 collisions at $\sNN = 5$ TeV on the left panel and pp collisions 
 at $\sqrt{s} = 14$ TeV on the right.
 The shadowed regions correspond to the rapidity region covered 
 by the ALICE central barrel ($|\eta| < 0.9$) and by the 
-muon arm ($-4 < \eta < -2.5$).
-The points with equal invariant mass ($c\overline{c}$ and $b\overline{b}$ pairs) lie on hyperbolae (straight lines in the log-log scale).\\
+muon arm ($2.5 < \eta < 4$).
+The points with equal invariant mass (solid and dashed lines for $c\overline{c}$ and $b\overline{b}$ pairs respectively) 
+lie on hyperbolae (straight lines in the log-log scale).\\
 
 
 \subsection{Experimental results in p-A collisions}
@@ -389,7 +387,7 @@ where A is the Pb mass number $A = 208$. \\
   \centering
   \includegraphics[width=7cm]{FigCap2/2017-Feb-05-Fig2b.pdf}
   \includegraphics[width=7cm]{FigCap2/2017-Feb-05-Fig2a.pdf}
-  \caption{Nuclear modification factor of muons from heavy-flavour hadron decays as a function of $\pt$ for p-Pb collisions at $\sNN = 5.02$ TeV at backward rapidity ($4.46 < y_{\rm cms} < 2.96$, left) and forward rapidity ($2.03 < y_{\rm cms} < 3.53$, right)~\cite{Acharya:2017hdv} compared to model predictions~\cite{Kang:2014hha,Mangano:1991jk}. }
+  \caption{Nuclear modification factor of muons from heavy-flavour hadron decays as a function of $\pt$ for p-Pb collisions at $\sNN = 5.02$ TeV at backward rapidity ($-4.46 < y_{\rm cms} < -2.96$, left) and forward rapidity ($2.03 < y_{\rm cms} < 3.53$, right)~\cite{Acharya:2017hdv} compared to model predictions~\cite{Kang:2014hha,Mangano:1991jk}. }
   \label{fig:muons}
 \end{figure}
 \begin{figure}[!ht]
@@ -404,6 +402,8 @@ where A is the Pb mass number $A = 208$. \\
 ALICE measured the $\pt$-differential nuclear modification factor 
 $R_{\rm pPb}$ of muons from heavy-flavour hadron decays in p-Pb collisions at $\sNN = 5.02$ TeV
 at forward and backward rapidity~\cite{Acharya:2017hdv} (Fig.~\ref{fig:muons}).
+At backward rapidity, the Bjorken-$x$ values are expected to vary from about 10$^{-3}$ to 10$^{-1}$, 
+while at forward rapidity they are located in the range from about 5$\cdot 10^{-6}$ to $10^{-2}$.
 While at forward rapidity muon $R_{\rm pPb}$ is compatible 
 with unity in the full $\pt$ range ($2 <\pt < 16 \, \Gevc$) in which the 
 measurement was carried out, 
@@ -449,8 +449,8 @@ Quark--Gluon Plasma is formed in p--Pb collisions.
 Both models are based on the Langevin approach for the transport of heavy 
 quarks through an expanding deconfined medium described by relativistic viscous 
 hydrodynamics. In both the Duke and POWLANG results the D-meson nuclear modification
-factor shows  a structure with a 
-maximum at $\pt \approx 2.5~\Gevc$, possibly followed by a moderate 
+factor shows a structure with a 
+maximum at $\pt \approx 2.5~\Gevc$ and $\pt \approx 3-4~\Gevc$ respectively, followed by a moderate 
 ($<20$-30\%) suppression at higher $\pt$,
 resulting from the interplay of CNM effects and interactions of charm quarks with the
 radially expanding medium.
@@ -461,7 +461,7 @@ larger than 10-15\% in the interval $3<\pt<12~\Gevc$.\\
   \centering
     \includegraphics[width=8cm]{FigCap2/2017-Sep-12-QCP-Daverage-ChargedHadrons.pdf}
   \caption{D-meson (black) and charged-particle (magenta) central-to-peripheral nuclear modification factor~\cite{ALICEPAS2017008}.}
-  \label{fig:RpA}
+  \label{fig:QCP}
 \end{figure}
 
 
@@ -485,7 +485,7 @@ Q_{\rm CP} = \frac{({\rm d}^2 N/{\rm d} \pt {\rm d} y)^{\rm central}_{\rm pPb}/ 
 \end{equation}
 The $Q_{\rm CP}$ of D mesons in the 0-10\% and 60-80\% 
 centrality classes was measured by 
-ALICE~\cite{ALICEPAS2017008} (Fig.~\ref{fig:RpA}, right panel) 
+ALICE~\cite{ALICEPAS2017008} (Fig.~\ref{fig:QCP}) 
 and it increases in the interval 1-4 $\Gevc$, 
 up to values of about 1.25 and then tends to decrease. The 
 average value of the D-meson $Q_{\rm CP}$ 
@@ -535,8 +535,8 @@ gluons (Fig.~\ref{fig:LoopCollScatt}, first to third diagrams) and quarks
 \end{split}
 \end{equation}
 where $\alpha_s$ is the QCD running coupling constant, $n_f$ is the number of flavours 
-considered in the scattering diagrams of Fig.~\ref{fig:LoopCollScatt} and $m_D$ is the 
-Debye screening mass of the plasma $m_D = 4\pi \alpha_s T^2 (1 + n_f/6)$. 
+considered in the scattering diagrams of Fig.~\ref{fig:LoopCollScatt}, $m_D$ is the 
+Debye screening mass of the plasma $m_D = 4\pi \alpha_s T^2 (1 + n_f/6)$ and $c(n_f) \sim \mathcal{O}(1)$ is a constant. 
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=14cm]{FigCap2/LO_HQscattering.png}
@@ -545,7 +545,7 @@ Debye screening mass of the plasma $m_D = 4\pi \alpha_s T^2 (1 + n_f/6)$.
 \end{figure}
 
 The multiple scatterings of the heavy quark with the medium 
-partons can also be treated as Brownian motion and is typically
+partons can also be treated as Brownian motion and typically
 be described by the Boltzmann equation. In the limit of small 
 momentum transfer, the latter can be reduced to the 
 Fokker-Planck equation, which is often further reduced into the
@@ -559,7 +559,7 @@ collisional energy loss presents itself as~\cite{Cao:2013ita}:
 \frac{{\rm d} {\vec{p}}}{{\rm d} t} = - \eta_D (p) \vec{p} + \vec{\xi}.
 \end{equation}
 In Eq.~\ref{eq:Langevin}, the first right-hand side term is the 
-deterministic friction force, while the second one is the thermal random noise,
+deterministic friction force, while the second one ($ \vec{\xi}$) is the thermal random noise,
 satisfying the properties:
 \begin{equation}
 \label{eq:Langevin2}
@@ -585,7 +585,7 @@ If we consider a gluon in the hard parton wave function, when the
 accumulated $k_{\perp}$ is enough, it can decohere from the partonic projectile and be emitted.
 These are $1 \rightarrow 2$ processes, like $Q \rightarrow g\, Q$, 
 where $Q$ is the heavy quark and $g$ the gluon.
-The average phase $\phi$ of the gluon is approximately:
+The average phase $\phi$ of the gluon emitted with frequency $\omega$ on a distance $\Delta z$ is approximately:
 \begin{equation}
 \label{eq:gluonPhase}
 \phi = {\Big \langle} \frac{k_{\perp}^2}{2\omega} \Delta z {\Big \rangle} \sim \frac{\hat{q} L}{2 \omega} L = \frac{\omega_c}{\omega},
@@ -593,7 +593,7 @@ The average phase $\phi$ of the gluon is approximately:
 where $\hat{q}$ is the transport coefficient of the medium, 
 defined as the average squared transverse 
 momentum transferred to the projectile per average unit path 
-length $L$: $\hat{q} = \langle k_{\perp}^2 \rangle / L$ \cite{Salgado:2003gb,}.
+length $L$: $\hat{q} = \langle k_{\perp}^2 \rangle / L$~\cite{Salgado:2003gb}.
 Hence, gluons are emitted from the parton traversing a finite path 
 length $L$ with a characteristic gluon frequency $\omega_c$:
 \begin{equation}
@@ -608,7 +608,7 @@ for small energies $\omega < \omega_c$ is of the form:
 \end{equation}
 where $C_R$ is the Casimir factor for the QCD coupling, 
 equal to 4/3 for quark-gluon coupling and to 3 for gluon-gluon coupling.
-The $\omega$-integrated average parton energy loss results then:
+The $\omega$-integrated average parton energy loss results then (BDMPS formalism~\cite{Salgado:2003gb}):
 \begin{equation}
 \label{eq:RadEnLoss}
 \langle \Delta E \rangle \propto \alpha_s \, C_R \, \hat{q} \, L^2. 
@@ -617,7 +617,7 @@ We can then summarise the main properties of average parton
 energy loss via radiative processes:
 \begin{itemize}
 \item it grows with the path length like: $\Delta E \propto L^2$;
-\item is proportional to $\alpha_s C_R$, thus it is larger by a factor 
+\item it is proportional to $\alpha_s C_R$, thus it is larger by a factor 
 9/4 $ = 2.25$ for a gluon traversing the medium than for a quark;
 \item it is independent of the initial parton energy $E$.
 \end{itemize}
@@ -631,14 +631,14 @@ emission angles $\Theta \ll 1$, is~\cite{Dokshitzer:1991fd}:
 \end{equation}
 with $\Theta_0 = M_Q/E_Q$.
 Therefore, in the kinematical region $\Theta < \Theta_0$ the yield of radiated gluons
-in the forward direction provides a small contribution to the total multiplicity. 
-The depleted forward region is called the {\it dead cone}.
+in the forward direction provides a small contribution to the total multiplicity of emitted gluons. 
+The depleted forward region is called the {\it dead cone}~\cite{Dokshitzer:1991fd}.
 Since $\Theta_0 = M_Q/E_Q$, the effect is expected to be more 
 relevant with increasing parton mass. A hierarchy in 
 the energy loss is hence expected:
 \begin{equation}
 \label{eq:HierachyRaa}
-\Delta E_{gluon} < \Delta E_{light\, quark} < \Delta E_{heavy\, quark},
+\Delta E_{gluon} > \Delta E_{light\, quark} > \Delta E_{heavy\, quark},
 \end{equation}
 where the first inequality comes from the different couplings in $gg$ and $gq$ 
 processes due to the Casimir factor in Eq.~\ref{eq:gluonEnDistrb} 
@@ -651,7 +651,7 @@ gluon, light and heavy-quark fragmentation.\\
   \centering
   \includegraphics[width=7cm]{FigCap2/HFEnLoss1.png}
   \includegraphics[width=7cm]{FigCap2/HFEnLoss2.png}
-  \caption{Comparison of radiative and collisional energy losses for charm (left) and for bottom (right) quarks from calculations in~\cite{Cao:2013ita}.}
+  \caption{Comparison of radiative and collisional energy losses for charm (left) and for bottom (right) quarks as a function of the quark energy from calculations in~\cite{Cao:2013ita}.}
   \label{fig:HFEnLoss}
 \end{figure}
 In Fig.~\ref{fig:HFEnLoss}, an example of calculations from~\cite{Cao:2013ita}
@@ -674,22 +674,22 @@ loss, the thermalisation of the charm quarks occurs at different times.\\
   \centering
   \includegraphics[width=7cm]{FigCap2/HFEnLoss3.png}
   \includegraphics[width=7cm]{FigCap2/FragHQ.png}
-  \caption{Left: thermalization process of charm quarks in a static medium~\cite{Cao:2013ita}. Right: relative contributions from different hadronisation mechanisms to D-meson production  from charm quarks, as a function of the transverse momentum, from calculations in~\cite{Cao:2013ita}.}
+  \caption{Left: thermalisation process of charm quarks in a static medium~\cite{Cao:2013ita}. Right: relative contributions from different hadronisation mechanisms to D-meson production  from charm quarks, as a function of the transverse momentum, from calculations in~\cite{Cao:2013ita}.}
   \label{fig:HFEnLoss2}
 \end{figure}
 
 \subsection{Heavy flavour hadronisation in the medium}
 \label{sec:HFhadro}
 
-The final hadron yields and momentum distributions depend not only on the energy loss 
+The final hadron yields and momentum distributions not only depend on the energy loss 
 mechanisms of the partons inside the medium,
 but also on the way parton hadronisation occurs. There are basically 
 two mechanisms for heavy quarks 
-to produce heavy-flavour hadrons: fragmentation of a high-momentum 
+to produce heavy-flavour hadrons: fragmentation of a 
 heavy quark into a jet of lower-momentum
 hadrons, or coalescence (re-combination) of low-momentum 
 quarks with partons from the 
-medium. Fig.~\ref{fig:HFEnLoss2} (right) illustrates the 
+medium. Figure~\ref{fig:HFEnLoss2} (right) illustrates the 
 contributions of coalescence and fragmentation 
 mechanisms into the final D-meson yields from charm-quark 
 hadronisation in central Pb-Pb collisions at the LHC. The recombination mechanism
@@ -700,13 +700,13 @@ hadron with momentum larger than that of the
 heavy quark, the $\pt$ distribution of the final hadrons produced via coalescence will be slightly 
 harder than that of the initial quarks,
 i.e. shifted towards higher momenta. A remarkable example
-for the study of heavy-quark hadronisation processes is the production of J/$\psi$ meson,
+for the study of heavy-quark hadronisation processes and the role of coalescence is the production of J/$\psi$ meson,
 discussed in Sec.~\ref{sec:Quarkonium}.\\
 
 
 
 The measurement of $\Ds$-meson production in A-A collisions can provide 
-crucial additional information for understanding the 
+crucial additional information to understand the 
 interactions of charm quarks with the strongly-interacting 
 medium formed in heavy-ion collisions at high energies.
 In particular, the $\Ds$-meson yield is sensitive to strangeness production 
@@ -733,13 +733,13 @@ hadronisation.
   \centering
   \includegraphics[width=7cm]{FigCap2/RaaDsRapp.png}
   \includegraphics[width=7cm]{FigCap2/v2DsRapp.png}
-  \caption{Results for the $\RAA$ (left panel) and $v_2$ (right) of $\Ds$ (red bands) and D (purple dashed-dotted lines) mesons in semi-central Au-Au collisions at RHIC~\cite{He:2012df},. Also results for charm quarks at pseudo-critical temperature $T_c$ (green dashed lines), the equilibrium limit for $\Ds$ meson mesons in the hydrodynamic medium at $T_{c}$ (blue dashed-double-dotted line) and STAR data for the D-meson $\RAA$ in in 0-80\% Au-Au~\cite{Zhang:2011uva}.}
+  \caption{Results for the $\RAA$ (left panel) and $v_2$ (right) of $\Ds$ (red bands) and D (purple dashed-dotted lines) mesons in semi-central Au-Au collisions at RHIC~\cite{He:2012df}. Results for charm quarks at pseudo-critical temperature $T_c$ (green dashed lines), the equilibrium limit for $\Ds$ meson in the hydrodynamic medium at $T_{c}$ (blue dashed-double-dotted line) and STAR data for the $\Dzero$-meson $\RAA$ in in 0-80\% Au-Au collisions are also reported~\cite{Zhang:2011uva}.}
   \label{fig:Rapp}
 \end{figure}
-Fig.~\ref{fig:Rapp} shows D- and $\Ds$-meson $\RAA$ (left-hand panel)
+Figure~\ref{fig:Rapp} shows D- and $\Ds$-meson $\RAA$ (left-hand panel)
 and $v_2$ (right), in semi-central Au-Au collisions at 
 RHIC, from the TAMU model calculations~\cite{He:2012df}, also
-compared to STAR measurements of D-meson $\RAA$ in 0-80\% Au-Au 
+compared to STAR measurements of $\Dzero$-meson $\RAA$ in 0-80\% Au-Au 
 collisions~\cite{Zhang:2011uva}.
 The model predicts the maximum $\RAA$ to be more 
 pronounced for the $\Ds$, reaching values larger than 1.5 due 
@@ -772,7 +772,7 @@ collisions.
     \includegraphics[width=7cm]{FigCap2/AverageDmesonRaa_010_DzeroSTAR_010.pdf}
     \includegraphics[width=7cm]{FigCap2/2017-Jul-05-DmesonAverage_010_3050_6080_comparison_04July2017.pdf}
   \caption{Left: average non-strange D-meson $\Raa$ as a function of $\pt$ in the 10\% most central Pb-Pb collisions at
- $\sNN=2.76$ TeVmeasured by ALICE~\cite{Adam:2015sza}, compared to $\Dzero$ $\Raa$ measured by the STAR Collaboration in Au-Au collisions at RHIC at
+ $\sNN=2.76$ TeV measured by ALICE~\cite{Adam:2015sza}, compared to $\Dzero$ $\Raa$ measured by the STAR Collaboration in 0-10\% Au-Au collisions at RHIC at
 $\sNN=200$ GeV~\cite{Adamczyk:2014uip}. A zoomed-in plot of the interval $0 < \pt < 8\, \Gevc$ is shown in the inset. Right: average $\RAA$ 
   of prompt $\Dzero$, $\Dplus$ and $\Dstar$ mesons in the 0--10\% (red), 30--50\% (blue) and 60--80\% (black) centrality classes at $\sqrtsNN=5.02~\tev$~\cite{ALICE-PUBLIC-2017-003}.  }
   \label{fig:Raa}
@@ -788,7 +788,7 @@ for the 10\% most central Au-Au collisions at $\sNN = 200$ GeV~\cite{Adamczyk:20
 The nuclear modification factors measured at the two energies are compatible within uncertainties for $\pt > 2\, \Gevc$.
 Similar $\RAA$ of D mesons for $\pt > 5 \,\Gevc$ does not necessarily imply a similar charm-quark
 energy loss at the two collision energies. A combined effect of a denser medium
-and of the harder $\pt$ spectra at the LHC could result in similar values of $\RAA$ as at lower
+and of the harder $\pt$ spectra at the LHC could result in similar values of $\RAA$ at lower
 collision energies~\cite{Baier:2002tc}. In the interval $1 < \pt < 2\, \Gevc$, the $\RAA$ 
 measured by STAR shows a maximum. This effect can be described 
 by models including parton energy loss, collective
@@ -799,13 +799,15 @@ due to the different role of initial-state effects or of radial flow at the
 two collision energies. In the initial state, the modification
 of the parton distribution functions in a nuclear environment is predicted to lead
 to a stronger suppression of the heavy-quark production yields at low $\pt$ with increasing
-$\sNN$~\cite{Eskola:2009uj}, because of the smaller values of Bjorken-x probed. In addition, the 
+$\sNN$~\cite{Eskola:2009uj}, because of the smaller values of Bjorken-x probed 
+and therefore more shadowing is expected. In addition, the 
 $k_{\rm T}$-broadening effect, which gives rise to an enhancement of the $\RAA$ at low-intermediate
 $\pt$ (Cronin peak), is known to be more pronounced at lower collision energies~\cite{Wang:1998ww,Vogt:2001nh}.
 In the final state, in addition to energy loss, the collective expansion of the medium is
 also predicted to affect the momentum distribution of charmed hadrons in heavy-ion collisions.
 This effect could be enhanced by hadronisation via recombination.
-The stronger radial flow at the LHC than at RHIC~\cite{Abelev:2008ab,Abelev:2013vea,Abelev:2012wca} does not necessarily give rise
+The stronger radial flow (see Sec.~\ref{sec:RadialFlow}) at the LHC than at 
+RHIC~\cite{Abelev:2008ab,Abelev:2013vea,Abelev:2012wca} does not necessarily give rise
 to a more pronounced bump-like structure in the $\RAA$ at low $\pt$ with increasing collision
 energy. Its effect can in fact be counterbalanced by the different shape of the momentum
 spectra in pp collisions at different energies. Reduced uncertainties
@@ -818,8 +820,7 @@ for the 0--10\%, 30--50\% and 60--80\% centrality classes~\cite{ALICE-PUBLIC-201
 The D-meson nuclear modification factors at $\sNN = 5.02$ TeV 
 exhibit a suppression which is compatible within uncertainties 
 with that measured at lower energy $\sNN = 2.76$ TeV~\cite{Adam:2015sza}. 
-They show a suppression that is
-maximal at $\pt=6$--$10~\gev/c$ for central and semi-central events, 
+The suppression is maximal at $\pt=6$--$10~\gev/c$ for central and semi-central events, 
 where a reduction of the yields by
 a factor of about 5 and 2.5 with respect to the binary-scaled pp reference is observed 
 in the two centrality classes, respectively.
@@ -828,14 +829,14 @@ $\RAA$ is compatible with unity  in the interval $1<\pt<3~\gev/c$.
 The average $\RAA$ in the 60--80\% centrality class shows a suppression 
 by about 20--30\%, without a pronounced dependence on $\pt$. 
 Recent studies proposed that event selections and geometry determination 
-of the collision can affect $\RAA$ with a bias, causing
+of the collision can bias the $\RAA$, causing
 an artificial suppression for $\RAA$ in peripheral collisions even in absence
 of jet quenching and shadowing~\cite{Morsch:2017brb}.\\
 
 
 The $\RAA$ of prompt $\Ds$ mesons in the 10\% most central Pb-Pb collisions 
-at $\sNN =  2.76$ TeV is compared in the right-hand panel
-of Fig.~\ref{fig:Raa} to the average nuclear modification factor of 
+at $\sNN =  2.76$ TeV is compared in the left-hand panel
+of Fig.~\ref{fig:DsD_MassDep} to the average nuclear modification factor of 
 $\Dzero$, $\Dplus$ and $\Dstar$ mesons measured in the same
 centrality class~\cite{Adam:2015sza}. This comparison is meant to 
 address the expected effect of hadronisation via quark
@@ -844,28 +845,28 @@ of strange and non-strange D-meson
 species. In the three $\pt$ intervals, the values of the $\Ds$-meson $\RAA$ 
 are higher than those of non-strange D mesons, although 
 compatible within the large uncertainties. More precise measurements are 
-expected with the data sample from LHC Run 2 at $\sNN = 5.02$ TeV.\\
+expected with the data sample from LHC Run 2 at $\sNN = 5.02$ TeV and are the subject of this thesis.\\
 \begin{figure}[!ht]
   \centering
     \includegraphics[width=7.1cm]{FigCap2/RAADsD_276.pdf}
     \includegraphics[width=6.9cm]{FigCap2/2017-May-22-RaavsNpart_Dmes8to16_Pions8to16_FinalNonPromptJpsi2017_CC_25042017.pdf}
-  \caption{Left: $\RAA$ of prompt $\Ds$ mesons~\cite{Adam:2015jda} compared to non-strange D mesons~\cite{Adam:2015sza} in the 0-10\% centrality class at $\sNN = 2.76$ TeV. Right: Comparison of the D-meson~\cite{Adam:2015nna} and charged-pion~\cite{Abelev:2014laa} $\RAA$ as a function of centrality expressed in terms of $\langle N_{\rm part} \rangle $ in 8 $< \pt < 16$ $\Gevc$~\cite{Adam:2015nna} 
+  \caption{Left: $\RAA$ of prompt $\Ds$ mesons~\cite{Adam:2015jda} compared to non-strange D mesons~\cite{Adam:2015sza} in the 0-10\% centrality class at $\sNN = 2.76$ TeV. Right: Comparison of the D-meson~\cite{Adam:2015nna} and charged-pion~\cite{Abelev:2014laa} $\RAA$ as a function of centrality expressed in terms of $\langle N_{\rm part} \rangle $ in \mbox{8 $< \pt < 16$ $\Gevc$} measured by ALICE~\cite{Adam:2015nna}, 
 and of the $\RAA$ of non-prompt J$/\psi$ mesons in 6.5 $< \pt < 30$ $\Gevc$ measured by CMS~\cite{Khachatryan:2016ypw}. 
 }
-  \label{fig:ColorMassDep}
+  \label{fig:DsD_MassDep}
 \end{figure}
 
 \begin{figure}[!ht]
   \centering
     \includegraphics[width=7.5cm]{FigCap2/2017-Jan-28-rParAAbeautyincl.pdf}
   \caption{Right: $\RAA$ of electrons from beauty-hadron decays as a function of $\pt$ together with
-the corresponding result for beauty- and charm-hadron decays~\cite{Adam:2016khe} for the 20\% most central Pb-Pb collisions.}
+the corresponding result for beauty- and charm-hadron decays~\cite{Adam:2016khe} for the 20\% most central Pb-Pb collisions at $\sNN=2.76$ TeV.}
   \label{fig:ColorMassDep}
 \end{figure}
 
-Fig.~\ref{fig:ColorMassDep} (left) shows the average of the $\Dzero$, $\Dplus$ and $\Dstar$ 
+Figure~\ref{fig:DsD_MassDep} (right) shows the average of the $\Dzero$, $\Dplus$ and $\Dstar$ 
 nuclear modification factors as a function of centrality measured by ALICE in
-Pb-Pb collisions at $\sNN =  2.76$ TeV, for the interval 8 $< \pt < 16$ $\Gevc$~\cite{Adam:2015nna}, 
+Pb-Pb collisions at $\sNN =  2.76$ TeV, for the interval 8 $< \pt < 16$ $\Gevc$  in $|y| < 0.5$~\cite{Adam:2015nna}, 
 compared to the $\RAA$ of charged pions~\cite{Abelev:2014laa} in $|y| < 0.8$ for the same $\pt$ interval, 
 and to non-prompt J$/\psi$ meson $\RAA$ measured by the CMS Collaboration for 6.5 $< \pt < 30$ $\Gevc$ 
 in $|y| < 1.2$~\cite{Khachatryan:2016ypw}. The different width of the rapidity interval for D and non-prompt
@@ -888,7 +889,7 @@ The value of the D-meson $\RAA$ in all the centrality
 classes, except the most peripheral one, is lower than that of non-prompt J$/\psi$ mesons. 
 The $\RAA$ of electrons from beauty-hadron decays~\cite{Adam:2016wyz} 
 is compared with the one of heavy-flavour decay electrons, i.e. originating from both charm- and
-beauty-hadron decays, in Fig.~\ref{fig:ColorMassDep} (right) 
+beauty-hadron decays, in Fig.~\ref{fig:ColorMassDep} 
 for the 20\% most central Pb-Pb collisions
 ~\cite{Adam:2016khe}. The measurements agree within 
 uncertainties at high $\pt$, while, in the $\pt$ 
@@ -897,18 +898,19 @@ of electrons from beauty-hadron decays
 is about 1.2$\sigma$ higher than that of heavy-flavour decay 
 electrons. The observation of different 
 suppression for particles originating from
-charm or beauty quarks like those presented in left- and 
-right-hand panels of Fig.~\ref{fig:ColorMassDep} 
+charm or beauty quarks like those presented in Fig.~\ref{fig:DsD_MassDep} (right) and~\ref{fig:ColorMassDep} 
 is consistent with a scenario of decreasing in-medium 
-parton energy loss with increasing quark mass.
+parton energy loss with increasing quark mass.\\
 
 \begin{figure}[!ht]
   \centering
         \includegraphics[width=14cm]{FigCap2/D0v2_CMS_5TeV.png}
-  \caption{Prompt $\Dzero$ meson $v_2$ (upper) and $v_3$ (lower) coefficients at midrapidity ($|y| < 1.0$) for
+  \caption{Prompt $\Dzero$ meson $v_2$ (upper) and $v_3$ (lower) coefficients as a function of $\pt$ at midrapidity ($|y| < 1.0$) for
 the centrality classes 0-10\% (left), 10-30\% (middle), and 30-50\% (right)~\cite{Sirunyan:2017plt}.}
   \label{fig:D0v2CMS}
 \end{figure}
+
+
 
 The measurement of the elliptic flow $v_2$ provides further 
 insight into the interactions of charm quarks with the medium. 
@@ -926,11 +928,15 @@ Fig.~	\ref{fig:D0v2CMS}, for the 0-10\%,
 10-30\% and 30-50\% centrality classes ~\cite{Sirunyan:2017plt}. 
 The measured $v_2$ and $v_3$ are larger than 0 
 at low $\pt$ and then decrease at higher $\pt$.
+The elliptic flow $v_2$ reaches its maximum value in the 30-50\% centrality class,
+due to the initial geometrical anisotropy of the fireball.
 The result suggests that charm quarks take part in 
-the collective motion of the medium and that collisional interaction processes as well as quark 
+the collective motion of the medium and that collisional processes as well as quark 
 recombination may contribute to the observed elliptic flow. 
 For $\pt > 6\, \Gevc$, the $\Dzero$ meson $v_2 >0$ suggests a 
-path-length dependence of the charm-quark energy loss. \\
+path-length dependence of the charm-quark energy loss. 
+The path-length effect is more evident for semi-peripheral collisions, where the difference of
+in-plane and out-of-plane path-lengths is maximum.\\
 
 
 \begin{figure}[!ht]
@@ -939,7 +945,7 @@ path-length dependence of the charm-quark energy loss. \\
     \includegraphics[width=7cm]{FigCap2/DmesonAverage_3050_AllModels_18May2017.pdf}
     \includegraphics[width=7cm]{FigCap2/DmesonAverage_6080_All_Mod04July2017.pdf}
   \caption{Average D-meson $\RAA$~\cite{ALICE-PUBLIC-2017-003} in 0-10\%, 30-50\% and 60-80\% centrality classes as a function of $\pt$ at $\sNN = 5.02$ TeV, compared with models.}
-  \label{fig:RAAandv2}
+  \label{fig:RAADs}
 \end{figure}
 
 
@@ -949,18 +955,17 @@ path-length dependence of the charm-quark energy loss. \\
     \includegraphics[width=11cm]{FigCap2/2017-Jul-04-DmesonComparisonWithModels.pdf}
 %    \includegraphics[width=7cm]{FigCap2/2017-Sep-13-v2ESE_Daverage_PbPb3050_VZERO_q2TPCFullSmall60Perc_q2TPCFullLarge20perc.pdf}
   \caption{Average D-meson $v_2$~\cite{Acharya:2017qps} in the 30-50\% centrality class as a function of $\pt$ at $\sNN = 5.02$ TeV, compared with models.}
-  \label{fig:RAAandv2}
+  \label{fig:Dmesonsv2}
 \end{figure}
 
 The simultaneous comparison of $\RAA$ and elliptic flow $v_2$ measurements 
 with theoretical calculations can provide more stringent constraints to the 
 charm-quark in-medium interactions and hadronisation processes.
-A comparison is shown in Fig.~\ref{fig:RAAandv2} for the 
-D-meson $\RAA$~\cite{ALICE-PUBLIC-2017-003} (left panel) 
-and $v_2$~\cite{Acharya:2017qps} (right panel) measured
-by ALICE in Pb-Pb collisions at $\sNN = 5.02$ TeV, in the 0-10\% and 30--50\% 
-centrality classes respectively.
-Transport models in Fig.~\ref{fig:RAAandv2} include: 
+Fig.~\ref{fig:RAADs} shows the D-meson $\RAA$~\cite{ALICE-PUBLIC-2017-003}  
+measured by ALICE in Pb-Pb collisions at $\sNN = 5.02$ TeV, in the 0-10\%, 30-50\% and 60-80\% 
+centrality classes and Fig.~\ref{fig:Dmesonsv2} shows the D-meson $v_2$~\cite{Acharya:2017qps} in the 30-50\% 
+centrality class.
+Transport models in Fig.~\ref{fig:RAADs} and~\ref{fig:Dmesonsv2} include: 
 POWLANG~\cite{Beraudo:2014boa} and TAMU~\cite{He:2014cla}, 
 in which the interactions only include collisional processes; 
 BAMPS-el+rad~\cite{Uphoff:2014hza}, LBT~\cite{Cao:2017hhk} and 
@@ -997,7 +1002,11 @@ $v_2$. POWLANG overestimates suppression at hight $\pt$ in all the centrality cl
 while gives a good description of the $v_2$.
 ~PHSD, LBT and MC@sHQ provide instead a fair 
 description of both $v_2$ magnitude and shape
-as well as of energy loss.\\
+as well as of energy loss. The calculations that describe the $v_2$ data 
+with $\chi^2/{\rm ndf}<1$ use values of the charm quark diffusion coefficient $2\pi\,T\,D_s$ in the range 1.5--7 at $T_{\rm c}$.
+The corresponding thermalisation time~\cite{Moore:2004tg} for charm
+quarks is $\tau_{\rm charm}=\frac{m_{\rm charm}}{T}  D_s \approx 3$--14~fm/$c$ with $T=T_{\rm c}$ and $m_{\rm charm}=1.5~\gev/c^2$. 
+These values are comparable to the estimated decoupling time of the high-density system~\cite{Aamodt:2011mr}.\\
 
 
 
@@ -1006,19 +1015,21 @@ as well as of energy loss.\\
 More quantitative comparisons between measurements and model
 calculations towards an estimate of the heavy-quark transport coefficients
 was proposed in a recent Bayesian model-to-data analysis~\cite{Xu:2017hgt}. 
-The dependence of the charm quark diffusion coefficient 2$\pi T D_s(T)$ on the temperature 
+The dependence of 2$\pi T D_s(T)$ on the temperature 
 (see Fig.~\ref{fig:DiffCoeff}) was extracted.
 The spacial diffusion coefficient is better constrained in the region (1.3 - 1.5) $T_c$, that is indeed a 
 temperature range where charm quarks spend most of their time in the medium.
 Furthermore, the coefficient, extracted from model-to-data comparison, 
 is found to be compatible to lattice QCD calculations and some results 
-from the latter are displayed in Fig.~\ref{fig:DiffCoeff}.
+from the latter are displayed in Fig.~\ref{fig:DiffCoeff}.\\
 
 \begin{figure}[!ht]
   \centering
     \includegraphics[width=10cm]{FigCap2/DiffCoeff.png}
-  \caption{Estimated temperature dependence of the spatial diffusion coefficient  2$\pi T D_s(T)$, compared with other models calculations.}
+  \caption{Estimated temperature dependence of the spatial diffusion coefficient  2$\pi T D_s(T/T_c)$, compared with other models calculations.}
   \label{fig:DiffCoeff}
 \end{figure}
 
-
+The larger data samples that will be collected during Run 3 and Run 4 at the LHC will
+ allow to substantially reduce the measurement uncertainties, providing further constraints to models and
+ constraining the values of the QGP transport coefficients.

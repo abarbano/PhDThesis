@@ -188,8 +188,10 @@ for the 0-10\%, 30-50\% and 60-80\% centrality classes respectively.
 The distributions were fitted with two Gaussian functions to model
 the $\Ds$ peak and that of $\DplustoKKpi$ decays, with BR = ($0.264 \pm 0.011\%$),
 which gives rise to a bump in the background shape around 1.870 $\Gevcc$. 
+The position and width of the Gaussian function used to fit the $\Dplus$ peak 
+were fixed respectively to the $\Dplus$ invariant mass from PDG and to the value of the width from the simulations.
 An exponential function was used to model the background.
-The $\Ds$ raw yield (sum of particles and anti-particles) is defined as the integral of the Gaussian function 
+The $\Dspm$ raw yield (sum of particles and anti-particles) is defined as the integral of the Gaussian function 
 after subtracting the background calculated from the 
 background fit function. 
 The values of raw yields, statistical significance and signal over background are reported in
@@ -348,7 +350,7 @@ the tighter topological selections applied. \\
 
 
 Figure~\ref{fig:d0} shows the resolution of the impact parameter of reconstructed tracks 
-in the transverse plane ($d_{\rm 0}^{\rm xy}$), for low interaction rate runs in data and in simulations.
+in the transverse plane ($d_{\rm 0}^{\rm xy}$), for low interaction rate runs (frequency of collisions $<2$kHz) in data and in simulations.
 The values of the resolution are obtained via a fit to the distributions of $d_{\rm 0}^{\rm xy}$ 
 of charged tracks, in the different $\pt$ intervals. The histograms are fitted by a function consisting of a sum
 of a Gaussian, to describe the $d_{\rm 0}^{\rm xy}$ of primary particles, and an exponential
@@ -924,7 +926,9 @@ the ratio of the FONLL predictions at the two energies in the same rapidity regi
 \label{eq:scalingPP}
 \sigma^{\rm 5.02 TeV}_{\rm scaled} (\pt) = \frac{\sigma^{\rm 5.02 TeV}_{\rm FONLL} (\pt)}{\sigma^{\rm 7 TeV}_{\rm FONLL} (\pt)} \sigma^{\rm 7 TeV}_{\rm meas} (\pt).
 \end{equation}
-The uncertainty on the pp reference 
+Since FONLL does not have a specific prediction for $\Dsplus$
+mesons, the cross sections of the D-meson admixture (70\% of $\Dzero$ and 30\% of $\Dplus$) were used for the
+scaling. The uncertainty on the pp reference 
 has two contributions. The first one is the uncertainty on the measured 
 $\pt$-differential $\Dsplus$-meson cross section at $\sqrt s=7$~TeV.
 The second contribution is the $\pt$-dependent scaling factor 
@@ -933,9 +937,10 @@ the FONLL parameters (charm-quark mass, factorisation and renormalisation scales
 as described in Sec.~\ref{sec:BfdSub} and in~\cite{Averbeck:2011ga}. The values of these parameters were 
 varied coherently at the two energies. The scaling factor 
 and its uncertainties from FONLL calculations are shown in Fig.~\ref{fig:FONLLscalFact}.
-In the interval $12<\pt<16~\Gevc$, where the pp reference is missing, the FONLL calculation at 
-$\sqrt s=5.02~\tev$~\cite{Cacciari:2012ny} was used as a reference 
-by scaling the values to match the central value of the data at lower $\pt$. 
+In the interval $12<\pt<16~\Gevc$, where the pp reference is missing, the FONLL cross section of the D-meson admixture at 
+$\sqrt s=5.02~\tev$ was used as a reference. 
+The latter was rescaled to match the data points of the $\Dsplus$ cross section at $\s=5.02 $ TeV (after the $\s$-rescaling)
+in the $\pt$ interval $2 < \pt < 12 \, \Gevc$, proving in this way a reference value for $\Dsplus$ cross section in  $12 < \pt < 16 \, \Gevc$.
 \begin{figure}[!h]
 \centering
  \includegraphics[width=0.6\textwidth]{FigCap5/FONLLscaling7To5TeV.png}
