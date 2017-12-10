@@ -1,6 +1,8 @@
 \chapter{The ALICE experiment at the LHC}
+\label{chap:chap3}
 
 \section{The Large Hadron Collider}
+\label{sec:LHC}
 The Large Hadron Collider (LHC), with a circumference of 27 km, 
 is the world largest and most powerful particle collider, built by the 
 European Organisation for Nuclear Research (CERN) from 1998 to 2008. 
@@ -32,6 +34,7 @@ the four main experiments (ALICE, ATLAS, CMS and LHCb) collected data with pp
 \label{fig:imageLHC}
 \end{figure} 
 \section{The ALICE experiment}
+\label{sec:ALICE}
 ALICE (A Large Ion Collider Experiment)~\cite{Abelev:2014ffa} is an experiment 
 at the LHC optimised for the study of QCD matter
 created in high-energy collisions between heavy nuclei.
@@ -83,6 +86,7 @@ In the following sections, the detectors of ALICE used in the analyses presented
 performance will be described. For information on the other detectors more details can be found in~\cite{Aamodt:2008zz}.
 
 \subsection{Magnet}
+\label{sec:Magnet}
 The magnet used in ALICE was constructed for the L3 experiment at LEP and 
 it produces a moderate solenoidal magnetic field (B $<$ 0.5 T). In the choice 
 of the magnetic field two aspects must be considered: the magnet has to be intense 
@@ -103,6 +107,7 @@ in the next sections.
 \end{figure}
 
 \subsection{Inner Tracking System (ITS)}
+\label{sec:ITS}
 The Inner Tracking System is one of the central barrel detectors used for track 
 reconstruction, primary and secondary vertex finding and Particle Identification (PID).
 It is composed by six cylindrical layers of silicon detectors placed 
@@ -215,6 +220,7 @@ particle ratios can be measured in the relativistic rise region at $\pt$ up to $
 \caption{A view of the ALICE Time-Of-Flight detector.}
 \label{fig:imageTOF}
 \end{figure}
+
 \subsection{Time-Of-Flight (TOF)}
 \label{sec:TOF}
 The TOF detector is a large area array of Multigap Resistive Plate Chambers (MRPC), 
@@ -255,93 +261,6 @@ TOF in Pb-Pb interactions.}
 \label{fig:TOFpid}
 \end{figure}
 
-\iffalse
-\subsection{Transition Radiation Detector (TRD)}
-The Transition Radiation Detector \cite{TRD-TDR} is placed between the
- Time Projection Chamber and the Time-Of-Flight detectors. It is the main 
- detector in the central barrel revealing high momentum electrons, with $\pt >$1 $\Gevc$, 
- i.e. the region where it is no more possible to use only the information from 
- energy loss of TPC for particle identification. Since the TRD is a fast tracker, 
- it is possible to use it as an efficient trigger for high-momentum electrons. 
- As the other detectors of the barrel, the TRD covers an acceptance of $|\eta|<$0.9.
-The transition radiation is produced when a highly relativistic charged particle 
-traverses the boundary between two media of different dielectric constants. 
-The probability of transition radiation increases with the relativistic gamma factor 
-and this provides an excellent way to discriminate between electrons and pions for
- momenta of a few $\Gevc$ and higher. The probability of emission traversing 
- a single boundary is small, so multiple boundaries are necessary to obtain a reasonable efficiency.
-It consists of 540 detector modules, each one composed by a radiator of 4.8 cm 
-thickness, a multi-wire proportional readout chamber, and the front-end electronics
- for this chamber. The gas mixture in the readout chamber is Xe/CO\textsubscript{2} 
- (85\%/15\%). Each readout chamber consists of a drift region of 3.0 cm separated 
- by cathode wires from an amplification region of 0.7 cm. The drift time is 2.0 $\mu$s.
-
-
-
-\subsection{High Momentum Particle Identification (HMPID)}
-The High Momentum Particle Identification system plays a role in the particle
- identification of heavy-ion collisions in ALICE \cite{HMPID-TDR}. It allows to extend
-  the PID capabilities beyond the momentum range allowed by energy loss measurements 
-  (ITS and TPC, $p \sim$ 600 MeV/c) and by the TOF ($p \sim$ 1.2-1.4 $\Gevc$). 
-  The HMPID detector has been designed to extend the useful range for identification of 
-  $\pi$/K up to 3 $\Gevc$ and of p/K up to 5 $\Gevc$. 
-
-
-This detector consists of seven modules of about 1.5$\times$1.5 m\textsuperscript{2} 
-each of Ring Imaging Cherenkov (RICH) counters. Cherenkov radiation is a wave resulting
- from charged particles when traversing a material faster than the velocity of light in that 
- material. The radiation propagates with a characteristics angle, that depends on the particle 
- velocity. The radiator is a thick layer of $C_6F_{14}$ (perfluorohexane) with an index of 
- refraction $n$=1.2989 at $\lambda$=175 nm, corresponding to a momentum threshold 
- of $p_{th}$=1.21$\times$m, where m is the particle mass. Then, a photon detector made 
- of CsI is used to detect the ring-shaped image of the Cherenkov radiation. From a 
- measurement of the Cherenkov angle and thus the particle velocity, the mass of the charged particle can be estimated.
-
-\subsection{Photon Spectrometer (PHOS)}
-PHOS (PHOton Spectrometer) is an electromagnetic calorimeter of high granularity 
-made of lead tungstate crystals \cite{PHOS-TDR}. It is positioned at the bottom of the 
-ALICE set-up and covers about a quarter of unit in pseudo-rapidity, $-0.12<\eta<0.12$ and $100\degree$ 
-in azimuthal angle. The main aim of the PHOS detector is the determination of the 
-thermal and dynamical properties of the initial phase of the collision. This is done 
-by measuring photons emerging directly from the collisions, that have to be 
-separated by photons coming from particle decays, and also neutral mesons like 
-$\pi^0$ and $\eta$ through their decays in two photons.
-
-\subsection{Electromagnetic Calorimeter (EMCal)}
-The Electromagnetic Calorimeter EMCal enhances ALICE's capabilities for jet 
-quenching measurements \cite{EMCal-TDR}.
-The detector contains several modules each consisting of sampling calorimeters,
- in fact the EMCal extends the ALICE $\pt$ capabilities for jets, direct photons and 
- electrons from heavy-flavour decays. It is made of alternating layers of 1.44 mm Pb 
- and 1.76 mm polystyrene, which is the scintillating material. The EMCal covers the
-  pseudo-rapidity range $-0.7 < \eta < 0.7$.
-
-\subsection{Forward Muon Spectrometer (FMS)}
-The Forward Muon Spectrometer is used to evaluate the production of $\mu^+\mu^-$
- pairs coming from the decay of heavy quarkonium states, like the charmonium states 
- (J/$\Psi$ and $\Psi'$) and the bottomonium states ($\Upsilon, \Upsilon'$ and $ \Upsilon"$).
-  In presence of a deconfined medium, quarkonium states are dissociated because 
-  of colour screening and this leads to a suppression of their production rates.
-
-The spectrometer is located around the beam pipe and its acceptance covers
- the pseudo-rapidity interval 2.5$\leq \eta \leq$4 \cite{FMS-TDR}. A resolution 
- of 70 MeV/$c^2$ in the 3 GeV/$c^2$ region is needed to separate J/$\Psi$ and 
- $\Psi'$ peaks and of 100 MeV/$c^2$ in the 10 GeV/$c^2$ region to distinguish $\Upsilon, \Upsilon' $and $\Upsilon"$.
-This detector is composed by a front absorber (Fig.~\ref{fig:muon} left) which 
-suppresses all the particles except the muons. It is made by carbon and concrete
- in order to limit the energy loss and multiple scattering of the muons. Then, a tracking 
- chamber allows to obtain muon tracks, thanks to multi-wire proportional chambers, 
- with a spatial resolution better than 100 $\mu$m, and a dipole magnet outside the L3
-  magnet which bends the charged particles tracks. The trigger on di-muon signals is 
-  provided by four layers of RPC operating in streamer mode that are located behind an iron absorber.
-\begin{figure}[!t]
-\centering
-\includegraphics[width=.49\textwidth]{FigCap3/dimuon1.jpeg}
-\includegraphics[width=.49\textwidth]{FigCap3/dimuon2.png}
-\caption{(Left) Basic principle of the Dimuon spectrometer: an absorber to filter the background, a set of tracking chambers before, inside and after the magnet and a set of trigger chambers. (Right) Mass spectrum of principal resonances of quarkonium states.}
-\label{fig:muon}
-\end{figure}
-\fi
 
 \subsection{V0 Detector} 
 \label{sec:V0}
@@ -633,6 +552,7 @@ orthogonal to $\Dplus$ $\pt$ direction (red), and along $z$-axis (blue).}
 \end{figure}
 
 \section{Secondary vertex reconstruction}
+\label{sec:secVertex}
 For the reconstruction of heavy-flavour hadron decays, the reconstruction of decay vertices 
 is done during the analysis phase. Tracks are grouped in pairs (e.g. for the $\DtoKpi$ decays) or in triplets (for the $\Dplus$ and $\Ds$ cases), 
 defining objects called ``candidates''. 
@@ -657,6 +577,7 @@ displaced from the interaction point by $\approx 150-300\,\mu$m.
 
 
 \section{Simulations}
+\label{sec:simu}
 Simulations are used in the analysis to calculate the reconstructed efficiencies and to study the detector
 performance.
 Event generators are used to simulate pp, p-Pb and Pb-Pb collisions. In particular, PYTHIA 6 and

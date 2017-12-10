@@ -155,20 +155,21 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
-\department{Scienze della Natura e Tecnologie Innovative} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
-\group{Indirizzo in Fisica ed Astrofisica} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+
+\department{\Large Scuola di Dottorato in Scienze della Natura\\ e Tecnologie Innovative} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{\Large Indirizzo in Fisica ed Astrofisica} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
 
 \thesistitle{Prompt $\Dsplus$ meson production in pp, p-Pb and Pb-Pb collisions at LHC with ALICE} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
-\supervisor{Prof. Stefania Beole'\\ Dr. Francesco Prino} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\supervisor{\Large Prof. Stefania Beol\`e\\ Dr. Francesco Prino} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 %\supervisor{Dr. Francesco Prino} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 %\supervisor{Dr. Francesco \textsc{Prino}} % Your supervisor's name, this is used \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 %\degree{Doctor of Physics} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
-\author{Anastasia Barbano} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\author{\Large Anastasia Barbano} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
 \addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
 
 \subject{Biological Sciences} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
 \keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
-\university{\href{http://www.university.com}{Universita' degli Studi di Torino}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\university{\textcolor{mdtRed}{Universita' degli Studi di Torino}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
 
 \AtBeginDocument{
 \hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
@@ -188,10 +189,15 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{titlepage}
 \begin{center}
-
-\vspace*{.06\textheight}
-{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
-\text{\Large Doctoral Thesis}\\[0.5cm] % Thesis type
+\begin{figure}
+\centering
+\includegraphics[width=3.5cm]{logo_UNITO.png}
+\end{figure}
+\vspace{1.cm}
+%\vspace*{.02\textheight}
+{\scshape\LARGE \univname\par}\vspace{1.cm} % University name
+\deptname\\\groupname\\ \vspace{1.5cm} % Research group name and department name
+%\text{\Large Doctoral Thesis}\\[0.5cm] % Thesis type
 
 \HRule \\[0.4cm] % Horizontal line
 {\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
@@ -199,35 +205,34 @@ headsepline, % Uncomment to get a line under the header
  
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushleft} \large
-\emph{Author:}\\
-\href{http://www.johnsmith.com}{\authorname} % Author name - remove the \href bracket to remove the link
+\emph{\Large Author:}\\
+\authorname % Author name - remove the \href bracket to remove the link
 \end{flushleft}
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushright} \large
-\emph{Supervisor:} \\
-\href{http://www.jamessmith.com}{\supname} % Supervisor name - remove the \href bracket to remove the link  
+\emph{\Large Supervisors:} \\
+\supname \\ \vspace{0.2cm}% Supervisor name - remove the \href bracket to remove the link  
+\emph{\Large Examiners:} \\
+\Large Dr. Ralf Averbeck\\
+\Large Dr. Patrick Robbe
 \end{flushright}
 \end{minipage}\\[3cm]
  
 \vfill
 
-\groupname\\\deptname\\[2cm] % Research group name and department name
  
 \vfill
 
-{\large \today}\\[4cm] % Date
+{\large \today}\\ % Date
 %\includegraphics{Logo} % University/department logo - uncomment to place it
  
-\vfill
 \end{center}
 \end{titlepage}
-
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
-\iffalse
 \begin{abstract}
 The aim of this thesis is the study of the $\Dsplus$-meson production in pp collisions at the centre-of-mass energy 
 $\s=7$ TeV and in p-Pb and Pb-Pb collisions at $\sNN=5.02$ TeV, with the ALICE 
@@ -265,12 +270,13 @@ used in ALICE to reconstruct the $\Dsplus$ mesons and discussing the results obt
 respectively. \\
 
 The measurements presented in this thesis were approved by the ALICE Collaboration 
-and presented in various conferences. The proton-proton analysis has already been published, 
-while the proton-nucleus and the nucleus-nucleus results are still preliminary and will be published soon.
+and presented in various conferences. The proton-proton analysis has already been published;
+the analysis of $\Dsplus$ $v_2$ in Pb-Pb collisions is available on arXiv, aiming at peer reviewed journal. 
+The proton-nucleus and the other nucleus-nucleus results are still preliminary and will be published soon.
 \end{abstract}
-\newpage
+
+
 \begin{abstract}
-\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 Il lavoro di questa tesi ha riguardato lo studio della produzione del mesone $\Dsplus$
 in collisioni pp alla energia del centro di massa di $\s=7$ TeV e in collisioni p-Pb e Pb-Pb
 a $\sNN=5.02$ TeV, attraverso il rivelatore ALICE al Large Hadron Collider del CERN.
@@ -309,27 +315,18 @@ dei risultati in collisioni pp, p-Pb e Pb-Pb rispettivamente.\\
 
 
 Le misure presentate in questa tesi sono state approvate dalla Collaborazione ALICE e presentate
-in numerose conferenze. L'analisi dei dati in collisioni pp \`e stata pubblicata, mentre i risultati
-in collisioni p-Pb e Pb-Pb sono ancora preliminari e saranno pubblicati a breve.
+in numerose conferenze. L'analisi dei dati in collisioni pp \`e stata pubblicata. L'analisi del $v_2$ del mesone 
+$\Dsplus$ è disponibile su arXiv, con l'obiettivo di una rivista peer review.
+I risultati delle analisi in collisioni p-Pb e il resto dei risultati delle analisi in collisioni Pb-Pb sono ancora preliminari e saranno pubblicati a breve.
 
 \end{abstract}
-\fi
-%----------------------------------------------------------------------------------------
-%	ACKNOWLEDGEMENTS
-%----------------------------------------------------------------------------------------
-\iffalse
-\begin{acknowledgements}
-\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
-The acknowledgments and the people to thank go here, don't forget to include your project advisor\ldots
-\end{acknowledgements}
-\fi
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
 %----------------------------------------------------------------------------------------
 
 \tableofcontents % Prints the main table of contents
 
-\listoffigures % Prints the list of figures
+%\listoffigures % Prints the list of figures
 
 %----------------------------------------------------------------------------------------
 %	ABBREVIATIONS
@@ -373,7 +370,6 @@ $\omega$ & angular frequency & \si{\radian} \\
 \pagestyle{thesis} % Return the page headers back to the "thesis" style
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
-
 \include{Chapters/Chapter1_QGP}
 \include{Chapters/Chapter2_HF}
 \include{Chapters/Chapter3_Detector}
@@ -391,8 +387,20 @@ $\omega$ & angular frequency & \si{\radian} \\
 % Uncomment the lines as you write the Appendices
 
 
-\include{Appendices/AppendixA}
-\include{Appendices/AppendixB}
+%\include{Appendices/AppendixA}
+%\include{Appendices/AppendixB}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+\begin{acknowledgements}
+I would like to thank my supervisors, Francesco Prino and Stefania Beol\`e, and also Elena Bruna for 
+their constant support during these years of PhD, the fruitful discussions with them and for the incredible amount
+of things they taught me. I really want to thank them also for all the opportunities that they gave me.
+I would also like to thank Dr. Ralf Averbeck and Dr. Patrick Robbe, who accepted to read my thesis.
+A big thank goes to everyone in the Torino group: Stefania, Massimo, Mario, Luciano, Yasser, Max, Luca, Stefano, Matteo, Fabrizio and Ivan, and in particular to Cristina, for this year at CERN. It was a pleasure for me to be part of this group! 
+A special thanks goes to my family and to Alessio, that support me every day.
+\end{acknowledgements}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
