@@ -7,11 +7,7 @@ charged-particle multiplicity produced in p-Pb collisions at $\sNN=5.02$ TeV and
 pp collisions at $\s=7$ TeV~\cite{Acharya:2017jgo} and Pb-Pb interactions at $\sNN=5.02$ TeV~\cite{ALICE-PUBLIC-2017-003}. 
 A primary charged particle is a charged particle with mean proper lifetime $\tau$ larger
 than 1 cm, which is either produced directly in the interaction or from decay of particles
-with $\tau < 1$ cm/$c$.
-Primary charged particles are defined as prompt
-particles produced in the collisions, including their decay products,
-except those from weak decay of strange particles.
-In presence of a medium 
+with $\tau < 1$ cm/$c$. In presence of a medium 
 composed of deconfined quarks and gluons, a modification of the hadronisation 
 mechanisms is expected due to the possible formation of hadrons via
 coalescence of charm quarks with other quarks from the 
@@ -30,7 +26,7 @@ Chapter~\ref{chap:PbPb} indicate higher values in Pb-Pb than in pp collisions, a
 the values are compatible within $1\sigma$ of the combined statistical and systematic uncertainties.
 Given the observed increase of strange particle production with increasing particle multiplicity
 in pp and p-Pb collisions~\cite{Abelev:2013haa,Adam:2015vsf,ALICE:2017jyt}, which reaches
-yields compatible with those observed in Pb-Pb collisions at similar multiplicities. The possible 
+yields compatible with those observed in Pb-Pb collisions at similar multiplicities, the possible 
 hadronisation via coalescence could result in an enhancement 
 of the relative yield of $\Dsplus$ meson with respect to non-strange
 D mesons in high multiplicity p-Pb collisions.
@@ -100,11 +96,11 @@ of the $z$ coordinate of the vertex ($\zVtx$) is shown.
  The average number of tracklets $\averNtrkl$ as a function of $\zVtx$ is also shown in the plots.
  The trend of $\averNtrkl$ as a function of $\zVtx$ is related to the SPD geometrical acceptance,
  which does not cover the range $-1 < \eta < 1$ for collisions with $|\zVtx|> 5-6$ cm.
- Lower $\averNtrkl$ values towards $\zVtx \sim 10 $ cm are due to the 
+ Therefore, lower $\averNtrkl$ values towards $|\zVtx| \sim 10 $ cm are due to the 
  finite acceptance of the SPD layers. 
 The modification of the number of active SPD modules during the data acquisition 
  affects also the number of reconstructed tracklets.
- Therefore, the distribution of $\averNtrkl$ as a function of $\zVtx$ and as a function of the time
+ For this reason, the distribution of $\averNtrkl$ as a function of $\zVtx$ and as a function of the time
  during the data taking needs to be equalised 
 in order to consistently define the $\Ntrkl$ intervals in which the analysis is performed.
 Otherwise, a given $\Ntrkl$ interval would correspond to different real charged particle
@@ -119,9 +115,9 @@ of the run groups 1, 2 and 3 to group 4, which is the one with the lowest averag
  event-by-event basis on each of the four groups of runs separately.
 The $\averNtrkl$ value that was used as the absolute reference multiplicity 
 value was defined as the maximum of $\averNtrkl$ value as a function of $\zVtx$ and time,
-resulting $N_{\rm ref} =  29.2$. 
-The number $N_{\rm raw}$ of reconstructed tracklets in each event
-is corrected by using a Poissonian distribution correction as follows:
+resulting $N_{\rm trkl}^{\rm ref} =  29.2$. 
+The number $N_{\rm trkl}^{\rm raw}$ of reconstructed tracklets in each event
+is corrected by using a Poissonian term as follows:
 \begin{equation} 
 \label{eq:NtrklCorr}
 N_{\rm trkl}^{\rm corr} = N_{\rm trkl}^{\rm raw} + {\rm Pois}(\Delta N),
@@ -129,10 +125,10 @@ N_{\rm trkl}^{\rm corr} = N_{\rm trkl}^{\rm raw} + {\rm Pois}(\Delta N),
 where:
 \begin{equation} 
 \label{eq:NtrklCorr}
-\Delta N = \Big (\frac{N_{\rm ref}}{\langle N(\zVtx) \rangle} -1 \Big ) \cdot N_{\rm trkl}^{\rm raw}.
+\Delta N = \Big (\frac{N_{\rm trkl}^{\rm ref}}{\langle N(\zVtx) \rangle} -1 \Big ) \cdot N_{\rm trkl}^{\rm raw}.
 \end{equation}
  The reference multiplicity value $N_{\rm trkl}^{\rm ref}$ was chosen as the
- maximum value of the $\averNtrkl$ distribution, in order to assure
+ maximum value of the \mbox{$\averNtrkl$} distribution, in order to assure
  that $\Delta N$ follows a Poissonian distribution. 
 The average $\averNtrkl$ profiles of the four bunches of runs 
 after the $\zVtx$ equalisation are shown in the right panel of 
@@ -150,7 +146,7 @@ validating the efficiency of the correction procedure.
 
 \section {Raw-yield extraction}
 \label{sec:Rawyields_vs_mult}
-The $\Ds$ signal was extracted in five $\pt$ intervals from 2 to 16 $\Gevc$, 
+The $\Dspm$ signal was extracted in five $\pt$ intervals from 2 to 16 $\Gevc$, 
 in three different classes of $N_{\rm trkl}^{\rm corr}$: $[1,40)$, $[40,70)$, $[70,200]$ tracklets,
 corrected for SPD acceptance effects described in Sec.~\ref{sec:zVxtEq}.
 The intervals were chosen in order to have sufficient statistics for the $\Ds$-meson yield extraction.
@@ -160,7 +156,7 @@ and they were selected by applying cuts on the displaced vertex topology, the
 invariant mass of the K$^+$K$^-$ pair and the d$E$/d$x$ and time of flight of the decay tracks.
 The $\Dspm$ raw yield was extracted via fits to the invariant-mass distributions of candidates passing the
 selection criteria described above. The fit function is composed of two Gaussians to model
-the $\Ds$ peak and the $\Dplus$ decay contribution in the same channel of $\Dsplus$ (around 1.88 MeV/$c^2$) 
+the $\Ds$ peak and the $\DplustoKKpi$ decay contribution, which give rise to a peak around 1.88 MeV/$c^2$, 
 and an exponential function to describe the background.
 The position and width of the Gaussian function used to fit the $\Dplus$ peak 
 were fixed respectively to the $\Dplus$ invariant mass from PDG and to the value of the width from the simulations.
@@ -219,7 +215,7 @@ multiplicity-integrated sample of simulated $\DstoKKpi$ decays. To this purpose,
 width of the $\Ds$ peak in the simulation and in data does not depend on the multiplicity intervals, as it can be seen in Fig.~\ref{fig:MCsigmaCompNtrklBins}, in the left and right panels, respectively. 
 In Fig.~\ref{fig:DsFitParamsVsNtrkl} the Gaussian peak positions  
 in data for the three intervals of $\Ntrkl$ are compared to the values of the widths extracted from the fit 
-on the distribution integrated over multiplicity in data and in the simulation.
+on the distribution integrated over multiplicity in data and in the simulation and to the PDG value.
 \begin{figure}[htpb]
 \centering
  \includegraphics[width=.48\textwidth]{FigCap6/comparisonSigmaDsMCBInsNtrkl.eps}
@@ -248,6 +244,13 @@ $f^{i, j}_{\rm prompt}$, for the acceptance-times-efficiency term $({\rm Acc} \t
 the branching ratio BR of the decay channel, which is different for $\Dsplus$ and $\Dplus$.\\
 
 
+\begin{figure}[!h]
+\centering
+ \includegraphics[width=.49\textwidth]{FigCap6/NtrkDistrDDataMC.eps}
+ \includegraphics[width=.49\textwidth]{FigCap6/NtrklWeightsMC_4bunches.eps}
+ \caption{Left: tracklets distribution in data and in MC in different colours. Right: data-driven weights used to correct the efficiencies as a function of the tracklet multiplicity, for the four groups of runs in different colours.}
+ \label{fig:NtrklDataMC}
+\end{figure}
 
 The acceptance-times-efficiency term was obtained via Monte Carlo simulations
 using PYTHIA v6.4.21~\cite{Sjostrand:2006za} with Perugia-2011 tuning as event generator.  
@@ -273,7 +276,7 @@ with data-driven multiplicity weights. These multiplicity weights were extracted
 separately for each of the four groups of runs discussed in Sec.~\ref{sec:zVxtEq},
 corresponding to different SPD configurations.
 The weights were defined as the ratios of the multiplicity distribution in data and in 
-the simulations, as their distributions as a function of the $\Ntrkl$ multiplicity are shown in Fig.~	\ref{fig:NtrklDataMC} (right), in 
+the simulations, and their distributions as a function of the $\Ntrkl$ multiplicity are shown in Fig.~\ref{fig:NtrklDataMC} (right), in 
 different colours for the fours groups of runs. The ratios of the weights from the four groups of runs to the ones integrated over
 all runs is shown in Fig.~\ref{fig:RatioNtrklMC}.
 Furthermore, the simulated $\Ntrkl$ distribution does not reach the highest 
@@ -290,22 +293,15 @@ in different colours. As shown in this figure, the efficiency is almost flat
 as a function of the event multiplicity.\\
 
 
-\begin{figure}[h]
-\centering
- \includegraphics[width=.49\textwidth]{FigCap6/NtrkDistrDDataMC.eps}
- \includegraphics[width=.49\textwidth]{FigCap6/NtrklWeightsMC_4bunches.eps}
- \caption{Left: tracklets distribution in data and in MC in different colours. Right: data-driven weights used to correct the efficiencies as a function of the tracklet multiplicity, for the four groups of runs in different colours.}
- \label{fig:NtrklDataMC}
-\end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
  \includegraphics[width=.9\textwidth]{FigCap6/NtrkDistrMC_17d2a_EvWithD_zVxtUnCorr_896_897.eps}
  \caption{Ratios of multiplicity weights for each of the four groups of runs to the weights computed for the full sample.}
  \label{fig:RatioNtrklMC}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
  \includegraphics[width=.49\textwidth]{FigCap6/EffDsfineNtrklBins_Uncorr.eps}
  \includegraphics[width=.49\textwidth]{FigCap6/PromptDsEfficiency_times_Acceptance_VsNtrkl.eps}
@@ -347,7 +343,7 @@ in Tab.~\ref{tab:cutsDsVsNtrkl} is shown in Fig~\ref{fig:DsfPrompt} as a functio
 Most of the sources of systematic uncertainty and the methodology for their evaluation are the same
 that were discussed in Chapters~\ref{chap:pp} and~\ref{chap:PbPb} for
 the pp and Pb-Pb analyses. They are the systematics on the yield extraction, 
-the selection, on the efficiency (including $\Ds$ meson selection, track reconstruction and particle
+on the efficiency (including $\Ds$ meson selection, track reconstruction and particle
 identification) and on the generated D-meson $\pt$ shape.
 The systematic uncertainty on the yield extraction was estimated via a multiple
 trial approach by varying the configuration of the fit parameters and by comparing the
@@ -388,7 +384,7 @@ least a $\Dzero$-meson candidate, with no further request on its invariant mass.
 The two multiplicity dependent weights obtained in the two cases are shown in 
 Fig.~\ref{fig:NtrklWeights_EvWithD_EvWithCand_Comparison} for the four groups of runs. 
 Fig.~\ref{fig:DsDplusVsMult_SystEffWeights} shows the ratios of the efficiencies re-weighted 
-with these two options for the multiplicity weights for the three intervals on $N_{\rm trkl}^{\rm corr}$ used
+with these two options for the multiplicity weights, for the three intervals on $N_{\rm trkl}^{\rm corr}$ used
 in the analysis. A 1\% systematic uncertainty was assigned based on the difference between 
 the re-weighted efficiencies.\\
 
@@ -489,17 +485,17 @@ to extract the central value of $\averNch$ from the average $\averNtrkl$ value i
 
 
 To estimate the systematic uncertainties on the evaluation of the average 
-$\Nch$ values in the considered $\Ntrkl$ intervals, three different checks have been performed.
+$\averNch$ values in the considered $\Ntrkl$ intervals, three different checks have been performed.
 \begin{enumerate}
 \item To test the dependence of the correction factor on the event generator, the correlation between
 $\Ntrkl$ to $\Nch$ with a different event generator (DPMJET~\cite{Ranft:1994fd}) was considered. The correlation
 between $\Ntrkl$ to $\Nch$ can in fact be sensitive to the relative abundance of different particle species
-produced by the event generator. The comparison of the average $\Nch$ in the three $\Ntrkl$ intervals
+produced by the event generator. The comparison of the average $\averNch$ in the three $\Ntrkl$ intervals
 used in the analysis from the EPOS and DPMJET generators
 is presented in Fig.~\ref{fig:NchVsMCgenerator}. The difference, which is 2\% in all $\Ntrkl$ intervals,
 was assigned as systematic uncertainty.
 \item To test deviations from the linear correlation which were observed in particular at low and high multiplicity (right panel of Fig.~\ref{fig:NtrklVsNch}), a different method to compute $\averNch$ was considered.  
-The average $\Nch$ was extracted by considering the $\Nch$ intervals used in the analysis as shown in Fig.Fig.~\ref{fig:NtrklProj}.
+The average $\averNch$ was extracted by considering the $\Nch$ intervals used in the analysis as shown in Fig.~\ref{fig:NtrklProj}.
 In Fig.~\ref{fig:NchVsCorrHypo} (left) the comparison of the $\averNch$ values
 obtained with this methods are compared to the ones computed with the linear fit. The difference
 is $<3\%$ in all $\Ntrkl$ intervals and is assigned as systematic uncertainty.
@@ -514,7 +510,7 @@ $[1,40), [40,70), [70,200]$ $\Ntrkl$ intervals respectively.
 \end{enumerate}
 The three sources of uncertainties were considered as 
 uncorrelated and their contributions were summed in quadrature. The final values of $\averNch$ in $|\eta|<1$ 
-and the associated systematic uncertainties are shown in 
+and the associated systematic uncertainties are reported in Tab.~\ref{tab:averNchandSyst} and shown in 
 Fig.~\ref{fig:Nch}. These values were then divided by the 
 width of the considered $\eta$ range, $\Delta \eta =$ 2, 
 to obtain $\langle {\rm d} \Nch/{\rm d}  \eta \rangle |_{|\eta|<0.5}$.\\
@@ -563,8 +559,8 @@ $\averNch$ & $\Ntrkl$ weights (\%)   & Lin. corr. $\Ntrkl$-$\Nch$  (\%)& Ev. gen
 102.7   &   2.5  &  2.9 &  1.5 \\
 \hline
 \end{tabular}}
-\caption{Systematic uncertainties on $\averNch$ values in each of the three $\Ntrkl$ multiplicity intervals.}
-\label{tab:DsVsMult_syst}
+\caption{$\averNch$ values and related systematic uncertainties in each of the three $\Ntrkl$ multiplicity intervals.}
+\label{tab:averNchandSyst}
 \end{table}
 
 \begin{figure}[h]
@@ -591,9 +587,9 @@ in p-Pb collisions. The measured $\Ds/\Dplus$ ratios in p-Pb collisions in the d
 multiplicity and $\pt$ intervals are found to be compatible within uncertainties. 
 To test for possible presence of non-flat trends as a function of multiplicity, the measured points were 
 fitted with a linear function to quantify their slope. The results of the fit are shown in Fig.~\ref{fig:FitRatios}
-and were obtained considering only the statistical uncertainties. The reason for this choice is that, without including the
+and were obtained considering only the statistical uncertainties. The reason for this choice is that, even without including the
 systematic uncertainties, the slopes from the linear fit on the pp, 
-p-Pb and Pb-Pb points were found to be different from zero already no more than 
+p-Pb and Pb-Pb points were found to be different from zero no more than 
 1$\sigma$ of the slope parameter error between 2 and 8 $\Gevc$. 
 If the fit is performed on pp and p-Pb measurements only (blue lines in Fig.~\ref{fig:FitRatios}), 
 the slopes differ from zero within 1$\sigma$ 

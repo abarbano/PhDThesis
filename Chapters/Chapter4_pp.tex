@@ -22,10 +22,11 @@ algorithm, which resulted in better $\pt$ resolution, thus higher signal-to-back
 
 \section{Event selection}
 \label{sec:EvSelec}
-The analysis was performed on 370M of events (it was 300M for the previous
-reconstruction). The larger data sample was obtained thanks to improvements in the reconstruction
-and detector alignments.
- A minimum-bias (MB)
+The analysis was performed on 370M of events, which passed the physics selection 
+cuts described in this Section and were thus selected for the analysis. 
+The larger data sample of the current reconstruction (the number of events was 300M for the previous
+reconstruction) was obtained thanks to improvements in the reconstruction
+and detector alignments. A minimum-bias (MB)
 trigger was used to collect the data sample, by requiring
 at least one hit in either of the V0 counters or in the SPD.
 This trigger was estimated to be sensitive to about 87\% of the pp inelastic
@@ -41,9 +42,9 @@ The algorithm of pile-up identification runs the vertex finding algorithm
 on the SPD tracklets not associated to the
 main vertex, which is the one with largest associated multiplicity. 
 A vertex is tagged pile-up if there is a minimum number of 
-tracklets associated to it (N$^{\rm tkl}_{\rm min}$) and if the 
+tracklets associated to it (N$^{\rm trkl}_{\rm min}$) and if the 
 $z$-separation between primary and pile-up vertex ($\Delta z$) is larger than a certain value.
-In this analysis, N$^{\rm tkl}_{\rm min}>3$ and $\Delta z>0.6$ cm were used.
+In this analysis, N$^{\rm trkl}_{\rm min}>3$ and $\Delta z>0.6$ cm were used.
 A further selection was applied on the event, requiring a primary vertex 
 reconstructed from at least two ITS+TPC tracks (global tracks). In general, the vertex can be reconstructed by
 using only SPD tracklets. The reconstruction of the vertex 
@@ -60,13 +61,13 @@ Furthermore, the requirement for the $z$-vertex coordinate to be $|z_{\rm RecoVe
 selects tracks within $\eta < 0.9$, which is the acceptance region of ITS and TPC,
 and contributes to reject satellite collisions (see Sec.~\ref{sec:BkgRejection}) 
 that mostly occur at positions well outside the fiducial vertex region. 
-The percentage of events of this sample rejected during the vertex and physics selection
-is shown in Fig.~\ref{fig:vxtReso} (right panel). 
+The percentage of events rejected during the vertex and physics selection
+is shown in Fig.~\ref{fig:vxtReso} (right panel). The most important contribution comes from the vertex selections.
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=.49\textwidth]{FigCap4/VtxReso.png}
-\includegraphics[width=.49\textwidth]{FigCap4/RejFracPass4.png}
+\includegraphics[width=.5\textwidth]{FigCap4/VtxReso.png}
+\includegraphics[width=.48\textwidth]{FigCap4/RejFracPass4.png}
 \caption{Left: resolutions of $x$- and $y$- vertices reconstructed with SPD tracklets or global tracks as a function of the event multiplicity. Right: fractions of events rejected during vertex and physics selection.}
 \label{fig:vxtReso}
 \end{figure}
@@ -175,13 +176,14 @@ y_{\rm fid} (\pt) = -\frac{0.2}{15}\pt^2 + \frac{1.9}{15}\pt + 0.5.
 The $\Dspm$ candidates are built from combinatorial 
  association of three candidate tracks passing the selection criteria 
  described in Sec.~\ref{sec:singleTrCuts}, with the correct combination of charge 
- signs. In this way, a huge number of candidates (about 885M, corresponding to $\sim$3 candidates per event) 
- is created, most of them being combinatorial background. 
+ signs. In this way, a large number of candidates is created, most of them being combinatorial background. 
  Strict selections are therefore needed to increase
  the signal-to-background ratio and the statistical significance of the signal,
  by applying cuts on variables that have the potential to discriminate
  $\Dsplus$ signal (i.e. corresponding to real $\Dspm$ decays) 
- from background candidates. Candidates 
+ from background candidates. 
+To give an idea, there are about 885M $\Ds$ candidates in the 370M analysed events, after a 
+preliminary filtering selections with very loose cuts. Candidates 
   are thus selected by applying geometrical cuts on the displaced decay vertex 
   topology, which are tuned as a function of the D-meson $\pt$.
 The main feature of the $\Dsplus$-decay topology is the presence of three tracks displaced from 
@@ -216,7 +218,7 @@ candidate. The topological cuts used for $\Dspm$ signal selection
    Likely cut values are $D_{len} > 300-400\, \mu $m. 
    To be noted that $\Ds$ mesons coming from weak decays of beauty hadrons have larger $D_{len}$
    with respect to prompt $\Ds$ from charm decay, due to more displaced decay vertices.
-\item \textbf{Normalized decay length NDL$_{\rm xy}$}, defined as the decay length 
+\item \textbf{Normalised decay length NDL$_{\rm xy}$}, defined as the decay length 
 in the transverse plane ($xy$) divided by its uncertainty (Fig.~\ref{fig:var1} right).
 Typical values of cuts on this variable are around 2.
 \item \textbf{Cos$\theta_{point}$}, where $\theta_{point}$ is the angle
@@ -364,7 +366,7 @@ PID selection preserves $\sim$85-90\% of the signal depending on the $\pt$.
 \end{figure}
 
 
-\section{Invariant mass spectra, cut optimization and signal extraction}
+\section{Invariant mass spectra, cut optimisation and signal extraction}
 \label{sec:invMassPlotsPP}
 For each candidate, two values of invariant mass can be computed, 
 corresponding to the two possible assignments of the kaon and the 
@@ -514,9 +516,9 @@ and that in $|y| < 0.5$. It was checked that calculations of the $C_{\Delta y}$ 
 factor based on FONLL pQCD calculations or on the assumption of uniform D-meson
 rapidity distribution in $|y| < y_{\rm fid}$ would give the same result, 
 because both in PYTHIA and in FONLL the D-meson yield is uniform within 1\% in the range $|y| < 0.8$.
-The integrated luminosity ($L_{\rm int} = (6.0 \pm 0.2) {\rm nb}^{-1}$) was computed as $L_{\rm int} = N_{ev}/\sigma_{pp,MB}$,
-where $N_{ev}$ is the number of analysed events and 
-$\sigma_{pp,MB} = 62.2$ mb~\cite{Abelev:2012sea}
+The integrated luminosity $L_{\rm int} = (6.0 \pm 0.2)\, {\rm nb}^{-1}$ was computed as $L_{\rm int} = N_{\rm ev}/\sigma_{\rm pp,MB}$,
+where $N_{\rm ev}$ is the number of analysed events and 
+$\sigma_{\rm pp,MB} = 62.2$ mb~\cite{Abelev:2012sea}
 is the cross-section for the minimum-bias trigger condition, derived from
 a van der Meer scan measurement~\cite{vanderMeer:296752}.
 
@@ -619,10 +621,10 @@ subtracting the background counts calculated from the
 background fit function.
 The values of the mean and the RMS
 of both the distributions are reported in the plot.
-The RMS of the distribution of the multiple trials was used as an estimator of
+The RMS of the distribution of the multiple trials on fit was used as an estimator of
 the systematic uncertainty on the raw yield extraction. With the above
 selection criteria, the value resulted to be $\sim$6\% in all $\pt$ intervals.
-The relative difference between the means of the distributions
+The relative difference between the means of the yield distributions
 for the extraction via fit and via bin counting resulted
 to be smaller than 6\% at all $\pt$ and therefore no additional uncertainty was assigned from this check. 
 The assigned uncertainty is reduced by a factor 3-4 with respect to the analysis with the old reconstruction,
@@ -688,7 +690,7 @@ One can see that all the three shapes
 give a good description of data, but in general no improvements 
 are visible when adding more parameters in the fit
 with respect to exponential shape, so the latter confirms itself as a good choice.
-Neverthless, it is important to look also at the values of the 
+Nevertheless, it is important to look also at the values of the 
 extracted yield to assess possible biases.
  In order to do this, 50 simulated samples were generated via 
  Poissonian smearing of the fit function with the exponential background.
@@ -747,7 +749,7 @@ while the selection on some variables needs to be released, the selection
 on others requires to be tightened. For this reason, the extracted yields with lower selection efficiency are in general not simply
 sub-samples of those with higher efficiency, thus making not straightforward the calculation
 of the error on the ratios of raw yields and hence, of the cross sections in order to
-estimate the systematic uncertianty.
+estimate the systematic uncertainty.
 The ratios of the different cross sections to the default one are shown in the bottom panel of the
 same Fig.~\ref{fig:cutVar}. We took the RMS of the their distributions in each $\pt$ interval as an estimator of 
 the systematic uncertainty. The uncertainty resulted to be 7\% in all $\pt$ bins.
@@ -780,7 +782,7 @@ than the 7\% from the cut variation study, which includes this contribution.
  \includegraphics[width=.44\textwidth]{FigCap4/rms_smearp10.eps}
 \caption{Left: $\Ds$ corrected yield measured with 12 different sets of
 cuts and compared to the yield from the best set of cuts (chosen for the central yield value). Right: ratio for $\Ds$ efficiencies w/o a 
-10\% smearing on the xy impact parameter resolution.}             
+10\% smearing on the $xy$ impact parameter resolution.}             
 \label{fig:cutVariation}
 \end{center}
 \end{figure}
@@ -933,7 +935,7 @@ is large and increases with $\pt$.
 \begin{figure}[!hb]
 \begin{center}
 \includegraphics[width=1.2\textwidth]{FigCap4/DataOverFit.eps}
-\caption{Ratio of DCAxy distributions in data and in the fit result histograms, in $\pt$ intervals from 0.5 to 15 $\Gevc$.}
+\caption{Ratio of DCA$_{\rm xy}$ distributions in data and in the fit result histograms, in $\pt$ intervals from 0.5 to 15 $\Gevc$.}
 \label{fig:DCAxyRatioDataFitVsPt}
 \end{center}
 \end{figure}
@@ -1113,7 +1115,7 @@ The use of this alternative approach has been reconsidered after a
 review of currently available measurements of beauty and 
 charmed meson cross-sections at the LHC was carried out. The measurements 
 were compared to FONLL predictions for heavy-flavoured hadrons 
-for the specific center-of-mass energy and rapidity interval.
+for the specific centre-of-mass energy and rapidity interval.
 In Fig.~\ref{fig:Bmesons}, the B$^{+}$-, B$^{0}$-, B$^0_{\rm s}$-meson and 
 $\Lambda_{\rm b}$-baryon cross sections measured by CMS in pp collisions 
 at $\s = $ 7 TeV~\cite{Khachatryan:2011mk,Chatrchyan:2011pw,Chatrchyan:2011vh,Chatrchyan:2012xg},

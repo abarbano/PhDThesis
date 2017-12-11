@@ -48,7 +48,7 @@ high granularity, a low transverse momentum threshold $\pt^{\rm min} \sim 0.15 $
 $\Gevc$ and good particle identification capabilities up to 20 $\Gevc$.
 The apparatus consists of three main parts: 
 \begin{itemize}
-\item \textbf{central barrel}, contained within the large magnet producing a moderate solenoidal field
+\item \textbf{central barrel}, contained within the large magnet producing a moderate solenoidal 
 field of B = 0.5 T in nominal running conditions and composed of detectors devoted to the reconstruction of charged particles, photons
 and jets and covering the pseudo-rapidity range -0.9 $< \eta <$ 0.9 over the 
 full azimuth. They are the Inner Tracking System (ITS), optimised for vertex 
@@ -130,9 +130,9 @@ All the ITS detectors were carefully optimised to minimise their radiation
 The resolution of the track impact parameter is determined by the spatial resolution of 
 the ITS detectors. The ITS detectors have a spatial resolution of a few tens of 
 $\mu$m in the $r\varphi$ plane, with the best precision (12  $\mu$m) for the 
-innermost detectors equipped with SPD. The left panels of Fig.~\ref{fig:DCAxyResolAndPtResol} and~\ref{fig:VtxResol} that will be discussed
- in Sec.~\ref{sec:tracking} show respectively the resolution on the impact parameter
-in the transverse plane and on the final vertex position in transverse coordinates. \\
+innermost detectors equipped with SPD. The left and the right panels of Fig.~\ref{fig:VtxResolDCAResol}, that will be discussed
+ in Sec.~\ref{sec:tracking}, show respectively the resolution on the final vertex position in transverse coordinates and on the impact parameter
+in the transverse plane. \\
  
  \begin{figure}[!h]
 \centering
@@ -209,8 +209,8 @@ f(\beta_\gamma) = \frac{P_1}{\beta^{P_4}} \Big ( P_2 - \beta^{P_4} - {\rm ln}\Bi
 where $\beta$ is the particle velocity, $\gamma$ is the Lorentz factor, and $P_{1-5}$ are fit parameters. 
 The measured d$E$/d$x$ as a function of the track momentum measured in TPC is
 shown in Fig.~\ref{fig:imagePIDTPC}. The lines correspond to the parametrisation. 
-It is evident a clear separation among the different particle species
-is observed for $\pt \lesssim 1 \, \Gevc$, which allow for a PID on a track-by-track basis. At higher $\pt$ the separation of the species is still feasible 
+A clear separation among the different particle species
+is observed for $\pt \lesssim 1 \, \Gevc$, which allows for a PID on a track-by-track basis. At higher $\pt$ the separation of the species is still feasible 
 on a statistical basis via multi-Gaussian fits. The PID resolution is about 5.2\% in 
 pp collisions and 6.5\% in the 5\% most central Pb-Pb collisions. Thanks to the d$E$/d$x$ resolution, 
 particle ratios can be measured in the relativistic rise region at $\pt$ up to $\approx 20\, \Gevc$.
@@ -231,7 +231,7 @@ of these sectors is divided into 5 modules along the beam direction.
 This detector is entirely devoted to particle identification. 
 The ionisation produced by any particle crossing the MRPCs starts a gas avalanche 
 which generates the observed signal. The TOF identifies the particle species via a measure of the time of flight 
-inside the chambers. Considering the following relation:
+inside the chambers. Let us consider the following relation:
 \[
 m = p \sqrt{\frac{t^2_{\rm TOF}}{L^2}-1}
 \]
@@ -455,7 +455,7 @@ allows the rejection of EM processes.
 \section{Track and vertex reconstruction}
 \label{sec:tracking}
 The track reconstruction and vertex finding are performed offline using information of the central
-barrel detectors (ITS and TPC). The track reconstruction is based on the Kalman filter~\cite{} , which performs
+barrel detectors (ITS and TPC). The track reconstruction is based on the Kalman filter~\cite{Fruhwirth:1987fm}, which performs
 simultaneously the track recognition (track finding) and reconstruction (track fitting). The main steps are described below.
 \begin{itemize}
 \item {\bf Clusterisation step:} the detector data are converted into ''clusters'' (i.e. groups of hits produced by the 
@@ -554,11 +554,11 @@ orthogonal to $\Dplus$ $\pt$ direction (red), and along $z$-axis (blue).}
 \section{Secondary vertex reconstruction}
 \label{sec:secVertex}
 For the reconstruction of heavy-flavour hadron decays, the reconstruction of decay vertices 
-is done during the analysis phase. Tracks are grouped in pairs (e.g. for the $\DtoKpi$ decays) or in triplets (for the $\Dplus$ and $\Ds$ cases), 
+is done during the analysis phase. Tracks are grouped in pairs (e.g. for the $\DtoKpi$ decays) or in triplets (for the $\Dplus$ and $\Dsplus$ cases), 
 defining objects called ``candidates''. 
 The algorithm used for the secondary vertex reconstruction is based on a straight 
 line approximation of the tracks (which are helices) in the vicinity of the primary vertex, by calculating the tangent line.
-The algorithm finds the point of minimum distance between the three tracks by minimising the quantity:
+The algorithm finds the point of minimum distance between the two (or three) tracks by minimising the quantity:
 \begin{equation}
 D^2= \sum_{i=1}^N d_i^2,
 \end{equation}
@@ -607,7 +607,7 @@ are the mass numbers of the colliding nuclei. The number of binary
 collisions $N_{\rm coll}$ can be calculated for a given value of the impact parameter. 
 The impact parameter $b$ and other geometry-related quantities ($N_{\rm part}$, 
 $N_{\rm spec}$, $N_{\rm coll}$) are not directly measurable. The determination of the collision centrality is based 
-measurements of multiplicity (energy) produced in the collision, which can be described utilizing
+measurements of multiplicity (energy) produced in the collision, which can be described utilising
 the Glauber model convoluted with a model for particle production based on a negative binomial distribution (NBD):
 \begin{equation}
 \label{eq:NBD}
@@ -616,7 +616,7 @@ P_{\mu, k} (n) = \frac{\Gamma(n+k)}{\Gamma(n+1)\Gamma(k)}\frac{(\mu/k)^n}{(\mu/k
 which gives the probability of measuring $n$ hits per independent emitting source of particles (called ancestor),
  where $\mu$ is the mean multiplicity per ancestor and $k$ controls the width of the distribution. 
 The number of ancestors is parameterised as: $N_{\rm ancestors} = fN_{\rm part} + (1- f) N_{\rm coll}$.
-This is inspired by two-component models~\cite{Deng:2010mv,Kharzeev:2004if}, which decompose particle production nucleus-nucleus 
+This is inspired by two-component models~\cite{Deng:2010mv,Kharzeev:2004if}, which decompose particle production in nucleus-nucleus 
 collisions into the contributions due to soft and hard interactions, where the soft interactions produce particles with 
 an average multiplicity proportional to $N_{\rm part}$, and the probability for hard interactions to occur is proportional to $N_{\rm coll}$. 
 \begin{figure}[!h]
@@ -632,7 +632,7 @@ an average multiplicity proportional to $N_{\rm part}$, and the probability for 
 %monotonically with the impact parameter. 
 With the Glauber Monte Carlo approach, the collision processes are simulated  
 and the $N_{\rm part}$, $N_{\rm coll}$ and the number of ancestors are computed event by event. 
-This allows to extract multiplicity distributions which can be compared to the measured ones, to extract the values of the parameters
+This allows to extract multiplicity distributions which can be compared to the measured ones and to extract the values of the parameters
 $\mu, n $ and $k$.
 The standard method typically used in ALICE is to define 
 the centrality classes in Pb-Pb collisions based on the NBD-Glauber fit to the sum of V0A and V0C amplitudes. 
@@ -644,7 +644,7 @@ as well as part of the EM background with a ZDC cut and a $z$-vertex cut ($|\zVt
 The V0 amplitude obtained with the NBD-Glauber model fitted to the data is shown as a red curve
  in Fig.~\ref{fig:centrality} (left). The centrality is expressed as a percentage of the total nuclear interaction cross section
 $\sigma$ obtained by integrating the V0
-amplitude distribution. The normalisation is performed utilizing the integral up to a threshold value V0$_{\rm THR}$ (anchor point), which corresponds
+amplitude distribution. The normalisation is performed utilising the integral up to a threshold value V0$_{\rm THR}$ (anchor point), which corresponds
 to the 90\% of the total hadronic cross section. For example, if we define V as the VZERO amplitude, 
 the top 10\% central class is defined by the boundary V0$_{10}$ which satisfies:
 \begin{equation}
